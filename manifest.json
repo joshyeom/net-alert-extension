@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_appName__",
+  "version": "1.0.0",
+  "description": "__MSG_appDesc__",
+  "default_locale": "en",
+  "author": "joshyeom",
+  "homepage_url": "https://github.com/joshyeom/net-alert-extension",
+  "permissions": ["alarms", "notifications", "storage"],
+  "host_permissions": [
+    "https://www.gstatic.com/*",
+    "https://www.cloudflare.com/*",
+    "https://speed.cloudflare.com/*"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "__MSG_popupTitle__"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

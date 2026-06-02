@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      :root {
+        font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
+      }
+      body {
+        width: 248px;
+        margin: 0;
+        padding: 16px;
+        background: #fafafa;
+        color: #222;
+      }
+      /* 헤더: 제목 + 설정 톱니 */
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 8px;
+      }
+      .header h1 {
+        font-size: 13px;
+        font-weight: 600;
+        margin: 0;
+        color: #555;
+      }
+      .iconBtn {
+        border: none;
+        background: none;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 2px 4px;
+        border-radius: 5px;
+        color: #888;
+      }
+      .iconBtn:hover {
+        background: #eee;
+      }
+
+      /* ---- 메인 뷰 ---- */
+      #main {
+        text-align: center;
+      }
+      #dot {
+        font-size: 40px;
+        line-height: 1;
+      }
+      #label {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      #sub {
+        margin-top: 6px;
+        font-size: 12px;
+        color: #777;
+      }
+      .offline #label {
+        color: #e53935;
+      }
+      .online #label {
+        color: #43a047;
+      }
+      #speedBox {
+        margin-top: 16px;
+        padding-top: 14px;
+        border-top: 1px solid #eee;
+        text-align: left;
+      }
+      #speedNow {
+        font-size: 13px;
+        color: #333;
+      }
+      #speedNow b {
+        font-size: 15px;
+      }
+      .slow #speedNow b {
+        color: #e53935;
+      }
+
+      /* ---- 설정 뷰 ---- */
+      #settings {
+        display: none;
+      }
+      body.settingsOpen #main {
+        display: none;
+      }
+      body.settingsOpen #settings {
+        display: block;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 9px 0;
+        font-size: 13px;
+        border-bottom: 1px solid #eee;
+      }
+      .row:last-child {
+        border-bottom: none;
+      }
+      .row label {
+        color: #444;
+      }
+      .group-title {
+        margin: 12px 0 2px;
+        font-size: 11px;
+        font-weight: 600;
+        color: #999;
+        text-transform: uppercase;
+      }
+      select,
+      input[type="number"] {
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding: 4px 6px;
+        font-size: 12px;
+        background: #fff;
+      }
+      input[type="number"] {
+        width: 52px;
+        text-align: right;
+      }
+      /* 토글 스위치 */
+      .switch {
+        position: relative;
+        width: 38px;
+        height: 22px;
+      }
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      .slider {
+        position: absolute;
+        inset: 0;
+        background: #ccc;
+        border-radius: 22px;
+        transition: 0.2s;
+        cursor: pointer;
+      }
+      .slider::before {
+        content: "";
+        position: absolute;
+        height: 18px;
+        width: 18px;
+        left: 2px;
+        top: 2px;
+        background: #fff;
+        border-radius: 50%;
+        transition: 0.2s;
+      }
+      .switch input:checked + .slider {
+        background: #43a047;
+      }
+      .switch input:checked + .slider::before {
+        transform: translateX(16px);
+      }
+      .threshUnit {
+        font-size: 12px;
+        color: #888;
+        margin-left: 4px;
+      }
+      .threshWrap {
+        display: flex;
+        align-items: center;
+      }
+
+      /* ---- 권한 배너 (공통) ---- */
+      #perm {
+        display: none;
+        margin-top: 16px;
+        padding: 10px 12px;
+        background: #fff3e0;
+        border: 1px solid #ffcc80;
+        border-radius: 8px;
+        font-size: 12px;
+        color: #8a5a00;
+        text-align: left;
+        line-height: 1.5;
+      }
+      #perm.show {
+        display: block;
+      }
+      #perm b {
+        color: #b35900;
+      }
+      #permBtn {
+        display: block;
+        width: 100%;
+        margin-top: 8px;
+        padding: 7px 0;
+        border: none;
+        border-radius: 6px;
+        background: #ff9800;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      #permBtn:hover {
+        background: #f57c00;
+      }
+      #permGuide {
+        display: none;
+        margin-top: 8px;
+        font-size: 11px;
+        color: #8a5a00;
+      }
+      #permGuide.show {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1 id="hdrTitle"></h1>
+      <button id="openSettings" class="iconBtn" title="settings">⚙️</button>
+    </div>
+
+    <!-- 메인 뷰 -->
+    <div id="main">
+      <div style="text-align: center">
+        <div id="dot">⚪</div>
+        <div id="label"></div>
+        <div id="sub"></div>
+      </div>
+      <div id="speedBox">
+        <div id="speedNow"></div>
+      </div>
+    </div>
+
+    <!-- 설정 뷰 -->
+    <div id="settings">
+      <div class="header">
+        <h1 id="setTitle"></h1>
+        <button id="closeSettings" class="iconBtn" title="done">✕</button>
+      </div>
+
+      <div class="row">
+        <label id="lblLang"></label>
+        <select id="selLang">
+          <option value="system" id="optSystem"></option>
+          <option value="ko" id="optKo"></option>
+          <option value="en" id="optEn"></option>
+        </select>
+      </div>
+
+      <div class="group-title" id="grpSpeed"></div>
+      <div class="row">
+        <label id="lblSpeedTest"></label>
+        <label class="switch"
+          ><input type="checkbox" id="swSpeedTest" /><span
+            class="slider"
+          ></span
+        ></label>
+      </div>
+      <div class="row">
+        <label id="lblThreshold"></label>
+        <span class="threshWrap">
+          <input id="threshold" type="number" min="1" step="1" />
+          <span class="threshUnit">Mbps</span>
+        </span>
+      </div>
+      <div class="row">
+        <label id="lblPeriod"></label>
+        <select id="selPeriod">
+          <option value="5" id="optP5"></option>
+          <option value="10" id="optP10"></option>
+          <option value="30" id="optP30"></option>
+        </select>
+      </div>
+
+      <div class="group-title" id="grpNotify"></div>
+      <div class="row">
+        <label id="lblNotifyDown"></label>
+        <label class="switch"
+          ><input type="checkbox" id="swNotifyDown" /><span
+            class="slider"
+          ></span
+        ></label>
+      </div>
+      <div class="row">
+        <label id="lblNotifyUp"></label>
+        <label class="switch"
+          ><input type="checkbox" id="swNotifyUp" /><span
+            class="slider"
+          ></span
+        ></label>
+      </div>
+      <div class="row">
+        <label id="lblNotifySlow"></label>
+        <label class="switch"
+          ><input type="checkbox" id="swNotifySlow" /><span
+            class="slider"
+          ></span
+        ></label>
+      </div>
+    </div>
+
+    <!-- 권한 배너 (양 뷰 공통, 아래 고정) -->
+    <div id="perm">
+      <b id="permTitle"></b><br />
+      <span id="permBody"></span>
+      <button id="permBtn"></button>
+      <div id="permGuide"></div>
+    </div>
+
+    <script src="i18n.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

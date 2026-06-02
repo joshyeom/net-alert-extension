@@ -1,0 +1,131 @@
+{
+  "appName": {
+    "message": "Internet Down Alert"
+  },
+  "appDesc": {
+    "message": "Instantly notifies you when the internet goes down and when it recovers."
+  },
+  "popupTitle": {
+    "message": "Connection Status"
+  },
+  "statusChecking": {
+    "message": "Checking…"
+  },
+  "statusOnline": {
+    "message": "Connected"
+  },
+  "statusOffline": {
+    "message": "Disconnected"
+  },
+  "lastCheck": {
+    "message": "Last checked: $1"
+  },
+  "speedLabel": {
+    "message": "Speed:"
+  },
+  "speedMeasuring": {
+    "message": "measuring…"
+  },
+  "speedValue": {
+    "message": "$1 Mbps"
+  },
+  "speedDash": {
+    "message": "—"
+  },
+  "thresholdLabel": {
+    "message": "Alert below"
+  },
+  "savedLabel": {
+    "message": "Saved"
+  },
+  "permTitle": {
+    "message": "⚠️ Notifications are off"
+  },
+  "permBody": {
+    "message": "To receive alerts, enable Chrome notifications in your system settings."
+  },
+  "permBtn": {
+    "message": "How to open settings"
+  },
+  "permGuide": {
+    "message": "System Settings → Notifications → Google Chrome → turn on \"Allow notifications\""
+  },
+  "notifyDownTitle": {
+    "message": "⚠️ Internet Down"
+  },
+  "notifyDownMsg": {
+    "message": "$1 Connection lost"
+  },
+  "notifyUpTitle": {
+    "message": "✅ Internet Restored"
+  },
+  "notifyUpMsg": {
+    "message": "Recovered after $1"
+  },
+  "notifySlowTitle": {
+    "message": "🐢 Internet Slow"
+  },
+  "notifySlowMsg": {
+    "message": "Now $1 Mbps (below $2 Mbps)"
+  },
+  "durationMinSec": {
+    "message": "$1m $2s"
+  },
+  "durationSec": {
+    "message": "$1s"
+  },
+  "settingsTitle": {
+    "message": "Settings"
+  },
+  "settingsOpen": {
+    "message": "Settings"
+  },
+  "settingsBack": {
+    "message": "Done"
+  },
+  "langLabel": {
+    "message": "Language"
+  },
+  "langSystem": {
+    "message": "System"
+  },
+  "langKo": {
+    "message": "한국어"
+  },
+  "langEn": {
+    "message": "English"
+  },
+  "speedTestLabel": {
+    "message": "Speed test"
+  },
+  "speedPeriodLabel": {
+    "message": "Interval"
+  },
+  "period5": {
+    "message": "5 min"
+  },
+  "period10": {
+    "message": "10 min"
+  },
+  "period30": {
+    "message": "30 min"
+  },
+  "notifyLabel": {
+    "message": "Notifications"
+  },
+  "notifyDownToggle": {
+    "message": "Disconnected"
+  },
+  "notifyUpToggle": {
+    "message": "Restored"
+  },
+  "notifySlowToggle": {
+    "message": "Slow"
+  },
+  "onLabel": {
+    "message": "On"
+  },
+  "offLabel": {
+    "message": "Off"
+  }
+}

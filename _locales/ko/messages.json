@@ -1,0 +1,131 @@
+{
+  "appName": {
+    "message": "인터넷 끊김 알림"
+  },
+  "appDesc": {
+    "message": "인터넷이 끊기면 OS 알림으로 즉시 알려주고 복구되면 알려줍니다."
+  },
+  "popupTitle": {
+    "message": "인터넷 연결 상태"
+  },
+  "statusChecking": {
+    "message": "확인 중…"
+  },
+  "statusOnline": {
+    "message": "연결됨"
+  },
+  "statusOffline": {
+    "message": "연결 끊김"
+  },
+  "lastCheck": {
+    "message": "마지막 확인: $1"
+  },
+  "speedLabel": {
+    "message": "속도:"
+  },
+  "speedMeasuring": {
+    "message": "측정 중…"
+  },
+  "speedValue": {
+    "message": "$1 Mbps"
+  },
+  "speedDash": {
+    "message": "—"
+  },
+  "thresholdLabel": {
+    "message": "경고 기준"
+  },
+  "savedLabel": {
+    "message": "저장됨"
+  },
+  "permTitle": {
+    "message": "⚠️ 알림이 꺼져 있어요"
+  },
+  "permBody": {
+    "message": "끊김 알림을 받으려면 macOS에서 Chrome 알림을 켜야 합니다."
+  },
+  "permBtn": {
+    "message": "설정 여는 법 보기"
+  },
+  "permGuide": {
+    "message": "시스템 설정 → 알림 → Google Chrome → \"알림 허용\" 켜기"
+  },
+  "notifyDownTitle": {
+    "message": "⚠️ 인터넷 끊김"
+  },
+  "notifyDownMsg": {
+    "message": "$1 연결이 끊겼습니다"
+  },
+  "notifyUpTitle": {
+    "message": "✅ 인터넷 복구됨"
+  },
+  "notifyUpMsg": {
+    "message": "$1 만에 복구"
+  },
+  "notifySlowTitle": {
+    "message": "🐢 인터넷 느림"
+  },
+  "notifySlowMsg": {
+    "message": "현재 $1 Mbps (기준 $2 Mbps 미만)"
+  },
+  "durationMinSec": {
+    "message": "$1분 $2초"
+  },
+  "durationSec": {
+    "message": "$1초"
+  },
+  "settingsTitle": {
+    "message": "설정"
+  },
+  "settingsOpen": {
+    "message": "설정"
+  },
+  "settingsBack": {
+    "message": "완료"
+  },
+  "langLabel": {
+    "message": "언어"
+  },
+  "langSystem": {
+    "message": "시스템"
+  },
+  "langKo": {
+    "message": "한국어"
+  },
+  "langEn": {
+    "message": "English"
+  },
+  "speedTestLabel": {
+    "message": "속도 측정"
+  },
+  "speedPeriodLabel": {
+    "message": "주기"
+  },
+  "period5": {
+    "message": "5분"
+  },
+  "period10": {
+    "message": "10분"
+  },
+  "period30": {
+    "message": "30분"
+  },
+  "notifyLabel": {
+    "message": "알림"
+  },
+  "notifyDownToggle": {
+    "message": "끊김"
+  },
+  "notifyUpToggle": {
+    "message": "복구"
+  },
+  "notifySlowToggle": {
+    "message": "느림"
+  },
+  "onLabel": {
+    "message": "켜기"
+  },
+  "offLabel": {
+    "message": "끄기"
+  }
+}
