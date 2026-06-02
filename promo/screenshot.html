@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        width: 1280px;
+        height: 800px;
+        font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
+        background: linear-gradient(135deg, #1e88e5 0%, #1565c0 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 64px;
+        overflow: hidden;
+      }
+      /* 왼쪽 카피 */
+      .copy { color: #fff; max-width: 480px; }
+      .copy h1 {
+        font-size: 52px;
+        line-height: 1.15;
+        font-weight: 800;
+        letter-spacing: -1px;
+      }
+      .copy p {
+        margin-top: 20px;
+        font-size: 22px;
+        line-height: 1.5;
+        opacity: 0.92;
+      }
+      .feat { margin-top: 28px; list-style: none; }
+      .feat li {
+        font-size: 19px;
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      /* 오른쪽: 팝업 목업 + 알림 */
+      .stage { display: flex; flex-direction: column; gap: 22px; align-items: center; }
+
+      .popup {
+        width: 280px;
+        background: #fafafa;
+        border-radius: 16px;
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+        padding: 22px 20px;
+        text-align: center;
+      }
+      .popup .hdr {
+        font-size: 13px;
+        color: #888;
+        text-align: left;
+        margin-bottom: 6px;
+        display: flex; justify-content: space-between;
+      }
+      .dot { font-size: 46px; }
+      .label { font-size: 22px; font-weight: 700; color: #43a047; margin-top: 8px; }
+      .sub { font-size: 13px; color: #999; margin-top: 6px; }
+      .speed {
+        margin-top: 16px; padding-top: 14px; border-top: 1px solid #eee;
+        text-align: left; font-size: 14px; color: #333;
+      }
+      .speed b { font-size: 16px; }
+
+      .notif {
+        width: 360px;
+        background: rgba(30, 30, 30, 0.96);
+        border-radius: 14px;
+        padding: 14px 16px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+      }
+      .notif .ic {
+        width: 40px; height: 40px; border-radius: 9px;
+        background: #1e88e5; display: flex; align-items: center;
+        justify-content: center; font-size: 22px; flex-shrink: 0;
+      }
+      .notif .txt { color: #fff; text-align: left; }
+      .notif .t1 { font-size: 15px; font-weight: 700; }
+      .notif .t2 { font-size: 13px; opacity: 0.85; margin-top: 2px; }
+    </style>
+  </head>
+  <body>
+    <div class="copy">
+      <h1>Your Wi-Fi icon lies.<br />This tells the truth.</h1>
+      <p>Full signal only means your router is reachable — not that the
+        internet works. Get alerted the moment it actually drops.</p>
+      <ul class="feat">
+        <li>🔴 Instant alert when the internet drops</li>
+        <li>🟢 Recovery notice with offline duration</li>
+        <li>🐢 Optional slow-connection warning</li>
+        <li>🔒 No tracking — everything stays local</li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <div class="notif">
+        <div class="ic">📶</div>
+        <div class="txt">
+          <div class="t1">⚠️ Internet Down</div>
+          <div class="t2">14:32 Connection lost</div>
+        </div>
+      </div>
+
+      <div class="popup">
+        <div class="hdr"><span>Connection Status</span><span>⚙️</span></div>
+        <div class="dot">🟢</div>
+        <div class="label">Connected</div>
+        <div class="sub">Last checked: 14:35:02</div>
+        <div class="speed">Speed: <b>87.4 Mbps</b></div>
+      </div>
+    </div>
+  </body>
+</html>
