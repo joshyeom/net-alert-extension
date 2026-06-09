@@ -103,14 +103,41 @@ goes down or recovers, with an optional slow-connection warning.
 
 ---
 
-## 5. 등록 체크리스트
+## 5. Category & Privacy URL (대시보드 입력값)
 
-- [ ] Privacy policy URL 등록 (PRIVACY.md → GitHub Pages 등으로 공개 URL)
-- [ ] 스크린샷 1280×800 (또는 640×400) 최소 1장
-- [ ] 아이콘 128×128 (있음)
-- [ ] Short / Detailed description 입력
-- [ ] 권한 사유 입력 (위 3번)
-- [ ] Single purpose 입력 (위 4번)
-- [ ] Data usage 항목 체크
-- [ ] test.js 등 제외한 .zip 업로드 (package.sh 사용)
-- [ ] $5 개발자 등록비 결제
+- **Category:** Productivity
+- **Language:** English (primary) — Korean 로케일은 자동 노출
+- **Privacy policy URL** (그대로 붙여넣기):
+  ```
+  https://raw.githubusercontent.com/joshyeom/net-alert-extension/main/PRIVACY.md
+  ```
+  repo PUBLIC + 커밋 push 완료 상태 → GitHub Pages 불필요. 이 raw URL 그대로 동작.
+
+---
+
+## 6. 업로드용 스크린샷 / 프로모 자산 (검증 완료)
+
+| 자산 | 파일 | 크기 | 규격 |
+|------|------|------|------|
+| 스크린샷 (EN) | `promo/store-screenshot.png` | 1280×800 | ✅ 필수 |
+| 스크린샷 (KO) | `promo/store-screenshot-ko.png` | 1280×800 | ✅ 선택 |
+| 작은 프로모 타일 | `promo/tile-small.png` | 440×280 | ✅ 권장 |
+| 마퀴 프로모 타일 | `promo/tile-marquee.png` | 1400×560 | ✅ 선택 |
+| 스토어 아이콘 | `icons/icon128.png` | 128×128 | ✅ 필수 |
+
+---
+
+## 7. 등록 체크리스트
+
+작성으로 끝난 항목 (✅) / 사용자 액션 필요 (⬜):
+
+- [x] Short / Detailed description (위 1·2번)
+- [x] 권한 사유 (위 3번)
+- [x] Single purpose (위 4번)
+- [x] Category + Privacy URL (위 5번)
+- [x] 스크린샷 1280×800 + 아이콘 128 (위 6번, 규격 검증됨)
+- [ ] **(액션)** `./package.sh` 실행 → 최신 `.zip` 생성
+- [ ] **(액션)** $5 개발자 등록비 결제
+- [ ] **(액션)** Developer Dashboard에서 위 내용 붙여넣기 + zip 업로드
+- [ ] **(액션)** Data usage 3개 항목 체크 (위 3번 참조)
+- [ ] **(액션)** 심사 제출
