@@ -45,9 +45,9 @@ requests.
 - `alarms` — schedule periodic connectivity checks while the browser is open.
 - `notifications` — show a desktop alert when the connection drops or recovers.
 - `storage` — save your settings and the last known status locally.
-- `host_permissions` (gstatic.com, cloudflare.com) — required to send the
-  connectivity-check and speed-test requests listed above. No other hosts are
-  accessed.
+- `host_permissions` (gstatic.com, cloudflare.com, speed.cloudflare.com) —
+  required to send the connectivity-check and speed-test requests listed above.
+  No other hosts are accessed.
 
 ### Contact
 
@@ -95,8 +95,9 @@ Questions: open an issue at
 - `alarms` — 브라우저가 열려 있는 동안 주기적 연결 확인을 예약.
 - `notifications` — 연결이 끊기거나 복구될 때 데스크톱 알림 표시.
 - `storage` — 설정과 마지막 상태를 로컬에 저장.
-- `host_permissions` (gstatic.com, cloudflare.com) — 위 연결 확인·속도 측정
-  요청을 보내기 위해 필요. 그 외 호스트에는 접속하지 않습니다.
+- `host_permissions` (gstatic.com, cloudflare.com, speed.cloudflare.com) — 위
+  연결 확인·속도 측정 요청을 보내기 위해 필요. 그 외 호스트에는 접속하지
+  않습니다.
 
 ### 문의
 
