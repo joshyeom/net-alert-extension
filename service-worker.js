@@ -11,7 +11,8 @@ importScripts("i18n.js");
 
 const ALARM_NAME = "heartbeat";
 const PING_TIMEOUT_MS = 5000; // 핑 1회 타임아웃
-const FAIL_THRESHOLD = 2; // 이만큼 연속 실패해야 offline 판정
+const FAIL_THRESHOLD = 3; // 이만큼 연속 실패해야 offline 판정
+const FAST_LOOP_MS = 5000; // 5초 자가 재예약 루프 주기 (빠른 감지용)
 
 // 하나만 성공해도 online 으로 본다 (단일 엔드포인트 장애 오판 방지)
 const PING_URLS = [
@@ -247,8 +248,14 @@ async function checkAndUpdate() {
   const changed = nextStatus !== prev.status && prev.status !== "unknown";
   const firstResolve = prev.status === "unknown" && nextStatus !== "unknown";
 
-  // 상태 전환 순간에만 알림 (설정 토글 반영)
-  if (changed) {
+  // 알림 조건:
+  //  - changed: online↔offline 전환 순간
+  //  - 첫 판정이 offline: unknown→offline 도 끊김 알림해야 함.
+  //    (SW가 끊긴 상태에서 재기동되면 status가 unknown으로 리셋되는데,
+  //     이때 changed=false 라 끊김 알림이 누락되던 버그)
+  //    단, 첫 판정이 online 인 경우는 "복구" 토스트가 아니므로 알림 안 함.
+  const notifyTransition = changed || (firstResolve && nextStatus === "offline");
+  if (notifyTransition) {
     const settings = await getSettings();
     if (nextStatus === "offline") {
       if (settings.notifyDown) await notifyDown(now);
@@ -271,6 +278,23 @@ async function checkAndUpdate() {
   if (changed || firstResolve) setBadge(nextStatus);
   // 첫 부팅시 뱃지 초기화
   else if (prev.status === "unknown") setBadge(nextStatus);
+}
+
+// ---- 빠른 감지 루프 (5초 자가 재예약) --------------------------------------
+// chrome.alarms 최소 주기는 1분이라 빠른 끊김 감지가 불가능.
+// setTimeout 을 매번 재예약해 ~5초 간격으로 핑한다. 단일 타이머라 중첩 없음.
+// 기존 1분 알람은 SW가 죽었다 깨어날 때를 대비한 fallback 으로 유지.
+let fastLoopTimer = null;
+
+function scheduleFastLoop() {
+  if (fastLoopTimer) clearTimeout(fastLoopTimer);
+  fastLoopTimer = setTimeout(async () => {
+    try {
+      await checkAndUpdate();
+    } finally {
+      scheduleFastLoop(); // 끝나면 다음 틱 재예약 (재귀 단일 타이머)
+    }
+  }, FAST_LOOP_MS);
 }
 
 // ---- 부팅 / 알람 등록 ------------------------------------------------------
@@ -308,22 +332,37 @@ chrome.runtime.onInstalled.addListener(() => {
   ensureAlarm();
   checkAndUpdate();
   checkSpeed();
+  scheduleFastLoop();
 });
 
 chrome.runtime.onStartup.addListener(() => {
   ensureAlarm();
   checkAndUpdate();
   checkSpeed();
+  scheduleFastLoop();
 });
 
 chrome.alarms.onAlarm.addListener((alarm) => {
-  if (alarm.name === ALARM_NAME) checkAndUpdate();
-  else if (alarm.name === SPEED_ALARM_NAME) checkSpeed();
+  if (alarm.name === ALARM_NAME) {
+    checkAndUpdate();
+    // SW가 죽었다 알람으로 깨어났으면 루프가 멈춰있음 — 다시 가동
+    if (!fastLoopTimer) scheduleFastLoop();
+  } else if (alarm.name === SPEED_ALARM_NAME) checkSpeed();
 });
 
 // 브라우저의 즉각적인 online/offline 이벤트도 활용 (alarms 1분 기다리지 않고 빠르게 반영)
 self.addEventListener("online", () => checkAndUpdate());
 self.addEventListener("offline", () => checkAndUpdate());
+
+// 팝업이 열릴 때 즉시 재확인 요청 (저장된 stale 상태 대신 실시간 반영)
+chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
+  if (msg && msg.type === "checkNow") {
+    // 루프가 멈춰있으면 같이 되살림 (SW 깨어난 김에)
+    if (!fastLoopTimer) scheduleFastLoop();
+    checkAndUpdate().then(() => sendResponse({ ok: true }));
+    return true; // 비동기 응답 유지
+  }
+});
 
 // 알림 클릭하면 닫기
 chrome.notifications.onClicked.addListener((id) => {
