@@ -373,3 +373,9 @@ chrome.notifications.onClicked.addListener((id) => {
 chrome.storage.onChanged.addListener((changes, area) => {
   if (area === "local" && changes[SETTINGS_KEY]) syncSpeedAlarm();
 });
+
+// SW 스크립트가 평가될 때마다 즉시 가동 — onInstalled/onStartup 은
+// 확장 reload(↻) 시 호출되지 않으므로 여기서 루프와 알람·핑을 보장한다.
+ensureAlarm();
+checkAndUpdate();
+scheduleFastLoop();
