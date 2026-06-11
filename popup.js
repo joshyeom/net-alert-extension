@@ -207,4 +207,8 @@ async function reloadLanguage() {
     if (changes[STORE_KEY]) renderStatus();
     if (changes[SPEED_KEY]) renderSpeed();
   });
+
+  // 팝업 열린 순간 SW에 실시간 재확인 요청 — 저장된 stale "연결됨" 방지.
+  // 상태가 바뀌면 storage.onChanged 가 renderStatus 를 다시 호출함.
+  chrome.runtime.sendMessage({ type: "checkNow" }).catch(() => {});
 })();
