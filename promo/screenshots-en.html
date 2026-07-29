@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Store screenshots — English</title>
+    <style>
+      /* 스토어 스크린샷 4장을 한 파일에. 각 .shot 이 정확히 1280x800.
+         캡처: 각 .shot 요소를 개별 스크린샷 → store-en-1..4.png */
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
+        background: #333;
+      }
+      .shot {
+        width: 1280px;
+        height: 800px;
+        background: linear-gradient(135deg, #1e88e5 0%, #1565c0 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 64px;
+        overflow: hidden;
+        margin-bottom: 24px;
+      }
+      .copy { color: #fff; max-width: 480px; }
+      .copy h1 {
+        font-size: 52px;
+        line-height: 1.15;
+        font-weight: 800;
+        letter-spacing: -1px;
+      }
+      .copy h1.sm { font-size: 44px; }
+      .copy p {
+        margin-top: 20px;
+        font-size: 22px;
+        line-height: 1.5;
+        opacity: 0.92;
+      }
+      .feat { margin-top: 28px; list-style: none; }
+      .feat li {
+        font-size: 19px;
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .stage { display: flex; flex-direction: column; gap: 22px; align-items: center; }
+
+      /* 팝업 목업 — popup.html 실제 레이아웃과 동일 구조 */
+      .popup {
+        width: 280px;
+        background: #fafafa;
+        border-radius: 16px;
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+        padding: 22px 20px;
+        text-align: center;
+      }
+      .popup .hdr {
+        font-size: 13px;
+        color: #888;
+        text-align: left;
+        margin-bottom: 6px;
+        display: flex; justify-content: space-between;
+      }
+      .dot { font-size: 46px; }
+      .label { font-size: 22px; font-weight: 700; color: #43a047; margin-top: 8px; }
+      .label.down { color: #e53935; }
+      .sub { font-size: 13px; color: #999; margin-top: 6px; }
+      .speed {
+        margin-top: 16px; padding-top: 14px; border-top: 1px solid #eee;
+        text-align: left; font-size: 14px; color: #333;
+        display: flex; align-items: center; justify-content: space-between; gap: 8px;
+      }
+      .speed b { font-size: 16px; }
+      .speed.slow b { color: #e53935; }
+      .btn {
+        border: 1px solid #ccc; border-radius: 6px; background: #fff;
+        color: #444; font-size: 11px; padding: 4px 8px; white-space: nowrap;
+      }
+      .btn.hot { border-color: #1e88e5; color: #1e88e5; font-weight: 600; }
+
+      /* 설정 목업 */
+      .rows { text-align: left; }
+      .grp {
+        margin: 12px 0 2px; font-size: 11px; font-weight: 600;
+        color: #999; text-transform: uppercase;
+      }
+      .row {
+        display: flex; align-items: center; justify-content: space-between;
+        padding: 9px 0; font-size: 13px; border-bottom: 1px solid #eee; color: #444;
+      }
+      .row:last-child { border-bottom: none; }
+      .sw {
+        width: 38px; height: 22px; border-radius: 22px; background: #43a047;
+        position: relative; flex-shrink: 0;
+      }
+      .sw::after {
+        content: ""; position: absolute; width: 18px; height: 18px; top: 2px; left: 18px;
+        background: #fff; border-radius: 50%;
+      }
+      .sw.off { background: #ccc; }
+      .sw.off::after { left: 2px; }
+      .pill {
+        border: 1px solid #ccc; border-radius: 6px; padding: 3px 8px;
+        font-size: 12px; background: #fff; color: #333;
+      }
+
+      /* OS 알림 목업 */
+      .notif {
+        width: 360px;
+        background: rgba(30, 30, 30, 0.96);
+        border-radius: 14px;
+        padding: 14px 16px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+      }
+      .notif .ic {
+        width: 40px; height: 40px; border-radius: 9px;
+        background: #1e88e5; display: flex; align-items: center;
+        justify-content: center; font-size: 22px; flex-shrink: 0;
+      }
+      .notif .ic.red { background: #e53935; }
+      .notif .ic.green { background: #43a047; }
+      .notif .txt { color: #fff; text-align: left; }
+      .notif .t1 { font-size: 15px; font-weight: 700; }
+      .notif .t2 { font-size: 13px; opacity: 0.85; margin-top: 2px; }
+    </style>
+  </head>
+  <body>
+    <!-- 1. 히어로 -->
+    <div class="shot" id="s1">
+      <div class="copy">
+        <h1>Your Wi-Fi icon lies.<br />This tells the truth.</h1>
+        <p>Full signal only means your router is reachable — not that the
+          internet works. Get alerted the moment it actually drops.</p>
+        <ul class="feat">
+          <li>🔴 Instant alert when the internet drops</li>
+          <li>🟢 Recovery notice with offline duration</li>
+          <li>⚡ Speed test on demand, any time</li>
+          <li>🔒 No tracking. Everything stays local</li>
+        </ul>
+      </div>
+      <div class="stage">
+        <div class="notif">
+          <div class="ic red">📶</div>
+          <div class="txt">
+            <div class="t1">⚠️ Internet Down</div>
+            <div class="t2">14:32 Connection lost</div>
+          </div>
+        </div>
+        <div class="popup">
+          <div class="hdr"><span>Connection Status</span><span>⚙️</span></div>
+          <div class="dot">🟢</div>
+          <div class="label">Connected</div>
+          <div class="sub">Last checked: 14:35:02</div>
+          <div class="speed">
+            <span>Speed: <b>87.4 Mbps</b></span>
+            <span class="btn">Measure now</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. 끊김 → 복구 알림 -->
+    <div class="shot" id="s2">
+      <div class="copy">
+        <h1 class="sm">Know the second<br />it drops. And returns.</h1>
+        <p>A desktop notification the moment the connection dies — and another
+          when it comes back, with exactly how long you were offline.</p>
+        <ul class="feat">
+          <li>⏱️ Checks every 5 seconds</li>
+          <li>🎯 Three failed pings before alerting, so no false alarms</li>
+          <li>🔕 Only on change, never repeated spam</li>
+        </ul>
+      </div>
+      <div class="stage">
+        <div class="notif">
+          <div class="ic red">📶</div>
+          <div class="txt">
+            <div class="t1">⚠️ Internet Down</div>
+            <div class="t2">14:32 Connection lost</div>
+          </div>
+        </div>
+        <div class="notif">
+          <div class="ic green">✅</div>
+          <div class="txt">
+            <div class="t1">✅ Internet Restored</div>
+            <div class="t2">Recovered after 3m 12s</div>
+          </div>
+        </div>
+        <div class="popup">
+          <div class="hdr"><span>Connection Status</span><span>⚙️</span></div>
+          <div class="dot">🔴</div>
+          <div class="label down">Disconnected</div>
+          <div class="sub">Last checked: 14:32:07</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. 온디맨드 속도 측정 (신규 기능) -->
+    <div class="shot" id="s3">
+      <div class="copy">
+        <h1 class="sm">Feels slow?<br />Measure it right now.</h1>
+        <p>One click in the popup runs a real download test and shows your
+          current speed in seconds — no website, no ads, no waiting.</p>
+        <ul class="feat">
+          <li>⚡ On-demand test, any time you want</li>
+          <li>🐢 Automatic warning below your own threshold</li>
+          <li>🔁 Or let it check on a 5 / 10 / 30 min schedule</li>
+        </ul>
+      </div>
+      <div class="stage">
+        <div class="notif">
+          <div class="ic">🐢</div>
+          <div class="txt">
+            <div class="t1">🐢 Internet Slow</div>
+            <div class="t2">Now 3.2 Mbps (below 10 Mbps)</div>
+          </div>
+        </div>
+        <div class="popup">
+          <div class="hdr"><span>Connection Status</span><span>⚙️</span></div>
+          <div class="dot">🟢</div>
+          <div class="label">Connected</div>
+          <div class="sub">Last checked: 14:35:02</div>
+          <div class="speed slow">
+            <span>Speed: <b>3.2 Mbps</b></span>
+            <span class="btn hot">Measure now</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. 설정 / 프라이버시 -->
+    <div class="shot" id="s4">
+      <div class="copy">
+        <h1 class="sm">Yours to tune.<br />Nothing leaves your device.</h1>
+        <p>Pick which alerts you want, set your own slow-speed threshold, and
+          switch language. No account, no analytics, no data collection.</p>
+        <ul class="feat">
+          <li>🔒 Settings stored locally, never uploaded</li>
+          <li>🌐 English and Korean, or follow your system</li>
+          <li>🎚️ Turn any notification off individually</li>
+        </ul>
+      </div>
+      <div class="stage">
+        <div class="popup">
+          <div class="hdr"><span>Settings</span><span>✕</span></div>
+          <div class="rows">
+            <div class="row"><span>Language</span><span class="pill">System</span></div>
+            <div class="grp">Speed test</div>
+            <div class="row"><span>Speed test</span><span class="sw"></span></div>
+            <div class="row"><span>Alert below</span><span class="pill">10 Mbps</span></div>
+            <div class="row"><span>Interval</span><span class="pill">10 min</span></div>
+            <div class="grp">Notifications</div>
+            <div class="row"><span>Disconnected</span><span class="sw"></span></div>
+            <div class="row"><span>Restored</span><span class="sw"></span></div>
+            <div class="row"><span>Slow</span><span class="sw off"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

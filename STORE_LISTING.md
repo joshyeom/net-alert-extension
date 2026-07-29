@@ -26,6 +26,7 @@ moment it comes back.
 **Features**
 - 🔴 Instant desktop notification when the internet drops
 - 🟢 Recovery notification with how long you were offline
+- ⚡ On-demand speed test — one click in the popup, any time you want
 - 🐢 Optional slow-connection warning with a custom speed threshold
 - 🎛️ Toolbar badge shows current status at a glance
 - 🌐 English / Korean, follows your system language or set it manually
@@ -51,6 +52,7 @@ changes — never spam.
 **기능**
 - 🔴 인터넷이 끊기면 즉시 데스크톱 알림
 - 🟢 복구 시 알림 + 끊겨 있던 시간 표시
+- ⚡ 원할 때 바로 속도 측정 — 팝업에서 클릭 한 번
 - 🐢 사용자 지정 기준 미만이면 속도 저하 경고 (선택)
 - 🎛️ 툴바 뱃지로 현재 상태 한눈에
 - 🌐 한국어 / 영어, 시스템 언어 자동 또는 수동 선택
@@ -106,12 +108,18 @@ goes down or recovers, with an optional slow-connection warning.
 ## 5. Category & Privacy URL (대시보드 입력값)
 
 - **Category:** Productivity
-- **Language:** English (primary) — Korean 로케일은 자동 노출
+- **Language:** English (기본 언어)
+  - 확장 이름은 두 로케일 모두 영문 `Internet Down Alert` 로 통일 (2026-07-29)
+  - 스토어 **등록정보는 로케일별로 따로 입력**해야 함 (자동 번역 안 됨).
+    대시보드 → 스토어 등록정보 → 언어 선택에서 `한국어 – ko` 를 골라
+    위 2번 KO 본문과 `promo/store-screenshot-ko.png` 를 별도로 등록.
 - **Privacy policy URL** (그대로 붙여넣기):
   ```
-  https://raw.githubusercontent.com/joshyeom/net-alert-extension/main/PRIVACY.md
+  https://github.com/joshyeom/net-alert-extension/blob/main/PRIVACY.md
   ```
-  repo PUBLIC + 커밋 push 완료 상태 → GitHub Pages 불필요. 이 raw URL 그대로 동작.
+  repo PUBLIC 상태에서 동작. raw URL(`raw.githubusercontent.com`)은
+  2026-06-30 정책 경고("링크가 작동하지 않거나 없습니다")를 받은 이력이 있어
+  렌더링되는 blob URL 을 사용한다.
 
 ---
 
@@ -119,7 +127,11 @@ goes down or recovers, with an optional slow-connection warning.
 
 | 자산 | 파일 | 크기 | 규격 |
 |------|------|------|------|
-| 스크린샷 (EN) | `promo/store-screenshot.png` | 1280×800 | ✅ 필수 |
+| 스크린샷 EN 1 · 히어로 | `promo/store-en-1.png` | 1280×800 | ✅ 필수 |
+| 스크린샷 EN 2 · 끊김/복구 알림 | `promo/store-en-2.png` | 1280×800 | ✅ 권장 |
+| 스크린샷 EN 3 · 즉시 속도 측정 | `promo/store-en-3.png` | 1280×800 | ✅ 권장 |
+| 스크린샷 EN 4 · 설정/프라이버시 | `promo/store-en-4.png` | 1280×800 | ✅ 권장 |
+| 스크린샷 (EN, 구버전) | `promo/store-screenshot.png` | 1280×800 | 대체됨 |
 | 스크린샷 (KO) | `promo/store-screenshot-ko.png` | 1280×800 | ✅ 선택 |
 | 작은 프로모 타일 | `promo/tile-small.png` | 440×280 | ✅ 권장 |
 | 마퀴 프로모 타일 | `promo/tile-marquee.png` | 1400×560 | ✅ 선택 |

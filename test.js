@@ -150,11 +150,26 @@
       } catch (e) { ok(false, `측정 실패: ${e.message}`); }
     },
 
+    // ---- "지금 측정" 경로 (팝업 버튼이 부르는 SW 함수) ----
+    // SW가 자기 자신에게 보낸 sendMessage 는 수신되지 않으므로 함수를 직접 호출한다.
+    async speedNow() {
+      log('"지금 측정" — measureSpeedNow() 직접 호출');
+      if (typeof measureSpeedNow !== "function") {
+        ok(false, "measureSpeedNow 없음 — 서비스 워커 콘솔에서 실행했는지 확인");
+        return;
+      }
+      const mbps = await measureSpeedNow();
+      ok(typeof mbps === "number" && mbps > 0, `측정값 ${mbps?.toFixed?.(1)} Mbps`);
+      const s = (await chrome.storage.local.get(SPEED_KEY))[SPEED_KEY];
+      ok(s && s.mbps === mbps, "speedState 에 결과 저장됨");
+    },
+
     // ---- 전체 순차 실행 ----
     async all() {
       console.log("%c═══ 전체 테스트 시작 ═══", "color:#1e88e5;font-size:14px;font-weight:bold");
       await test.ping();
       await test.measure();
+      await test.speedNow();
       await test.settings();
 
       log("─── 한국어 알림 3종 (알림센터에 쌓임) ───");
