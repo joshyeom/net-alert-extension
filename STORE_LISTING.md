@@ -115,11 +115,21 @@ goes down or recovers, with an optional slow-connection warning.
     위 2번 KO 본문과 `promo/store-screenshot-ko.png` 를 별도로 등록.
 - **Privacy policy URL** (그대로 붙여넣기):
   ```
-  https://github.com/joshyeom/net-alert-extension/blob/main/PRIVACY.md
+  https://preview-ashy.vercel.app/net-alert-privacy.html
   ```
-  repo PUBLIC 상태에서 동작. raw URL(`raw.githubusercontent.com`)은
-  2026-06-30 정책 경고("링크가 작동하지 않거나 없습니다")를 받은 이력이 있어
-  렌더링되는 blob URL 을 사용한다.
+  `joshyeom/preview` repo(private)의 `net-alert-privacy.html` 을 Vercel 이
+  공개 서빙한다. 이 repo 를 private 로 유지하면서 정책 문서만 공개하기 위한 구조.
+  원본 문구는 `PRIVACY.md` 와 동일하며 수정 시 **양쪽 모두** 갱신할 것.
+
+  경고 이력: `raw.githubusercontent.com` URL 은 repo 가 private 이라 404 →
+  2026-06-30 "링크가 작동하지 않거나 없습니다" 위반. 링크는 로그인 없이
+  200 이어야 한다.
+
+  ⚠️ 이 repo 를 private 로 되돌리면 함께 죽는 링크:
+  - 대시보드 **지원 URL** (`.../issues`) → 비우면 Google 기본 지원 폼이 대체
+  - 대시보드 **홈페이지 URL** (repo 루트) → 비우거나 스토어 페이지로
+  - `manifest.json` 의 `homepage_url` → 스토어 상세 페이지로 교체 (v1.1.0 반영 완료)
+  - `PRIVACY.md` 문의 링크 → HTML 판은 스토어 지원 링크로 이미 교체
 
 ---
 
