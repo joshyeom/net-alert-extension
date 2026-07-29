@@ -16,30 +16,49 @@
 
 ### EN
 
-**Your Wi-Fi icon lies. This extension tells the truth.**
+> 2026-07-29 대시보드에 반영된 실제 본문. 후킹 문구 + 검색어(internet down,
+> wifi not working, network outage, speed test 등)를 자연스럽게 녹임.
+> 미출시 기능(v1.1.0 "지금 측정")은 게시 전까지 넣지 않는다.
 
-A full Wi-Fi signal only means your router is reachable — not that the
-internet actually works. Internet Down Alert pings the real internet on a
-schedule and tells you the moment your connection actually drops, and the
-moment it comes back.
+```
+Your Wi-Fi icon lies. Internet Down Alert tells the truth.
 
-**Features**
-- 🔴 Instant desktop notification when the internet drops
-- 🟢 Recovery notification with how long you were offline
-- ⚡ On-demand speed test — one click in the popup, any time you want
-- 🐢 Optional slow-connection warning with a custom speed threshold
-- 🎛️ Toolbar badge shows current status at a glance
-- 🌐 English / Korean, follows your system language or set it manually
-- 🔒 No accounts, no tracking, no data collection — everything stays on your device
+A full Wi-Fi signal only means your router is reachable. It says nothing about whether the internet actually works. Internet Down Alert checks the real internet every few seconds and tells you the exact moment your connection drops, and the exact moment it comes back.
 
-**Who it's for**
-- Remote workers and video-call users who can't afford to miss a drop
-- Streamers and uploaders who need to know the instant they go offline
-- Anyone on an unstable connection who wants to know "did it just drop?"
+WHY PEOPLE KEEP IT INSTALLED
 
-How it works: it sends a tiny connectivity check about once a minute to public
-endpoints (Google / Cloudflare). It only notifies you when the status actually
-changes — never spam.
+"Is the internet down, or is it just me?" You get the answer in seconds instead of reloading a page over and over.
+
+"Did the call freeze because of my network?" The toolbar badge turns red the moment your connection is actually gone, so you stop guessing.
+
+"How long was I offline?" The recovery notification tells you exactly, which matters when you have to explain a gap to a client or a team.
+
+FEATURES
+
+- Instant desktop notification when the internet goes down
+- Recovery notification showing exactly how long you were offline
+- Slow connection warning when your speed drops below a threshold you choose
+- Automatic internet speed test on your own schedule (5, 10 or 30 minutes)
+- Toolbar badge shows current connection status at a glance
+- Every notification can be turned off individually
+- English and Korean, following your system language or set manually
+- No account, no sign-up, no analytics, no tracking, no data collection
+
+WHO IT IS FOR
+
+- Remote workers and video call users who cannot afford to miss a dropout
+- Streamers, uploaders and traders who need to know the instant they go offline
+- Anyone on unstable Wi-Fi, cafe networks, hotel networks or mobile tethering
+- Support and ops people who need to separate a network outage from an app bug
+
+HOW IT WORKS
+
+The extension sends a tiny connectivity check to public endpoints run by Google and Cloudflare. If several checks in a row fail, it treats the connection as genuinely down, so a single hiccup does not trigger a false alarm. You are notified only when the status actually changes, never repeatedly.
+
+PRIVACY
+
+Everything stays on your device. Settings and connection status are stored locally through Chrome storage. Nothing is uploaded, sold or shared, and there is no account to create.
+```
 
 ### KO
 
