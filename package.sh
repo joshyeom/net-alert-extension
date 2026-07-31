@@ -17,7 +17,12 @@ zip -r "$OUT" \
   icons/icon48.png \
   icons/icon128.png \
   _locales/en/messages.json \
-  _locales/ko/messages.json
+  _locales/ko/messages.json \
+  _locales/es/messages.json \
+  _locales/id/messages.json \
+  _locales/tr/messages.json \
+  _locales/pt_BR/messages.json \
+  _locales/pl/messages.json
 
 echo
 echo "생성됨: $OUT"

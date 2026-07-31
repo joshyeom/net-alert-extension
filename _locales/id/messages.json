@@ -1,0 +1,152 @@
+{
+  "appName": {
+    "message": "Peringatan Internet Putus"
+  },
+  "appDesc": {
+    "message": "Lemot? Cari tahu dalam 3 detik: masalahnya di PC atau internet. Peringatan internet putus, koneksi lambat, dan notifikasi pulih."
+  },
+  "popupTitle": {
+    "message": "Status Koneksi"
+  },
+  "statusChecking": {
+    "message": "Memeriksa…"
+  },
+  "statusOnline": {
+    "message": "Terhubung"
+  },
+  "statusOffline": {
+    "message": "Terputus"
+  },
+  "lastCheck": {
+    "message": "Terakhir diperiksa: $1"
+  },
+  "speedLabel": {
+    "message": "Kecepatan:"
+  },
+  "speedMeasuring": {
+    "message": "mengukur…"
+  },
+  "speedValue": {
+    "message": "$1 Mbps"
+  },
+  "speedDash": {
+    "message": "—"
+  },
+  "speedNowBtn": {
+    "message": "Ukur sekarang"
+  },
+  "speedNowFailed": {
+    "message": "Pengukuran gagal. Periksa koneksi Anda."
+  },
+  "thresholdLabel": {
+    "message": "Peringatkan di bawah"
+  },
+  "savedLabel": {
+    "message": "Tersimpan"
+  },
+  "permTitle": {
+    "message": "⚠️ Notifikasi mati"
+  },
+  "permBody": {
+    "message": "Untuk menerima peringatan, aktifkan notifikasi Chrome di pengaturan sistem."
+  },
+  "permBtn": {
+    "message": "Cara membuka pengaturan"
+  },
+  "permGuide": {
+    "message": "Pengaturan Sistem → Notifikasi → Google Chrome → aktifkan \"Izinkan notifikasi\""
+  },
+  "notifyDownTitle": {
+    "message": "⚠️ Internet Putus"
+  },
+  "notifyDownMsg": {
+    "message": "$1 Koneksi terputus"
+  },
+  "notifyUpTitle": {
+    "message": "✅ Internet Pulih"
+  },
+  "notifyUpMsg": {
+    "message": "Pulih setelah $1"
+  },
+  "notifySlowTitle": {
+    "message": "🐢 Internet Lambat"
+  },
+  "notifySlowMsg": {
+    "message": "Sekarang $1 Mbps (di bawah $2 Mbps)"
+  },
+  "durationMinSec": {
+    "message": "$1 mnt $2 dtk"
+  },
+  "durationSec": {
+    "message": "$1 dtk"
+  },
+  "settingsTitle": {
+    "message": "Pengaturan"
+  },
+  "settingsOpen": {
+    "message": "Pengaturan"
+  },
+  "settingsBack": {
+    "message": "Selesai"
+  },
+  "langLabel": {
+    "message": "Bahasa"
+  },
+  "langSystem": {
+    "message": "Sistem"
+  },
+  "langKo": {
+    "message": "한국어"
+  },
+  "langEn": {
+    "message": "English"
+  },
+  "langEs": {
+    "message": "Español"
+  },
+  "langId": {
+    "message": "Bahasa Indonesia"
+  },
+  "langTr": {
+    "message": "Türkçe"
+  },
+  "langPtBr": {
+    "message": "Português (Brasil)"
+  },
+  "langPl": {
+    "message": "Polski"
+  },
+  "speedTestLabel": {
+    "message": "Tes kecepatan"
+  },
+  "speedPeriodLabel": {
+    "message": "Interval"
+  },
+  "period5": {
+    "message": "5 mnt"
+  },
+  "period10": {
+    "message": "10 mnt"
+  },
+  "period30": {
+    "message": "30 mnt"
+  },
+  "notifyLabel": {
+    "message": "Notifikasi"
+  },
+  "notifyDownToggle": {
+    "message": "Terputus"
+  },
+  "notifyUpToggle": {
+    "message": "Pulih"
+  },
+  "notifySlowToggle": {
+    "message": "Lambat"
+  },
+  "onLabel": {
+    "message": "Aktif"
+  },
+  "offLabel": {
+    "message": "Mati"
+  }
+}

@@ -101,6 +101,21 @@
   "langEn": {
     "message": "English"
   },
+  "langEs": {
+    "message": "Español"
+  },
+  "langId": {
+    "message": "Bahasa Indonesia"
+  },
+  "langTr": {
+    "message": "Türkçe"
+  },
+  "langPtBr": {
+    "message": "Português (Brasil)"
+  },
+  "langPl": {
+    "message": "Polski"
+  },
   "speedTestLabel": {
     "message": "속도 측정"
   },

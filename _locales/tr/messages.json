@@ -1,0 +1,152 @@
+{
+  "appName": {
+    "message": "İnternet Kesintisi Uyarısı"
+  },
+  "appDesc": {
+    "message": "Takılma mı var? 3 saniyede anlayın: PC mi, internet mi? İnternet kesilince uyarı, yavaşlama ve bağlantı geri gelme bildirimi."
+  },
+  "popupTitle": {
+    "message": "Bağlantı Durumu"
+  },
+  "statusChecking": {
+    "message": "Kontrol ediliyor…"
+  },
+  "statusOnline": {
+    "message": "Bağlı"
+  },
+  "statusOffline": {
+    "message": "Bağlantı kesildi"
+  },
+  "lastCheck": {
+    "message": "Son kontrol: $1"
+  },
+  "speedLabel": {
+    "message": "Hız:"
+  },
+  "speedMeasuring": {
+    "message": "ölçülüyor…"
+  },
+  "speedValue": {
+    "message": "$1 Mbps"
+  },
+  "speedDash": {
+    "message": "—"
+  },
+  "speedNowBtn": {
+    "message": "Şimdi ölç"
+  },
+  "speedNowFailed": {
+    "message": "Ölçüm başarısız. Bağlantınızı kontrol edin."
+  },
+  "thresholdLabel": {
+    "message": "Şunun altında uyar:"
+  },
+  "savedLabel": {
+    "message": "Kaydedildi"
+  },
+  "permTitle": {
+    "message": "⚠️ Bildirimler kapalı"
+  },
+  "permBody": {
+    "message": "Uyarı almak için sistem ayarlarından Chrome bildirimlerini açın."
+  },
+  "permBtn": {
+    "message": "Ayarları açma yolu"
+  },
+  "permGuide": {
+    "message": "Sistem Ayarları → Bildirimler → Google Chrome → \"Bildirimlere izin ver\" seçeneğini açın"
+  },
+  "notifyDownTitle": {
+    "message": "⚠️ İnternet Kesildi"
+  },
+  "notifyDownMsg": {
+    "message": "$1 Bağlantı koptu"
+  },
+  "notifyUpTitle": {
+    "message": "✅ İnternet Geri Geldi"
+  },
+  "notifyUpMsg": {
+    "message": "$1 sonra geri geldi"
+  },
+  "notifySlowTitle": {
+    "message": "🐢 İnternet Yavaş"
+  },
+  "notifySlowMsg": {
+    "message": "Şu an $1 Mbps ($2 Mbps altında)"
+  },
+  "durationMinSec": {
+    "message": "$1dk $2sn"
+  },
+  "durationSec": {
+    "message": "$1sn"
+  },
+  "settingsTitle": {
+    "message": "Ayarlar"
+  },
+  "settingsOpen": {
+    "message": "Ayarlar"
+  },
+  "settingsBack": {
+    "message": "Tamam"
+  },
+  "langLabel": {
+    "message": "Dil"
+  },
+  "langSystem": {
+    "message": "Sistem"
+  },
+  "langKo": {
+    "message": "한국어"
+  },
+  "langEn": {
+    "message": "English"
+  },
+  "langEs": {
+    "message": "Español"
+  },
+  "langId": {
+    "message": "Bahasa Indonesia"
+  },
+  "langTr": {
+    "message": "Türkçe"
+  },
+  "langPtBr": {
+    "message": "Português (Brasil)"
+  },
+  "langPl": {
+    "message": "Polski"
+  },
+  "speedTestLabel": {
+    "message": "Hız testi"
+  },
+  "speedPeriodLabel": {
+    "message": "Aralık"
+  },
+  "period5": {
+    "message": "5 dk"
+  },
+  "period10": {
+    "message": "10 dk"
+  },
+  "period30": {
+    "message": "30 dk"
+  },
+  "notifyLabel": {
+    "message": "Bildirimler"
+  },
+  "notifyDownToggle": {
+    "message": "Kesinti"
+  },
+  "notifyUpToggle": {
+    "message": "Geri gelme"
+  },
+  "notifySlowToggle": {
+    "message": "Yavaşlama"
+  },
+  "onLabel": {
+    "message": "Açık"
+  },
+  "offLabel": {
+    "message": "Kapalı"
+  }
+}
