@@ -1,30 +1,30 @@
 {
   "appName": {
-    "message": "Internet Down Alert"
+    "message": "Alerta de Queda de Internet"
   },
   "appDesc": {
-    "message": "Lagging? Find out in 3 seconds if it's your PC or your internet. Real internet down alert, slow warning & recovery notification."
+    "message": "Travando? Descubra em 3 segundos se é o seu PC ou a sua internet. Alerta de internet caindo, aviso de lentidão e de reconexão."
   },
   "popupTitle": {
-    "message": "Connection Status"
+    "message": "Status da conexão"
   },
   "statusChecking": {
-    "message": "Checking…"
+    "message": "Verificando…"
   },
   "statusOnline": {
-    "message": "Connected"
+    "message": "Conectado"
   },
   "statusOffline": {
-    "message": "Disconnected"
+    "message": "Sem conexão"
   },
   "lastCheck": {
-    "message": "Last checked: $1"
+    "message": "Última verificação: $1"
   },
   "speedLabel": {
-    "message": "Speed:"
+    "message": "Velocidade:"
   },
   "speedMeasuring": {
-    "message": "measuring…"
+    "message": "medindo…"
   },
   "speedValue": {
     "message": "$1 Mbps"
@@ -33,46 +33,46 @@
     "message": "—"
   },
   "speedNowBtn": {
-    "message": "Measure now"
+    "message": "Medir agora"
   },
   "speedNowFailed": {
-    "message": "Measurement failed. Check your connection."
+    "message": "Falha na medição. Verifique sua conexão."
   },
   "thresholdLabel": {
-    "message": "Alert below"
+    "message": "Alertar abaixo de"
   },
   "savedLabel": {
-    "message": "Saved"
+    "message": "Salvo"
   },
   "permTitle": {
-    "message": "⚠️ Notifications are off"
+    "message": "⚠️ Notificações desativadas"
   },
   "permBody": {
-    "message": "To receive alerts, enable Chrome notifications in your system settings."
+    "message": "Para receber alertas, ative as notificações do Chrome nas configurações do sistema."
   },
   "permBtn": {
-    "message": "How to open settings"
+    "message": "Como abrir as configurações"
   },
   "permGuide": {
-    "message": "System Settings → Notifications → Google Chrome → turn on \"Allow notifications\""
+    "message": "Configurações do sistema → Notificações → Google Chrome → ative \"Permitir notificações\""
   },
   "notifyDownTitle": {
-    "message": "⚠️ Internet Down"
+    "message": "⚠️ Internet caiu"
   },
   "notifyDownMsg": {
-    "message": "$1 Connection lost"
+    "message": "$1 Conexão perdida"
   },
   "notifyUpTitle": {
-    "message": "✅ Internet Restored"
+    "message": "✅ Internet restaurada"
   },
   "notifyUpMsg": {
-    "message": "Recovered after $1"
+    "message": "Recuperada após $1"
   },
   "notifySlowTitle": {
-    "message": "🐢 Internet Slow"
+    "message": "🐢 Internet lenta"
   },
   "notifySlowMsg": {
-    "message": "Now $1 Mbps (below $2 Mbps)"
+    "message": "Agora $1 Mbps (abaixo de $2 Mbps)"
   },
   "durationMinSec": {
     "message": "$1m $2s"
@@ -81,19 +81,19 @@
     "message": "$1s"
   },
   "settingsTitle": {
-    "message": "Settings"
+    "message": "Configurações"
   },
   "settingsOpen": {
-    "message": "Settings"
+    "message": "Configurações"
   },
   "settingsBack": {
-    "message": "Done"
+    "message": "Concluído"
   },
   "langLabel": {
-    "message": "Language"
+    "message": "Idioma"
   },
   "langSystem": {
-    "message": "System"
+    "message": "Sistema"
   },
   "langKo": {
     "message": "한국어"
@@ -117,10 +117,10 @@
     "message": "Polski"
   },
   "speedTestLabel": {
-    "message": "Speed test"
+    "message": "Teste de velocidade"
   },
   "speedPeriodLabel": {
-    "message": "Interval"
+    "message": "Intervalo"
   },
   "period5": {
     "message": "5 min"
@@ -132,21 +132,21 @@
     "message": "30 min"
   },
   "notifyLabel": {
-    "message": "Notifications"
+    "message": "Notificações"
   },
   "notifyDownToggle": {
-    "message": "Disconnected"
+    "message": "Queda"
   },
   "notifyUpToggle": {
-    "message": "Restored"
+    "message": "Reconexão"
   },
   "notifySlowToggle": {
-    "message": "Slow"
+    "message": "Lentidão"
   },
   "onLabel": {
-    "message": "On"
+    "message": "Ativado"
   },
   "offLabel": {
-    "message": "Off"
+    "message": "Desativado"
   }
 }

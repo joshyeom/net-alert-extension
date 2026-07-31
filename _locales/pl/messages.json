@@ -1,0 +1,152 @@
+{
+  "appName": {
+    "message": "Alert rozłączenia internetu"
+  },
+  "appDesc": {
+    "message": "Tnie się? W 3 sekundy sprawdź, czy to komputer, czy internet. Alert o utracie internetu, wolnym łączu i powrocie połączenia."
+  },
+  "popupTitle": {
+    "message": "Stan połączenia"
+  },
+  "statusChecking": {
+    "message": "Sprawdzanie…"
+  },
+  "statusOnline": {
+    "message": "Połączono"
+  },
+  "statusOffline": {
+    "message": "Rozłączono"
+  },
+  "lastCheck": {
+    "message": "Ostatnie sprawdzenie: $1"
+  },
+  "speedLabel": {
+    "message": "Prędkość:"
+  },
+  "speedMeasuring": {
+    "message": "pomiar…"
+  },
+  "speedValue": {
+    "message": "$1 Mbps"
+  },
+  "speedDash": {
+    "message": "—"
+  },
+  "speedNowBtn": {
+    "message": "Zmierz teraz"
+  },
+  "speedNowFailed": {
+    "message": "Pomiar nie powiódł się. Sprawdź połączenie."
+  },
+  "thresholdLabel": {
+    "message": "Alert poniżej"
+  },
+  "savedLabel": {
+    "message": "Zapisano"
+  },
+  "permTitle": {
+    "message": "⚠️ Powiadomienia wyłączone"
+  },
+  "permBody": {
+    "message": "Aby otrzymywać alerty, włącz powiadomienia Chrome w ustawieniach systemu."
+  },
+  "permBtn": {
+    "message": "Jak otworzyć ustawienia"
+  },
+  "permGuide": {
+    "message": "Ustawienia systemowe → Powiadomienia → Google Chrome → włącz \"Zezwalaj na powiadomienia\""
+  },
+  "notifyDownTitle": {
+    "message": "⚠️ Brak internetu"
+  },
+  "notifyDownMsg": {
+    "message": "$1 Utracono połączenie"
+  },
+  "notifyUpTitle": {
+    "message": "✅ Internet wrócił"
+  },
+  "notifyUpMsg": {
+    "message": "Wrócił po $1"
+  },
+  "notifySlowTitle": {
+    "message": "🐢 Wolny internet"
+  },
+  "notifySlowMsg": {
+    "message": "Teraz $1 Mbps (poniżej $2 Mbps)"
+  },
+  "durationMinSec": {
+    "message": "$1 min $2 s"
+  },
+  "durationSec": {
+    "message": "$1 s"
+  },
+  "settingsTitle": {
+    "message": "Ustawienia"
+  },
+  "settingsOpen": {
+    "message": "Ustawienia"
+  },
+  "settingsBack": {
+    "message": "Gotowe"
+  },
+  "langLabel": {
+    "message": "Język"
+  },
+  "langSystem": {
+    "message": "Systemowy"
+  },
+  "langKo": {
+    "message": "한국어"
+  },
+  "langEn": {
+    "message": "English"
+  },
+  "langEs": {
+    "message": "Español"
+  },
+  "langId": {
+    "message": "Bahasa Indonesia"
+  },
+  "langTr": {
+    "message": "Türkçe"
+  },
+  "langPtBr": {
+    "message": "Português (Brasil)"
+  },
+  "langPl": {
+    "message": "Polski"
+  },
+  "speedTestLabel": {
+    "message": "Test prędkości"
+  },
+  "speedPeriodLabel": {
+    "message": "Interwał"
+  },
+  "period5": {
+    "message": "5 min"
+  },
+  "period10": {
+    "message": "10 min"
+  },
+  "period30": {
+    "message": "30 min"
+  },
+  "notifyLabel": {
+    "message": "Powiadomienia"
+  },
+  "notifyDownToggle": {
+    "message": "Rozłączenie"
+  },
+  "notifyUpToggle": {
+    "message": "Powrót"
+  },
+  "notifySlowToggle": {
+    "message": "Wolne łącze"
+  },
+  "onLabel": {
+    "message": "Wł."
+  },
+  "offLabel": {
+    "message": "Wył."
+  }
+}

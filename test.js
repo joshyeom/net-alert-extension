@@ -19,7 +19,7 @@
       `color:${cond ? "#43a047" : "#e53935"};font-weight:bold`, "color:inherit");
 
   // 저장된 언어로 messages.json 직접 로드 (i18n.js 와 동일 규칙)
-  const SUPPORTED = ["ko", "en"], FB = "en";
+  const SUPPORTED = ["ko", "en", "es", "id", "tr", "pt_BR", "pl"], FB = "en";
   async function resolveLang() {
     const o = await chrome.storage.local.get(LANG_KEY);
     const pref = o[LANG_KEY] || "system";

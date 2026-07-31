@@ -2,8 +2,8 @@
 // 문자열 원본은 _locales/<lang>/messages.json 하나만 유지 (중복 금지).
 // 저장된 사용자 언어(system/ko/en)에 따라 런타임 오버라이드.
 
-const I18N_LANG_KEY = "uiLang"; // "system" | "ko" | "en"
-const I18N_SUPPORTED = ["ko", "en"];
+const I18N_LANG_KEY = "uiLang"; // "system" | 지원 로케일 코드
+const I18N_SUPPORTED = ["ko", "en", "es", "id", "tr", "pt_BR", "pl"];
 const I18N_FALLBACK = "en";
 
 const _i18nCache = {}; // { ko: {key: "..."}, en: {...} }
@@ -14,8 +14,10 @@ async function resolveLang() {
   const pref = obj[I18N_LANG_KEY] || "system";
   if (pref !== "system" && I18N_SUPPORTED.includes(pref)) return pref;
   // system: Chrome UI 언어 앞 2글자로 매칭, 미지원이면 fallback
+  // (포르투갈어는 디렉토리가 pt_BR 하나뿐이라 pt-BR/pt-PT 모두 여기로)
   const ui = (chrome.i18n.getUILanguage() || I18N_FALLBACK).slice(0, 2);
-  return I18N_SUPPORTED.includes(ui) ? ui : I18N_FALLBACK;
+  const mapped = ui === "pt" ? "pt_BR" : ui;
+  return I18N_SUPPORTED.includes(mapped) ? mapped : I18N_FALLBACK;
 }
 
 // 해당 로케일 messages.json 로드(캐시)
