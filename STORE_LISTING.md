@@ -6,9 +6,9 @@
 
 ## 1. Short description (≤132자)
 
-**EN:** Instantly alerts you when your internet actually goes down or recovers — even when the Wi-Fi icon still looks connected.
+**EN:** Lagging? Find out in 3 seconds if it's your PC or your internet. Real internet down alert, slow warning & recovery notification.
 
-**KO:** 와이파이는 멀쩡해 보여도 실제 인터넷이 끊기면 즉시 알려주고, 복구되면 알려줍니다.
+**KO:** 렉 걸릴 때, 내 컴퓨터 탓인지 인터넷 탓인지 3초 만에 판별. 진짜 인터넷 끊김 알림 · 속도 저하 경고 · 연결 복구 알림.
 
 ---
 
@@ -16,74 +16,79 @@
 
 ### EN
 
-> 2026-07-29 대시보드에 반영된 실제 본문. 후킹 문구 + 검색어(internet down,
-> wifi not working, network outage, speed test 등)를 자연스럽게 녹임.
-> 미출시 기능(v1.1.0 "지금 측정")은 게시 전까지 넣지 않는다.
+**Zoom freezing? Page won't load? Is it your PC — or your internet?**
 
-```
-Your Wi-Fi icon lies. Internet Down Alert tells the truth.
+Stop guessing. Internet Down Alert pings the real internet (not just your
+router) and shows the verdict on a toolbar badge: if the internet is slow or
+down, it's not your computer. Wi-Fi connected but no internet? You'll know in
+seconds — with a desktop notification the moment your connection actually
+drops, and a recovery notification when it's back.
 
-A full Wi-Fi signal only means your router is reachable. It says nothing about whether the internet actually works. Internet Down Alert checks the real internet every few seconds and tells you the exact moment your connection drops, and the exact moment it comes back.
+**Find the culprit in 3 seconds**
+- 🎛️ Toolbar badge = always-on diagnosis light. Green means the internet is
+  fine — so if things still lag, look at your PC, not your router
+- 🐢 Slow connection warning when speed falls below your threshold — instant
+  proof it's the network, not you
+- 🔴 Internet down alert the moment the connection actually drops
+- 🟢 Recovery notification with how long you were offline
 
-WHY PEOPLE KEEP IT INSTALLED
+**Why it's different**
+- Checks the real internet (Google / Cloudflare endpoints) — a full Wi-Fi
+  icon only proves your router is reachable, and `navigator.onLine` lies
+- Notifies only on real state changes (down / slow / recovered) — never spam
+- 🌐 English / Korean, follows your system language or set it manually
+- 🔒 Zero setup, no accounts, no tracking, no data collection — everything
+  stays on your device. Just 3 permissions.
 
-"Is the internet down, or is it just me?" You get the answer in seconds instead of reloading a page over and over.
+**Real-world moment**
+Your video call stutters → the badge says "slow" → it's the internet, not
+your machine → you switch to a hotspot instead of rebooting for nothing.
 
-"Did the call freeze because of my network?" The toolbar badge turns red the moment your connection is actually gone, so you stop guessing.
+**Who it's for**
+- Remote workers who need to know "is it me or is it Zoom?"
+- Anyone on an unstable connection — cafés, trains, shared Wi-Fi
+- Streamers, traders, and uploaders who can't afford a silent drop
 
-"How long was I offline?" The recovery notification tells you exactly, which matters when you have to explain a gap to a client or a team.
-
-FEATURES
-
-- Instant desktop notification when the internet goes down
-- Recovery notification showing exactly how long you were offline
-- Slow connection warning when your speed drops below a threshold you choose
-- Automatic internet speed test on your own schedule (5, 10 or 30 minutes)
-- Toolbar badge shows current connection status at a glance
-- Every notification can be turned off individually
-- English and Korean, following your system language or set manually
-- No account, no sign-up, no analytics, no tracking, no data collection
-
-WHO IT IS FOR
-
-- Remote workers and video call users who cannot afford to miss a dropout
-- Streamers, uploaders and traders who need to know the instant they go offline
-- Anyone on unstable Wi-Fi, cafe networks, hotel networks or mobile tethering
-- Support and ops people who need to separate a network outage from an app bug
-
-HOW IT WORKS
-
-The extension sends a tiny connectivity check to public endpoints run by Google and Cloudflare. If several checks in a row fail, it treats the connection as genuinely down, so a single hiccup does not trigger a false alarm. You are notified only when the status actually changes, never repeatedly.
-
-PRIVACY
-
-Everything stays on your device. Settings and connection status are stored locally through Chrome storage. Nothing is uploaded, sold or shared, and there is no account to create.
-```
+How it works: a tiny connectivity check about once a minute to public
+endpoints (Google / Cloudflare). Status changes only — no noise.
 
 ### KO
 
-**와이파이 아이콘은 거짓말을 합니다. 이 확장 프로그램은 진실을 알려줍니다.**
+**줌이 버벅일 때 — 내 컴퓨터 탓일까, 인터넷 탓일까?**
 
-와이파이 신호가 가득 차 있어도 그건 공유기까지만 연결됐다는 뜻입니다 —
-실제 인터넷이 된다는 보장이 아닙니다. 인터넷 끊김 알림은 주기적으로 진짜
-인터넷에 핑을 보내, 연결이 실제로 끊긴 순간과 복구된 순간을 알려줍니다.
+이제 추측하지 마세요. 인터넷 끊김 알림은 공유기가 아닌 진짜 인터넷에
+핑을 보내고, 판정을 툴바 뱃지로 보여줍니다. 인터넷이 느리거나 끊겼다면
+내 컴퓨터 잘못이 아니라는 뜻입니다. 와이파이는 연결됐는데 인터넷이 안
+될 때 — 몇 초 안에 알 수 있습니다. 진짜 끊긴 순간엔 데스크톱 알림,
+돌아온 순간엔 연결 복구 알림이 옵니다.
 
-**기능**
-- 🔴 인터넷이 끊기면 즉시 데스크톱 알림
-- 🟢 복구 시 알림 + 끊겨 있던 시간 표시
-- ⚡ 원할 때 바로 속도 측정 — 팝업에서 클릭 한 번
-- 🐢 사용자 지정 기준 미만이면 속도 저하 경고 (선택)
-- 🎛️ 툴바 뱃지로 현재 상태 한눈에
+**3초 만에 범인 찾기**
+- 🎛️ 툴바 뱃지 = 상시 진단등. 초록이면 인터넷은 정상 — 그래도 느리면
+  범인은 내 PC
+- 🐢 설정한 기준 아래로 느려지면 속도 저하 경고 — "네트워크 탓"이라는
+  즉석 증거
+- 🔴 인터넷이 실제로 끊긴 순간 즉시 끊김 알림
+- 🟢 복구되면 알림 + 끊겨 있던 시간 표시
+
+**무엇이 다른가**
+- 공유기가 아닌 진짜 인터넷(Google / Cloudflare)을 확인 — 와이파이
+  아이콘이 가득 차 있어도 그건 공유기까지만 연결됐다는 뜻입니다
+- 상태가 실제로 바뀔 때(끊김/느림/복구)만 알림 — 스팸 없음
 - 🌐 한국어 / 영어, 시스템 언어 자동 또는 수동 선택
-- 🔒 계정·추적·데이터 수집 없음 — 모든 데이터는 기기 내부에만
+- 🔒 설정 0개, 계정·추적·데이터 수집 없음 — 모든 데이터는 기기 내부에만.
+  권한도 3개뿐
+
+**실제 사용 순간**
+화상회의가 버벅임 → 뱃지가 "느림" 표시 → 아, 내 탓이 아니라 인터넷
+탓이구나 → 괜히 재부팅하는 대신 핫스팟으로 전환.
 
 **이런 분께**
-- 끊김을 놓치면 안 되는 원격근무자·화상회의 사용자
-- 송출 중 끊김을 즉시 알아야 하는 스트리머·업로더
-- 불안정한 회선에서 "방금 끊겼나?" 확인하고 싶은 누구나
+- "내 문제야, 줌 문제야?" 바로 알고 싶은 원격근무자·화상회의 사용자
+- 카페·기차·공용 와이파이 등 불안정한 회선을 쓰는 누구나
+- 조용한 끊김이 치명적인 스트리머·트레이더·업로더
 
 동작 방식: 약 1분마다 공개 엔드포인트(Google / Cloudflare)로 아주 작은
-연결 확인 요청을 보냅니다. 상태가 실제로 바뀔 때만 알림 — 스팸 없음.
+연결 확인 요청을 보냅니다. 상태 변화 때만 알림 — 소음 없음.
 
 ---
 
@@ -127,28 +132,12 @@ goes down or recovers, with an optional slow-connection warning.
 ## 5. Category & Privacy URL (대시보드 입력값)
 
 - **Category:** Productivity
-- **Language:** English (기본 언어)
-  - 확장 이름은 두 로케일 모두 영문 `Internet Down Alert` 로 통일 (2026-07-29)
-  - 스토어 **등록정보는 로케일별로 따로 입력**해야 함 (자동 번역 안 됨).
-    대시보드 → 스토어 등록정보 → 언어 선택에서 `한국어 – ko` 를 골라
-    위 2번 KO 본문과 `promo/store-screenshot-ko.png` 를 별도로 등록.
+- **Language:** English (primary) — Korean 로케일은 자동 노출
 - **Privacy policy URL** (그대로 붙여넣기):
   ```
-  https://preview-ashy.vercel.app/net-alert-privacy.html
+  https://raw.githubusercontent.com/joshyeom/net-alert-extension/main/PRIVACY.md
   ```
-  `joshyeom/preview` repo(private)의 `net-alert-privacy.html` 을 Vercel 이
-  공개 서빙한다. 이 repo 를 private 로 유지하면서 정책 문서만 공개하기 위한 구조.
-  원본 문구는 `PRIVACY.md` 와 동일하며 수정 시 **양쪽 모두** 갱신할 것.
-
-  경고 이력: `raw.githubusercontent.com` URL 은 repo 가 private 이라 404 →
-  2026-06-30 "링크가 작동하지 않거나 없습니다" 위반. 링크는 로그인 없이
-  200 이어야 한다.
-
-  ⚠️ 이 repo 를 private 로 되돌리면 함께 죽는 링크:
-  - 대시보드 **지원 URL** (`.../issues`) → 비우면 Google 기본 지원 폼이 대체
-  - 대시보드 **홈페이지 URL** (repo 루트) → 비우거나 스토어 페이지로
-  - `manifest.json` 의 `homepage_url` → 스토어 상세 페이지로 교체 (v1.1.0 반영 완료)
-  - `PRIVACY.md` 문의 링크 → HTML 판은 스토어 지원 링크로 이미 교체
+  repo PUBLIC + 커밋 push 완료 상태 → GitHub Pages 불필요. 이 raw URL 그대로 동작.
 
 ---
 
@@ -156,11 +145,7 @@ goes down or recovers, with an optional slow-connection warning.
 
 | 자산 | 파일 | 크기 | 규격 |
 |------|------|------|------|
-| 스크린샷 EN 1 · 히어로 | `promo/store-en-1.png` | 1280×800 | ✅ 필수 |
-| 스크린샷 EN 2 · 끊김/복구 알림 | `promo/store-en-2.png` | 1280×800 | ✅ 권장 |
-| 스크린샷 EN 3 · 즉시 속도 측정 | `promo/store-en-3.png` | 1280×800 | ✅ 권장 |
-| 스크린샷 EN 4 · 설정/프라이버시 | `promo/store-en-4.png` | 1280×800 | ✅ 권장 |
-| 스크린샷 (EN, 구버전) | `promo/store-screenshot.png` | 1280×800 | 대체됨 |
+| 스크린샷 (EN) | `promo/store-screenshot.png` | 1280×800 | ✅ 필수 |
 | 스크린샷 (KO) | `promo/store-screenshot-ko.png` | 1280×800 | ✅ 선택 |
 | 작은 프로모 타일 | `promo/tile-small.png` | 440×280 | ✅ 권장 |
 | 마퀴 프로모 타일 | `promo/tile-marquee.png` | 1400×560 | ✅ 선택 |
