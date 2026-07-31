@@ -1,9 +1,9 @@
 {
   "appName": {
-    "message": "Internet Down Alert"
+    "message": "인터넷 끊김 알림"
   },
   "appDesc": {
-    "message": "인터넷이 끊기면 OS 알림으로 즉시 알려주고 복구되면 알려줍니다."
+    "message": "렉 걸릴 때, 내 컴퓨터 탓인지 인터넷 탓인지 3초 만에 판별. 진짜 인터넷 끊김 알림 · 속도 저하 경고 · 연결 복구 알림."
   },
   "popupTitle": {
     "message": "인터넷 연결 상태"
