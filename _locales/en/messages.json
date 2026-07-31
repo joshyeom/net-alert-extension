@@ -32,6 +32,12 @@
   "speedDash": {
     "message": "—"
   },
+  "speedNowBtn": {
+    "message": "Measure now"
+  },
+  "speedNowFailed": {
+    "message": "Measurement failed. Check your connection."
+  },
   "thresholdLabel": {
     "message": "Alert below"
   },

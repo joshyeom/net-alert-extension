@@ -197,6 +197,21 @@ async function measureSpeed() {
   }
 }
 
+// 팝업의 "지금 측정" — 주기 설정(speedTest)과 무관하게 즉시 1회 측정.
+// 사용자가 화면을 보고 있으므로 느림 알림은 띄우지 않는다(결과가 팝업에 바로 보임).
+// 진행 중이면 같은 측정을 공유해 중복 다운로드를 막는다.
+let speedNowRun = null;
+
+async function measureSpeedNow() {
+  const mbps = await measureSpeed();
+  if (mbps == null) return null;
+  const threshold = await getThreshold();
+  await chrome.storage.local.set({
+    [SPEED_KEY]: { mbps, lastTs: Date.now(), slow: mbps < threshold },
+  });
+  return mbps;
+}
+
 async function checkSpeed() {
   const settings = await getSettings();
   if (!settings.speedTest) return; // 측정 끄면 스킵
@@ -360,6 +375,17 @@ chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
     // 루프가 멈춰있으면 같이 되살림 (SW 깨어난 김에)
     if (!fastLoopTimer) scheduleFastLoop();
     checkAndUpdate().then(() => sendResponse({ ok: true }));
+    return true; // 비동기 응답 유지
+  }
+  if (msg && msg.type === "speedNow") {
+    if (!speedNowRun) {
+      speedNowRun = measureSpeedNow().finally(() => {
+        speedNowRun = null;
+      });
+    }
+    speedNowRun
+      .then((mbps) => sendResponse({ ok: mbps != null, mbps }))
+      .catch(() => sendResponse({ ok: false }));
     return true; // 비동기 응답 유지
   }
 });

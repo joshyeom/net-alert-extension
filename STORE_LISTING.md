@@ -16,29 +16,49 @@
 
 ### EN
 
-**Your Wi-Fi icon lies. This extension tells the truth.**
+> 2026-07-29 대시보드에 반영된 실제 본문. 후킹 문구 + 검색어(internet down,
+> wifi not working, network outage, speed test 등)를 자연스럽게 녹임.
+> 미출시 기능(v1.1.0 "지금 측정")은 게시 전까지 넣지 않는다.
 
-A full Wi-Fi signal only means your router is reachable — not that the
-internet actually works. Internet Down Alert pings the real internet on a
-schedule and tells you the moment your connection actually drops, and the
-moment it comes back.
+```
+Your Wi-Fi icon lies. Internet Down Alert tells the truth.
 
-**Features**
-- 🔴 Instant desktop notification when the internet drops
-- 🟢 Recovery notification with how long you were offline
-- 🐢 Optional slow-connection warning with a custom speed threshold
-- 🎛️ Toolbar badge shows current status at a glance
-- 🌐 English / Korean, follows your system language or set it manually
-- 🔒 No accounts, no tracking, no data collection — everything stays on your device
+A full Wi-Fi signal only means your router is reachable. It says nothing about whether the internet actually works. Internet Down Alert checks the real internet every few seconds and tells you the exact moment your connection drops, and the exact moment it comes back.
 
-**Who it's for**
-- Remote workers and video-call users who can't afford to miss a drop
-- Streamers and uploaders who need to know the instant they go offline
-- Anyone on an unstable connection who wants to know "did it just drop?"
+WHY PEOPLE KEEP IT INSTALLED
 
-How it works: it sends a tiny connectivity check about once a minute to public
-endpoints (Google / Cloudflare). It only notifies you when the status actually
-changes — never spam.
+"Is the internet down, or is it just me?" You get the answer in seconds instead of reloading a page over and over.
+
+"Did the call freeze because of my network?" The toolbar badge turns red the moment your connection is actually gone, so you stop guessing.
+
+"How long was I offline?" The recovery notification tells you exactly, which matters when you have to explain a gap to a client or a team.
+
+FEATURES
+
+- Instant desktop notification when the internet goes down
+- Recovery notification showing exactly how long you were offline
+- Slow connection warning when your speed drops below a threshold you choose
+- Automatic internet speed test on your own schedule (5, 10 or 30 minutes)
+- Toolbar badge shows current connection status at a glance
+- Every notification can be turned off individually
+- English and Korean, following your system language or set manually
+- No account, no sign-up, no analytics, no tracking, no data collection
+
+WHO IT IS FOR
+
+- Remote workers and video call users who cannot afford to miss a dropout
+- Streamers, uploaders and traders who need to know the instant they go offline
+- Anyone on unstable Wi-Fi, cafe networks, hotel networks or mobile tethering
+- Support and ops people who need to separate a network outage from an app bug
+
+HOW IT WORKS
+
+The extension sends a tiny connectivity check to public endpoints run by Google and Cloudflare. If several checks in a row fail, it treats the connection as genuinely down, so a single hiccup does not trigger a false alarm. You are notified only when the status actually changes, never repeatedly.
+
+PRIVACY
+
+Everything stays on your device. Settings and connection status are stored locally through Chrome storage. Nothing is uploaded, sold or shared, and there is no account to create.
+```
 
 ### KO
 
@@ -51,6 +71,7 @@ changes — never spam.
 **기능**
 - 🔴 인터넷이 끊기면 즉시 데스크톱 알림
 - 🟢 복구 시 알림 + 끊겨 있던 시간 표시
+- ⚡ 원할 때 바로 속도 측정 — 팝업에서 클릭 한 번
 - 🐢 사용자 지정 기준 미만이면 속도 저하 경고 (선택)
 - 🎛️ 툴바 뱃지로 현재 상태 한눈에
 - 🌐 한국어 / 영어, 시스템 언어 자동 또는 수동 선택
@@ -106,12 +127,28 @@ goes down or recovers, with an optional slow-connection warning.
 ## 5. Category & Privacy URL (대시보드 입력값)
 
 - **Category:** Productivity
-- **Language:** English (primary) — Korean 로케일은 자동 노출
+- **Language:** English (기본 언어)
+  - 확장 이름은 두 로케일 모두 영문 `Internet Down Alert` 로 통일 (2026-07-29)
+  - 스토어 **등록정보는 로케일별로 따로 입력**해야 함 (자동 번역 안 됨).
+    대시보드 → 스토어 등록정보 → 언어 선택에서 `한국어 – ko` 를 골라
+    위 2번 KO 본문과 `promo/store-screenshot-ko.png` 를 별도로 등록.
 - **Privacy policy URL** (그대로 붙여넣기):
   ```
-  https://raw.githubusercontent.com/joshyeom/net-alert-extension/main/PRIVACY.md
+  https://preview-ashy.vercel.app/net-alert-privacy.html
   ```
-  repo PUBLIC + 커밋 push 완료 상태 → GitHub Pages 불필요. 이 raw URL 그대로 동작.
+  `joshyeom/preview` repo(private)의 `net-alert-privacy.html` 을 Vercel 이
+  공개 서빙한다. 이 repo 를 private 로 유지하면서 정책 문서만 공개하기 위한 구조.
+  원본 문구는 `PRIVACY.md` 와 동일하며 수정 시 **양쪽 모두** 갱신할 것.
+
+  경고 이력: `raw.githubusercontent.com` URL 은 repo 가 private 이라 404 →
+  2026-06-30 "링크가 작동하지 않거나 없습니다" 위반. 링크는 로그인 없이
+  200 이어야 한다.
+
+  ⚠️ 이 repo 를 private 로 되돌리면 함께 죽는 링크:
+  - 대시보드 **지원 URL** (`.../issues`) → 비우면 Google 기본 지원 폼이 대체
+  - 대시보드 **홈페이지 URL** (repo 루트) → 비우거나 스토어 페이지로
+  - `manifest.json` 의 `homepage_url` → 스토어 상세 페이지로 교체 (v1.1.0 반영 완료)
+  - `PRIVACY.md` 문의 링크 → HTML 판은 스토어 지원 링크로 이미 교체
 
 ---
 
@@ -119,7 +156,11 @@ goes down or recovers, with an optional slow-connection warning.
 
 | 자산 | 파일 | 크기 | 규격 |
 |------|------|------|------|
-| 스크린샷 (EN) | `promo/store-screenshot.png` | 1280×800 | ✅ 필수 |
+| 스크린샷 EN 1 · 히어로 | `promo/store-en-1.png` | 1280×800 | ✅ 필수 |
+| 스크린샷 EN 2 · 끊김/복구 알림 | `promo/store-en-2.png` | 1280×800 | ✅ 권장 |
+| 스크린샷 EN 3 · 즉시 속도 측정 | `promo/store-en-3.png` | 1280×800 | ✅ 권장 |
+| 스크린샷 EN 4 · 설정/프라이버시 | `promo/store-en-4.png` | 1280×800 | ✅ 권장 |
+| 스크린샷 (EN, 구버전) | `promo/store-screenshot.png` | 1280×800 | 대체됨 |
 | 스크린샷 (KO) | `promo/store-screenshot-ko.png` | 1280×800 | ✅ 선택 |
 | 작은 프로모 타일 | `promo/tile-small.png` | 440×280 | ✅ 권장 |
 | 마퀴 프로모 타일 | `promo/tile-marquee.png` | 1400×560 | ✅ 선택 |

@@ -39,6 +39,7 @@ const TEXT_MAP = {
   lblNotifyDown: "notifyDownToggle",
   lblNotifyUp: "notifyUpToggle",
   lblNotifySlow: "notifySlowToggle",
+  btnSpeedNow: "speedNowBtn",
   permTitle: "permTitle",
   permBody: "permBody",
   permBtn: "permBtn",
@@ -175,6 +176,27 @@ $("openSettings").addEventListener("click", () =>
 $("closeSettings").addEventListener("click", () =>
   document.body.classList.remove("settingsOpen")
 );
+
+// ---- 지금 측정 ----
+// SW에 즉시 측정을 요청. 결과 표시는 storage.onChanged → renderSpeed 가 맡는다.
+$("btnSpeedNow").addEventListener("click", async () => {
+  const btn = $("btnSpeedNow");
+  const err = $("speedErr");
+  btn.disabled = true;
+  btn.textContent = t("speedMeasuring");
+  err.classList.remove("show");
+
+  const res = await chrome.runtime
+    .sendMessage({ type: "speedNow" })
+    .catch(() => null);
+
+  if (!res || !res.ok) {
+    err.textContent = t("speedNowFailed");
+    err.classList.add("show");
+  }
+  btn.disabled = false;
+  btn.textContent = t("speedNowBtn");
+});
 
 // ---- 권한 배너 ----
 function checkPermission() {

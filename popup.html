@@ -79,6 +79,38 @@
       .slow #speedNow b {
         color: #e53935;
       }
+      #speedRow {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+      }
+      #btnSpeedNow {
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        background: #fff;
+        color: #444;
+        font-size: 11px;
+        padding: 4px 8px;
+        cursor: pointer;
+        white-space: nowrap;
+      }
+      #btnSpeedNow:hover:not(:disabled) {
+        background: #f0f0f0;
+      }
+      #btnSpeedNow:disabled {
+        color: #aaa;
+        cursor: default;
+      }
+      #speedErr {
+        display: none;
+        margin-top: 6px;
+        font-size: 11px;
+        color: #e53935;
+      }
+      #speedErr.show {
+        display: block;
+      }
 
       /* ---- 설정 뷰 ---- */
       #settings {
@@ -229,7 +261,11 @@
         <div id="sub"></div>
       </div>
       <div id="speedBox">
-        <div id="speedNow"></div>
+        <div id="speedRow">
+          <div id="speedNow"></div>
+          <button id="btnSpeedNow"></button>
+        </div>
+        <div id="speedErr"></div>
       </div>
     </div>
 

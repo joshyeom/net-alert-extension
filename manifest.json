@@ -1,11 +1,11 @@
 {
   "manifest_version": 3,
   "name": "__MSG_appName__",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "__MSG_appDesc__",
   "default_locale": "en",
   "author": "joshyeom",
-  "homepage_url": "https://github.com/joshyeom/net-alert-extension",
+  "homepage_url": "https://chromewebstore.google.com/detail/egidejbpdcankobpbnofddmjooiicbgg",
   "permissions": ["alarms", "notifications", "storage"],
   "host_permissions": [
     "https://www.gstatic.com/*",

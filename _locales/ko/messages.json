@@ -1,6 +1,6 @@
 {
   "appName": {
-    "message": "인터넷 끊김 알림"
+    "message": "Internet Down Alert"
   },
   "appDesc": {
     "message": "인터넷이 끊기면 OS 알림으로 즉시 알려주고 복구되면 알려줍니다."
@@ -31,6 +31,12 @@
   },
   "speedDash": {
     "message": "—"
+  },
+  "speedNowBtn": {
+    "message": "지금 측정"
+  },
+  "speedNowFailed": {
+    "message": "측정 실패. 연결 상태를 확인하세요."
   },
   "thresholdLabel": {
     "message": "경고 기준"
