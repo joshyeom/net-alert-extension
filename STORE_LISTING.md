@@ -72,9 +72,9 @@ account, no sign-up, and no analytics.
 현재 상태는 툴바 뱃지로 한눈에 보여줍니다.
 
 주요 기능:
-- 현재 연결 상태를 툴바 뱃지에 표시
-- 연결이 끊기면 데스크톱 알림
-- 연결이 돌아오면 알림, 끊겨 있던 시간 함께 표시
+- 현재 상태를 툴바 뱃지에 표시
+- 끊기면 데스크톱 알림
+- 돌아오면 알림, 끊겨 있던 시간 함께 표시
 - 측정한 속도가 설정한 기준 아래로 내려가면 선택적으로 경고
 - 각 알림을 개별로 켜고 끄기
 
@@ -97,9 +97,9 @@ más allá del router para confirmar que la conexión funciona de verdad. La
 insignia de la barra de herramientas muestra el estado actual.
 
 Qué hace:
-- Muestra el estado actual de la conexión en la insignia de la barra
-- Envía una notificación de escritorio cuando se pierde la conexión
-- Envía una notificación cuando vuelve, indicando cuánto tiempo estuvo caída
+- Muestra el estado actual en la insignia de la barra
+- Envía una notificación de escritorio cuando se pierde el acceso
+- Envía otra cuando vuelve, indicando cuánto tiempo estuvo caído
 - Opcionalmente avisa cuando la velocidad medida baja de un umbral que elijas
 - Permite activar o desactivar cada notificación por separado
 
@@ -123,9 +123,9 @@ menembus router untuk memastikan koneksinya benar-benar bekerja. Lencana
 toolbar menampilkan keadaan saat ini.
 
 Yang dilakukan:
-- Menampilkan keadaan koneksi saat ini di lencana toolbar
-- Mengirim notifikasi desktop saat koneksi hilang
-- Mengirim notifikasi saat koneksi kembali, beserta lama gangguannya
+- Menampilkan keadaan saat ini di lencana toolbar
+- Mengirim notifikasi desktop saat aksesnya hilang
+- Mengirim notifikasi saat sudah kembali, beserta lama gangguannya
 - Secara opsional memperingatkan saat kecepatan terukur turun di bawah ambang
   yang Anda tentukan
 - Memungkinkan Anda menyalakan atau mematikan tiap notifikasi
@@ -150,9 +150,9 @@ kontrol modemin ötesine geçerek bağlantının gerçekten çalıştığını d
 Araç çubuğu rozeti mevcut durumu gösterir.
 
 Neler yapar:
-- Mevcut bağlantı durumunu araç çubuğu rozetinde gösterir
-- Bağlantı koptuğunda masaüstü bildirimi gönderir
-- Bağlantı geri geldiğinde, ne kadar süre erişilemediğini de belirterek bildirir
+- Mevcut durumu araç çubuğu rozetinde gösterir
+- Koptuğunda masaüstü bildirimi gönderir
+- Geri geldiğinde, ne kadar süre erişilemediğini de belirterek bildirir
 - İsteğe bağlı olarak, ölçülen hız belirlediğiniz eşiğin altına düştüğünde uyarır
 - Her bildirimi ayrı ayrı açıp kapatmanıza izin verir
 
@@ -175,9 +175,9 @@ verificação vai além do roteador para confirmar que a conexão realmente
 funciona. O selo na barra de ferramentas mostra o estado atual.
 
 O que faz:
-- Mostra o estado atual da conexão no selo da barra de ferramentas
-- Envia uma notificação na área de trabalho quando a conexão é perdida
-- Envia uma notificação quando ela volta, informando quanto tempo ficou fora
+- Mostra o estado atual no selo da barra de ferramentas
+- Envia uma notificação na área de trabalho quando o acesso cai
+- Envia outra quando ele volta, informando quanto tempo ficou fora
 - Opcionalmente avisa quando a velocidade medida fica abaixo de um limite que
   você definir
 - Permite ligar ou desligar cada notificação separadamente
