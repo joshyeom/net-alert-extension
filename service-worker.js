@@ -170,41 +170,69 @@ async function getThreshold() {
 }
 
 // 500KB 다운로드 시간으로 Mbps 계산. 실패하면 null 반환(끊김 등).
+// 시간은 요청 시작이 아니라 첫 청크 도착부터 잼 — TTFB(서버 대기·TLS)가
+// 섞이면 빠른 회선일수록 값이 지연시간에 좌우돼 오차가 커지기 때문.
 async function measureSpeed() {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), SPEED_TIMEOUT_MS);
-  const start = Date.now();
+  const reqStart = Date.now();
   try {
     const res = await fetch(SPEED_URL, {
       method: "GET",
       cache: "no-store",
       signal: controller.signal,
     });
-    if (!res.ok) {
+    if (!res.ok || !res.body) {
       clearTimeout(timer);
       return null;
     }
-    // 본문을 끝까지 읽어야 실제 다운로드 완료 시간이 잡힘
-    const buf = await res.arrayBuffer();
+    const reader = res.body.getReader();
+    let firstChunkTs = 0;
+    let totalBytes = 0;
+    let bytesAfterFirst = 0;
+    let lastChunkTs = 0;
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      const now = Date.now();
+      totalBytes += value.byteLength;
+      if (!firstChunkTs) {
+        firstChunkTs = now;
+      } else {
+        bytesAfterFirst += value.byteLength;
+        lastChunkTs = now;
+      }
+    }
     clearTimeout(timer);
-    const elapsedSec = (Date.now() - start) / 1000;
-    if (elapsedSec <= 0) return null;
-    const bits = buf.byteLength * 8;
-    return bits / elapsedSec / 1_000_000; // Mbps
+    const elapsedSec = (lastChunkTs - firstChunkTs) / 1000;
+    if (elapsedSec > 0 && bytesAfterFirst > 0) {
+      return (bytesAfterFirst * 8) / elapsedSec / 1_000_000; // Mbps
+    }
+    // 본문이 사실상 한 청크로 온 경우 — 전체 시간 기준으로 폴백
+    const totalSec = (Date.now() - reqStart) / 1000;
+    if (totalSec <= 0 || totalBytes <= 0) return null;
+    return (totalBytes * 8) / totalSec / 1_000_000;
   } catch {
     clearTimeout(timer);
     return null;
   }
 }
 
-// 팝업의 "지금 측정" — 주기 설정(speedTest)과 무관하게 즉시 1회 측정.
+// 팝업의 "지금 측정" — 주기 설정(speedTest)과 무관하게 즉시 측정.
 // 사용자가 화면을 보고 있으므로 느림 알림은 띄우지 않는다(결과가 팝업에 바로 보임).
 // 진행 중이면 같은 측정을 공유해 중복 다운로드를 막는다.
 let speedNowRun = null;
 
+// 순차 3회 측정 후 최대값 — 단발 측정은 스톨·순간 혼잡으로 실제보다 낮게만
+// 나오므로(링크보다 빨리 받을 수는 없음) 최대값이 회선 용량에 가장 가깝다.
 async function measureSpeedNow() {
-  const mbps = await measureSpeed();
-  if (mbps == null) return null;
+  const samples = [];
+  for (let i = 0; i < 3; i++) {
+    const v = await measureSpeed();
+    if (v != null) samples.push(v);
+  }
+  if (samples.length === 0) return null;
+  const mbps = Math.max(...samples);
   const threshold = await getThreshold();
   await chrome.storage.local.set({
     [SPEED_KEY]: { mbps, lastTs: Date.now(), slow: mbps < threshold },

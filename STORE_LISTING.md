@@ -6,320 +6,214 @@
 
 ## 1. Short description (≤132자)
 
-**EN:** Lagging? Find out in 3 seconds if it's your PC or your internet. Real internet down alert, slow warning & recovery notification.
+> ⚠️ 2026-08-07 거부(Yellow Argon, 스팸/키워드 스터핑) 후 재작성.
+> 규칙: 기능 나열식 키워드 금지, 같은 개념 반복 금지, 한 문장으로 무엇을 하는지만.
 
-**KO:** 렉 걸릴 때, 내 컴퓨터 탓인지 인터넷 탓인지 3초 만에 판별. 진짜 인터넷 끊김 알림 · 속도 저하 경고 · 연결 복구 알림.
+**EN:** Tells you whether your internet connection is actually working, and notifies you when it drops or comes back.
 
-**ES:** ¿Va lento? Averigua en 3 segundos si es tu PC o tu internet. Alerta cuando se cae el internet, aviso de lentitud y de recuperación.
+**KO:** 인터넷 연결이 실제로 되고 있는지 확인하고, 끊기거나 복구되면 알려줍니다.
 
-**ID:** Lemot? Cari tahu dalam 3 detik: masalahnya di PC atau internet. Peringatan internet putus, koneksi lambat, dan notifikasi pulih.
+**ES:** Comprueba si tu conexión a internet funciona de verdad y te avisa cuando se cae o vuelve.
 
-**TR:** Takılma mı var? 3 saniyede anlayın: PC mi, internet mi? İnternet kesilince uyarı, yavaşlama ve bağlantı geri gelme bildirimi.
+**ID:** Memeriksa apakah koneksi internet Anda benar-benar berfungsi, dan memberi tahu saat putus atau kembali.
 
-**PT-BR:** Travando? Descubra em 3 segundos se é o seu PC ou a sua internet. Alerta de internet caindo, aviso de lentidão e de reconexão.
+**TR:** İnternet bağlantınızın gerçekten çalışıp çalışmadığını kontrol eder ve koptuğunda veya geri geldiğinde bildirir.
 
-**PL:** Tnie się? W 3 sekundy sprawdź, czy to komputer, czy internet. Alert o utracie internetu, wolnym łączu i powrocie połączenia.
+**PT-BR:** Verifica se a sua conexão com a internet está mesmo funcionando e avisa quando ela cai ou volta.
+
+**PL:** Sprawdza, czy twoje połączenie z internetem naprawdę działa, i powiadamia, gdy zniknie lub wróci.
 
 ---
 
 ## 2. Detailed description (스토어 본문)
 
+> 작성 규칙 (거부 재발 방지):
+> - 도입부 훅 1~2줄까지만. 그 뒤는 전부 기능·동작 서술.
+> - 같은 기능을 다른 표현으로 반복하지 않는다.
+> - "이런 분께" 같은 페르소나 나열 금지 (검색어 커버리지로 읽힘).
+> - 이모지 불릿 금지, 기능명 반복 금지.
+
 ### EN
 
-**Zoom freezing? Page won't load? Is it your PC — or your internet?**
+Is it your PC, or your internet?
 
-Stop guessing. Internet Down Alert pings the real internet (not just your
-router) and shows the verdict on a toolbar badge: if the internet is slow or
-down, it's not your computer. Wi-Fi connected but no internet? You'll know in
-seconds — with a desktop notification the moment your connection actually
-drops, and a recovery notification when it's back.
+When a video call stutters or a page hangs, this extension tells you which
+side the problem is on.
 
-**Find the culprit in 3 seconds**
-- 🎛️ Toolbar badge = always-on diagnosis light. Green means the internet is
-  fine — so if things still lag, look at your PC, not your router
-- 🐢 Slow connection warning when speed falls below your threshold — instant
-  proof it's the network, not you
-- 🔴 Internet down alert the moment the connection actually drops
-- 🟢 Recovery notification with how long you were offline
+It checks the connection about once a minute by sending a small request to a
+public endpoint run by Google or Cloudflare. A full Wi-Fi icon only means
+your router is reachable, so the check goes past the router to confirm the
+connection actually works. The toolbar badge shows the current state at a
+glance.
 
-**Why it's different**
-- Checks the real internet (Google / Cloudflare endpoints) — a full Wi-Fi
-  icon only proves your router is reachable, and `navigator.onLine` lies
-- Notifies only on real state changes (down / slow / recovered) — never spam
-- 🌐 7 languages (English, Korean, Spanish, Indonesian, Turkish,
-  Portuguese, Polish) — follows your system language or set it manually
-- 🔒 Zero setup, no accounts, no tracking, no data collection — everything
-  stays on your device. Just 3 permissions.
+What it does:
+- Shows the current connection state on the toolbar badge
+- Sends a desktop notification when the connection is lost
+- Sends a notification when it returns, including how long it was unavailable
+- Optionally warns you when measured speed falls below a threshold you set
+- Lets you turn each notification on or off
 
-**Real-world moment**
-Your video call stutters → the badge says "slow" → it's the internet, not
-your machine → you switch to a hotspot instead of rebooting for nothing.
+You are notified only when the state changes, so it stays quiet while
+everything is fine.
 
-**Who it's for**
-- Remote workers who need to know "is it me or is it Zoom?"
-- Anyone on an unstable connection — cafés, trains, shared Wi-Fi
-- Streamers, traders, and uploaders who can't afford a silent drop
-
-How it works: a tiny connectivity check about once a minute to public
-endpoints (Google / Cloudflare). Status changes only — no noise.
+Settings and the last known state are stored on your device. There is no
+account, no sign-up, and no analytics.
 
 ### KO
 
-**줌이 버벅일 때 — 내 컴퓨터 탓일까, 인터넷 탓일까?**
+내 컴퓨터 문제일까, 인터넷 문제일까?
 
-이제 추측하지 마세요. 인터넷 끊김 알림은 공유기가 아닌 진짜 인터넷에
-핑을 보내고, 판정을 툴바 뱃지로 보여줍니다. 인터넷이 느리거나 끊겼다면
-내 컴퓨터 잘못이 아니라는 뜻입니다. 와이파이는 연결됐는데 인터넷이 안
-될 때 — 몇 초 안에 알 수 있습니다. 진짜 끊긴 순간엔 데스크톱 알림,
-돌아온 순간엔 연결 복구 알림이 옵니다.
+화상회의가 버벅이거나 페이지가 멈출 때, 이 확장 프로그램이 어느 쪽 문제인지
+알려줍니다.
 
-**3초 만에 범인 찾기**
-- 🎛️ 툴바 뱃지 = 상시 진단등. 초록이면 인터넷은 정상 — 그래도 느리면
-  범인은 내 PC
-- 🐢 설정한 기준 아래로 느려지면 속도 저하 경고 — "네트워크 탓"이라는
-  즉석 증거
-- 🔴 인터넷이 실제로 끊긴 순간 즉시 끊김 알림
-- 🟢 복구되면 알림 + 끊겨 있던 시간 표시
+약 1분마다 Google 또는 Cloudflare가 운영하는 공개 엔드포인트로 작은 요청을
+보내 연결을 확인합니다. 와이파이 아이콘이 가득 차 있어도 그건 공유기까지만
+연결됐다는 뜻이므로, 공유기 너머까지 확인해 실제로 연결이 되는지 판단합니다.
+현재 상태는 툴바 뱃지로 한눈에 보여줍니다.
 
-**무엇이 다른가**
-- 공유기가 아닌 진짜 인터넷(Google / Cloudflare)을 확인 — 와이파이
-  아이콘이 가득 차 있어도 그건 공유기까지만 연결됐다는 뜻입니다
-- 상태가 실제로 바뀔 때(끊김/느림/복구)만 알림 — 스팸 없음
-- 🌐 7개 언어(한국어·영어·스페인어·인니어·터키어·포르투갈어·폴란드어),
-  시스템 언어 자동 또는 수동 선택
-- 🔒 설정 0개, 계정·추적·데이터 수집 없음 — 모든 데이터는 기기 내부에만.
-  권한도 3개뿐
+주요 기능:
+- 현재 연결 상태를 툴바 뱃지에 표시
+- 연결이 끊기면 데스크톱 알림
+- 연결이 돌아오면 알림, 끊겨 있던 시간 함께 표시
+- 측정한 속도가 설정한 기준 아래로 내려가면 선택적으로 경고
+- 각 알림을 개별로 켜고 끄기
 
-**실제 사용 순간**
-화상회의가 버벅임 → 뱃지가 "느림" 표시 → 아, 내 탓이 아니라 인터넷
-탓이구나 → 괜히 재부팅하는 대신 핫스팟으로 전환.
+상태가 바뀔 때만 알리므로, 정상일 때는 조용합니다.
 
-**이런 분께**
-- "내 문제야, 줌 문제야?" 바로 알고 싶은 원격근무자·화상회의 사용자
-- 카페·기차·공용 와이파이 등 불안정한 회선을 쓰는 누구나
-- 조용한 끊김이 치명적인 스트리머·트레이더·업로더
-
-동작 방식: 약 1분마다 공개 엔드포인트(Google / Cloudflare)로 아주 작은
-연결 확인 요청을 보냅니다. 상태 변화 때만 알림 — 소음 없음.
+설정과 마지막 상태는 기기 안에만 저장됩니다. 계정도, 가입도, 분석 도구도
+없습니다.
 
 ### ES
 
-**¿Zoom se congela? ¿La página no carga? ¿Es tu PC — o tu internet?**
+¿Es tu PC o es tu conexión?
 
-Deja de adivinar. Alerta de Caída de Internet hace ping al internet real (no
-solo a tu router) y muestra el veredicto en una insignia de la barra de
-herramientas: si el internet está lento o caído, no es tu computadora. ¿Wifi
-conectado pero sin internet? Lo sabrás en segundos — con una notificación de
-escritorio en el momento en que la conexión se cae de verdad, y otra cuando
-se recupera.
+Cuando una videollamada se entrecorta o una página se queda colgada, esta
+extensión te dice de qué lado está el problema.
 
-**Encuentra al culpable en 3 segundos**
-- 🎛️ Insignia en la barra = luz de diagnóstico permanente. Verde significa
-  que el internet está bien — si aun así va lento, mira tu PC, no tu router
-- 🐢 Aviso de conexión lenta cuando la velocidad baja del umbral que elijas
-  — prueba instantánea de que es la red, no tú
-- 🔴 Alerta en el momento exacto en que se cae el internet
-- 🟢 Notificación de recuperación con el tiempo que estuviste sin conexión
+Comprueba la conexión aproximadamente una vez por minuto enviando una
+petición pequeña a un endpoint público de Google o Cloudflare. Un icono de
+wifi lleno solo significa que tu router responde, así que la comprobación va
+más allá del router para confirmar que la conexión funciona de verdad. La
+insignia de la barra de herramientas muestra el estado actual.
 
-**Por qué es diferente**
-- Comprueba el internet real (endpoints de Google / Cloudflare) — el icono
-  de wifi lleno solo prueba que tu router responde
-- Notifica solo con cambios reales de estado (caído / lento / recuperado) —
-  nunca spam
-- 🌐 7 idiomas (incluido español), sigue el idioma del sistema o elígelo
-  manualmente
-- 🔒 Sin configuración, sin cuentas, sin rastreo, sin recopilación de datos
-  — todo queda en tu equipo. Solo 3 permisos.
+Qué hace:
+- Muestra el estado actual de la conexión en la insignia de la barra
+- Envía una notificación de escritorio cuando se pierde la conexión
+- Envía una notificación cuando vuelve, indicando cuánto tiempo estuvo caída
+- Opcionalmente avisa cuando la velocidad medida baja de un umbral que elijas
+- Permite activar o desactivar cada notificación por separado
 
-**Momento real**
-La videollamada se entrecorta → la insignia dice "lento" → es el internet,
-no tu máquina → cambias al hotspot en vez de reiniciar para nada.
+Solo recibes avisos cuando el estado cambia, así que permanece en silencio
+mientras todo va bien.
 
-**Para quién es**
-- Teletrabajadores que necesitan saber "¿soy yo o es Zoom?"
-- Cualquiera a quien se le cae el internet — cafeterías, trenes, wifi
-  compartido
-- Streamers, traders y creadores que no pueden permitirse una caída
-  silenciosa
-
-Cómo funciona: una comprobación de conectividad mínima aprox. una vez por
-minuto a endpoints públicos (Google / Cloudflare). Solo cambios de estado —
-sin ruido.
+Los ajustes y el último estado se guardan en tu dispositivo. No hay cuenta,
+ni registro, ni analíticas.
 
 ### ID
 
-**Zoom macet? Halaman tidak mau terbuka? Masalahnya di PC — atau di internet?**
+Masalahnya di PC Anda atau di koneksi?
 
-Berhenti menebak. Peringatan Internet Putus melakukan ping ke internet
-sungguhan (bukan cuma router Anda) dan menampilkan hasilnya di lencana
-toolbar: kalau internet lambat atau putus, berarti bukan salah komputer
-Anda. Wifi tersambung tapi tidak ada internet? Anda tahu dalam hitungan
-detik — dengan notifikasi desktop begitu koneksi benar-benar putus, dan
-notifikasi lagi saat pulih.
+Saat panggilan video patah-patah atau halaman berhenti memuat, ekstensi ini
+memberi tahu di sisi mana masalahnya.
 
-**Temukan biang keladinya dalam 3 detik**
-- 🎛️ Lencana toolbar = lampu diagnosis yang selalu aktif. Hijau berarti
-  internet baik-baik saja — kalau masih lemot, periksa PC Anda, bukan router
-- 🐢 Peringatan koneksi lambat saat kecepatan turun di bawah ambang yang
-  Anda atur — bukti instan bahwa masalahnya di jaringan, bukan di Anda
-- 🔴 Peringatan internet putus tepat saat koneksi benar-benar terputus
-- 🟢 Notifikasi pulih beserta lamanya Anda offline
+Ekstensi memeriksa koneksi kira-kira sekali per menit dengan mengirim
+permintaan kecil ke endpoint publik milik Google atau Cloudflare. Ikon wifi
+yang penuh hanya berarti router Anda terjangkau, jadi pemeriksaan ini
+menembus router untuk memastikan koneksinya benar-benar bekerja. Lencana
+toolbar menampilkan keadaan saat ini.
 
-**Kenapa berbeda**
-- Memeriksa internet sungguhan (endpoint Google / Cloudflare) — ikon wifi
-  penuh hanya membuktikan router terjangkau
-- Memberi tahu hanya saat status benar-benar berubah (putus / lambat /
-  pulih) — tidak pernah spam
-- 🌐 7 bahasa (termasuk Bahasa Indonesia), ikut bahasa sistem atau pilih
-  manual
-- 🔒 Tanpa setup, tanpa akun, tanpa pelacakan, tanpa pengumpulan data —
-  semuanya tetap di perangkat Anda. Hanya 3 izin.
+Yang dilakukan:
+- Menampilkan keadaan koneksi saat ini di lencana toolbar
+- Mengirim notifikasi desktop saat koneksi hilang
+- Mengirim notifikasi saat koneksi kembali, beserta lama gangguannya
+- Secara opsional memperingatkan saat kecepatan terukur turun di bawah ambang
+  yang Anda tentukan
+- Memungkinkan Anda menyalakan atau mematikan tiap notifikasi
 
-**Momen nyata**
-Video call patah-patah → lencana bilang "lambat" → berarti internetnya,
-bukan komputer Anda → Anda pindah ke hotspot alih-alih restart sia-sia.
+Anda hanya diberi tahu ketika keadaan berubah, jadi ekstensi ini diam selama
+semuanya baik-baik saja.
 
-**Untuk siapa**
-- Pekerja remote yang perlu tahu "salah saya atau salah Zoom?"
-- Siapa pun yang internetnya sering putus — kafe, kereta, wifi bersama
-- Streamer, trader, dan kreator yang tidak boleh kecolongan internet mati
-
-Cara kerja: pemeriksaan konektivitas kecil sekitar sekali per menit ke
-endpoint publik (Google / Cloudflare). Hanya saat status berubah — tanpa
-berisik.
+Pengaturan dan keadaan terakhir disimpan di perangkat Anda. Tidak ada akun,
+tidak ada pendaftaran, dan tidak ada analitik.
 
 ### TR
 
-**Zoom donuyor mu? Sayfa açılmıyor mu? Sorun PC'nizde mi — internette mi?**
+Sorun bilgisayarınızda mı, bağlantınızda mı?
 
-Tahmin etmeyi bırakın. İnternet Kesintisi Uyarısı, yalnızca modeminize değil
-gerçek internete ping atar ve kararı araç çubuğu rozetinde gösterir:
-internet yavaşsa ya da kesildiyse, suçlu bilgisayarınız değildir. Wifi bağlı
-ama internet yok mu? Saniyeler içinde öğrenirsiniz — bağlantı gerçekten
-koptuğu anda masaüstü bildirimi, geri geldiğinde de ayrı bir bildirim
-alırsınız.
+Görüntülü görüşme takıldığında ya da sayfa açılmadığında, bu eklenti sorunun
+hangi tarafta olduğunu söyler.
 
-**Suçluyu 3 saniyede bulun**
-- 🎛️ Araç çubuğu rozeti = her zaman açık tanı ışığı. Yeşilse internet
-  yolunda — hâlâ takılma varsa modeme değil PC'nize bakın
-- 🐢 Hız belirlediğiniz eşiğin altına düşünce yavaşlama uyarısı — "suç ağda"
-  olduğunun anlık kanıtı
-- 🔴 İnternet gerçekten kesildiği anda kesinti uyarısı
-- 🟢 Bağlantı geri gelince bildirim + ne kadar süre çevrimdışı kaldığınız
+Bağlantıyı yaklaşık dakikada bir, Google veya Cloudflare tarafından işletilen
+herkese açık bir uç noktaya küçük bir istek göndererek kontrol eder. Dolu bir
+wifi simgesi yalnızca modeminize ulaşılabildiği anlamına gelir; bu yüzden
+kontrol modemin ötesine geçerek bağlantının gerçekten çalıştığını doğrular.
+Araç çubuğu rozeti mevcut durumu gösterir.
 
-**Neden farklı**
-- Modemi değil gerçek interneti kontrol eder (Google / Cloudflare uç
-  noktaları) — dolu wifi simgesi yalnızca modeme ulaşabildiğinizi gösterir
-- Yalnızca gerçek durum değişimlerinde bildirir (kesildi / yavaş / geri
-  geldi) — asla spam yapmaz
-- 🌐 7 dil (Türkçe dahil), sistem dilini izler veya elle seçilir
-- 🔒 Kurulum yok, hesap yok, izleme yok, veri toplama yok — her şey
-  cihazınızda kalır. Yalnızca 3 izin.
+Neler yapar:
+- Mevcut bağlantı durumunu araç çubuğu rozetinde gösterir
+- Bağlantı koptuğunda masaüstü bildirimi gönderir
+- Bağlantı geri geldiğinde, ne kadar süre erişilemediğini de belirterek bildirir
+- İsteğe bağlı olarak, ölçülen hız belirlediğiniz eşiğin altına düştüğünde uyarır
+- Her bildirimi ayrı ayrı açıp kapatmanıza izin verir
 
-**Gerçek bir an**
-Görüntülü görüşme takılıyor → rozet "yavaş" diyor → sorun internette,
-makinenizde değil → boşuna yeniden başlatmak yerine hotspot'a
-geçiyorsunuz.
+Yalnızca durum değiştiğinde bildirim alırsınız; her şey yolundayken sessiz
+kalır.
 
-**Kimler için**
-- "Sorun bende mi, Zoom'da mı?" bilmek isteyen uzaktan çalışanlar
-- İnterneti sık kesilen herkes — kafe, tren, ortak wifi
-- Sessiz bir kesintiyi göze alamayan yayıncılar, trader'lar ve içerik
-  üreticileri
-
-Nasıl çalışır: yaklaşık dakikada bir, herkese açık uç noktalara (Google /
-Cloudflare) çok küçük bir bağlantı kontrolü gönderir. Yalnızca durum
-değişince bildirim — gürültü yok.
+Ayarlar ve son durum cihazınızda saklanır. Hesap, kayıt ve analitik yoktur.
 
 ### PT-BR
 
-**Zoom travando? Página não carrega? É o seu PC — ou a sua internet?**
+É o seu PC ou é a sua conexão?
 
-Pare de adivinhar. O Alerta de Queda de Internet pinga a internet de verdade
-(não só o seu roteador) e mostra o veredito num selo na barra de
-ferramentas: se a internet está lenta ou caiu, a culpa não é do seu
-computador. Wifi conectado mas sem internet? Você descobre em segundos —
-com uma notificação na área de trabalho no momento em que a conexão
-realmente cai, e outra quando volta.
+Quando uma videochamada engasga ou uma página trava, esta extensão diz de que
+lado está o problema.
 
-**Encontre o culpado em 3 segundos**
-- 🎛️ Selo na barra = luz de diagnóstico sempre ligada. Verde significa
-  internet ok — se ainda estiver travando, olhe para o PC, não para o
-  roteador
-- 🐢 Aviso de lentidão quando a velocidade cai abaixo do limite que você
-  definir — prova instantânea de que é a rede, não você
-- 🔴 Alerta no momento exato em que a internet cai
-- 🟢 Notificação de reconexão mostrando quanto tempo você ficou offline
+Ela verifica a conexão cerca de uma vez por minuto enviando uma requisição
+pequena a um endpoint público operado pelo Google ou pela Cloudflare. Um
+ícone de wifi cheio significa apenas que o seu roteador responde, então a
+verificação vai além do roteador para confirmar que a conexão realmente
+funciona. O selo na barra de ferramentas mostra o estado atual.
 
-**Por que é diferente**
-- Verifica a internet de verdade (endpoints do Google / Cloudflare) — ícone
-  de wifi cheio só prova que o roteador responde
-- Notifica apenas em mudanças reais de estado (caiu / lenta / voltou) —
-  nunca spam
-- 🌐 7 idiomas (incluindo português), segue o idioma do sistema ou escolha
-  manualmente
-- 🔒 Zero configuração, sem conta, sem rastreamento, sem coleta de dados —
-  tudo fica no seu aparelho. Só 3 permissões.
+O que faz:
+- Mostra o estado atual da conexão no selo da barra de ferramentas
+- Envia uma notificação na área de trabalho quando a conexão é perdida
+- Envia uma notificação quando ela volta, informando quanto tempo ficou fora
+- Opcionalmente avisa quando a velocidade medida fica abaixo de um limite que
+  você definir
+- Permite ligar ou desligar cada notificação separadamente
 
-**Momento real**
-Internet caindo toda hora na videochamada → o selo mostra "lenta" → é a
-internet, não a sua máquina → você troca para o hotspot em vez de reiniciar
-à toa.
+Você é avisado apenas quando o estado muda, então a extensão fica quieta
+enquanto está tudo bem.
 
-**Para quem é**
-- Quem trabalha remoto e precisa saber "sou eu ou é o Zoom?"
-- Qualquer pessoa com internet instável — cafés, trens, wifi compartilhado
-- Streamers, traders e criadores que não podem ter uma queda silenciosa
-
-Como funciona: uma verificação de conectividade minúscula, cerca de uma vez
-por minuto, em endpoints públicos (Google / Cloudflare). Só mudanças de
-estado — sem ruído.
+As configurações e o último estado ficam guardados no seu aparelho. Não há
+conta, nem cadastro, nem análise de dados.
 
 ### PL
 
-**Zoom się zacina? Strona się nie ładuje? To komputer — czy internet?**
+To twój komputer czy twoje łącze?
 
-Przestań zgadywać. Alert rozłączenia internetu pinguje prawdziwy internet
-(nie tylko router) i pokazuje werdykt na plakietce paska narzędzi: jeśli
-internet jest wolny albo padł, to nie wina twojego komputera. Wifi
-połączone, ale bez internetu? Dowiesz się w kilka sekund — z powiadomieniem
-na pulpicie w chwili, gdy połączenie naprawdę się rozłącza, i drugim, gdy
-wraca.
+Gdy rozmowa wideo się zacina albo strona przestaje się ładować, to
+rozszerzenie mówi, po której stronie jest problem.
 
-**Znajdź winnego w 3 sekundy**
-- 🎛️ Plakietka na pasku = stale włączona lampka diagnostyczna. Zielona
-  znaczy, że internet działa — jeśli dalej się tnie, sprawdź komputer, nie
-  router
-- 🐢 Ostrzeżenie o wolnym łączu, gdy prędkość spadnie poniżej ustawionego
-  progu — natychmiastowy dowód, że to sieć, nie ty
-- 🔴 Alert w chwili, gdy internet naprawdę się rozłącza
-- 🟢 Powiadomienie o powrocie połączenia z czasem trwania przerwy
+Sprawdza połączenie mniej więcej raz na minutę, wysyłając małe zapytanie do
+publicznego endpointu prowadzonego przez Google lub Cloudflare. Pełna ikona
+wifi oznacza tylko, że router odpowiada, więc sprawdzenie sięga poza router,
+by potwierdzić, że połączenie naprawdę działa. Plakietka na pasku narzędzi
+pokazuje bieżący stan.
 
-**Czym się różni**
-- Sprawdza prawdziwy internet (endpointy Google / Cloudflare) — pełna ikona
-  wifi dowodzi tylko, że router odpowiada
-- Powiadamia wyłącznie przy realnej zmianie stanu (brak / wolno / powrót) —
-  nigdy spam
-- 🌐 7 języków (w tym polski), podąża za językiem systemu albo wybierz
-  ręcznie
-- 🔒 Zero konfiguracji, bez konta, bez śledzenia, bez zbierania danych —
-  wszystko zostaje na twoim urządzeniu. Tylko 3 uprawnienia.
+Co robi:
+- Pokazuje bieżący stan połączenia na plakietce paska narzędzi
+- Wysyła powiadomienie na pulpicie, gdy połączenie zostaje utracone
+- Wysyła powiadomienie, gdy wraca, wraz z czasem trwania przerwy
+- Opcjonalnie ostrzega, gdy zmierzona prędkość spadnie poniżej ustawionego
+  progu
+- Pozwala włączyć lub wyłączyć każde powiadomienie osobno
 
-**Scena z życia**
-Wideorozmowa się zacina → plakietka pokazuje "wolno" → to internet, nie
-twój sprzęt → przełączasz się na hotspot zamiast restartować na darmo.
+Powiadomienia pojawiają się tylko przy zmianie stanu, więc dopóki wszystko
+działa, rozszerzenie milczy.
 
-**Dla kogo**
-- Pracujący zdalnie, którzy chcą wiedzieć "to ja czy Zoom?"
-- Każdy, komu internet co chwilę się rozłącza — kawiarnie, pociągi, wspólne
-  wifi
-- Streamerzy, traderzy i twórcy, których cicha przerwa słono kosztuje
-
-Jak to działa: malutkie sprawdzenie łączności mniej więcej raz na minutę do
-publicznych endpointów (Google / Cloudflare). Tylko zmiany stanu — bez
-szumu.
-
----
+Ustawienia i ostatni stan są zapisywane na twoim urządzeniu. Nie ma konta,
+rejestracji ani analityki.
 
 ## 3. Permission justification (대시보드 "권한 사유")
 
