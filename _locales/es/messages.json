@@ -3,7 +3,7 @@
     "message": "Alerta de Caída de Internet"
   },
   "appDesc": {
-    "message": "¿Va lento? Averigua en 3 segundos si es tu PC o tu internet. Alerta cuando se cae el internet, aviso de lentitud y de recuperación."
+    "message": "Comprueba si tu conexión a internet funciona de verdad y te avisa cuando se cae o vuelve."
   },
   "popupTitle": {
     "message": "Estado de la conexión"

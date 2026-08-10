@@ -3,7 +3,7 @@
     "message": "İnternet Kesintisi Uyarısı"
   },
   "appDesc": {
-    "message": "Takılma mı var? 3 saniyede anlayın: PC mi, internet mi? İnternet kesilince uyarı, yavaşlama ve bağlantı geri gelme bildirimi."
+    "message": "İnternet bağlantınızın gerçekten çalışıp çalışmadığını kontrol eder ve koptuğunda veya geri geldiğinde bildirir."
   },
   "popupTitle": {
     "message": "Bağlantı Durumu"

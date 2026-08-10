@@ -3,7 +3,7 @@
     "message": "Alerta de Queda de Internet"
   },
   "appDesc": {
-    "message": "Travando? Descubra em 3 segundos se é o seu PC ou a sua internet. Alerta de internet caindo, aviso de lentidão e de reconexão."
+    "message": "Verifica se a sua conexão com a internet está mesmo funcionando e avisa quando ela cai ou volta."
   },
   "popupTitle": {
     "message": "Status da conexão"

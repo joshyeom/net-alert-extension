@@ -3,7 +3,7 @@
     "message": "Alert rozłączenia internetu"
   },
   "appDesc": {
-    "message": "Tnie się? W 3 sekundy sprawdź, czy to komputer, czy internet. Alert o utracie internetu, wolnym łączu i powrocie połączenia."
+    "message": "Sprawdza, czy twoje połączenie z internetem naprawdę działa, i powiadamia, gdy zniknie lub wróci."
   },
   "popupTitle": {
     "message": "Stan połączenia"
