@@ -1,8 +1,21 @@
-// 팝업: 상태/속도 표시 + 설정 뷰(언어/속도/알림). i18n.js 공유 모듈 사용.
+// 팝업: 상태/속도 표시 + 끊김 기록 뷰 + 설정 뷰(언어/속도/알림). i18n.js 공유 모듈 사용.
 const STORE_KEY = "netState";
 const SPEED_KEY = "speedState";
 const THRESHOLD_KEY = "speedThreshold";
 const DEFAULT_THRESHOLD = 10;
+const LOG_KEY = "outageLog"; // SW 가 복구 시 쌓는 [{start, end, partial?}]
+const RECOVERY_COUNT_KEY = "recoveryCount";
+const REVIEW_DISMISSED_KEY = "reviewDismissed";
+const REVIEW_MIN_RECOVERIES = 3; // 이만큼 복구를 겪은 뒤에야 리뷰를 부탁한다
+const HIST_WINDOW_MS = 7 * 24 * 60 * 60 * 1000;
+const HIST_LIST_MAX = 30;
+// 스토어별 리뷰 페이지. Edge·Firefox 는 게시 후 URL 확정되면 채운다(null 이면 배너 숨김).
+const REVIEW_URLS = {
+  chrome:
+    "https://chromewebstore.google.com/detail/egidejbpdcankobpbnofddmjooiicbgg/reviews",
+  edge: null,
+  firefox: null,
+};
 const SETTINGS_KEY = "settings";
 const DEFAULT_SETTINGS = {
   speedTest: true,
@@ -49,6 +62,16 @@ const TEXT_MAP = {
   permBody: "permBody",
   permBtn: "permBtn",
   permGuide: "permGuide",
+  histTitle: "histTitle",
+  histWeek: "histWeek",
+  lblHistCount: "histCount",
+  lblHistTotal: "histTotal",
+  lblHistLongest: "histLongest",
+  histEmpty: "histEmpty",
+  histNote: "histPartialNote",
+  btnHistClear: "histClear",
+  reviewAsk: "reviewAsk",
+  btnReview: "reviewBtn",
 };
 
 function applyStaticText() {
@@ -67,7 +90,7 @@ function clock(ts) {
 }
 
 async function renderStatus() {
-  const obj = await chrome.storage.local.get(STORE_KEY);
+  const obj = await browser.storage.local.get(STORE_KEY);
   const s = obj[STORE_KEY];
   const dot = $("dot"),
     label = $("label"),
@@ -95,7 +118,7 @@ async function renderStatus() {
 }
 
 async function renderSpeed() {
-  const obj = await chrome.storage.local.get(SPEED_KEY);
+  const obj = await browser.storage.local.get(SPEED_KEY);
   const s = obj[SPEED_KEY];
   const el = $("speedNow");
   const labelSpan = document.createElement("span");
@@ -111,25 +134,127 @@ async function renderSpeed() {
   el.replaceChildren(labelSpan, valueB);
 }
 
+// ---- 끊김 기록 ----
+function formatDuration(ms) {
+  const totalSec = Math.round(ms / 1000);
+  const h = Math.floor(totalSec / 3600);
+  const m = Math.floor((totalSec % 3600) / 60);
+  const s = totalSec % 60;
+  if (h > 0) return t("durationHourMin", [String(h), String(m)]);
+  if (m > 0) return t("durationMinSec", [String(m), String(s)]);
+  return t("durationSec", [String(s)]);
+}
+
+function formatWhen(ts) {
+  const locale = (document.documentElement.lang || "en").replace("_", "-");
+  return new Date(ts).toLocaleString(locale, {
+    month: "short",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+}
+
+async function getLog() {
+  const obj = await browser.storage.local.get(LOG_KEY);
+  return Array.isArray(obj[LOG_KEY]) ? obj[LOG_KEY] : [];
+}
+
+async function renderHistory() {
+  const log = await getLog();
+  const since = Date.now() - HIST_WINDOW_MS;
+  const week = log.filter((e) => e.end >= since);
+  const total = week.reduce((acc, e) => acc + (e.end - e.start), 0);
+  const longest = week.reduce((acc, e) => Math.max(acc, e.end - e.start), 0);
+
+  $("histSummaryText").textContent = t("histSummary", [
+    String(week.length),
+    week.length ? formatDuration(total) : t("speedDash"),
+  ]);
+  $("stCount").textContent = String(week.length);
+  $("stTotal").textContent = week.length ? formatDuration(total) : t("speedDash");
+  $("stLongest").textContent = week.length ? formatDuration(longest) : t("speedDash");
+
+  const rows = log
+    .slice(-HIST_LIST_MAX)
+    .reverse()
+    .map((e) => {
+      const row = document.createElement("div");
+      row.className = "hrow";
+      const when = document.createElement("span");
+      when.textContent = formatWhen(e.start);
+      const dur = document.createElement("b");
+      dur.textContent = (e.partial ? "≥ " : "") + formatDuration(e.end - e.start);
+      row.append(when, dur);
+      return row;
+    });
+  $("histList").replaceChildren(...rows);
+  $("histEmpty").style.display = log.length ? "none" : "block";
+  $("histNote").style.display = log.some((e) => e.partial) ? "block" : "none";
+  $("btnHistClear").style.display = log.length ? "block" : "none";
+}
+
+$("histSummary").addEventListener("click", () =>
+  document.body.classList.add("historyOpen")
+);
+$("closeHistory").addEventListener("click", () =>
+  document.body.classList.remove("historyOpen")
+);
+$("btnHistClear").addEventListener("click", () =>
+  browser.storage.local.remove(LOG_KEY)
+);
+
+// ---- 리뷰 요청 배너 ----
+// 보상 없는 요청은 스토어 정책상 허용. 복구를 몇 번 겪어 가치를 확인한 사용자에게만,
+// 닫으면 영구히 숨긴다.
+function reviewUrl() {
+  if (location.protocol === "moz-extension:") return REVIEW_URLS.firefox;
+  if (/Edg\//.test(navigator.userAgent)) return REVIEW_URLS.edge;
+  return REVIEW_URLS.chrome;
+}
+
+async function renderReview() {
+  const url = reviewUrl();
+  const obj = await browser.storage.local.get([
+    RECOVERY_COUNT_KEY,
+    REVIEW_DISMISSED_KEY,
+  ]);
+  const show =
+    !!url &&
+    !obj[REVIEW_DISMISSED_KEY] &&
+    (obj[RECOVERY_COUNT_KEY] || 0) >= REVIEW_MIN_RECOVERIES;
+  $("review").classList.toggle("show", show);
+}
+
+async function dismissReview() {
+  await browser.storage.local.set({ [REVIEW_DISMISSED_KEY]: true });
+  $("review").classList.remove("show");
+}
+$("reviewClose").addEventListener("click", dismissReview);
+$("btnReview").addEventListener("click", async () => {
+  window.open(reviewUrl(), "_blank");
+  await dismissReview();
+});
+
 // ---- 설정 뷰 ----
 async function getSettings() {
-  const obj = await chrome.storage.local.get(SETTINGS_KEY);
+  const obj = await browser.storage.local.get(SETTINGS_KEY);
   return { ...DEFAULT_SETTINGS, ...(obj[SETTINGS_KEY] || {}) };
 }
 
 async function saveSettings(patch) {
   const cur = await getSettings();
-  await chrome.storage.local.set({ [SETTINGS_KEY]: { ...cur, ...patch } });
+  await browser.storage.local.set({ [SETTINGS_KEY]: { ...cur, ...patch } });
 }
 
 async function initSettingsView() {
   const s = await getSettings();
 
   // 언어
-  const langObj = await chrome.storage.local.get(I18N_LANG_KEY);
+  const langObj = await browser.storage.local.get(I18N_LANG_KEY);
   $("selLang").value = langObj[I18N_LANG_KEY] || "system";
   $("selLang").addEventListener("change", async (e) => {
-    await chrome.storage.local.set({ [I18N_LANG_KEY]: e.target.value });
+    await browser.storage.local.set({ [I18N_LANG_KEY]: e.target.value });
     await reloadLanguage(); // 즉시 UI 갱신
   });
 
@@ -140,7 +265,7 @@ async function initSettingsView() {
   );
 
   // 임계값
-  const thObj = await chrome.storage.local.get(THRESHOLD_KEY);
+  const thObj = await browser.storage.local.get(THRESHOLD_KEY);
   $("threshold").value = thObj[THRESHOLD_KEY] || DEFAULT_THRESHOLD;
   let thTimer;
   $("threshold").addEventListener("input", () => {
@@ -148,7 +273,7 @@ async function initSettingsView() {
     if (!(v > 0)) return;
     clearTimeout(thTimer);
     thTimer = setTimeout(
-      () => chrome.storage.local.set({ [THRESHOLD_KEY]: v }),
+      () => browser.storage.local.set({ [THRESHOLD_KEY]: v }),
       400
     );
   });
@@ -191,7 +316,7 @@ $("btnSpeedNow").addEventListener("click", async () => {
   btn.textContent = t("speedMeasuring");
   err.classList.remove("show");
 
-  const res = await chrome.runtime
+  const res = await browser.runtime
     .sendMessage({ type: "speedNow" })
     .catch(() => null);
 
@@ -204,10 +329,11 @@ $("btnSpeedNow").addEventListener("click", async () => {
 });
 
 // ---- 권한 배너 ----
-function checkPermission() {
-  chrome.notifications.getPermissionLevel((level) => {
-    $("perm").classList.toggle("show", level !== "granted");
-  });
+async function checkPermission() {
+  // Firefox 에는 getPermissionLevel 이 없다 — 배너 판단 자체를 건너뛴다.
+  if (!browser.notifications.getPermissionLevel) return;
+  const level = await browser.notifications.getPermissionLevel();
+  $("perm").classList.toggle("show", level !== "granted");
 }
 $("permBtn").addEventListener("click", () =>
   $("permGuide").classList.add("show")
@@ -221,21 +347,25 @@ async function reloadLanguage() {
   applyStaticText();
   await renderStatus();
   await renderSpeed();
+  await renderHistory();
 }
 
 // ---- 초기화 ----
 (async () => {
   await reloadLanguage();
   await initSettingsView();
+  await renderReview();
   checkPermission();
 
-  chrome.storage.onChanged.addListener((changes, area) => {
+  browser.storage.onChanged.addListener((changes, area) => {
     if (area !== "local") return;
     if (changes[STORE_KEY]) renderStatus();
     if (changes[SPEED_KEY]) renderSpeed();
+    if (changes[LOG_KEY]) renderHistory();
+    if (changes[RECOVERY_COUNT_KEY]) renderReview();
   });
 
   // 팝업 열린 순간 SW에 실시간 재확인 요청 — 저장된 stale "연결됨" 방지.
   // 상태가 바뀌면 storage.onChanged 가 renderStatus 를 다시 호출함.
-  chrome.runtime.sendMessage({ type: "checkNow" }).catch(() => {});
+  browser.runtime.sendMessage({ type: "checkNow" }).catch(() => {});
 })();

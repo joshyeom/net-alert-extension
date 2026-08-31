@@ -1,18 +1,28 @@
 // 인터넷 끊김 알림 — 백그라운드 service worker (MV3)
 //
 // 동작:
-//  - chrome.alarms 1분 주기로 깨어나 heartbeat 핑 실행
+//  - browser.alarms 30초 주기로 깨어나 heartbeat 핑 실행
 //  - navigator.onLine + 실제 fetch 핑 이중 검증
 //  - 핑 N회 연속 실패하면 offline 판정 (오판 방지)
 //  - 상태가 바뀌는 순간(online↔offline)에만 OS 알림 1회
 //  - 아이콘 뱃지 색으로 현재 상태 표시
-
-importScripts("i18n.js");
+//  - 복구될 때마다 끊김 구간을 outageLog 에 누적 (팝업의 기록/통계용)
+//
+// Chrome 은 service worker 로, Firefox 는 이벤트 페이지(background.scripts)로
+// 같은 파일을 실행한다. 이벤트 페이지엔 importScripts 가 없고 i18n.js 가
+// manifest 순서대로 먼저 로드되므로 분기한다.
+if (typeof importScripts === "function") importScripts("i18n.js");
 
 const ALARM_NAME = "heartbeat";
+// Chrome 120+ 최소 주기 0.5분. 5초 루프가 SW 종료로 끊겨도 30초 안에 다시 깬다.
+const HEARTBEAT_PERIOD_MIN = 0.5;
 const PING_TIMEOUT_MS = 5000; // 핑 1회 타임아웃
 const FAIL_THRESHOLD = 3; // 이만큼 연속 실패해야 offline 판정
 const FAST_LOOP_MS = 5000; // 5초 자가 재예약 루프 주기 (빠른 감지용)
+// 마지막 확인 뒤 이만큼 비어 있으면 절전·브라우저 종료로 본다.
+// 그 사이는 관측하지 못한 구간이라 끊김 시간에 넣지 않는다.
+const GAP_MS = 3 * 60 * 1000;
+const LOG_MAX = 500; // outageLog 최대 보관 건수
 
 // 하나만 성공해도 online 으로 본다 (단일 엔드포인트 장애 오판 방지)
 const PING_URLS = [
@@ -32,6 +42,8 @@ const STORE_KEY = "netState";
 const SPEED_KEY = "speedState"; // {mbps, lastTs, slow:boolean}
 const THRESHOLD_KEY = "speedThreshold"; // 사용자 커스텀 임계값(Mbps)
 const SETTINGS_KEY = "settings"; // {speedTest, speedPeriod, notifyDown, notifyUp, notifySlow}
+const LOG_KEY = "outageLog"; // [{start, end, partial?}] 오래된 것부터, 최대 LOG_MAX
+const RECOVERY_COUNT_KEY = "recoveryCount"; // 복구 누적 횟수 (팝업 리뷰 요청 조건)
 
 const DEFAULT_SETTINGS = {
   speedTest: true, // 속도 측정 on/off
@@ -42,7 +54,7 @@ const DEFAULT_SETTINGS = {
 };
 
 async function getSettings() {
-  const obj = await chrome.storage.local.get(SETTINGS_KEY);
+  const obj = await browser.storage.local.get(SETTINGS_KEY);
   return { ...DEFAULT_SETTINGS, ...(obj[SETTINGS_KEY] || {}) };
 }
 
@@ -55,7 +67,7 @@ async function getSettings() {
 // }
 
 async function getState() {
-  const obj = await chrome.storage.local.get(STORE_KEY);
+  const obj = await browser.storage.local.get(STORE_KEY);
   return (
     obj[STORE_KEY] || {
       status: "unknown",
@@ -67,7 +79,20 @@ async function getState() {
 }
 
 async function setState(next) {
-  await chrome.storage.local.set({ [STORE_KEY]: next });
+  await browser.storage.local.set({ [STORE_KEY]: next });
+}
+
+// 끊김 구간 1건을 로그 끝에 추가. partial=true 는 관측이 중간에 끊겨
+// (절전·종료) 실제보다 짧게 기록된 구간.
+async function appendOutage(start, end, partial) {
+  if (!(end > start)) return;
+  const obj = await browser.storage.local.get(LOG_KEY);
+  const log = Array.isArray(obj[LOG_KEY]) ? obj[LOG_KEY] : [];
+  const entry = { start, end };
+  if (partial) entry.partial = true;
+  log.push(entry);
+  if (log.length > LOG_MAX) log.splice(0, log.length - LOG_MAX);
+  await browser.storage.local.set({ [LOG_KEY]: log });
 }
 
 // ---- 핑 --------------------------------------------------------------------
@@ -81,15 +106,18 @@ async function pingOnce() {
   const attempts = PING_URLS.map((url) => {
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), PING_TIMEOUT_MS);
+    // no-cors: 응답 본문·상태는 못 읽지만 "응답이 왔다" 자체가 연결 증거다.
+    // Firefox MV3 는 host_permissions 가 설치 시 부여되지 않아 cors 모드면
+    // CORS 헤더 없는 generate_204 가 실패로 잡혀 끊김으로 오판한다.
     return fetch(url, {
       method: "GET",
+      mode: "no-cors",
       cache: "no-store",
       signal: controller.signal,
     })
-      .then((res) => {
+      .then(() => {
         clearTimeout(timer);
-        // no-cors 가 아니므로 status 확인 가능. 응답이 오기만 하면 연결됨으로 본다.
-        return res.ok || res.status === 204 || res.status === 200;
+        return true;
       })
       .catch(() => {
         clearTimeout(timer);
@@ -120,9 +148,9 @@ function formatClock(ts) {
 }
 
 async function notifyDown(ts) {
-  chrome.notifications.create("net-down", {
+  browser.notifications.create("net-down", {
     type: "basic",
-    iconUrl: chrome.runtime.getURL("icons/icon128.png"),
+    iconUrl: browser.runtime.getURL("icons/icon128.png"),
     title: await tLang("notifyDownTitle"),
     message: await tLang("notifyDownMsg", [formatClock(ts)]),
     priority: 2,
@@ -130,9 +158,9 @@ async function notifyDown(ts) {
 }
 
 async function notifyUp(downDurationMs) {
-  chrome.notifications.create("net-up", {
+  browser.notifications.create("net-up", {
     type: "basic",
-    iconUrl: chrome.runtime.getURL("icons/icon128.png"),
+    iconUrl: browser.runtime.getURL("icons/icon128.png"),
     title: await tLang("notifyUpTitle"),
     message: await tLang("notifyUpMsg", [await formatDuration(downDurationMs)]),
     priority: 2,
@@ -142,21 +170,21 @@ async function notifyUp(downDurationMs) {
 // ---- 뱃지 ------------------------------------------------------------------
 function setBadge(status) {
   if (status === "offline") {
-    chrome.action.setBadgeBackgroundColor({ color: "#e53935" }); // 빨강
-    chrome.action.setBadgeText({ text: "!" });
+    browser.action.setBadgeBackgroundColor({ color: "#e53935" }); // 빨강
+    browser.action.setBadgeText({ text: "!" });
   } else if (status === "online") {
-    chrome.action.setBadgeBackgroundColor({ color: "#43a047" }); // 초록
-    chrome.action.setBadgeText({ text: "" }); // 정상은 깔끔하게 비움
+    browser.action.setBadgeBackgroundColor({ color: "#43a047" }); // 초록
+    browser.action.setBadgeText({ text: "" }); // 정상은 깔끔하게 비움
   } else {
-    chrome.action.setBadgeText({ text: "" });
+    browser.action.setBadgeText({ text: "" });
   }
 }
 
 // ---- 속도 측정 -------------------------------------------------------------
 async function notifySlow(mbps, threshold) {
-  chrome.notifications.create("net-slow", {
+  browser.notifications.create("net-slow", {
     type: "basic",
-    iconUrl: chrome.runtime.getURL("icons/icon128.png"),
+    iconUrl: browser.runtime.getURL("icons/icon128.png"),
     title: await tLang("notifySlowTitle"),
     message: await tLang("notifySlowMsg", [mbps.toFixed(1), String(threshold)]),
     priority: 1,
@@ -164,7 +192,7 @@ async function notifySlow(mbps, threshold) {
 }
 
 async function getThreshold() {
-  const obj = await chrome.storage.local.get(THRESHOLD_KEY);
+  const obj = await browser.storage.local.get(THRESHOLD_KEY);
   const v = obj[THRESHOLD_KEY];
   return typeof v === "number" && v > 0 ? v : DEFAULT_SPEED_THRESHOLD;
 }
@@ -234,7 +262,7 @@ async function measureSpeedNow() {
   if (samples.length === 0) return null;
   const mbps = Math.max(...samples);
   const threshold = await getThreshold();
-  await chrome.storage.local.set({
+  await browser.storage.local.set({
     [SPEED_KEY]: { mbps, lastTs: Date.now(), slow: mbps < threshold },
   });
   return mbps;
@@ -252,7 +280,7 @@ async function checkSpeed() {
   if (mbps == null) return; // 측정 실패는 조용히 무시 (끊김 알림이 따로 처리)
 
   const threshold = await getThreshold();
-  const prevObj = await chrome.storage.local.get(SPEED_KEY);
+  const prevObj = await browser.storage.local.get(SPEED_KEY);
   const prev = prevObj[SPEED_KEY] || { slow: false };
 
   const slow = mbps < threshold;
@@ -261,7 +289,7 @@ async function checkSpeed() {
     await notifySlow(mbps, threshold);
   }
 
-  await chrome.storage.local.set({
+  await browser.storage.local.set({
     [SPEED_KEY]: { mbps, lastTs: Date.now(), slow },
   });
 }
@@ -269,7 +297,18 @@ async function checkSpeed() {
 // ---- 핵심: 핑 → 상태 전환 판정 ---------------------------------------------
 async function checkAndUpdate() {
   const now = Date.now();
-  const prev = await getState();
+  let prev = await getState();
+
+  // 관측 공백(절전·브라우저 종료) 뒤 첫 확인: 공백 전 상태를 이어 붙이면
+  // "5시간 만에 복구" 같은 허위 다운타임이 나온다. 끊긴 채로 공백에 들어갔다면
+  // 마지막으로 실제 본 시각까지만 partial 로 기록하고, 상태는 처음부터 다시 판정한다.
+  if (prev.lastCheckTs > 0 && now - prev.lastCheckTs > GAP_MS) {
+    if (prev.status === "offline") {
+      await appendOutage(prev.firstFailTs || prev.sinceTs, prev.lastCheckTs, true);
+    }
+    prev = { status: "unknown", sinceTs: now, lastCheckTs: 0, failStreak: 0 };
+  }
+
   const alive = await pingOnce();
 
   let failStreak = alive ? 0 : prev.failStreak + 1;
@@ -306,6 +345,11 @@ async function checkAndUpdate() {
       // 첫 실패 시점부터 복구까지 = 실제 다운타임 (없으면 status 시작 시점 폴백)
       const downStart = prev.firstFailTs || prev.sinceTs;
       if (settings.notifyUp) await notifyUp(now - downStart);
+      await appendOutage(downStart, now, false);
+      const cnt = await browser.storage.local.get(RECOVERY_COUNT_KEY);
+      await browser.storage.local.set({
+        [RECOVERY_COUNT_KEY]: (cnt[RECOVERY_COUNT_KEY] || 0) + 1,
+      });
     }
   }
 
@@ -324,7 +368,7 @@ async function checkAndUpdate() {
 }
 
 // ---- 빠른 감지 루프 (5초 자가 재예약) --------------------------------------
-// chrome.alarms 최소 주기는 1분이라 빠른 끊김 감지가 불가능.
+// browser.alarms 최소 주기는 1분이라 빠른 끊김 감지가 불가능.
 // setTimeout 을 매번 재예약해 ~5초 간격으로 핑한다. 단일 타이머라 중첩 없음.
 // 기존 1분 알람은 SW가 죽었다 깨어날 때를 대비한 fallback 으로 유지.
 let fastLoopTimer = null;
@@ -342,12 +386,12 @@ function scheduleFastLoop() {
 
 // ---- 부팅 / 알람 등록 ------------------------------------------------------
 async function ensureAlarm() {
-  const existing = await chrome.alarms.get(ALARM_NAME);
-  if (!existing) {
-    // periodInMinutes 최소 1 (MV3 제약). delayInMinutes 로 즉시 1회 가깝게.
-    chrome.alarms.create(ALARM_NAME, {
+  const existing = await browser.alarms.get(ALARM_NAME);
+  // 없거나 주기가 다르면(구버전 1분 알람) 재생성. delayInMinutes 로 즉시 1회 가깝게.
+  if (!existing || existing.periodInMinutes !== HEARTBEAT_PERIOD_MIN) {
+    browser.alarms.create(ALARM_NAME, {
       delayInMinutes: 0.1,
-      periodInMinutes: 1,
+      periodInMinutes: HEARTBEAT_PERIOD_MIN,
     });
   }
   await syncSpeedAlarm();
@@ -356,36 +400,36 @@ async function ensureAlarm() {
 // 속도측정 알람을 현재 설정(on/off, 주기)에 맞춰 생성/갱신/제거
 async function syncSpeedAlarm() {
   const settings = await getSettings();
-  const existing = await chrome.alarms.get(SPEED_ALARM_NAME);
+  const existing = await browser.alarms.get(SPEED_ALARM_NAME);
 
   if (!settings.speedTest) {
-    if (existing) await chrome.alarms.clear(SPEED_ALARM_NAME);
+    if (existing) await browser.alarms.clear(SPEED_ALARM_NAME);
     return;
   }
   // 주기 바뀌었거나 알람 없으면 재생성
   if (!existing || existing.periodInMinutes !== settings.speedPeriod) {
-    chrome.alarms.create(SPEED_ALARM_NAME, {
+    browser.alarms.create(SPEED_ALARM_NAME, {
       delayInMinutes: 0.2,
       periodInMinutes: settings.speedPeriod,
     });
   }
 }
 
-chrome.runtime.onInstalled.addListener(() => {
+browser.runtime.onInstalled.addListener(() => {
   ensureAlarm();
   checkAndUpdate();
   checkSpeed();
   scheduleFastLoop();
 });
 
-chrome.runtime.onStartup.addListener(() => {
+browser.runtime.onStartup.addListener(() => {
   ensureAlarm();
   checkAndUpdate();
   checkSpeed();
   scheduleFastLoop();
 });
 
-chrome.alarms.onAlarm.addListener((alarm) => {
+browser.alarms.onAlarm.addListener((alarm) => {
   if (alarm.name === ALARM_NAME) {
     checkAndUpdate();
     // SW가 죽었다 알람으로 깨어났으면 루프가 멈춰있음 — 다시 가동
@@ -398,7 +442,7 @@ self.addEventListener("online", () => checkAndUpdate());
 self.addEventListener("offline", () => checkAndUpdate());
 
 // 팝업이 열릴 때 즉시 재확인 요청 (저장된 stale 상태 대신 실시간 반영)
-chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
+browser.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
   if (msg && msg.type === "checkNow") {
     // 루프가 멈춰있으면 같이 되살림 (SW 깨어난 김에)
     if (!fastLoopTimer) scheduleFastLoop();
@@ -419,12 +463,12 @@ chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
 });
 
 // 알림 클릭하면 닫기
-chrome.notifications.onClicked.addListener((id) => {
-  chrome.notifications.clear(id);
+browser.notifications.onClicked.addListener((id) => {
+  browser.notifications.clear(id);
 });
 
 // 설정(속도측정 on/off·주기) 바뀌면 알람 즉시 동기화
-chrome.storage.onChanged.addListener((changes, area) => {
+browser.storage.onChanged.addListener((changes, area) => {
   if (area === "local" && changes[SETTINGS_KEY]) syncSpeedAlarm();
 });
 

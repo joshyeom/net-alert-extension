@@ -148,5 +148,41 @@
   },
   "offLabel": {
     "message": "끄기"
+  },
+  "histTitle": {
+    "message": "끊김 기록"
+  },
+  "histSummary": {
+    "message": "최근 7일: $1회 · 총 $2"
+  },
+  "histWeek": {
+    "message": "최근 7일"
+  },
+  "histCount": {
+    "message": "끊김 횟수"
+  },
+  "histTotal": {
+    "message": "총 끊김 시간"
+  },
+  "histLongest": {
+    "message": "최장"
+  },
+  "histEmpty": {
+    "message": "아직 기록된 끊김이 없습니다."
+  },
+  "histClear": {
+    "message": "기록 지우기"
+  },
+  "histPartialNote": {
+    "message": "≥ = 절전·종료로 관측이 끊겨 실제보다 짧게 기록됨"
+  },
+  "durationHourMin": {
+    "message": "$1시간 $2분"
+  },
+  "reviewAsk": {
+    "message": "도움이 되고 있나요? 짧은 리뷰가 다른 분들이 찾는 데 큰 힘이 됩니다."
+  },
+  "reviewBtn": {
+    "message": "리뷰 남기기"
   }
 }

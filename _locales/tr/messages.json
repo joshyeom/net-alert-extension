@@ -148,5 +148,41 @@
   },
   "offLabel": {
     "message": "Kapalı"
+  },
+  "histTitle": {
+    "message": "Kesinti geçmişi"
+  },
+  "histSummary": {
+    "message": "Son 7 gün: $1 kesinti · $2"
+  },
+  "histWeek": {
+    "message": "Son 7 gün"
+  },
+  "histCount": {
+    "message": "Kesinti"
+  },
+  "histTotal": {
+    "message": "Toplam kesinti süresi"
+  },
+  "histLongest": {
+    "message": "En uzun"
+  },
+  "histEmpty": {
+    "message": "Henüz kayıtlı kesinti yok."
+  },
+  "histClear": {
+    "message": "Geçmişi temizle"
+  },
+  "histPartialNote": {
+    "message": "≥ = gözlem uyku veya kapatma nedeniyle sona erdi; gerçek kesinti daha uzundu"
+  },
+  "durationHourMin": {
+    "message": "$1 sa $2 dk"
+  },
+  "reviewAsk": {
+    "message": "İşinize yaradı mı? Kısa bir yorum başkalarının da bulmasına yardımcı olur."
+  },
+  "reviewBtn": {
+    "message": "Yorum yaz"
   }
 }

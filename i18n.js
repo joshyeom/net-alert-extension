@@ -2,6 +2,11 @@
 // 문자열 원본은 _locales/<lang>/messages.json 하나만 유지 (중복 금지).
 // 저장된 사용자 언어(system/ko/en)에 따라 런타임 오버라이드.
 
+// 크로스 브라우저 네임스페이스 — Firefox·Chrome 148+ 는 browser.* 가 기본,
+// 그 이전 Chrome 은 chrome.* 뿐이므로 별칭을 만든다(MV3 chrome.* 도 프로미스 반환).
+// 이 파일이 SW·popup·Firefox 이벤트 페이지 모두에서 가장 먼저 로드된다.
+globalThis.browser ??= globalThis.chrome;
+
 const I18N_LANG_KEY = "uiLang"; // "system" | 지원 로케일 코드
 const I18N_SUPPORTED = ["ko", "en", "es", "id", "tr", "pt_BR", "pl"];
 const I18N_FALLBACK = "en";
@@ -10,12 +15,12 @@ const _i18nCache = {}; // { ko: {key: "..."}, en: {...} }
 
 // 저장된 언어 설정 → 실제 사용할 로케일 코드로 해석
 async function resolveLang() {
-  const obj = await chrome.storage.local.get(I18N_LANG_KEY);
+  const obj = await browser.storage.local.get(I18N_LANG_KEY);
   const pref = obj[I18N_LANG_KEY] || "system";
   if (pref !== "system" && I18N_SUPPORTED.includes(pref)) return pref;
   // system: Chrome UI 언어 앞 2글자로 매칭, 미지원이면 fallback
   // (포르투갈어는 디렉토리가 pt_BR 하나뿐이라 pt-BR/pt-PT 모두 여기로)
-  const ui = (chrome.i18n.getUILanguage() || I18N_FALLBACK).slice(0, 2);
+  const ui = (browser.i18n.getUILanguage() || I18N_FALLBACK).slice(0, 2);
   const mapped = ui === "pt" ? "pt_BR" : ui;
   return I18N_SUPPORTED.includes(mapped) ? mapped : I18N_FALLBACK;
 }
@@ -23,7 +28,7 @@ async function resolveLang() {
 // 해당 로케일 messages.json 로드(캐시)
 async function loadMessages(lang) {
   if (_i18nCache[lang]) return _i18nCache[lang];
-  const url = chrome.runtime.getURL(`_locales/${lang}/messages.json`);
+  const url = browser.runtime.getURL(`_locales/${lang}/messages.json`);
   const res = await fetch(url);
   const json = await res.json();
   _i18nCache[lang] = json;

@@ -148,5 +148,41 @@
   },
   "offLabel": {
     "message": "Desactivado"
+  },
+  "histTitle": {
+    "message": "Historial de cortes"
+  },
+  "histSummary": {
+    "message": "Últimos 7 días: $1 cortes · $2"
+  },
+  "histWeek": {
+    "message": "Últimos 7 días"
+  },
+  "histCount": {
+    "message": "Cortes"
+  },
+  "histTotal": {
+    "message": "Tiempo sin conexión"
+  },
+  "histLongest": {
+    "message": "Más largo"
+  },
+  "histEmpty": {
+    "message": "Aún no hay cortes registrados."
+  },
+  "histClear": {
+    "message": "Borrar historial"
+  },
+  "histPartialNote": {
+    "message": "≥ = la observación terminó por suspensión o apagado; el corte real fue más largo"
+  },
+  "durationHourMin": {
+    "message": "$1 h $2 min"
+  },
+  "reviewAsk": {
+    "message": "¿Te resulta útil? Una reseña breve ayuda a que otros lo encuentren."
+  },
+  "reviewBtn": {
+    "message": "Escribir una reseña"
   }
 }

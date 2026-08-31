@@ -148,5 +148,41 @@
   },
   "offLabel": {
     "message": "Desativado"
+  },
+  "histTitle": {
+    "message": "Histórico de quedas"
+  },
+  "histSummary": {
+    "message": "Últimos 7 dias: $1 quedas · $2"
+  },
+  "histWeek": {
+    "message": "Últimos 7 dias"
+  },
+  "histCount": {
+    "message": "Quedas"
+  },
+  "histTotal": {
+    "message": "Tempo total offline"
+  },
+  "histLongest": {
+    "message": "Mais longa"
+  },
+  "histEmpty": {
+    "message": "Nenhuma queda registrada ainda."
+  },
+  "histClear": {
+    "message": "Limpar histórico"
+  },
+  "histPartialNote": {
+    "message": "≥ = observação interrompida por suspensão ou desligamento; a queda real foi mais longa"
+  },
+  "durationHourMin": {
+    "message": "$1 h $2 min"
+  },
+  "reviewAsk": {
+    "message": "Está sendo útil? Uma avaliação rápida ajuda outras pessoas a encontrar."
+  },
+  "reviewBtn": {
+    "message": "Escrever avaliação"
   }
 }
