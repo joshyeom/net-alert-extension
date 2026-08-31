@@ -148,5 +148,41 @@
   },
   "offLabel": {
     "message": "Mati"
+  },
+  "histTitle": {
+    "message": "Riwayat putus"
+  },
+  "histSummary": {
+    "message": "7 hari terakhir: $1 kali · $2"
+  },
+  "histWeek": {
+    "message": "7 hari terakhir"
+  },
+  "histCount": {
+    "message": "Putus"
+  },
+  "histTotal": {
+    "message": "Total waktu putus"
+  },
+  "histLongest": {
+    "message": "Terlama"
+  },
+  "histEmpty": {
+    "message": "Belum ada catatan putus."
+  },
+  "histClear": {
+    "message": "Hapus riwayat"
+  },
+  "histPartialNote": {
+    "message": "≥ = pemantauan berhenti karena tidur atau dimatikan; putus sebenarnya lebih lama"
+  },
+  "durationHourMin": {
+    "message": "$1 j $2 mnt"
+  },
+  "reviewAsk": {
+    "message": "Merasa terbantu? Ulasan singkat membantu orang lain menemukannya."
+  },
+  "reviewBtn": {
+    "message": "Tulis ulasan"
   }
 }

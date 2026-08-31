@@ -148,5 +148,41 @@
   },
   "offLabel": {
     "message": "Wył."
+  },
+  "histTitle": {
+    "message": "Historia przerw"
+  },
+  "histSummary": {
+    "message": "Ostatnie 7 dni: $1 przerw · $2"
+  },
+  "histWeek": {
+    "message": "Ostatnie 7 dni"
+  },
+  "histCount": {
+    "message": "Przerwy"
+  },
+  "histTotal": {
+    "message": "Łączny czas offline"
+  },
+  "histLongest": {
+    "message": "Najdłuższa"
+  },
+  "histEmpty": {
+    "message": "Brak zarejestrowanych przerw."
+  },
+  "histClear": {
+    "message": "Wyczyść historię"
+  },
+  "histPartialNote": {
+    "message": "≥ = obserwacja przerwana przez uśpienie lub wyłączenie; rzeczywista przerwa była dłuższa"
+  },
+  "durationHourMin": {
+    "message": "$1 h $2 min"
+  },
+  "reviewAsk": {
+    "message": "Przydaje się? Krótka opinia pomoże innym to znaleźć."
+  },
+  "reviewBtn": {
+    "message": "Napisz opinię"
   }
 }

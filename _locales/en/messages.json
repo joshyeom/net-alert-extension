@@ -148,5 +148,41 @@
   },
   "offLabel": {
     "message": "Off"
+  },
+  "histTitle": {
+    "message": "Outage history"
+  },
+  "histSummary": {
+    "message": "Last 7 days: $1 outages · $2"
+  },
+  "histWeek": {
+    "message": "Last 7 days"
+  },
+  "histCount": {
+    "message": "Outages"
+  },
+  "histTotal": {
+    "message": "Total downtime"
+  },
+  "histLongest": {
+    "message": "Longest"
+  },
+  "histEmpty": {
+    "message": "No outages recorded yet."
+  },
+  "histClear": {
+    "message": "Clear history"
+  },
+  "histPartialNote": {
+    "message": "≥ = observation ended by sleep or shutdown; the real outage was longer"
+  },
+  "durationHourMin": {
+    "message": "$1h $2m"
+  },
+  "reviewAsk": {
+    "message": "Finding this useful? A quick review helps others find it."
+  },
+  "reviewBtn": {
+    "message": "Write a review"
   }
 }
