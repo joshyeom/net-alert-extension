@@ -1,0 +1,193 @@
+- generic [ref=f5e1]:
+  - banner [ref=f5e2]:
+    - link "주요 콘텐츠로 이동" [ref=f5e3] [cursor=pointer]
+    - generic [ref=f5e4]:
+      - generic [ref=f5e5]:
+        - link "Chrome 웹 스토어 로고 Chrome 웹 스토어" [ref=f5e7] [cursor=pointer]:
+          - /url: ./
+          - img "Chrome 웹 스토어 로고" [ref=f5e8]
+          - generic [ref=f5e9]: Chrome 웹 스토어
+        - search "사이트 전체" [ref=f5e10]:
+          - generic [ref=f5e13]:
+            - combobox "Chrome 웹 스토어 검색" [active] [ref=f5e15]: 인터넷 끊김
+            - button "검색 설정 지우기" [ref=f5e17] [cursor=pointer]
+        - generic [ref=f5e20]:
+          - button "옵션 메뉴 더보기" [ref=f5e24] [cursor=pointer]
+          - generic [ref=f5e34]:
+            - button "Google 앱" [ref=f5e38] [cursor=pointer]
+            - link "로그인" [ref=f5e42] [cursor=pointer]:
+              - /url: https://accounts.google.com/ServiceLogin?passive=1209600&osid=1&continue=https://chromewebstore.google.com/search/%25EC%259D%25B8%25ED%2584%25B0%25EB%2584%25B7%2520%25EB%2581%258A%25EA%25B9%2580?hl%3Dko&followup=https://chromewebstore.google.com/search/%25EC%259D%25B8%25ED%2584%25B0%25EB%2584%25B7%2520%25EB%2581%258A%25EA%25B9%2580?hl%3Dko&hl=ko&ec=GAZApQM
+      - tablist [ref=f5e46]:
+        - generic [ref=f5e49]:
+          - tab "탐색" [ref=f5e50] [cursor=pointer]
+          - tab "확장 프로그램" [ref=f5e51] [cursor=pointer]
+          - tab "테마" [ref=f5e52] [cursor=pointer]
+  - generic [ref=f5e56]:
+    - generic [ref=f5e58]:
+      - generic [ref=f5e59]:
+        - heading "유형" [level=2] [ref=f5e60]
+        - toolbar "광고 확장 유형별로 항목 필터링" [ref=f5e61]:
+          - button "확장 프로그램" [ref=f5e64] [cursor=pointer]
+          - button "테마" [ref=f5e69] [cursor=pointer]
+      - generic [ref=f5e72]:
+        - heading "필터링 기준" [level=2] [ref=f5e73]
+        - generic [ref=f5e75] [cursor=pointer]:
+          - checkbox "추천 확장 프로그램" [ref=f5e77]
+          - generic [ref=f5e78]: 추천 확장 프로그램
+        - generic [ref=f5e81] [cursor=pointer]:
+          - checkbox "우수 게시자" [ref=f5e83]
+          - generic [ref=f5e84]: 우수 게시자
+      - generic [ref=f5e86]:
+        - heading "평점" [level=2] [ref=f5e87]
+        - radiogroup "평점" [ref=f5e88]:
+          - radio "별 5개" [ref=f5e89]
+          - radio "별 4개 이상" [ref=f5e95]:
+            - generic [aria-hidden] [ref=f5e102]: 이상
+          - radio "별 3개 이상" [ref=f5e103]:
+            - generic [aria-hidden] [ref=f5e111]: 이상
+          - radio "별 2개 이상" [ref=f5e112]:
+            - generic [aria-hidden] [ref=f5e121]: 이상
+      - generic [ref=f5e123]:
+        - button "모든 필터 지우기 버튼" [disabled] [ref=f5e124]:
+          - generic [aria-hidden] [ref=f5e126]: 모두 지우기
+        - tooltip [aria-hidden] [ref=f5e127]: 필터 옵션을 재설정합니다.
+    - main [ref=f5e128]:
+      - generic [ref=f5e129]:
+        - heading "검색결과" [level=1] [ref=f5e130]
+        - generic [ref=f5e131]:
+          - generic [ref=f5e132]:
+            - link "인터넷 끊김 알림" [ref=f5e133] [cursor=pointer]:
+              - /url: ./detail/%EC%9D%B8%ED%84%B0%EB%84%B7-%EB%81%8A%EA%B9%80-%EC%95%8C%EB%A6%BC/egidejbpdcankobpbnofddmjooiicbgg
+            - generic [ref=f5e135]:
+              - heading "인터넷 끊김 알림" [level=2] [ref=f5e137]
+              - paragraph
+              - generic [ref=f5e138]:
+                - img "평균 평점은 별점 5점 중 5점입니다." [ref=f5e139]:
+                  - generic [ref=f5e140]: "5.0"
+                - link "검색 결과 및 리뷰에 관해 자세히 알아보기 \"인터넷 끊김 알림\"" [ref=f5e149] [cursor=pointer]:
+                  - /url: https://support.google.com/chrome_webstore/answer/12225786?p=cws_reviews_results&hl=ko
+              - paragraph [ref=f5e150]: 인터넷 연결이 실제로 되고 있는지 확인하고, 끊기거나 복구되면 알려줍니다.
+          - generic [ref=f5e151]:
+            - link "라디오 듣기 / online radio box" [ref=f5e152] [cursor=pointer]:
+              - /url: ./detail/%EB%9D%BC%EB%94%94%EC%98%A4-%EB%93%A3%EA%B8%B0-online-radio-box/ldlicpjbbcdcpogndijmaenpldhmlhhp
+            - generic [ref=f5e154]:
+              - heading "라디오 듣기 / online radio box" [level=2] [ref=f5e156]
+              - paragraph [ref=f5e157]:
+                - img "인증된 게시자에 의해 게시됨" [ref=f5e158]
+                - generic [ref=f5e161]: cresotech.com
+              - generic [ref=f5e162]:
+                - img "평균 평점은 별점 5점 중 4.9점입니다." [ref=f5e163]:
+                  - generic [ref=f5e164]: "4.9"
+                - link "검색 결과 및 리뷰에 관해 자세히 알아보기 \"라디오 듣기 / online radio box\"" [ref=f5e173] [cursor=pointer]:
+                  - /url: https://support.google.com/chrome_webstore/answer/12225786?p=cws_reviews_results&hl=ko
+              - paragraph [ref=f5e174]: 사용하여 라디오 듣기로 좋아하는 라디오와 radio를 들어보세요. 라디오 듣기로 다양한 방송을 언제나 즐기세요.
+          - generic [ref=f5e175]:
+            - link "화이트 노이즈 사운드 앱" [ref=f5e176] [cursor=pointer]:
+              - /url: ./detail/%ED%99%94%EC%9D%B4%ED%8A%B8-%EB%85%B8%EC%9D%B4%EC%A6%88-%EC%82%AC%EC%9A%B4%EB%93%9C-%EC%95%B1/kbamloahffgamokeejodkkcpkhmebikd
+            - generic [ref=f5e178]:
+              - heading "화이트 노이즈 사운드 앱" [level=2] [ref=f5e180]
+              - paragraph
+              - generic [ref=f5e181]:
+                - img "평균 평점은 별점 5점 중 0점입니다." [ref=f5e182]:
+                  - generic [ref=f5e183]: "0.0"
+                - link "검색 결과 및 리뷰에 관해 자세히 알아보기 \"화이트 노이즈 사운드 앱\"" [ref=f5e192] [cursor=pointer]:
+                  - /url: https://support.google.com/chrome_webstore/answer/12225786?p=cws_reviews_results&hl=ko
+              - paragraph [ref=f5e193]: 비, 바람, 백색 소음 루프를 위한 오프라인 주변 사운드 믹서입니다.
+          - generic [ref=f5e194]:
+            - link "풀 블리츠 게임 - 브라우저에서 클래식 당구 마스터하기!" [ref=f5e195] [cursor=pointer]:
+              - /url: ./detail/%ED%92%80-%EB%B8%94%EB%A6%AC%EC%B8%A0-%EA%B2%8C%EC%9E%84-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%97%90%EC%84%9C-%ED%81%B4%EB%9E%98%EC%8B%9D-%EB%8B%B9%EA%B5%AC-%EB%A7%88%EC%8A%A4/kplkegablcobhdmfippbnoofbaibnhfo
+            - generic [ref=f5e197]:
+              - heading "풀 블리츠 게임 - 브라우저에서 클래식 당구 마스터하기!" [level=2] [ref=f5e199]
+              - paragraph
+              - generic [ref=f5e200]:
+                - img "평균 평점은 별점 5점 중 5점입니다." [ref=f5e201]:
+                  - generic [ref=f5e202]: "5.0"
+                - link "검색 결과 및 리뷰에 관해 자세히 알아보기 \"풀 블리츠 게임 - 브라우저에서 클래식 당구 마스터하기!\"" [ref=f5e211] [cursor=pointer]:
+                  - /url: https://support.google.com/chrome_webstore/answer/12225786?p=cws_reviews_results&hl=ko
+              - paragraph [ref=f5e212]: "\"풀 블리츠에 빠져보세요, 언제든 스릴 넘치는 당구 액션을 위한 무료 브라우저 확장입니다!\""
+          - generic [ref=f5e213]:
+            - link "Midjourney Automation Bulk Image Generation and prompt generation" [ref=f5e214] [cursor=pointer]:
+              - /url: ./detail/midjourney-automation-bul/edkfcbjfkineeoogblfajdmpcaihpflk
+            - generic [ref=f5e216]:
+              - heading "Midjourney Automation Bulk Image Generation and prompt generation" [level=2] [ref=f5e218]
+              - paragraph [ref=f5e219]:
+                - link "midjourneyautomation.com" [ref=f5e220] [cursor=pointer]:
+                  - /url: https://midjourneyautomation.com
+              - generic [ref=f5e221]:
+                - img "평균 평점은 별점 5점 중 1점입니다." [ref=f5e222]:
+                  - generic [ref=f5e223]: "1.0"
+                - link "검색 결과 및 리뷰에 관해 자세히 알아보기 \"Midjourney Automation Bulk Image Generation and prompt generation\"" [ref=f5e232] [cursor=pointer]:
+                  - /url: https://support.google.com/chrome_webstore/answer/12225786?p=cws_reviews_results&hl=ko
+              - paragraph [ref=f5e233]: bulk image generation on Ideogram AI with batch processing , CSV export, and download management for Midjourney
+          - generic [ref=f5e234]:
+            - link "Matchventures 게임 - 마법 같은 매치-3 모험을 시작하세요!" [ref=f5e235] [cursor=pointer]:
+              - /url: ./detail/matchventures-%EA%B2%8C%EC%9E%84-%EB%A7%88%EB%B2%95-%EA%B0%99%EC%9D%80-%EB%A7%A4%EC%B9%98/lclmfacdjajnpmommpcjobpbhefhjhkf
+            - generic [ref=f5e237]:
+              - heading "Matchventures 게임 - 마법 같은 매치-3 모험을 시작하세요!" [level=2] [ref=f5e239]
+              - paragraph
+              - generic [ref=f5e240]:
+                - img "평균 평점은 별점 5점 중 0점입니다." [ref=f5e241]:
+                  - generic [ref=f5e242]: "0.0"
+                - link "검색 결과 및 리뷰에 관해 자세히 알아보기 \"Matchventures 게임 - 마법 같은 매치-3 모험을 시작하세요!\"" [ref=f5e251] [cursor=pointer]:
+                  - /url: https://support.google.com/chrome_webstore/answer/12225786?p=cws_reviews_results&hl=ko
+              - paragraph [ref=f5e252]: 브라우저에서 오프라인 매치-3 모험인 Matchventures의 마법 같은 여정에 참여하세요!
+          - generic [ref=f5e253]:
+            - link "Path To Glory 게임 - 군대를 지휘하고 왕국을 정복하세요!" [ref=f5e254] [cursor=pointer]:
+              - /url: ./detail/path-to-glory-%EA%B2%8C%EC%9E%84-%EA%B5%B0%EB%8C%80%EB%A5%BC-%EC%A7%80%ED%9C%98%ED%95%98%EA%B3%A0/lagdfmhhbnbojhhmpoiokmdinlfijbdp
+            - generic [ref=f5e256]:
+              - heading "Path To Glory 게임 - 군대를 지휘하고 왕국을 정복하세요!" [level=2] [ref=f5e258]
+              - paragraph
+              - generic [ref=f5e259]:
+                - img "평균 평점은 별점 5점 중 0점입니다." [ref=f5e260]:
+                  - generic [ref=f5e261]: "0.0"
+                - link "검색 결과 및 리뷰에 관해 자세히 알아보기 \"Path To Glory 게임 - 군대를 지휘하고 왕국을 정복하세요!\"" [ref=f5e270] [cursor=pointer]:
+                  - /url: https://support.google.com/chrome_webstore/answer/12225786?p=cws_reviews_results&hl=ko
+              - paragraph [ref=f5e271]: 이 오프라인 전략 RPG 브라우저 확장 프로그램에서 왕국을 정복하고 제국을 건설하세요!
+          - generic [ref=f5e272]:
+            - link "monolog" [ref=f5e273] [cursor=pointer]:
+              - /url: ./detail/monolog/nckbdcanfdhoakkpbjmnijogpobnpfbj
+            - generic [ref=f5e275]:
+              - heading "monolog" [level=2] [ref=f5e277]
+              - paragraph [ref=f5e278]:
+                - link "monolog.ing" [ref=f5e279] [cursor=pointer]:
+                  - /url: https://monolog.ing
+              - generic [ref=f5e280]:
+                - img "평균 평점은 별점 5점 중 0점입니다." [ref=f5e281]:
+                  - generic [ref=f5e282]: "0.0"
+                - link "검색 결과 및 리뷰에 관해 자세히 알아보기 \"monolog\"" [ref=f5e291] [cursor=pointer]:
+                  - /url: https://support.google.com/chrome_webstore/answer/12225786?p=cws_reviews_results&hl=ko
+              - paragraph [ref=f5e292]: 기록하는 순간, 기억은 시작됩니다
+          - generic [ref=f5e293]:
+            - link "이미지를 PDF로" [ref=f5e294] [cursor=pointer]:
+              - /url: ./detail/%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A5%BC-pdf%EB%A1%9C/epccbohjklpembhokkmgeipijcnacfjl
+            - generic [ref=f5e296]:
+              - heading "이미지를 PDF로" [level=2] [ref=f5e298]
+              - paragraph
+              - generic [ref=f5e299]:
+                - img "평균 평점은 별점 5점 중 5점입니다." [ref=f5e300]:
+                  - generic [ref=f5e301]: "5.0"
+                - link "검색 결과 및 리뷰에 관해 자세히 알아보기 \"이미지를 PDF로\"" [ref=f5e310] [cursor=pointer]:
+                  - /url: https://support.google.com/chrome_webstore/answer/12225786?p=cws_reviews_results&hl=ko
+              - paragraph [ref=f5e311]: "이미지를 PDF로: 사진을 깔끔하게 합쳐, 단숨에 공유 가능한 문서로 바꿔주는 변환 도구입니다!"
+  - contentinfo [ref=f5e312]:
+    - list [ref=f5e313]:
+      - listitem [ref=f5e314]:
+        - link "Chrome 웹 스토어 정보" [ref=f5e315] [cursor=pointer]:
+          - /url: https://support.google.com/chrome_webstore/answer/1047776?hl=ko
+        - text: •
+      - listitem [ref=f5e316]:
+        - link "개발자 대시보드" [ref=f5e317] [cursor=pointer]:
+          - /url: https://chrome.google.com/webstore/devconsole/
+        - text: •
+      - listitem [ref=f5e318]:
+        - link "개인정보처리방침" [ref=f5e319] [cursor=pointer]:
+          - /url: https://myaccount.google.com/privacypolicy?hl=ko
+        - text: •
+      - listitem [ref=f5e320]:
+        - link "서비스 약관" [ref=f5e321] [cursor=pointer]:
+          - /url: https://ssl.gstatic.com/chrome/webstore/intl/ko/gallery_tos.html
+        - text: •
+      - listitem [ref=f5e322]:
+        - link "도움말" [ref=f5e323] [cursor=pointer]:
+          - /url: https://support.google.com/chrome_webstore?hl=ko
+  - generic [ref=f5e324]: 페이지가 로드되었습니다.

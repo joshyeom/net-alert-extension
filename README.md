@@ -1,5 +1,10 @@
 # Internet Down Alert — Chrome Extension
 
+> **취미 유지 모드 (2026-09-15부터).** 성장 작업은 중단했고 코드는 v1.2.0에서
+> 동결했다. 확장은 정상 동작하며 크롬 웹스토어 게시도 유지한다. 판단 근거는
+> [DECISION.md](DECISION.md)에 있다. GitHub 저장소는 archived 상태라 푸시하려면
+> 먼저 언아카이브해야 한다.
+
 Your Wi-Fi icon only proves your **router** is reachable — not that the
 **internet** actually works. This extension pings the real internet on a
 schedule and notifies you the moment your connection actually drops, and the

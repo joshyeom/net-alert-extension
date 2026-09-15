@@ -1,0 +1,89 @@
+- generic [ref=f4e1]:
+  - banner [ref=f4e2]:
+    - link "주요 콘텐츠로 이동" [ref=f4e3] [cursor=pointer]
+    - generic [ref=f4e4]:
+      - generic [ref=f4e5]:
+        - link "Chrome 웹 스토어 로고 Chrome 웹 스토어" [ref=f4e7] [cursor=pointer]:
+          - /url: ./
+          - img "Chrome 웹 스토어 로고" [ref=f4e8]
+          - generic [ref=f4e9]: Chrome 웹 스토어
+        - search "사이트 전체" [ref=f4e10]:
+          - generic [ref=f4e13]:
+            - combobox "Chrome 웹 스토어 검색" [active] [ref=f4e15]: 인터넷 끊김 알림 확장
+            - button "검색 설정 지우기" [ref=f4e17] [cursor=pointer]
+        - generic [ref=f4e20]:
+          - button "옵션 메뉴 더보기" [ref=f4e24] [cursor=pointer]
+          - generic [ref=f4e34]:
+            - button "Google 앱" [ref=f4e38] [cursor=pointer]
+            - link "로그인" [ref=f4e42] [cursor=pointer]:
+              - /url: https://accounts.google.com/ServiceLogin?passive=1209600&osid=1&continue=https://chromewebstore.google.com/search/%25EC%259D%25B8%25ED%2584%25B0%25EB%2584%25B7%2520%25EB%2581%258A%25EA%25B9%2580%2520%25EC%2595%258C%25EB%25A6%25BC%2520%25ED%2599%2595%25EC%259E%25A5?hl%3Dko&followup=https://chromewebstore.google.com/search/%25EC%259D%25B8%25ED%2584%25B0%25EB%2584%25B7%2520%25EB%2581%258A%25EA%25B9%2580%2520%25EC%2595%258C%25EB%25A6%25BC%2520%25ED%2599%2595%25EC%259E%25A5?hl%3Dko&hl=ko&ec=GAZApQM
+      - tablist [ref=f4e46]:
+        - generic [ref=f4e49]:
+          - tab "탐색" [ref=f4e50] [cursor=pointer]
+          - tab "확장 프로그램" [ref=f4e51] [cursor=pointer]
+          - tab "테마" [ref=f4e52] [cursor=pointer]
+  - generic [ref=f4e56]:
+    - generic [ref=f4e58]:
+      - generic [ref=f4e59]:
+        - heading "유형" [level=2] [ref=f4e60]
+        - toolbar "광고 확장 유형별로 항목 필터링" [ref=f4e61]:
+          - button "확장 프로그램" [ref=f4e64] [cursor=pointer]
+          - button "테마" [ref=f4e69] [cursor=pointer]
+      - generic [ref=f4e72]:
+        - heading "필터링 기준" [level=2] [ref=f4e73]
+        - generic [ref=f4e75] [cursor=pointer]:
+          - checkbox "추천 확장 프로그램" [ref=f4e77]
+          - generic [ref=f4e78]: 추천 확장 프로그램
+        - generic [ref=f4e81] [cursor=pointer]:
+          - checkbox "우수 게시자" [ref=f4e83]
+          - generic [ref=f4e84]: 우수 게시자
+      - generic [ref=f4e86]:
+        - heading "평점" [level=2] [ref=f4e87]
+        - radiogroup "평점" [ref=f4e88]:
+          - radio "별 5개" [ref=f4e89]
+          - radio "별 4개 이상" [ref=f4e95]:
+            - generic [aria-hidden] [ref=f4e102]: 이상
+          - radio "별 3개 이상" [ref=f4e103]:
+            - generic [aria-hidden] [ref=f4e111]: 이상
+          - radio "별 2개 이상" [ref=f4e112]:
+            - generic [aria-hidden] [ref=f4e121]: 이상
+      - generic [ref=f4e123]:
+        - button "모든 필터 지우기 버튼" [disabled] [ref=f4e124]:
+          - generic [aria-hidden] [ref=f4e126]: 모두 지우기
+        - tooltip [aria-hidden] [ref=f4e127]: 필터 옵션을 재설정합니다.
+    - main [ref=f4e128]:
+      - generic [ref=f4e129]:
+        - heading "검색결과" [level=1] [ref=f4e130]
+        - generic [ref=f4e132]:
+          - link "인터넷 끊김 알림" [ref=f4e133] [cursor=pointer]:
+            - /url: ./detail/%EC%9D%B8%ED%84%B0%EB%84%B7-%EB%81%8A%EA%B9%80-%EC%95%8C%EB%A6%BC/egidejbpdcankobpbnofddmjooiicbgg
+          - generic [ref=f4e135]:
+            - heading "인터넷 끊김 알림" [level=2] [ref=f4e137]
+            - paragraph
+            - generic [ref=f4e138]:
+              - img "평균 평점은 별점 5점 중 5점입니다." [ref=f4e139]:
+                - generic [ref=f4e140]: "5.0"
+              - link "검색 결과 및 리뷰에 관해 자세히 알아보기 \"인터넷 끊김 알림\"" [ref=f4e149] [cursor=pointer]:
+                - /url: https://support.google.com/chrome_webstore/answer/12225786?p=cws_reviews_results&hl=ko
+            - paragraph [ref=f4e150]: 인터넷 연결이 실제로 되고 있는지 확인하고, 끊기거나 복구되면 알려줍니다.
+  - contentinfo [ref=f4e151]:
+    - list [ref=f4e152]:
+      - listitem [ref=f4e153]:
+        - link "Chrome 웹 스토어 정보" [ref=f4e154] [cursor=pointer]:
+          - /url: https://support.google.com/chrome_webstore/answer/1047776?hl=ko
+        - text: •
+      - listitem [ref=f4e155]:
+        - link "개발자 대시보드" [ref=f4e156] [cursor=pointer]:
+          - /url: https://chrome.google.com/webstore/devconsole/
+        - text: •
+      - listitem [ref=f4e157]:
+        - link "개인정보처리방침" [ref=f4e158] [cursor=pointer]:
+          - /url: https://myaccount.google.com/privacypolicy?hl=ko
+        - text: •
+      - listitem [ref=f4e159]:
+        - link "서비스 약관" [ref=f4e160] [cursor=pointer]:
+          - /url: https://ssl.gstatic.com/chrome/webstore/intl/ko/gallery_tos.html
+        - text: •
+      - listitem [ref=f4e161]:
+        - link "도움말" [ref=f4e162] [cursor=pointer]:
+          - /url: https://support.google.com/chrome_webstore?hl=ko

@@ -1,0 +1,989 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - heading [level=1] [ref=e5]:
+          - link " CLIEN" [ref=e6] [cursor=pointer]:
+            - /url: /service/
+            - generic [ref=e7]: 
+            - generic [ref=e8]: CLIEN
+        - link "본문 바로가기" [ref=e9] [cursor=pointer]:
+          - /url: "#div_content"
+        - link "메뉴 바로가기" [ref=e10] [cursor=pointer]:
+          - /url: "#menuTop"
+        - link "보기설정" [ref=e11] [cursor=pointer]:
+          - /url: javascript:;
+        - link "테마설정" [ref=e12] [cursor=pointer]:
+          - /url: javascript:;
+        - generic [ref=e13]:
+          - generic [ref=e14]:
+            - link "톺아보기" [ref=e15] [cursor=pointer]:
+              - /url: /service/group/clien_all
+            - link "공감글" [ref=e17] [cursor=pointer]:
+              - /url: /service/group/clien_all?&od=T33
+          - generic [ref=e19]:
+            - button "" [ref=e20] [cursor=pointer]
+            - searchbox "통합검색" [ref=e22]
+      - generic [ref=e23]:
+        - generic [ref=e25]:
+          - link "" [ref=e26] [cursor=pointer]:
+            - /url: javascript:;
+            - generic "화면크게보기" [ref=e27]: 
+          - link "" [ref=e28] [cursor=pointer]:
+            - /url: javascript:;
+            - generic "다크모드" [ref=e29]: 
+        - generic [ref=e30]:
+          - generic [ref=e31]: 
+          - text: 
+  - generic [ref=e32]:
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - generic [ref=e38] [cursor=pointer]:
+              - generic [ref=e39]: 커뮤니티
+              - generic [ref=e40]: 
+            - link "커뮤니티전체" [ref=e41] [cursor=pointer]:
+              - /url: /service/group/board_all
+              - text: 
+            - link "C 모두의광장" [ref=e43] [cursor=pointer]:
+              - /url: /service/group/community
+              - generic [ref=e44]: C
+              - generic "모두의광장" [ref=e45]
+            - link "F 모두의공원" [ref=e46] [cursor=pointer]:
+              - /url: /service/board/park
+              - generic [ref=e47]: F
+              - generic "모두의공원" [ref=e48]
+            - link "I 사진게시판" [ref=e49] [cursor=pointer]:
+              - /url: /service/board/image
+              - generic [ref=e50]: I
+              - generic "사진게시판" [ref=e51]
+            - link "Q 아무거나질문" [ref=e52] [cursor=pointer]:
+              - /url: /service/board/kin
+              - generic [ref=e53]: Q
+              - generic "아무거나질문" [ref=e54]
+            - link "D 정보와자료" [ref=e55] [cursor=pointer]:
+              - /url: /service/group/allinfo
+              - generic [ref=e56]: D
+              - generic "정보와자료" [ref=e57]
+            - link "N 새로운소식" [ref=e58] [cursor=pointer]:
+              - /url: /service/board/news
+              - generic [ref=e59]: "N"
+              - generic "새로운소식" [ref=e60]
+            - link "T 유용한사이트" [ref=e61] [cursor=pointer]:
+              - /url: /service/board/useful
+              - generic [ref=e62]: T
+              - generic "유용한사이트" [ref=e63]
+            - link "P 자료실" [ref=e64] [cursor=pointer]:
+              - /url: /service/board/pds
+              - generic [ref=e65]: P
+              - generic "자료실" [ref=e66]
+            - link "E 강좌/사용기" [ref=e67] [cursor=pointer]:
+              - /url: /service/group/allreview
+              - generic [ref=e68]: E
+              - generic "강좌/사용기" [ref=e69]
+            - link "L 팁과강좌" [ref=e70] [cursor=pointer]:
+              - /url: /service/board/lecture
+              - generic [ref=e71]: L
+              - generic "팁과강좌" [ref=e72]
+            - link "U 사용기" [ref=e73] [cursor=pointer]:
+              - /url: /service/board/use
+              - generic [ref=e74]: U
+              - generic "사용기" [ref=e75]
+            - link "체험단사용기" [ref=e76] [cursor=pointer]:
+              - /url: /service/board/chehum
+            - link "W 사고팔고" [ref=e78] [cursor=pointer]:
+              - /url: /service/group/allsell
+              - generic [ref=e79]: W
+              - generic "사고팔고" [ref=e80]
+            - link "J 알뜰구매" [ref=e81] [cursor=pointer]:
+              - /url: /service/board/jirum
+              - generic [ref=e82]: J
+              - generic "알뜰구매" [ref=e83]
+            - link "S 회원중고장터" [ref=e84] [cursor=pointer]:
+              - /url: /service/board/sold
+              - generic [ref=e85]: S
+              - generic "회원중고장터" [ref=e86]
+            - link "B 직접홍보" [ref=e87] [cursor=pointer]:
+              - /url: /service/board/hongbo
+              - generic [ref=e88]: B
+              - generic "직접홍보" [ref=e89]
+            - link "보험상담실" [ref=e90] [cursor=pointer]:
+              - /url: /service/group/insure
+          - generic [ref=e93]:
+            - generic [ref=e94] [cursor=pointer]:
+              - generic [ref=e95]: 소모임
+              - generic [ref=e96]: 
+            - link "소모임전체" [ref=e97] [cursor=pointer]:
+              - /url: /service/group/cm_all
+            - link "굴러간당" [ref=e99] [cursor=pointer]:
+              - /url: /service/board/cm_car
+            - link "아이포니앙" [ref=e101] [cursor=pointer]:
+              - /url: /service/board/cm_iphonien
+            - link "주식한당" [ref=e103] [cursor=pointer]:
+              - /url: /service/board/cm_stock
+            - link "MaClien" [ref=e105] [cursor=pointer]:
+              - /url: /service/board/cm_mac
+            - link "일본산당" [ref=e107] [cursor=pointer]:
+              - /url: /service/board/cm_japanlive
+            - link "방탄소년당" [ref=e109] [cursor=pointer]:
+              - /url: /service/board/cm_bts
+            - link "자전거당" [ref=e111] [cursor=pointer]:
+              - /url: /service/board/cm_bike
+            - link "개발한당" [ref=e113] [cursor=pointer]:
+              - /url: /service/board/cm_app
+            - link "야구당" [ref=e115] [cursor=pointer]:
+              - /url: /service/board/cm_baseball
+            - link "안드로메당" [ref=e117] [cursor=pointer]:
+              - /url: /service/board/cm_andro
+            - link "이륜차당" [ref=e119] [cursor=pointer]:
+              - /url: /service/board/cm_mbike
+            - link "노젓는당" [ref=e121] [cursor=pointer]:
+              - /url: /service/board/cm_rowing
+            - link "나스당" [ref=e123] [cursor=pointer]:
+              - /url: /service/board/cm_nas
+            - link "육아당" [ref=e125] [cursor=pointer]:
+              - /url: /service/board/cm_baby
+            - link "소리당" [ref=e127] [cursor=pointer]:
+              - /url: /service/board/cm_music
+            - link "소시당" [ref=e129] [cursor=pointer]:
+              - /url: /service/board/cm_girl
+            - link "캠핑간당" [ref=e131] [cursor=pointer]:
+              - /url: /service/board/cm_camp
+            - link "달린당" [ref=e133] [cursor=pointer]:
+              - /url: /service/board/cm_running
+            - link "소셜게임한당" [ref=e135] [cursor=pointer]:
+              - /url: /service/board/cm_werule
+            - link "시계찬당" [ref=e137] [cursor=pointer]:
+              - /url: /service/board/cm_watch
+            - link "젬워한당" [ref=e139] [cursor=pointer]:
+              - /url: /service/board/cm_gemwar
+            - link "스팀한당" [ref=e141] [cursor=pointer]:
+              - /url: /service/board/cm_steam
+            - link "리눅서당" [ref=e143] [cursor=pointer]:
+              - /url: /service/board/cm_linux
+            - link "찰칵찍당" [ref=e145] [cursor=pointer]:
+              - /url: /service/board/cm_photo
+            - link "걸그룹당" [ref=e147] [cursor=pointer]:
+              - /url: /service/board/cm_girlgroup
+            - link "IoT당" [ref=e149] [cursor=pointer]:
+              - /url: /service/board/cm_iot
+            - link "퐁당퐁당" [ref=e151] [cursor=pointer]:
+              - /url: /service/board/cm_swim
+            - link "콘솔한당" [ref=e153] [cursor=pointer]:
+              - /url: /service/board/cm_console
+            - link "키보드당" [ref=e155] [cursor=pointer]:
+              - /url: /service/board/cm_keyboard
+            - link "물고기당" [ref=e157] [cursor=pointer]:
+              - /url: /service/board/cm_fish
+            - link "골프당" [ref=e159] [cursor=pointer]:
+              - /url: /service/board/cm_golf
+            - link "가상화폐당" [ref=e161] [cursor=pointer]:
+              - /url: /service/board/cm_vcoin
+            - link "창업한당" [ref=e163] [cursor=pointer]:
+              - /url: /service/board/cm_venture
+            - link "클다방" [ref=e165] [cursor=pointer]:
+              - /url: /service/board/cm_coffee
+            - link "3D메이킹" [ref=e167] [cursor=pointer]:
+              - /url: /service/board/cm_3dmaking
+            - link "X세대당" [ref=e169] [cursor=pointer]:
+              - /url: /service/board/cm_70
+            - link "ADHD당" [ref=e171] [cursor=pointer]:
+              - /url: /service/board/cm_adhd
+            - link "AI당" [ref=e173] [cursor=pointer]:
+              - /url: /service/board/cm_ai
+            - link "AI그림당" [ref=e175] [cursor=pointer]:
+              - /url: /service/board/cm_aigurim
+            - link "날아간당" [ref=e177] [cursor=pointer]:
+              - /url: /service/board/cm_airplane
+            - link "사과시계당" [ref=e179] [cursor=pointer]:
+              - /url: /service/board/cm_applewatch
+            - link "배드민턴당" [ref=e181] [cursor=pointer]:
+              - /url: /service/board/cm_badmin
+            - link "농구당" [ref=e183] [cursor=pointer]:
+              - /url: /service/board/cm_basket
+            - link "블랙베리당" [ref=e185] [cursor=pointer]:
+              - /url: /service/board/cm_bb
+            - link "곰돌이당" [ref=e187] [cursor=pointer]:
+              - /url: /service/board/cm_bear
+            - link "비어있당" [ref=e189] [cursor=pointer]:
+              - /url: /service/board/cm_beer
+            - link "FM당구당" [ref=e191] [cursor=pointer]:
+              - /url: /service/board/cm_billiards
+            - link "블록체인당" [ref=e193] [cursor=pointer]:
+              - /url: /service/board/cm_blockchain
+            - link "보드게임당" [ref=e195] [cursor=pointer]:
+              - /url: /service/board/cm_board
+            - link "활자중독당" [ref=e197] [cursor=pointer]:
+              - /url: /service/board/cm_book
+            - link "볼링친당" [ref=e199] [cursor=pointer]:
+              - /url: /service/board/cm_bowling
+            - link "냐옹이당" [ref=e201] [cursor=pointer]:
+              - /url: /service/board/cm_cat
+            - link "문명하셨당" [ref=e203] [cursor=pointer]:
+              - /url: /service/board/cm_civilize
+            - link "클래시앙" [ref=e205] [cursor=pointer]:
+              - /url: /service/board/cm_classic
+            - link "요리한당" [ref=e207] [cursor=pointer]:
+              - /url: /service/board/cm_cook
+            - link "쿠키런당" [ref=e209] [cursor=pointer]:
+              - /url: /service/board/cm_cookierun
+            - link "대구당" [ref=e211] [cursor=pointer]:
+              - /url: /service/board/cm_daegu
+            - link "DANGER당" [ref=e213] [cursor=pointer]:
+              - /url: /service/board/cm_danger
+            - link "뚝딱뚝당" [ref=e215] [cursor=pointer]:
+              - /url: /service/board/cm_dduk
+            - link "디아블로당" [ref=e217] [cursor=pointer]:
+              - /url: /service/board/cm_dia
+            - link "개판이당" [ref=e219] [cursor=pointer]:
+              - /url: /service/board/cm_dog
+            - link "동숲한당" [ref=e221] [cursor=pointer]:
+              - /url: /service/board/cm_dongsup
+            - link "날아올랑" [ref=e223] [cursor=pointer]:
+              - /url: /service/board/cm_drone
+            - link "전기자전거당" [ref=e225] [cursor=pointer]:
+              - /url: /service/board/cm_ebicycle
+            - link "e북본당" [ref=e227] [cursor=pointer]:
+              - /url: /service/board/cm_ebook
+            - link "갖고다닌당" [ref=e229] [cursor=pointer]:
+              - /url: /service/board/cm_edc
+            - link "이브한당" [ref=e231] [cursor=pointer]:
+              - /url: /service/board/cm_eve
+            - link "패셔니앙" [ref=e233] [cursor=pointer]:
+              - /url: /service/board/cm_fashion
+            - link "도시어부당" [ref=e235] [cursor=pointer]:
+              - /url: /service/board/cm_fisher
+            - link "FM한당" [ref=e237] [cursor=pointer]:
+              - /url: /service/board/cm_fm
+            - link "맛있겠당" [ref=e239] [cursor=pointer]:
+              - /url: /service/board/cm_food
+            - link "포뮬러당" [ref=e241] [cursor=pointer]:
+              - /url: /service/board/cm_formula1
+            - link "안경쓴당" [ref=e243] [cursor=pointer]:
+              - /url: /service/board/cm_glasses
+            - link "차턴당" [ref=e245] [cursor=pointer]:
+              - /url: /service/board/cm_gta
+            - link "총쏜당" [ref=e247] [cursor=pointer]:
+              - /url: /service/board/cm_gun
+            - link "땀흘린당" [ref=e249] [cursor=pointer]:
+              - /url: /service/board/cm_gym
+            - link "하스스톤한당" [ref=e251] [cursor=pointer]:
+              - /url: /service/board/cm_hearth
+            - link "히어로즈한당" [ref=e253] [cursor=pointer]:
+              - /url: /service/board/cm_heroes
+            - link "인스타한당" [ref=e255] [cursor=pointer]:
+              - /url: /service/board/cm_instar
+            - link "KARA당" [ref=e257] [cursor=pointer]:
+              - /url: /service/board/cm_kara
+            - link "꼬들한당" [ref=e259] [cursor=pointer]:
+              - /url: /service/board/cm_kordle
+            - link "덕질한당" [ref=e261] [cursor=pointer]:
+              - /url: /service/board/cm_ku
+            - link "어학당" [ref=e263] [cursor=pointer]:
+              - /url: /service/board/cm_lang
+            - link "가죽당" [ref=e265] [cursor=pointer]:
+              - /url: /service/board/cm_leather
+            - link "레고당" [ref=e267] [cursor=pointer]:
+              - /url: /service/board/cm_lego
+            - link "LOLien" [ref=e269] [cursor=pointer]:
+              - /url: /service/board/cm_lol
+            - link "Mabinogien" [ref=e271] [cursor=pointer]:
+              - /url: /service/board/cm_mabi
+            - link "임시소모임" [ref=e273] [cursor=pointer]:
+              - /url: /service/board/cm_main
+            - link "미드당" [ref=e275] [cursor=pointer]:
+              - /url: /service/board/cm_midra
+            - link "밀리터리당" [ref=e277] [cursor=pointer]:
+              - /url: /service/board/cm_military
+            - link "땅판당" [ref=e279] [cursor=pointer]:
+              - /url: /service/board/cm_mine
+            - link "헌팅한당" [ref=e281] [cursor=pointer]:
+              - /url: /service/board/cm_monhunt
+            - link "오른당" [ref=e283] [cursor=pointer]:
+              - /url: /service/board/cm_mount
+            - link "영화본당" [ref=e285] [cursor=pointer]:
+              - /url: /service/board/cm_movie
+            - link "MTG한당" [ref=e287] [cursor=pointer]:
+              - /url: /service/board/cm_mtg
+            - link "노키앙" [ref=e289] [cursor=pointer]:
+              - /url: /service/board/cm_nokien
+            - link "적는당" [ref=e291] [cursor=pointer]:
+              - /url: /service/board/cm_note
+            - link "방송한당" [ref=e293] [cursor=pointer]:
+              - /url: /service/board/cm_onair
+            - link "바다건너당" [ref=e295] [cursor=pointer]:
+              - /url: /service/board/cm_oversea
+            - link "PC튜닝한당" [ref=e297] [cursor=pointer]:
+              - /url: /service/board/cm_pctuning
+            - link "그림그린당" [ref=e299] [cursor=pointer]:
+              - /url: /service/board/cm_pic
+            - link "소풍간당" [ref=e301] [cursor=pointer]:
+              - /url: /service/board/cm_picnic
+            - link "심는당" [ref=e303] [cursor=pointer]:
+              - /url: /service/board/cm_plant
+            - link "패스오브엑자일당" [ref=e305] [cursor=pointer]:
+              - /url: /service/board/cm_poe
+            - link "라즈베리파이당" [ref=e307] [cursor=pointer]:
+              - /url: /service/board/cm_rasp
+            - link "품앱이당" [ref=e309] [cursor=pointer]:
+              - /url: /service/board/cm_redeem
+            - link "리듬탄당" [ref=e311] [cursor=pointer]:
+              - /url: /service/board/cm_rhythm
+            - link "Sea마당" [ref=e313] [cursor=pointer]:
+              - /url: /service/board/cm_sea
+            - link "SimSim하당" [ref=e315] [cursor=pointer]:
+              - /url: /service/board/cm_sim
+            - link "심야식당" [ref=e317] [cursor=pointer]:
+              - /url: /service/board/cm_simsik
+            - link "윈태블릿당" [ref=e319] [cursor=pointer]:
+              - /url: /service/board/cm_slate
+            - link "미끄러진당" [ref=e321] [cursor=pointer]:
+              - /url: /service/board/cm_snow
+            - link "축구당" [ref=e323] [cursor=pointer]:
+              - /url: /service/board/cm_soccer
+            - link "나혼자산당" [ref=e325] [cursor=pointer]:
+              - /url: /service/board/cm_solo
+            - link "스타한당" [ref=e327] [cursor=pointer]:
+              - /url: /service/board/cm_star
+            - link "파도탄당" [ref=e329] [cursor=pointer]:
+              - /url: /service/board/cm_surfing
+            - link "테니스친당" [ref=e331] [cursor=pointer]:
+              - /url: /service/board/cm_tennis
+            - link "테스트당" [ref=e333] [cursor=pointer]:
+              - /url: /service/board/cm_test
+            - link "빨콩이당" [ref=e335] [cursor=pointer]:
+              - /url: /service/board/cm_thinkpad
+            - link "공대시계당" [ref=e337] [cursor=pointer]:
+              - /url: /service/board/cm_tiwatch
+            - link "여행을떠난당" [ref=e339] [cursor=pointer]:
+              - /url: /service/board/cm_tour
+            - link "터치패드당" [ref=e341] [cursor=pointer]:
+              - /url: /service/board/cm_tpad
+            - link "트윗당" [ref=e343] [cursor=pointer]:
+              - /url: /service/board/cm_twit
+            - link "VR당" [ref=e345] [cursor=pointer]:
+              - /url: /service/board/cm_vr
+            - link "WebOs당" [ref=e347] [cursor=pointer]:
+              - /url: /service/board/cm_webos
+            - link "위스키당" [ref=e349] [cursor=pointer]:
+              - /url: /service/board/cm_whiskey
+            - link "와인마신당" [ref=e351] [cursor=pointer]:
+              - /url: /service/board/cm_wine
+            - link "WOW당" [ref=e353] [cursor=pointer]:
+              - /url: /service/board/cm_wow
+            - link "윈폰이당" [ref=e355] [cursor=pointer]:
+              - /url: /service/board/cm_wp
+          - link "임시소모임" [ref=e357] [cursor=pointer]:
+            - /url: /service/board/cm_main
+        - generic [ref=e360]:
+          - link "고객지원 " [ref=e361] [cursor=pointer]:
+            - /url: javascript:;
+          - list [ref=e362]:
+            - listitem [ref=e363]:
+              - link "게시물 삭제 요청" [ref=e364] [cursor=pointer]:
+                - /url: /service/cs/singo/article
+            - listitem [ref=e365]:
+              - link "불법촬영물등 신고" [ref=e366] [cursor=pointer]:
+                - /url: /service/cs/singo/article?type=illegal
+            - listitem [ref=e367]:
+              - link "쪽지 신고" [ref=e368] [cursor=pointer]:
+                - /url: /service/cs/singo/message
+            - listitem [ref=e369]:
+              - link "닉네임 신고" [ref=e370] [cursor=pointer]:
+                - /url: /service/cs/singo/nickname
+            - listitem [ref=e371]:
+              - link "제보 및 기타 제안" [ref=e372] [cursor=pointer]:
+                - /url: mailto:admin@clien.net
+      - generic [ref=e373]:
+        - link "© CLIEN.NET" [ref=e374] [cursor=pointer]:
+          - /url: /service
+        - link "" [ref=e375] [cursor=pointer]:
+          - /url: "#menuTop"
+    - generic [ref=e377]:
+      - generic [ref=e379]:
+        - generic [ref=e380]:
+          - heading "통합검색결과" [level=2] [ref=e382]
+          - generic [ref=e383]: ※ 검색결과 목록의 게시판명을 클릭하면 해당 게시판의 상세검색을 할 수 있습니다.
+        - generic [ref=e385]:
+          - generic [ref=e386]:
+            - generic [ref=e387] [cursor=pointer]:
+              - generic [ref=e388]: 
+              - combobox [ref=e389]:
+                - option "통합검색" [selected]
+                - option "모두의공원"
+                - option "사진게시판"
+                - option "아무거나질문"
+                - option "새로운소식"
+                - option "유용한사이트"
+                - option "자료실"
+                - option "팁과강좌"
+                - option "사용기"
+                - option "체험단사용기"
+                - option "알뜰구매"
+                - option "회원중고장터"
+                - option "직접홍보"
+                - option "굴러간당"
+                - option "아이포니앙"
+                - option "주식한당"
+                - option "MaClien"
+                - option "일본산당"
+                - option "방탄소년당"
+                - option "자전거당"
+                - option "개발한당"
+                - option "야구당"
+                - option "안드로메당"
+                - option "이륜차당"
+                - option "노젓는당"
+                - option "나스당"
+                - option "육아당"
+                - option "소리당"
+                - option "소시당"
+                - option "캠핑간당"
+                - option "달린당"
+                - option "소셜게임한당"
+                - option "시계찬당"
+                - option "젬워한당"
+                - option "스팀한당"
+                - option "리눅서당"
+                - option "찰칵찍당"
+                - option "걸그룹당"
+                - option "IoT당"
+                - option "퐁당퐁당"
+                - option "콘솔한당"
+                - option "키보드당"
+                - option "물고기당"
+                - option "골프당"
+                - option "가상화폐당"
+                - option "창업한당"
+                - option "클다방"
+                - option "3D메이킹"
+                - option "X세대당"
+                - option "ADHD당"
+                - option "AI당"
+                - option "AI그림당"
+                - option "날아간당"
+                - option "사과시계당"
+                - option "배드민턴당"
+                - option "농구당"
+                - option "블랙베리당"
+                - option "곰돌이당"
+                - option "비어있당"
+                - option "FM당구당"
+                - option "블록체인당"
+                - option "보드게임당"
+                - option "활자중독당"
+                - option "볼링친당"
+                - option "냐옹이당"
+                - option "문명하셨당"
+                - option "클래시앙"
+                - option "요리한당"
+                - option "쿠키런당"
+                - option "대구당"
+                - option "DANGER당"
+                - option "뚝딱뚝당"
+                - option "디아블로당"
+                - option "개판이당"
+                - option "동숲한당"
+                - option "날아올랑"
+                - option "전기자전거당"
+                - option "e북본당"
+                - option "갖고다닌당"
+                - option "이브한당"
+                - option "패셔니앙"
+                - option "도시어부당"
+                - option "FM한당"
+                - option "맛있겠당"
+                - option "포뮬러당"
+                - option "안경쓴당"
+                - option "차턴당"
+                - option "총쏜당"
+                - option "땀흘린당"
+                - option "하스스톤한당"
+                - option "히어로즈한당"
+                - option "인스타한당"
+                - option "KARA당"
+                - option "꼬들한당"
+                - option "덕질한당"
+                - option "어학당"
+                - option "가죽당"
+                - option "레고당"
+                - option "LOLien"
+                - option "Mabinogien"
+                - option "임시소모임"
+                - option "미드당"
+                - option "밀리터리당"
+                - option "땅판당"
+                - option "헌팅한당"
+                - option "오른당"
+                - option "영화본당"
+                - option "MTG한당"
+                - option "노키앙"
+                - option "적는당"
+                - option "방송한당"
+                - option "바다건너당"
+                - option "PC튜닝한당"
+                - option "그림그린당"
+                - option "소풍간당"
+                - option "심는당"
+                - option "패스오브엑자일당"
+                - option "라즈베리파이당"
+                - option "품앱이당"
+                - option "리듬탄당"
+                - option "Sea마당"
+                - option "SimSim하당"
+                - option "심야식당"
+                - option "윈태블릿당"
+                - option "미끄러진당"
+                - option "축구당"
+                - option "나혼자산당"
+                - option "스타한당"
+                - option "파도탄당"
+                - option "테니스친당"
+                - option "테스트당"
+                - option "빨콩이당"
+                - option "공대시계당"
+                - option "여행을떠난당"
+                - option "터치패드당"
+                - option "트윗당"
+                - option "VR당"
+                - option "WebOs당"
+                - option "위스키당"
+                - option "와인마신당"
+                - option "WOW당"
+                - option "윈폰이당"
+            - generic [ref=e390]:
+              - searchbox "검색" [ref=e391]: 인터넷 끊김
+              - button "" [ref=e392] [cursor=pointer]
+          - generic [ref=e394]:
+            - link "최신순" [ref=e395] [cursor=pointer]:
+              - /url: javascript:;
+            - link "정확도순" [ref=e396] [cursor=pointer]:
+              - /url: javascript:;
+        - list [ref=e400]:
+          - listitem [ref=e401]:
+            - generic [ref=e402]:
+              - text: AD
+              - link "페페네트워크" [ref=e403] [cursor=pointer]:
+                - /url: https://ader.naver.com/v1/0zdSPKHwyLswJGUOP-JEIqKLN_qUf7nfNyP1HHg8Pj1Ocf_jHakiwRBC-pBQ1drgeY90r0tzuZlKrnbs11sC7eKtlSc7tjsVzTsh06U8KiRNsnltJ8lqrvgKdHopfnDkWBdmUxB9ao7MkFsrRpantGf1JBY1jVQ2iNo0Z93j5PVg9z1ZrM561v2riaxCOecqT_79UK9W8QBh_kSfFH8RCw==?c=clien.ch2&t=0
+              - link "기업네트워크구축, 보안서버, 프로그램, 방화벽설치, 보안장비, 클라우드, 해킹방어" [ref=e405] [cursor=pointer]:
+                - /url: https://ader.naver.com/v1/0zdSPKHwyLswJGUOP-JEIqKLN_qUf7nfNyP1HHg8Pj1Ocf_jHakiwRBC-pBQ1drgeY90r0tzuZlKrnbs11sC7eKtlSc7tjsVzTsh06U8KiRNsnltJ8lqrvgKdHopfnDkWBdmUxB9ao7MkFsrRpantGf1JBY1jVQ2iNo0Z93j5PVg9z1ZrM561v2riaxCOecqT_79UK9W8QBh_kSfFH8RCw==?c=clien.ch2&t=0
+          - listitem [ref=e406]:
+            - generic [ref=e407]:
+              - text: AD
+              - link "U+공식온라인스토어" [ref=e408] [cursor=pointer]:
+                - /url: https://ader.naver.com/v1/7QSy0Mw2hpj7IjADGc79eSae97Uil0csOm0X0_vHbOFyZd6zmbAFHnE6kjYeDCNAKBbl4t3ZjDUlq5AcU1w6kBkQ9JHvnxvMLi_28CmaUFWHlYzpHVl0eE6igryV2L8XmSJdBS7qO7MKS43hxEh56zJLfj4Q7vK9ctFeuJEe6XFfyzND2MxacgGY-A6xN28BuTWbfL1xFNJnf5zISnKDpagrC2URR8dNvzyLC2MKybNjGrkFlG62MG-8uTCd4y1UzezlK_EB7QXLLCXpFQU1NxCG_qg2pMQxaOm-gKCyQBApYC4bErNDDxoG5X9CaGfKRCzXRNZTzrFUk4lKuFuAhtfUd14302sAfBn8RbzLOTjE_YaUcifR5vWyH6GBJqGyyR4mC8UUPOgF-7lJ_9ZDcB0sAQJiupC4VqbrbA5nVhUK6K4P-zTx1nbOo_NjQcBddChBLBerQ4WqiUBws8eV8QayL_WuuxSpe8y7-97dUW-QsAb_znT9owEjsZWxwhxy?c=clien.ch2&t=0
+              - link [ref=e410] [cursor=pointer]:
+                - /url: https://ader.naver.com/v1/7QSy0Mw2hpj7IjADGc79eSae97Uil0csOm0X0_vHbOFyZd6zmbAFHnE6kjYeDCNAKBbl4t3ZjDUlq5AcU1w6kBkQ9JHvnxvMLi_28CmaUFWHlYzpHVl0eE6igryV2L8XmSJdBS7qO7MKS43hxEh56zJLfj4Q7vK9ctFeuJEe6XFfyzND2MxacgGY-A6xN28BuTWbfL1xFNJnf5zISnKDpagrC2URR8dNvzyLC2MKybNjGrkFlG62MG-8uTCd4y1UzezlK_EB7QXLLCXpFQU1NxCG_qg2pMQxaOm-gKCyQBApYC4bErNDDxoG5X9CaGfKRCzXRNZTzrFUk4lKuFuAhtfUd14302sAfBn8RbzLOTjE_YaUcifR5vWyH6GBJqGyyR4mC8UUPOgF-7lJ_9ZDcB0sAQJiupC4VqbrbA5nVhUK6K4P-zTx1nbOo_NjQcBddChBLBerQ4WqiUBws8eV8QayL_WuuxSpe8y7-97dUW-QsAb_znT9owEjsZWxwhxy?c=clien.ch2&t=0
+                - mark [ref=e411]: 인터넷
+                - mark [ref=e412]: 끊김
+                - text: ", 오직 공식몰에서만 혜택 54만원+추가 요금 할인까지!"
+        - generic [ref=e413]:
+          - generic [ref=e414]:
+            - generic [ref=e416]:
+              - generic [ref=e417]:
+                - button "체험" [ref=e418] [cursor=pointer]
+                - 'link "화웨이 FG736 유무선 공유기 리뷰 : 갤럭시 S25에서 경험한 차세대 Wi-Fi 7 속도!" [ref=e419] [cursor=pointer]':
+                  - /url: /service/board/chehum/19263726?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false
+              - generic [ref=e420]: 
+              - generic [ref=e422]:
+                - text: 메시 네트워크를 구축하면, 넓은 공간을 이동하더라도 단 하나의 Wi-Fi 이름 (SSID)으로
+                - mark [ref=e423]: 끊김
+                - text: 없는 무선
+                - mark [ref=e424]: 인터넷
+                - text: 환경을 경험할 수
+            - generic "럭키싱글" [ref=e428]
+            - generic [ref=e429]: "159"
+            - generic [ref=e431]: 09-14
+          - generic [ref=e433]:
+            - generic [ref=e435]:
+              - generic [ref=e436]:
+                - button "사용기" [ref=e437] [cursor=pointer]
+                - link "SCR-01 2주 사용기 (+ USB-C to RJ45 케이블)" [ref=e438] [cursor=pointer]:
+                  - /url: /service/board/use/19258673?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false
+              - generic [ref=e439]: 
+              - link "51" [ref=e440] [cursor=pointer]:
+                - /url: /service/board/use/19258673?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false#comment-point
+              - generic [ref=e442]:
+                - text: 포탈이
+                - mark [ref=e443]: 끊김
+                - text: 없이 잘된대서 이거에 혹한게 크긴 합니다..; 플5프로 매물 언제 풀리나요..) 클리앙에 있는 사용기 글들과 검색을 통
+            - generic "어빈" [ref=e447]
+            - generic [ref=e448]: "7718"
+            - generic [ref=e450]: 09-04
+          - generic [ref=e452]:
+            - generic [ref=e454]:
+              - generic [ref=e455]:
+                - button "체험" [ref=e456] [cursor=pointer]
+                - link "27인치 QHD 144Hz 가성비 게이밍 모니터 이노스 27QLS120M 사용기" [ref=e457] [cursor=pointer]:
+                  - /url: /service/board/chehum/19255197?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false
+              - generic [ref=e458]: 
+              - generic [ref=e460]:
+                - text: 영상이나
+                - mark [ref=e461]: 인터넷
+                - text: 강의를 보기에는 무난한 성능을 보여주지만, 게임이나 영화 볼 때 묵직한 중저음과 타격감까지 기대하기에는 다
+            - generic "럭키싱글" [ref=e465]
+            - generic [ref=e466]: "1917"
+            - generic [ref=e468]: 08-29
+          - generic [ref=e470]:
+            - generic [ref=e472]:
+              - generic [ref=e473]:
+                - button "아질게" [ref=e474] [cursor=pointer]
+                - link "카페 wifi는 노트북이나 태블릿 사용을 제한할수있나요?" [ref=e475] [cursor=pointer]:
+                  - /url: /service/board/kin/19243772?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false
+              - generic [ref=e476]: 
+              - link "5" [ref=e477] [cursor=pointer]:
+                - /url: /service/board/kin/19243772?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false#comment-point
+              - generic [ref=e479]:
+                - text: 게 딸깍 하면 되는게 아니라서 아닐걸요? 그냥 카페
+                - mark [ref=e480]: 인터넷
+                - text: 이 느린걸거에요. 요새 스마트폰은 wifi 신호 안...5ghz로 바꿔보세요
+            - generic "킨브로KINBRO" [ref=e484]
+            - generic [ref=e485]: "1783"
+            - generic [ref=e487]: 08-08
+          - generic [ref=e489]:
+            - generic [ref=e491]:
+              - generic [ref=e492]:
+                - button "새소식" [ref=e493] [cursor=pointer]
+                - link "아마존 게이밍 수장, 머지않아 콘솔 기기가 필요 없어질 것" [ref=e494] [cursor=pointer]:
+                  - /url: /service/board/news/19235418?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false
+              - generic [ref=e495]: 
+              - link "5" [ref=e496] [cursor=pointer]:
+                - /url: /service/board/news/19235418?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false#comment-point
+              - generic [ref=e498]:
+                - text: 띄는
+                - mark [ref=e499]: 끊김
+                - text: 과 화질 저하 현상이 발생했습니다. 이는 기술 자체에 대한 비판이라기보다는 물리적인 현실의 문제입니다. 제가 사는
+            - generic "심심해!" [ref=e503]
+            - generic [ref=e504]: "3321"
+            - generic [ref=e506]: 07-27
+          - generic [ref=e508]:
+            - generic [ref=e510]:
+              - generic [ref=e511]:
+                - button "굴당" [ref=e512] [cursor=pointer]
+                - link [ref=e513] [cursor=pointer]:
+                  - /url: /service/board/cm_car/19214040?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false
+                  - text: 5W 내비 + 아이폰 조합 혹시 블루투스
+                  - mark [ref=e514]: 끊김
+                  - text: 증상 없으신가요?
+              - link "30" [ref=e515] [cursor=pointer]:
+                - /url: /service/board/cm_car/19214040?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false#comment-point
+              - generic [ref=e517]:
+                - text: 아니고요 좀 주접이라고 느껴지실수 있겠지만
+                - mark [ref=e518]: 인터넷
+                - text: 에 하나둘씩 뿌리는 정보로 사람 특정하는게 일도...5w네비 ev6 22년식 아이
+            - generic "체미" [ref=e522]
+            - generic [ref=e523]: "3518"
+            - generic [ref=e525]: 06-23
+          - generic [ref=e527]:
+            - generic [ref=e529]:
+              - generic [ref=e530]:
+                - button "새소식" [ref=e531] [cursor=pointer]
+                - link "[펌웨어] ipTIME 유무선 공유기 펌웨어 15.35.0 배포" [ref=e532] [cursor=pointer]:
+                  - /url: /service/board/news/19206715?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false
+              - link "2" [ref=e533] [cursor=pointer]:
+                - /url: /service/board/news/19206715?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false#comment-point
+              - generic [ref=e535]:
+                - text: "관련(인증 영역) 패치 # 버그 수정 및 안정성 개선 - [ QCA 칩셋 제품 ] 일부 환경에서 IPTV 시청 중"
+                - mark [ref=e536]: 끊김
+                - text: 현상 개선 - 6GHz 포함
+            - generic "_딘_" [ref=e540]
+            - generic [ref=e541]: "3007"
+            - generic [ref=e543]: 06-10
+          - generic [ref=e545]:
+            - generic [ref=e547]:
+              - generic [ref=e548]:
+                - button "아질게" [ref=e549] [cursor=pointer]
+                - link [ref=e550] [cursor=pointer]:
+                  - /url: /service/board/kin/19203906?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false
+                  - text: 원룸 LG HelloVision 케이블
+                  - mark [ref=e551]: 인터넷
+                  - text: 업로드 속도 2~3Mbps
+              - link "4" [ref=e552] [cursor=pointer]:
+                - /url: /service/board/kin/19203906?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false#comment-point
+              - generic [ref=e554]:
+                - text: 보였습니다. WAN 1포트의 물리적 링크가 재연결되어 DHCP기능을 다시 시작합니다. 또 일부 날짜에는
+                - mark [ref=e555]: 인터넷
+                - mark [ref=e556]: 끊김
+                - text: /외부 IP 관련 로
+            - generic "한큐나리" [ref=e560]
+            - generic [ref=e561]: "1549"
+            - generic [ref=e563]: 06-06
+          - generic [ref=e565]:
+            - generic [ref=e567]:
+              - generic [ref=e568]:
+                - button "아질게" [ref=e569] [cursor=pointer]
+                - link [ref=e570] [cursor=pointer]:
+                  - /url: /service/board/kin/19198528?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false
+                  - text: SK 광케이블이라고 해서
+                  - mark [ref=e571]: 인터넷
+                  - text: 설치했는데요
+              - link "11" [ref=e572] [cursor=pointer]:
+                - /url: /service/board/kin/19198528?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false#comment-point
+              - generic [ref=e574]:
+                - text: 였던것 같은데 (챗GPT한테 물어보니 광캐이블이면 100M 충분하다고 해서 신청했어요) 이번에
+                - mark [ref=e575]: 인터넷
+                - text: (화상영어)
+                - mark [ref=e576]: 끊김
+                - text: 으로 새로 설
+            - generic "okki" [ref=e580]
+            - generic [ref=e581]: "1984"
+            - generic [ref=e583]: 05-30
+          - generic [ref=e585]:
+            - generic [ref=e587]:
+              - generic [ref=e588]:
+                - button "새소식" [ref=e589] [cursor=pointer]
+                - link "LGU+, 이통사 첫 5G·LTE 통합요금제 출시" [ref=e590] [cursor=pointer]:
+                  - /url: /service/board/news/19197599?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false
+              - link "6" [ref=e591] [cursor=pointer]:
+                - /url: /service/board/news/19197599?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false#comment-point
+              - generic [ref=e593]:
+                - text: 분리 요금제 5G·LTE 통합 네트워크 구분 없이 선택 단순화 데이터 소진 시 추가 과금 전 구간 QoS 적용
+                - mark [ref=e594]: 끊김
+                - text: 없는 데이터 이용 복
+            - generic "_딘_" [ref=e598]
+            - generic [ref=e599]: "6534"
+            - generic [ref=e601]: 05-28
+          - generic [ref=e603]:
+            - generic [ref=e605]:
+              - generic [ref=e606]:
+                - button "새소식" [ref=e607] [cursor=pointer]
+                - link "[펌웨어] ipTIME 유무선 공유기 펌웨어 15.34.4 배포" [ref=e608] [cursor=pointer]:
+                  - /url: /service/board/news/19193998?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false
+              - link "7" [ref=e609] [cursor=pointer]:
+                - /url: /service/board/news/19193998?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false#comment-point
+              - generic [ref=e611]:
+                - text: 사용자 모드'로 변경 - [ BE5100M/BE3600M/RingBE3600/RingBE3600+ ] WireGuard 서버 사용 시
+                - mark [ref=e612]: 인터넷
+                - text: 사용
+                - mark [ref=e613]: 끊김
+                - text: 문제 해결 - [ A
+            - generic "_딘_" [ref=e617]
+            - generic [ref=e618]: "4010"
+            - generic [ref=e620]: 05-21
+          - generic [ref=e622]:
+            - generic [ref=e624]:
+              - generic [ref=e625]:
+                - button "굴당" [ref=e626] [cursor=pointer]
+                - link "파가니 존다 체르비노 / 애스턴마틴 - 중국자본수혈 / 안드로이드 오토, 데이터 장사의" [ref=e627] [cursor=pointer]:
+                  - /url: /service/board/cm_car/19193724?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false
+              - generic [ref=e629]:
+                - text: 사물
+                - mark [ref=e630]: 인터넷
+                - text: (IoT) 기술을 활용해 차 안에서 터치 한 번으로 집 안의 차고 문을 원격으로 여닫는 스마트 단축키까지 설정할 수 있습
+            - generic "전자치킨" [ref=e634]
+            - generic [ref=e635]: "1425"
+            - generic [ref=e637]: 05-20
+          - generic [ref=e639]:
+            - generic [ref=e641]:
+              - generic [ref=e642]:
+                - button "새소식" [ref=e643] [cursor=pointer]
+                - link "LG이노텍 최첨단 ‘차량용 와이파이7 통신 모듈’ 유럽 메이저 부품사에 공급한다" [ref=e644] [cursor=pointer]:
+                  - /url: /service/board/news/19180205?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false
+              - link "1" [ref=e645] [cursor=pointer]:
+                - /url: /service/board/news/19180205?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false#comment-point
+              - generic [ref=e647]:
+                - text: 송수신해도,
+                - mark [ref=e648]: 끊김
+                - text: 없이 초고속 와이파이를 이용할 수 있는 비결이다. LG이노텍의 ‘차량용 와이파이7 통신 모듈’은 퀄컴의 통신칩
+            - generic "_딘_" [ref=e652]
+            - generic [ref=e653]: "3471"
+            - generic [ref=e655]: 04-20
+          - generic [ref=e657]:
+            - generic [ref=e659]:
+              - generic [ref=e660]:
+                - button "체험" [ref=e661] [cursor=pointer]
+                - link "컴퓨터메인보드 추천 기가바이트 B850M AORUS ELITE WIFI6E ICE 성능 및 스펙 분석" [ref=e662] [cursor=pointer]:
+                  - /url: /service/board/chehum/19169041?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false
+              - generic [ref=e663]: 
+              - generic [ref=e665]:
+                - text: 때도
+                - mark [ref=e666]: 끊김
+                - text: 없이 안정적인 연결 상태를 유지해 줍니다. 후면 I/O 패널 구성을 보면 USB 3.2 Gen2 Type-C 포트를 포함해 다양한 연
+            - generic "야콤" [ref=e670]
+            - generic [ref=e671]: "2988"
+            - generic [ref=e673]: 03-27
+          - generic [ref=e675]:
+            - generic [ref=e677]:
+              - generic [ref=e678]:
+                - button "아질게" [ref=e679] [cursor=pointer]
+                - link [ref=e680] [cursor=pointer]:
+                  - /url: /service/board/kin/19166162?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false
+                  - text: KT 기가지니 A
+                  - mark [ref=e681]: 끊김
+                  - text: 문제 해결하신 분 있을지요?
+              - link "4" [ref=e682] [cursor=pointer]:
+                - /url: /service/board/kin/19166162?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false#comment-point
+              - generic [ref=e684]:
+                - text: 셋톱을 이사오면서 75인치 4K TV에 연결했어요.
+                - mark [ref=e685]: 인터넷
+                - text: 은 깔끔하게 되니, 모뎀문제는 아닌듯, 회선문제도...보든, 제가 넷플릭스
+            - generic "simplify" [ref=e689]
+            - generic [ref=e690]: "2621"
+            - generic [ref=e692]: 03-22
+          - generic [ref=e694]:
+            - generic [ref=e696]:
+              - generic [ref=e697]:
+                - button "체험" [ref=e698] [cursor=pointer]
+                - link "모던한 디자인에 넓은 커버리지 능력까지 갖춘 가성비 공유기 [netis/네티스 MEX605 유" [ref=e699] [cursor=pointer]:
+                  - /url: /service/board/chehum/19159211?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false
+              - generic [ref=e701]:
+                - text: "공유기, #"
+                - mark [ref=e702]: 인터넷
+                - text: "공유기 추천, #netis, #네티스 - 구매링크 - - https://prod.danawa.com/info/?pcode=31372091 - https://smart"
+            - generic "yewtree923" [ref=e706]
+            - generic [ref=e707]: "2334"
+            - generic [ref=e709]: 03-12
+          - generic [ref=e711]:
+            - generic [ref=e713]:
+              - generic [ref=e714]:
+                - button "체험" [ref=e715] [cursor=pointer]
+                - link "WiFi7공유기 가성비 모델 찾는다면 ASUS RT-BE50이 매력적인 이유" [ref=e716] [cursor=pointer]:
+                  - /url: /service/board/chehum/19147798?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false
+              - generic [ref=e717]: 
+              - generic [ref=e719]:
+                - text: 있는데, 역시나 안정적인 수치로 측정이 되었습니다. 고해상도의 영상이나 스트리밍 영상을 볼 때에도
+                - mark [ref=e720]: 끊김
+                - text: 없이 볼 수 있었고, 설
+            - generic "야콤" [ref=e724]
+            - generic [ref=e725]: "2078"
+            - generic [ref=e727]: 02-21
+          - generic [ref=e729]:
+            - generic [ref=e731]:
+              - generic [ref=e732]:
+                - button "모공" [ref=e733] [cursor=pointer]
+                - link "kt는 스카이 라이프를 버린것이 맞아요" [ref=e734] [cursor=pointer]:
+                  - /url: /service/board/park/19142755?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false
+              - link "11" [ref=e735] [cursor=pointer]:
+                - /url: /service/board/park/19142755?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false#comment-point
+              - generic [ref=e737]:
+                - text: 도서지역은 필수이면서 서비스 개선은 썩….
+                - mark [ref=e738]: 인터넷
+                - text: 속도보다도 육지는 지니티비니 뭐니 하면서 엄청나게...볼거리 많다고 홍보하
+            - generic "씨펄" [ref=e742]
+            - generic [ref=e743]: "3585"
+            - generic [ref=e745]: 02-11
+          - generic [ref=e747]:
+            - generic [ref=e749]:
+              - generic [ref=e750]:
+                - button "새소식" [ref=e751] [cursor=pointer]
+                - link "[펌웨어] ipTIME 유무선 공유기 101 종 펌웨어 15.30.6 배포" [ref=e752] [cursor=pointer]:
+                  - /url: /service/board/news/19137725?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false
+              - link "3" [ref=e753] [cursor=pointer]:
+                - /url: /service/board/news/19137725?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false#comment-point
+              - generic [ref=e755]:
+                - text: 네트워크 History ]
+                - mark [ref=e756]: 인터넷
+                - text: 사용률 기능 추가 - [ Mediatek BE제품군 ] Easymesh 안정성 개선 - [ Mediatek...Class 및 Client I
+            - generic "_딘_" [ref=e760]
+            - generic [ref=e761]: "3222"
+            - generic [ref=e763]: 02-04
+          - generic [ref=e765]:
+            - generic [ref=e767]:
+              - generic [ref=e768]:
+                - button "아이폰" [ref=e769] [cursor=pointer]
+                - link "아이폰 에어 셀룰러 콜드랍 문제" [ref=e770] [cursor=pointer]:
+                  - /url: /service/board/cm_iphonien/19128107?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false
+              - link "15" [ref=e771] [cursor=pointer]:
+                - /url: /service/board/cm_iphonien/19128107?combine=true&q=%EC%9D%B8%ED%84%B0%EB%84%B7+%EB%81%8A%EA%B9%80&p=0&sort=recency&boardCd=&isBoard=false#comment-point
+              - generic [ref=e773]:
+                - text: 있었어요. 게다가 통화 품질도 종종 저하되고
+                - mark [ref=e774]: 끊김
+                - text: 현상도 있고요. 통신사는 KT LTE 요금제를 쓰고 있는데...해결됐다고 해서 와
+            - generic "클리으앙" [ref=e778]
+            - generic [ref=e779]: "5195"
+            - generic [ref=e781]: 01-19
+        - generic [ref=e786]:
+          - generic [ref=e787]:
+            - link "1" [ref=e788] [cursor=pointer]:
+              - /url: "javascript:"
+            - link "2" [ref=e789] [cursor=pointer]:
+              - /url: "javascript:"
+            - link "3" [ref=e790] [cursor=pointer]:
+              - /url: "javascript:"
+            - link "4" [ref=e791] [cursor=pointer]:
+              - /url: "javascript:"
+            - link "5" [ref=e792] [cursor=pointer]:
+              - /url: "javascript:"
+            - link "6" [ref=e793] [cursor=pointer]:
+              - /url: "javascript:"
+            - link "7" [ref=e794] [cursor=pointer]:
+              - /url: "javascript:"
+            - link "8" [ref=e795] [cursor=pointer]:
+              - /url: "javascript:"
+            - link "9" [ref=e796] [cursor=pointer]:
+              - /url: "javascript:"
+            - link "10" [ref=e797] [cursor=pointer]:
+              - /url: "javascript:"
+          - link "" [ref=e798] [cursor=pointer]:
+            - /url: "javascript:"
+          - link "다음 " [ref=e799] [cursor=pointer]:
+            - /url: "javascript:"
+        - generic [ref=e801]:
+          - generic [ref=e802]:
+            - generic [ref=e803]: AD
+            - link "" [ref=e804] [cursor=pointer]:
+              - /url: https://saedu.naver.com/adbiz/searchad/intro.nhn
+              - generic "등록안내" [ref=e805]: 
+          - list [ref=e807]:
+            - listitem [ref=e808]:
+              - generic [ref=e809]:
+                - link "(주)한국와이파이" [ref=e810] [cursor=pointer]:
+                  - /url: https://ader.naver.com/v1/MQsRGYiCJcoqGGBuUXi-FTawj0v71vLCvhrdAD7donm_rWyy_VYS4mnSK7Pby6JmvsubM5KsFEaLeriXUnuLRFt-mfNe5OmLsl-RY2fSOVRsgQO2mOBnWtwxfczDCWjpjOX0WkWufWWlC_Xe34D89q_lMQCRVQrCXJY69EkOZCUdQSAVbjiMuxDBOl6yHEdQ3JCMiJURemZrrGP-L2ho6PZObkNzDjuOosZa7pAZz0cuN17WgR9rtXuAXvBSpK5GryHR7Jfk5ll83HSUcDBvoVnkcQySGddYoml426jx9i7wviSg850L1jeoiAb_iaWzpHrxgbznOLvr7REKeNzr2NpmBO8zOWHU-9QjOFhJADrhh2jjfDtllBXPoEu0jEe1liLund5XvVkWEZyQJaUQMfySFrcMzleZJyZeol14zwuRR-fUQhDqjjISZiz56L2J?c=clien.ch2&t=0
+                - link "특허, 벤처 기업용 와이파이 설계구축 전문, 공공와이파이, 행사, 이벤트, IOT" [ref=e812] [cursor=pointer]:
+                  - /url: https://ader.naver.com/v1/MQsRGYiCJcoqGGBuUXi-FTawj0v71vLCvhrdAD7donm_rWyy_VYS4mnSK7Pby6JmvsubM5KsFEaLeriXUnuLRFt-mfNe5OmLsl-RY2fSOVRsgQO2mOBnWtwxfczDCWjpjOX0WkWufWWlC_Xe34D89q_lMQCRVQrCXJY69EkOZCUdQSAVbjiMuxDBOl6yHEdQ3JCMiJURemZrrGP-L2ho6PZObkNzDjuOosZa7pAZz0cuN17WgR9rtXuAXvBSpK5GryHR7Jfk5ll83HSUcDBvoVnkcQySGddYoml426jx9i7wviSg850L1jeoiAb_iaWzpHrxgbznOLvr7REKeNzr2NpmBO8zOWHU-9QjOFhJADrhh2jjfDtllBXPoEu0jEe1liLund5XvVkWEZyQJaUQMfySFrcMzleZJyZeol14zwuRR-fUQhDqjjISZiz56L2J?c=clien.ch2&t=0
+              - link [ref=e813] [cursor=pointer]:
+                - /url: https://ader.naver.com/v1/-FQR9ZBvgRMtHMCXWR3KzwFf57jdab202hnU3xfOLSv8glZOgwCTZpGpj675Vmqn5w0tWgxPu9zRBcjG7UW2bDo-m55T-cpRyaoPsufqlb__AR5i1YlWpO0S4Q7SRkvId37dtIUyBdkNWZVaJ49Zs3C1a0rvsldQCXm2nClBL2-Gzyw6woQPxzFl7PsLuF0lUtzIVPwTFino-E04LNWgLJR4xwl7ueyCtr2F3Vxgfl0vfkpMHY8EEHm3UFJcFhazOTxm4h5R6PLzSMWxxXvVSfHS6M4vaxXwEwyLZ2cn9EcdKMcGzl19hOPtKFuyOvF7ECUG72ZKyK7NR7jKp3m9m0-D29AlAKk0fte19xccx1Ri9YZczZ8PlX3CaGyC4kqqVxZIaEo4yjZ4HvTUjUnNVSIlSgiZXOHNM01yFFj_1-sAYiveSGlEkmQXEZtyv5YU09zYCtVA1CIER2b1bPd5Rw==?c=clien.ch2&t=0
+            - listitem [ref=e816]:
+              - generic [ref=e817]:
+                - link "(주)한국와이파이 특허,벤처" [ref=e818] [cursor=pointer]:
+                  - /url: https://ader.naver.com/v1/0zdSPKHwyLswJGUOP-JEIqKLN_qUf7nfNyP1HHg8Pj2qrFqwZnP2h-bajNjfe6oSUFPAh5xXgiyWYzw5CHt5Xi3L8NqT0gV_Aezxew5g_UPIzP_XdteSO8URCGvKav7QeTYpmVCA7RQnpBoQZSBHXwP1MdKnLKENkfLxwVsaT5ICLocxzq8ba6BiaBg7M0McqGmc1mBVHeJdRQi6_yoapA==?c=clien.ch2&t=0
+                - link "와이파이 설계구축 전문, 공공와이파이, 행사, 이벤트, IOT, 건축시설" [ref=e820] [cursor=pointer]:
+                  - /url: https://ader.naver.com/v1/0zdSPKHwyLswJGUOP-JEIqKLN_qUf7nfNyP1HHg8Pj2qrFqwZnP2h-bajNjfe6oSUFPAh5xXgiyWYzw5CHt5Xi3L8NqT0gV_Aezxew5g_UPIzP_XdteSO8URCGvKav7QeTYpmVCA7RQnpBoQZSBHXwP1MdKnLKENkfLxwVsaT5ICLocxzq8ba6BiaBg7M0McqGmc1mBVHeJdRQi6_yoapA==?c=clien.ch2&t=0
+              - link [ref=e821] [cursor=pointer]:
+                - /url: https://ader.naver.com/v1/0zdSPKHwyLswJGUOP-JEIqKLN_qUf7nfNyP1HHg8Pj2qrFqwZnP2h-bajNjfe6oSUFPAh5xXgiyWYzw5CHt5Xi3L8NqT0gV_Aezxew5g_UPIzP_XdteSO8URCGvKav7Qx0wODLDD79e_PFEQuQRNdSYu8ALZ8vG2s89DY4iFyH1QBpg2FEGrdiyLdA4ijyQs5zxDhzGzLxma6YAYcRb540SZ36qbyb-K9TW9EdmVFd0=?c=clien.ch2&t=0
+            - listitem [ref=e824]:
+              - generic [ref=e825]:
+                - link "(주)한국와이파이 특허,벤처" [ref=e826] [cursor=pointer]:
+                  - /url: https://ader.naver.com/v1/IF_6_GKbtvPHK3lDKhGxz2hbN-ovajmFEenXKhTeACF-CPMS_XnVz0XWBgoCBJRcsCpBZmHbkr5-2lb4oT4wgnpXCJMI8jdWtV6qC8NDtx7ssu3qPiWOOgmKZIEbkljh3yEkwjr3ydXMLOgnw_60huIUCFNVsOXMbEKevM4K-S4F7F4QIfpXLPZDwK1VZ5d_drz9dKfB7PhlHzxRuM1Ml9za-W_UOv4Ao3S36dxXAtbb1QWKKe7tVwWfygGqnqSboP91bSCvXBPx0M0VBfThb4PL1VV5G3gDhsSVBGtOcsuDFLfp-iJxnIC-ZFVLDMAuJhSjW2Wj6gbzWK4A5zAr6KBO3ZPUMNcXKFBbwNEXVfI6e7IKofWMBKIN5VX3yOM5u6RCsE5hqfucqV6r1McTmhiTh8iUQtiepTzNaWX0ECY=?c=clien.ch2&t=0
+                - link "와이파이 설계구축 전문, 공공와이파이, 행사, 이벤트, IOT, 건축시설" [ref=e828] [cursor=pointer]:
+                  - /url: https://ader.naver.com/v1/IF_6_GKbtvPHK3lDKhGxz2hbN-ovajmFEenXKhTeACF-CPMS_XnVz0XWBgoCBJRcsCpBZmHbkr5-2lb4oT4wgnpXCJMI8jdWtV6qC8NDtx7ssu3qPiWOOgmKZIEbkljh3yEkwjr3ydXMLOgnw_60huIUCFNVsOXMbEKevM4K-S4F7F4QIfpXLPZDwK1VZ5d_drz9dKfB7PhlHzxRuM1Ml9za-W_UOv4Ao3S36dxXAtbb1QWKKe7tVwWfygGqnqSboP91bSCvXBPx0M0VBfThb4PL1VV5G3gDhsSVBGtOcsuDFLfp-iJxnIC-ZFVLDMAuJhSjW2Wj6gbzWK4A5zAr6KBO3ZPUMNcXKFBbwNEXVfI6e7IKofWMBKIN5VX3yOM5u6RCsE5hqfucqV6r1McTmhiTh8iUQtiepTzNaWX0ECY=?c=clien.ch2&t=0
+              - link [ref=e829] [cursor=pointer]:
+                - /url: https://ader.naver.com/v1/FKTYRG_uk3NmzZixehAvMk2ZPLwaadphPd3UbNMc5Qfo2CWDOnco_5YGi4Hz-Bf5efWffARRzBfp5piD8uCZI_tvyyPajz6GXnMKuX67-DYYJLeXTbAb39MS1rCmGXzCb6cTQ1kBWgWuEnZREQ3xxh9baFi_RWm2ERqe0oDdIYo5qi1mo7WX2h8hIsKBjpyXJKioz08Thx2AmTGOYHonojbAMf4MTwkHgHfFloCU-vxgXWf3EaCB_f6qajTdwYp1na239NpqrUQkQ2K5dMA3Ljj-_b8fQEvUV5xnxViqE5lb_4YYHuCJ_08FCGxtmDlrKfYNHJDEu4tXCcMTZGzj_FpliGpRxEve3xemQLfSycMdYPF6THeXetXJxvoxtYNmZC--u5GhIYO-Aop6EMaYLXyC-cUpmozwToOBflIDzeY=?c=clien.ch2&t=0
+      - text:  
+      - generic [ref=e835]:
+        - button " 로그인" [ref=e837] [cursor=pointer]:
+          - generic [ref=e838]: 
+          - generic [ref=e839]: 로그인
+        - generic [ref=e841]:
+          - link "아이디 · 비밀번호 찾기" [ref=e842] [cursor=pointer]:
+            - /url: /service/auth/findAccountCert
+          - emphasis [ref=e843]
+          - link "회원가입" [ref=e844] [cursor=pointer]:
+            - /url: /service/auth/join
+  - generic [ref=e851]:
+    - generic [ref=e852]:
+      - link "이용규칙" [ref=e853] [cursor=pointer]:
+        - /url: /service/board/rule
+      - link "운영알림판" [ref=e854] [cursor=pointer]:
+        - /url: /service/board/annonce
+      - link "운영소통" [ref=e855] [cursor=pointer]:
+        - /url: /service/board/symposium
+      - link "재검토요청" [ref=e856] [cursor=pointer]:
+        - /url: /service/board/claim
+      - link "도움말" [ref=e857] [cursor=pointer]:
+        - /url: /service/board/faq
+      - link "버그신고" [ref=e858] [cursor=pointer]:
+        - /url: /service/board/bug
+    - generic [ref=e859]:
+      - link [ref=e860] [cursor=pointer]:
+        - /url: /service/cs/privacy
+        - strong [ref=e861]: 개인정보처리방침
+      - link "이용약관" [ref=e862] [cursor=pointer]:
+        - /url: /service/cs/conditions
+      - link "책임의 한계와 법적고지" [ref=e863] [cursor=pointer]:
+        - /url: /service/cs/policy
+      - link "청소년 보호정책" [ref=e864] [cursor=pointer]:
+        - /url: /service/cs/teenager
+    - generic [ref=e865]: © 2026 • CLIEN.NET
+  - text: 

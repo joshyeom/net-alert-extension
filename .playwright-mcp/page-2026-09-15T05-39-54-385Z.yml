@@ -1,0 +1,523 @@
+- generic [active] [ref=f68e1]:
+  - link "메인 콘텐츠로 바로가기" [ref=f68e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=f68e6]:
+    - generic:
+      - generic: "Persistent Internet outages. I am out of ideas and so is my ISP : r/techsupport"
+      - banner [ref=f68e10]:
+        - navigation [ref=f68e11]:
+          - link "홈" [ref=f68e15] [cursor=pointer]:
+            - /url: https://www.reddit.com/
+          - search [ref=f68e34]:
+            - generic [ref=f68e36]:
+              - textbox [ref=f68e43]:
+                - /placeholder: Reddit 검색
+              - generic [aria-hidden]: Reddit 검색
+          - generic [ref=f68e44]:
+            - link "가입" [ref=f68e50] [cursor=pointer]:
+              - /url: https://www.reddit.com/register/
+            - link "로그인" [ref=f68e56] [cursor=pointer]:
+              - /url: https://www.reddit.com/login/
+            - button "사용자 메뉴 펼치기" [ref=f68e63] [cursor=pointer]
+      - generic [ref=f68e69]:
+        - generic [ref=f68e70]:
+          - generic [ref=f68e71]:
+            - generic:
+              - generic:
+                - link "가입 바로가기" [ref=f68e72] [cursor=pointer]:
+                  - /url: "#left-sidebar-container"
+                - link "오른쪽 사이드바 바로가기" [ref=f68e73] [cursor=pointer]:
+                  - /url: "#right-sidebar-container"
+          - generic [ref=f68e74]:
+            - main [ref=f68e75]:
+              - 'generic "Persistent Internet outages. I am out of ideas and so is my ISP : r/techsupport"'
+              - generic [ref=f68e76]:
+                - generic [ref=f68e77]:
+                  - generic [ref=f68e78]:
+                    - button "뒤로" [ref=f68e80] [cursor=pointer]
+                    - link "techsupport 커뮤니티로 이동" [ref=f68e88] [cursor=pointer]:
+                      - /url: https://www.reddit.com/r/techsupport/
+                    - group [ref=f68e93]:
+                      - generic [ref=f68e94]:
+                        - link "r/techsupport" [ref=f68e98] [cursor=pointer]:
+                          - /url: https://www.reddit.com/r/techsupport/
+                        - generic [aria-hidden] [ref=f68e99]: •
+                        - time [ref=f68e101]: 2개월 전
+                      - link "작성자는 Ragingpancake456입니다" [ref=f68e107] [cursor=pointer]:
+                        - /url: https://www.reddit.com/user/Ragingpancake456/
+                        - generic [ref=f68e108]: Ragingpancake456
+                  - button "사용자 작업 열기" [ref=f68e112] [cursor=pointer]
+                - generic [ref=f68e118]:
+                  - 'heading "게시물 제목: Persistent Internet outages. I am out of ideas and so is my ISP" [level=1] [ref=f68e119]': Persistent Internet outages. I am out of ideas and so is my ISP
+                  - link "Open | Hardware 플레어입니다" [ref=f68e122] [cursor=pointer]:
+                    - /url: /r/techsupport/?f=flair_name%3A%22Open%20%7C%20Hardware%22
+                    - generic "Open | Hardware 플레어입니다" [ref=f68e124]: Open | Hardware
+                - generic [ref=f68e127]:
+                  - generic [ref=f68e128]:
+                    - paragraph [ref=f68e129]: Hello,
+                    - paragraph [ref=f68e130]: I have been experiencing persistent internet outages at my apartment for the entire time I have lived here, about 1.5 years. Only recently have these outages become so frequent it makes a consistent connection very difficult. According to my routers logs I have been disconnected 26 times in 24 hours, typically I am reconnected after 5-15 min or after power cycling the router/modem. I am on a wired connection, there are no fault lights on the router during a disconnect. Occasionally the upstream light will blink green but I am still connected. I am on my third router since i have lived here. (replaced for troubleshooting)
+                    - paragraph [ref=f68e131]: In the past 5 weeks I have had 5 technicians come to my apartment, all gave me different solutions and none have worked. I have replaced nearly every component that I am able to replace and I have yet to solve the issue.
+                    - paragraph [ref=f68e132]: So far I have replaced
+                    - paragraph [ref=f68e133]: The router/modemAll coax on the property, including the coax outside and insideAll coax points of connection at the walls (face plates)The coax connection between the shared cable box, and the ground point of connection
+                    - paragraph [ref=f68e134]: I am out of ideas, I have replaced everything my landlord and ISP will allow me to replace, I have been assured several times that my issue has been fixed, only for nothing to change.
+                    - paragraph [ref=f68e135]: One technician told me I was receiving around half of the signal strength of my neighbors. To my uneducated self, this sounds like an issue with the hardware outside at the point of connection for my coax in. They have routinely checked and claim there is no faults.
+                    - paragraph [ref=f68e136]: The first technician who did the initial install when I moved in had told me he had an issue with the box outside during the set up and would have to come back later to fix it. He never came back, and I never had to request a return visit until the outages became too bad to ignore.
+                    - paragraph [ref=f68e137]: Customer service told me over the phone that my signal was significantly weaker than it should be and wildly varied in consistency. One suggestion they had was an electrical intrusion into the coax line causing spikes that would cause a disconnect.
+                    - paragraph [ref=f68e138]: Enough technicians have come to my apartment that they no longer look at anything, they just hand me a paper explaining to my landlord that my problem is outside the scope of work they can provide. This is what lead to the replacement of the coax within the walls. I am worried i'm reaching a point where it will be decided by my landlord it's too expensive to fix what may actually be broken.
+                    - paragraph [ref=f68e139]: Has anyone had any similar problems? This is genuinely one of the most frustrating experiences I have had to endure and I feel I have explored all the options available to me. Came here to ask for ANY suggestions to fix this.
+                  - button "더 읽기" [ref=f68e140] [cursor=pointer]
+                - generic "이 게시물에서 실행할 수 있는 작업" [ref=f68e147]:
+                  - generic [ref=f68e150]:
+                    - button "좋아요" [ref=f68e151] [cursor=pointer]
+                    - generic [ref=f68e156]: "3"
+                    - button "싫어요" [ref=f68e158] [cursor=pointer]
+                  - button "21 댓글로 이동" [ref=f68e163] [cursor=pointer]:
+                    - generic [ref=f68e164]: "21"
+                    - generic [ref=f68e170]: 댓글로 이동
+                  - button "공유" [ref=f68e174] [cursor=pointer]
+              - generic "Traceability safeguards data. See how fabs can reduce tester time 80% with single-device tracking." [ref=f68e181]:
+                - generic [ref=f68e182]:
+                  - 'generic "Advertisement: Traceability safeguards data. See how fabs can reduce tester time 80% with single-device tracking." [ref=f68e183]':
+                    - 'link "Advertisement: Traceability safeguards data. See how fabs can reduce tester time 80% with single-device tracking." [ref=f68e184] [cursor=pointer]':
+                      - /url: https://alb.reddit.com/cr?za=J2EJUR7d6P4tHXEXXO3ly8X9vZFaMXmRRUu_U_fVPK0fiEQ7n62K4hvba_j9lCCeEb8_mGrcxv_qreeXcQuV28DJxEfZhBWZD2kGtT5BRpI5aSVRnZcm7NYPrqZy3X40yTcSkYNGZQ3EVnwvuSbMyfe0_1rx85LjQxftaTRbS_mW0kQu5FJhkoL_E4kdX-peD1C88-BvNvAZrAXqJcz5fVXyYj-tscbdgAOrldXcvRotJ3J-E6an4cs9yDI0fUOJuAzGKe0YrBHFzGBFU3hH6IOknAWSeSmi73vvjGUaNvViecSHegUsevdzUOEGyyc51mGZ1QWR9izj3mlE50flkNXz_f_6uftOtQaCH86T-G8jA8jsVNgKdReGjzO-4ULPCLO9Y1FFGKWsp7h-XmkUuaKTEFaW2Nk0-SSta8PA-qH0mch6q8LLXrU59hKKO7tCvRl3SWnoEy7mOwLFOwnWG6PQTtHIJ5BNaER9BC1eRXlr9DJ0LqIi7F1i5W1MUZrV0LD89Bdx8Q34oYyzLCA5mghNgJ2Rhb-Mk_XjkCUQN7Y85yATrukIpcnqHbIgOZ7Kv6-zDGYHnYmBZFHtIFEnNbTzRMYg5dxgZbRaxDeOmZjaFNZcP7OYvWh7FT3MsV_NJZVSL8pa96abHQ00Tkl4Sw3FjIiGEE51vahQt-3qtOD9wM57in_RIxpBjYi-snlHLiRe8pkF&zp=uw5ccNgYm7hsSba7BNRqK-75zkoGMjzY6xiPc27QfQ_yrPjiIz6B2b-v2SwezOFMthDKqGqkfssNvC1kHXGTxKv2ZFjK-NkfloFNTqKn-zUY_34B9dUFWpiL3tjTphVfQMYayVeEnapaeHgvfUo6HdThABqRNFtnCPG47bRZYKqBXIgu2-01Vsvqk7qcu3fkfT8RuefsvF8HdSErFiUAWnYbGA3VKJES0qc4XPZPDZxJLo75w2BrHh8_Rw9b09y3-ERnGi4Zy_T4b4nOSJNzdg
+                  - generic [ref=f68e185]:
+                    - generic [ref=f68e186]:
+                      - link "Siemens_Software" [ref=f68e189] [cursor=pointer]:
+                        - /url: /user/Siemens_Software/
+                        - img "u/Siemens_Software 님의 아바타입니다" [ref=f68e192]
+                      - generic [ref=f68e194]: •
+                      - link "광고" [ref=f68e196] [cursor=pointer]:
+                        - /url: /user/Siemens_Software/
+                      - link [ref=f68e199] [cursor=pointer]:
+                        - /url: https://alb.reddit.com/cr?za=J2EJUR7d6P4tHXEXXO3ly8X9vZFaMXmRRUu_U_fVPK0fiEQ7n62K4hvba_j9lCCeEb8_mGrcxv_qreeXcQuV28DJxEfZhBWZD2kGtT5BRpI5aSVRnZcm7NYPrqZy3X40yTcSkYNGZQ3EVnwvuSbMyfe0_1rx85LjQxftaTRbS_mW0kQu5FJhkoL_E4kdX-peD1C88-BvNvAZrAXqJcz5fVXyYj-tscbdgAOrldXcvRotJ3J-E6an4cs9yDI0fUOJuAzGKe0YrBHFzGBFU3hH6IOknAWSeSmi73vvjGUaNvViecSHegUsevdzUOEGyyc51mGZ1QWR9izj3mlE50flkNXz_f_6uftOtQaCH86T-G8jA8jsVNgKdReGjzO-4ULPCLO9Y1FFGKWsp7h-XmkUuaKTEFaW2Nk0-SSta8PA-qH0mch6q8LLXrU59hKKO7tCvRl3SWnoEy7mOwLFOwnWG6PQTtHIJ5BNaER9BC1eRXlr9DJ0LqIi7F1i5W1MUZrV0LD89Bdx8Q34oYyzLCA5mghNgJ2Rhb-Mk_XjkCUQN7Y85yATrukIpcnqHbIgOZ7Kv6-zDGYHnYmBZFHtIFEnNbTzRMYg5dxgZbRaxDeOmZjaFNZcP7OYvWh7FT3MsV_NJZVSL8pa96abHQ00Tkl4Sw3FjIiGEE51vahQt-3qtOD9wM57in_RIxpBjYi-snlHLiRe8pkF&zp=uw5ccNgYm7hsSba7BNRqK-75zkoGMjzY6xiPc27QfQ_yrPjiIz6B2b-v2SwezOFMthDKqGqkfssNvC1kHXGTxKv2ZFjK-NkfloFNTqKn-zUY_34B9dUFWpiL3tjTphVfQMYayVeEnapaeHgvfUo6HdThABqRNFtnCPG47bRZYKqBXIgu2-01Vsvqk7qcu3fkfT8RuefsvF8HdSErFiUAWnYbGA3VKJES0qc4XPZPDZxJLo75w2BrHh8_Rw9b09y3-ERnGi4Zy_T4b4nOSJNzdg
+                    - button "사용자 작업 열기" [ref=f68e205] [cursor=pointer]
+                  - generic [ref=f68e211]:
+                    - generic [ref=f68e212]:
+                      - link "Traceability safeguards data. See how fabs can reduce tester time 80% with single-device tracking." [ref=f68e214] [cursor=pointer]:
+                        - /url: https://alb.reddit.com/cr?za=J2EJUR7d6P4tHXEXXO3ly8X9vZFaMXmRRUu_U_fVPK0fiEQ7n62K4hvba_j9lCCeEb8_mGrcxv_qreeXcQuV28DJxEfZhBWZD2kGtT5BRpI5aSVRnZcm7NYPrqZy3X40yTcSkYNGZQ3EVnwvuSbMyfe0_1rx85LjQxftaTRbS_mW0kQu5FJhkoL_E4kdX-peD1C88-BvNvAZrAXqJcz5fVXyYj-tscbdgAOrldXcvRotJ3J-E6an4cs9yDI0fUOJuAzGKe0YrBHFzGBFU3hH6IOknAWSeSmi73vvjGUaNvViecSHegUsevdzUOEGyyc51mGZ1QWR9izj3mlE50flkNXz_f_6uftOtQaCH86T-G8jA8jsVNgKdReGjzO-4ULPCLO9Y1FFGKWsp7h-XmkUuaKTEFaW2Nk0-SSta8PA-qH0mch6q8LLXrU59hKKO7tCvRl3SWnoEy7mOwLFOwnWG6PQTtHIJ5BNaER9BC1eRXlr9DJ0LqIi7F1i5W1MUZrV0LD89Bdx8Q34oYyzLCA5mghNgJ2Rhb-Mk_XjkCUQN7Y85yATrukIpcnqHbIgOZ7Kv6-zDGYHnYmBZFHtIFEnNbTzRMYg5dxgZbRaxDeOmZjaFNZcP7OYvWh7FT3MsV_NJZVSL8pa96abHQ00Tkl4Sw3FjIiGEE51vahQt-3qtOD9wM57in_RIxpBjYi-snlHLiRe8pkF&zp=uw5ccNgYm7hsSba7BNRqK-75zkoGMjzY6xiPc27QfQ_yrPjiIz6B2b-v2SwezOFMthDKqGqkfssNvC1kHXGTxKv2ZFjK-NkfloFNTqKn-zUY_34B9dUFWpiL3tjTphVfQMYayVeEnapaeHgvfUo6HdThABqRNFtnCPG47bRZYKqBXIgu2-01Vsvqk7qcu3fkfT8RuefsvF8HdSErFiUAWnYbGA3VKJES0qc4XPZPDZxJLo75w2BrHh8_Rw9b09y3-ERnGi4Zy_T4b4nOSJNzdg
+                      - generic [ref=f68e215]:
+                        - link [ref=f68e217] [cursor=pointer]:
+                          - /url: https://alb.reddit.com/cr?za=J2EJUR7d6P4tHXEXXO3ly8X9vZFaMXmRRUu_U_fVPK0fiEQ7n62K4hvba_j9lCCeEb8_mGrcxv_qreeXcQuV28DJxEfZhBWZD2kGtT5BRpI5aSVRnZcm7NYPrqZy3X40yTcSkYNGZQ3EVnwvuSbMyfe0_1rx85LjQxftaTRbS_mW0kQu5FJhkoL_E4kdX-peD1C88-BvNvAZrAXqJcz5fVXyYj-tscbdgAOrldXcvRotJ3J-E6an4cs9yDI0fUOJuAzGKe0YrBHFzGBFU3hH6IOknAWSeSmi73vvjGUaNvViecSHegUsevdzUOEGyyc51mGZ1QWR9izj3mlE50flkNXz_f_6uftOtQaCH86T-G8jA8jsVNgKdReGjzO-4ULPCLO9Y1FFGKWsp7h-XmkUuaKTEFaW2Nk0-SSta8PA-qH0mch6q8LLXrU59hKKO7tCvRl3SWnoEy7mOwLFOwnWG6PQTtHIJ5BNaER9BC1eRXlr9DJ0LqIi7F1i5W1MUZrV0LD89Bdx8Q34oYyzLCA5mghNgJ2Rhb-Mk_XjkCUQN7Y85yATrukIpcnqHbIgOZ7Kv6-zDGYHnYmBZFHtIFEnNbTzRMYg5dxgZbRaxDeOmZjaFNZcP7OYvWh7FT3MsV_NJZVSL8pa96abHQ00Tkl4Sw3FjIiGEE51vahQt-3qtOD9wM57in_RIxpBjYi-snlHLiRe8pkF&zp=uw5ccNgYm7hsSba7BNRqK-75zkoGMjzY6xiPc27QfQ_yrPjiIz6B2b-v2SwezOFMthDKqGqkfssNvC1kHXGTxKv2ZFjK-NkfloFNTqKn-zUY_34B9dUFWpiL3tjTphVfQMYayVeEnapaeHgvfUo6HdThABqRNFtnCPG47bRZYKqBXIgu2-01Vsvqk7qcu3fkfT8RuefsvF8HdSErFiUAWnYbGA3VKJES0qc4XPZPDZxJLo75w2BrHh8_Rw9b09y3-ERnGi4Zy_T4b4nOSJNzdg
+                        - link "go.sw.siemens.com" [ref=f68e221] [cursor=pointer]:
+                          - /url: https://alb.reddit.com/cr?za=J2EJUR7d6P4tHXEXXO3ly8X9vZFaMXmRRUu_U_fVPK0fiEQ7n62K4hvba_j9lCCeEb8_mGrcxv_qreeXcQuV28DJxEfZhBWZD2kGtT5BRpI5aSVRnZcm7NYPrqZy3X40yTcSkYNGZQ3EVnwvuSbMyfe0_1rx85LjQxftaTRbS_mW0kQu5FJhkoL_E4kdX-peD1C88-BvNvAZrAXqJcz5fVXyYj-tscbdgAOrldXcvRotJ3J-E6an4cs9yDI0fUOJuAzGKe0YrBHFzGBFU3hH6IOknAWSeSmi73vvjGUaNvViecSHegUsevdzUOEGyyc51mGZ1QWR9izj3mlE50flkNXz_f_6uftOtQaCH86T-G8jA8jsVNgKdReGjzO-4ULPCLO9Y1FFGKWsp7h-XmkUuaKTEFaW2Nk0-SSta8PA-qH0mch6q8LLXrU59hKKO7tCvRl3SWnoEy7mOwLFOwnWG6PQTtHIJ5BNaER9BC1eRXlr9DJ0LqIi7F1i5W1MUZrV0LD89Bdx8Q34oYyzLCA5mghNgJ2Rhb-Mk_XjkCUQN7Y85yATrukIpcnqHbIgOZ7Kv6-zDGYHnYmBZFHtIFEnNbTzRMYg5dxgZbRaxDeOmZjaFNZcP7OYvWh7FT3MsV_NJZVSL8pa96abHQ00Tkl4Sw3FjIiGEE51vahQt-3qtOD9wM57in_RIxpBjYi-snlHLiRe8pkF&zp=uw5ccNgYm7hsSba7BNRqK-75zkoGMjzY6xiPc27QfQ_yrPjiIz6B2b-v2SwezOFMthDKqGqkfssNvC1kHXGTxKv2ZFjK-NkfloFNTqKn-zUY_34B9dUFWpiL3tjTphVfQMYayVeEnapaeHgvfUo6HdThABqRNFtnCPG47bRZYKqBXIgu2-01Vsvqk7qcu3fkfT8RuefsvF8HdSErFiUAWnYbGA3VKJES0qc4XPZPDZxJLo75w2BrHh8_Rw9b09y3-ERnGi4Zy_T4b4nOSJNzdg
+                    - link [ref=f68e224] [cursor=pointer]:
+                      - /url: https://alb.reddit.com/cr?za=J2EJUR7d6P4tHXEXXO3ly8X9vZFaMXmRRUu_U_fVPK0fiEQ7n62K4hvba_j9lCCeEb8_mGrcxv_qreeXcQuV28DJxEfZhBWZD2kGtT5BRpI5aSVRnZcm7NYPrqZy3X40yTcSkYNGZQ3EVnwvuSbMyfe0_1rx85LjQxftaTRbS_mW0kQu5FJhkoL_E4kdX-peD1C88-BvNvAZrAXqJcz5fVXyYj-tscbdgAOrldXcvRotJ3J-E6an4cs9yDI0fUOJuAzGKe0YrBHFzGBFU3hH6IOknAWSeSmi73vvjGUaNvViecSHegUsevdzUOEGyyc51mGZ1QWR9izj3mlE50flkNXz_f_6uftOtQaCH86T-G8jA8jsVNgKdReGjzO-4ULPCLO9Y1FFGKWsp7h-XmkUuaKTEFaW2Nk0-SSta8PA-qH0mch6q8LLXrU59hKKO7tCvRl3SWnoEy7mOwLFOwnWG6PQTtHIJ5BNaER9BC1eRXlr9DJ0LqIi7F1i5W1MUZrV0LD89Bdx8Q34oYyzLCA5mghNgJ2Rhb-Mk_XjkCUQN7Y85yATrukIpcnqHbIgOZ7Kv6-zDGYHnYmBZFHtIFEnNbTzRMYg5dxgZbRaxDeOmZjaFNZcP7OYvWh7FT3MsV_NJZVSL8pa96abHQ00Tkl4Sw3FjIiGEE51vahQt-3qtOD9wM57in_RIxpBjYi-snlHLiRe8pkF&zp=uw5ccNgYm7hsSba7BNRqK-75zkoGMjzY6xiPc27QfQ_yrPjiIz6B2b-v2SwezOFMthDKqGqkfssNvC1kHXGTxKv2ZFjK-NkfloFNTqKn-zUY_34B9dUFWpiL3tjTphVfQMYayVeEnapaeHgvfUo6HdThABqRNFtnCPG47bRZYKqBXIgu2-01Vsvqk7qcu3fkfT8RuefsvF8HdSErFiUAWnYbGA3VKJES0qc4XPZPDZxJLo75w2BrHh8_Rw9b09y3-ERnGi4Zy_T4b4nOSJNzdg
+                      - 'img "Thumbnail image: Traceability safeguards data. See how fabs can reduce tester time 80% with single-device tracking." [ref=f68e225]'
+              - generic [ref=f68e227]:
+                - generic:
+                  - generic [ref=f68e228]:
+                    - button "댓글 추가 버튼" [disabled]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - textbox [disabled]:
+                                  - /placeholder: 대화에 참여해보세요
+                  - generic [ref=f68e233]:
+                    - generic [ref=f68e235]:
+                      - generic [aria-hidden] [ref=f68e236]: "정렬 기준:"
+                      - button "정렬 기준 좋아요 비율 높은 순" [ref=f68e241] [cursor=pointer]:
+                        - generic [ref=f68e242]: 좋아요 비율 높은 순
+                    - button "댓글 검색 댓글 검색 펼치기" [ref=f68e250] [cursor=pointer]:
+                      - generic [ref=f68e251]: 댓글 검색
+                      - generic [ref=f68e258]: 댓글 검색 펼치기
+              - region "댓글" [ref=f68e261]:
+                - heading "댓글 섹션" [level=1] [ref=f68e262]
+                - article "Wendigo1010 2개월 전 댓글" [ref=f68e264]:
+                  - generic [ref=f68e265] [cursor=pointer]:
+                    - link "Wendigo1010 님의 프로필 --- 아바타" [ref=f68e271]:
+                      - /url: https://www.reddit.com/user/Wendigo1010/
+                    - generic [ref=f68e281]:
+                      - link "Wendigo1010 님의 프로필" [ref=f68e285]:
+                        - /url: https://www.reddit.com/user/Wendigo1010/
+                        - text: Wendigo1010
+                      - generic [aria-hidden] [ref=f68e286]: •
+                      - link [ref=f68e288]:
+                        - /url: https://www.reddit.com/r/techsupport/comments/1v9gi56/comment/p0dkudt/
+                        - time [ref=f68e290]: 2개월 전
+                  - generic [ref=f68e292]:
+                    - generic [ref=f68e295]:
+                      - paragraph [ref=f68e296]: If they won't change anymore hardware you may be able to pin down times of day and look for environmental effects.
+                      - paragraph [ref=f68e297]: Could be that something picks up interference when something happens. Could be something simple and mundane. Turning on a light in a room, a train going by, someone turns on the microwave, etc.
+                      - paragraph [ref=f68e298]: Keep pestering them and tracking outages. Start asking for refunds due to problematic service levels over a sustained period.
+                    - 'article "댓글 스레드 수준 1: Ragingpancake456 2개월 전 답글" [ref=f68e303]':
+                      - generic [ref=f68e304] [cursor=pointer]:
+                        - link "Ragingpancake456 님의 프로필 --- 아바타" [ref=f68e310]:
+                          - /url: https://www.reddit.com/user/Ragingpancake456/
+                        - generic [ref=f68e320]:
+                          - link "Ragingpancake456 님의 프로필" [ref=f68e324]:
+                            - /url: https://www.reddit.com/user/Ragingpancake456/
+                            - text: Ragingpancake456
+                          - generic "원글 작성자 댓글로 구별 표시된 댓글" [ref=f68e327]: 원글 작성자
+                          - generic [aria-hidden] [ref=f68e328]: •
+                          - link [ref=f68e330]:
+                            - /url: https://www.reddit.com/r/techsupport/comments/1v9gi56/comment/p0dmsym/
+                            - time [ref=f68e332]: 2개월 전
+                      - generic [ref=f68e337]:
+                        - paragraph [ref=f68e338]: I have been saving the logs from the router to determine exactly what percent of my service is downtime, some days are better than others but its around 20%-30% down time. That was the discount I was going to ask for.
+                        - paragraph [ref=f68e339]: I have noticed that the outages seem to be most frequent during the night/mornings. Usually around 12-7am. I would assume that activity during those hours by anyone is limited but its something I will start looking out for.
+                        - paragraph [ref=f68e340]: Thanks
+                - article "RWLemon 2개월 전 댓글" [ref=f68e344]:
+                  - generic [ref=f68e345] [cursor=pointer]:
+                    - link "RWLemon 님의 프로필 --- 아바타" [ref=f68e351]:
+                      - /url: https://www.reddit.com/user/RWLemon/
+                      - img "u/RWLemon 님의 아바타입니다" [ref=f68e354]
+                    - generic [ref=f68e358]:
+                      - link "RWLemon 님의 프로필" [ref=f68e362]:
+                        - /url: https://www.reddit.com/user/RWLemon/
+                        - text: RWLemon
+                      - generic [aria-hidden] [ref=f68e363]: •
+                      - link [ref=f68e365]:
+                        - /url: https://www.reddit.com/r/techsupport/comments/1v9gi56/comment/p0dlf8h/
+                        - time [ref=f68e367]: 2개월 전
+                  - generic [ref=f68e369]:
+                    - generic [ref=f68e372]:
+                      - paragraph [ref=f68e373]: Maybe try this, if your router is in an enclosed space, maybe move it somewhere else where there is ventilation.
+                      - paragraph [ref=f68e374]: When isp gave me a new router we placed it back where the old router was which had no problems what so ever. However the new router was constantly disconnecting and reconnecting until we moved it outside the enclosed area as I suspect it was over heating.
+                      - paragraph [ref=f68e375]: Give it a shot, what else do you have to loose.
+                    - 'article "댓글 스레드 수준 1: Ragingpancake456 2개월 전 답글" [ref=f68e380]':
+                      - generic [ref=f68e381] [cursor=pointer]:
+                        - link "Ragingpancake456 님의 프로필 --- 아바타" [ref=f68e387]:
+                          - /url: https://www.reddit.com/user/Ragingpancake456/
+                        - generic [ref=f68e397]:
+                          - link "Ragingpancake456 님의 프로필" [ref=f68e401]:
+                            - /url: https://www.reddit.com/user/Ragingpancake456/
+                            - text: Ragingpancake456
+                          - generic "원글 작성자 댓글로 구별 표시된 댓글" [ref=f68e404]: 원글 작성자
+                          - generic [aria-hidden] [ref=f68e405]: •
+                          - link [ref=f68e407]:
+                            - /url: https://www.reddit.com/r/techsupport/comments/1v9gi56/comment/p0dn1dy/
+                            - time [ref=f68e409]: 2개월 전
+                      - paragraph [ref=f68e415]: That's a good idea, I will try it out, Thanks
+                - article "cryptaneonline 2개월 전 댓글" [ref=f68e419]:
+                  - generic [ref=f68e420] [cursor=pointer]:
+                    - link "cryptaneonline 님의 프로필 --- 아바타" [ref=f68e426]:
+                      - /url: https://www.reddit.com/user/cryptaneonline/
+                    - generic [ref=f68e442]:
+                      - link "cryptaneonline 님의 프로필" [ref=f68e446]:
+                        - /url: https://www.reddit.com/user/cryptaneonline/
+                        - text: cryptaneonline
+                      - generic [aria-hidden] [ref=f68e447]: •
+                      - link [ref=f68e449]:
+                        - /url: https://www.reddit.com/r/techsupport/comments/1v9gi56/comment/p0djbsm/
+                        - time [ref=f68e451]: 2개월 전
+                  - paragraph [ref=f68e457]: Had a similar issue. My ISP was good enough to change the outdoor module too which fixed it.
+                - article "nizzoball 2개월 전 댓글" [ref=f68e461]:
+                  - generic [ref=f68e462] [cursor=pointer]:
+                    - link "nizzoball 님의 프로필 --- 아바타" [ref=f68e468]:
+                      - /url: https://www.reddit.com/user/nizzoball/
+                    - generic [ref=f68e478]:
+                      - link "nizzoball 님의 프로필" [ref=f68e482]:
+                        - /url: https://www.reddit.com/user/nizzoball/
+                        - text: nizzoball
+                      - generic [aria-hidden] [ref=f68e483]: •
+                      - link [ref=f68e485]:
+                        - /url: https://www.reddit.com/r/techsupport/comments/1v9gi56/comment/p0dx3ey/
+                        - time [ref=f68e487]: 2개월 전
+                  - paragraph [ref=f68e493]: I have a friend whose internet went out daily in the afternoon. Had a hell of a time trying to figure it out. Turns out there was a piece on the pole outside that would expand when the sun would heat it up and break the connection. When it cooled at night it would contract and the the connection would work again
+                - article "The_Daytona 2개월 전 댓글" [ref=f68e497]:
+                  - generic [ref=f68e498] [cursor=pointer]:
+                    - link "The_Daytona 님의 프로필 --- 아바타" [ref=f68e504]:
+                      - /url: https://www.reddit.com/user/The_Daytona/
+                      - img "u/The_Daytona 님의 아바타입니다" [ref=f68e507]
+                    - generic [ref=f68e511]:
+                      - link "The_Daytona 님의 프로필" [ref=f68e515]:
+                        - /url: https://www.reddit.com/user/The_Daytona/
+                        - text: The_Daytona
+                      - generic [aria-hidden] [ref=f68e516]: •
+                      - link [ref=f68e518]:
+                        - /url: https://www.reddit.com/r/techsupport/comments/1v9gi56/comment/p0dnlbn/
+                        - time [ref=f68e520]: 2개월 전
+                  - generic [ref=f68e525]:
+                    - paragraph [ref=f68e526]: I recently went through this over the past three years. It went as far as confirm my line was solid, swapped the modem and router, nothing.
+                    - paragraph [ref=f68e527]: Then I finally got ahold of a customer service rep who asked some of my outage dates and cross referenced themAgainst their techs doing work in my area.
+                    - paragraph [ref=f68e528]: Sure enough anytime a tech did work upstream (meaning my connection was fed from that line) it would bring anyone down stream. In other words maintenance caused putages.
+                    - paragraph [ref=f68e529]: It’s old coax infrastructure and was installed with poor design.
+                    - paragraph [ref=f68e530]: There is nothing they can do until they install fiber in my area.
+                - generic "Stop losing sleep to 403s. Zenrows keeps web data flowing." [ref=f68e534]:
+                  - generic [ref=f68e535]:
+                    - 'generic "Advertisement: Stop losing sleep to 403s. Zenrows keeps web data flowing." [ref=f68e536]':
+                      - 'link "Advertisement: Stop losing sleep to 403s. Zenrows keeps web data flowing." [ref=f68e537] [cursor=pointer]':
+                        - /url: https://alb.reddit.com/cr?za=HoaC6qNtOdOYK1bMssqyzsTGUt7bC-4PY4-s9_8KJpWKl5xDoN5G2nh2wPAwo5dJciwDg7wWQsO3jWcxNDrfOOsiFHR0V2ZHYjsBGrGEvvgxTGVubRQlR_sXctuEMhi3Ae89KhfZZNDy638A8O09WsXJlPuY7UynDkILyrP7_4guaAj3McWIPQsuquIvSAEnSpF_2P9NpqFoTBbVSIpT2JkajavGfLH0Eu5Ho5xzaVK2htCnS4A80-oGH47CJetoEp06XIuzxitSf5BA4Db0AMduzIX9grteMGDx-TYTqKDTUemF3vhsSrDJI74MPuv29GjYKlDpbzqemEdmFRB8tt_NOzjoNYN69ip8YgZzxYzfo1smN0klEgl3KFYpgqoxNLTKuxDsDyO6m4BfgUp7FJUvF1Wr_CdFBV-BDxaAhJX0qSRFiHjt7GUlH10NIiwGTkYo83I6Tv7uUQaHwmZXtqUlpNbcXmauFpsO2c-e2pUz-L4kolKxvAbDonib0NmlsbjYm1ca5-DUamwuy9JXMfDYnwpRITdacZw7t1aRIxROwGb1CmfgzFqzfSeXdp8W9-cp8Vi1VfG0F7cHiCvk-8kPuZnnIvHa3aKBazuSWedWmtG5u8bx59e_qj-r_3K0S-Wdrycc23AqtopK0mEPsTjk8utaAhRX_ZXSZtdpxcVq0XSjM4eEos221XRhujbCV1bJFTqePKQ&zp=dkmY4thJ5vGZYSkA0Iwa8BNrmQnHPZ_gACtbMqyIroL2vKtJNKrAfwlycGi38kaTFJXWRSeFEepNZquo-LKSuXRtjJ8ElEVfVm6PwM6Htc7Wa3hPirr5XLBhEm7wZk2P2mZmMCpfSapP0nYB_BRFc-0e36uU_cBcdJg3OZZQ0iZKmgUkGGpIKqxJt74pjEzKNWGsgItRUWkriWaVHMNUP00MDGtGiZuTov2adOtcsGTSPKEMEwisz030zkWUnbGFj1waKOeBdndQwdL2SR-gsx1lPJHnW0zIpz9NuXa-OPOjq80prxmO8isaHZv9hnLgNBnG2TxnBhz0ls5H1mPLVK_hkhtoA_GgFpd_WkPfn8m46V2nNYQPQtTzoi_lP2zY1hMR2nC2XaCDhBDPIoXMNWLEsNJx-ggssu3ITfrawQzKd6P2iy_OgG4rWOH6vW53Gs7qLGlxTbhf4EP7f0fUCtXWK8g8iWUBSA
+                    - generic [ref=f68e538]:
+                      - generic [ref=f68e539]:
+                        - link "u/zenrows_scraper" [ref=f68e542] [cursor=pointer]:
+                          - /url: /user/zenrows_scraper/
+                          - img "u/zenrows_scraper 님의 아바타입니다" [ref=f68e545]
+                        - generic [ref=f68e547]: •
+                        - link "광고" [ref=f68e549] [cursor=pointer]:
+                          - /url: /user/zenrows_scraper/
+                        - link [ref=f68e552] [cursor=pointer]:
+                          - /url: https://alb.reddit.com/cr?za=HoaC6qNtOdOYK1bMssqyzsTGUt7bC-4PY4-s9_8KJpWKl5xDoN5G2nh2wPAwo5dJciwDg7wWQsO3jWcxNDrfOOsiFHR0V2ZHYjsBGrGEvvgxTGVubRQlR_sXctuEMhi3Ae89KhfZZNDy638A8O09WsXJlPuY7UynDkILyrP7_4guaAj3McWIPQsuquIvSAEnSpF_2P9NpqFoTBbVSIpT2JkajavGfLH0Eu5Ho5xzaVK2htCnS4A80-oGH47CJetoEp06XIuzxitSf5BA4Db0AMduzIX9grteMGDx-TYTqKDTUemF3vhsSrDJI74MPuv29GjYKlDpbzqemEdmFRB8tt_NOzjoNYN69ip8YgZzxYzfo1smN0klEgl3KFYpgqoxNLTKuxDsDyO6m4BfgUp7FJUvF1Wr_CdFBV-BDxaAhJX0qSRFiHjt7GUlH10NIiwGTkYo83I6Tv7uUQaHwmZXtqUlpNbcXmauFpsO2c-e2pUz-L4kolKxvAbDonib0NmlsbjYm1ca5-DUamwuy9JXMfDYnwpRITdacZw7t1aRIxROwGb1CmfgzFqzfSeXdp8W9-cp8Vi1VfG0F7cHiCvk-8kPuZnnIvHa3aKBazuSWedWmtG5u8bx59e_qj-r_3K0S-Wdrycc23AqtopK0mEPsTjk8utaAhRX_ZXSZtdpxcVq0XSjM4eEos221XRhujbCV1bJFTqePKQ&zp=dkmY4thJ5vGZYSkA0Iwa8BNrmQnHPZ_gACtbMqyIroL2vKtJNKrAfwlycGi38kaTFJXWRSeFEepNZquo-LKSuXRtjJ8ElEVfVm6PwM6Htc7Wa3hPirr5XLBhEm7wZk2P2mZmMCpfSapP0nYB_BRFc-0e36uU_cBcdJg3OZZQ0iZKmgUkGGpIKqxJt74pjEzKNWGsgItRUWkriWaVHMNUP00MDGtGiZuTov2adOtcsGTSPKEMEwisz030zkWUnbGFj1waKOeBdndQwdL2SR-gsx1lPJHnW0zIpz9NuXa-OPOjq80prxmO8isaHZv9hnLgNBnG2TxnBhz0ls5H1mPLVK_hkhtoA_GgFpd_WkPfn8m46V2nNYQPQtTzoi_lP2zY1hMR2nC2XaCDhBDPIoXMNWLEsNJx-ggssu3ITfrawQzKd6P2iy_OgG4rWOH6vW53Gs7qLGlxTbhf4EP7f0fUCtXWK8g8iWUBSA
+                      - button "사용자 작업 열기" [ref=f68e558] [cursor=pointer]
+                    - generic [ref=f68e564]:
+                      - generic [ref=f68e565]:
+                        - link "Stop losing sleep to 403s. Zenrows keeps web data flowing." [ref=f68e567] [cursor=pointer]:
+                          - /url: https://alb.reddit.com/cr?za=HoaC6qNtOdOYK1bMssqyzsTGUt7bC-4PY4-s9_8KJpWKl5xDoN5G2nh2wPAwo5dJciwDg7wWQsO3jWcxNDrfOOsiFHR0V2ZHYjsBGrGEvvgxTGVubRQlR_sXctuEMhi3Ae89KhfZZNDy638A8O09WsXJlPuY7UynDkILyrP7_4guaAj3McWIPQsuquIvSAEnSpF_2P9NpqFoTBbVSIpT2JkajavGfLH0Eu5Ho5xzaVK2htCnS4A80-oGH47CJetoEp06XIuzxitSf5BA4Db0AMduzIX9grteMGDx-TYTqKDTUemF3vhsSrDJI74MPuv29GjYKlDpbzqemEdmFRB8tt_NOzjoNYN69ip8YgZzxYzfo1smN0klEgl3KFYpgqoxNLTKuxDsDyO6m4BfgUp7FJUvF1Wr_CdFBV-BDxaAhJX0qSRFiHjt7GUlH10NIiwGTkYo83I6Tv7uUQaHwmZXtqUlpNbcXmauFpsO2c-e2pUz-L4kolKxvAbDonib0NmlsbjYm1ca5-DUamwuy9JXMfDYnwpRITdacZw7t1aRIxROwGb1CmfgzFqzfSeXdp8W9-cp8Vi1VfG0F7cHiCvk-8kPuZnnIvHa3aKBazuSWedWmtG5u8bx59e_qj-r_3K0S-Wdrycc23AqtopK0mEPsTjk8utaAhRX_ZXSZtdpxcVq0XSjM4eEos221XRhujbCV1bJFTqePKQ&zp=dkmY4thJ5vGZYSkA0Iwa8BNrmQnHPZ_gACtbMqyIroL2vKtJNKrAfwlycGi38kaTFJXWRSeFEepNZquo-LKSuXRtjJ8ElEVfVm6PwM6Htc7Wa3hPirr5XLBhEm7wZk2P2mZmMCpfSapP0nYB_BRFc-0e36uU_cBcdJg3OZZQ0iZKmgUkGGpIKqxJt74pjEzKNWGsgItRUWkriWaVHMNUP00MDGtGiZuTov2adOtcsGTSPKEMEwisz030zkWUnbGFj1waKOeBdndQwdL2SR-gsx1lPJHnW0zIpz9NuXa-OPOjq80prxmO8isaHZv9hnLgNBnG2TxnBhz0ls5H1mPLVK_hkhtoA_GgFpd_WkPfn8m46V2nNYQPQtTzoi_lP2zY1hMR2nC2XaCDhBDPIoXMNWLEsNJx-ggssu3ITfrawQzKd6P2iy_OgG4rWOH6vW53Gs7qLGlxTbhf4EP7f0fUCtXWK8g8iWUBSA
+                        - generic [ref=f68e568]:
+                          - link [ref=f68e570] [cursor=pointer]:
+                            - /url: https://alb.reddit.com/cr?za=HoaC6qNtOdOYK1bMssqyzsTGUt7bC-4PY4-s9_8KJpWKl5xDoN5G2nh2wPAwo5dJciwDg7wWQsO3jWcxNDrfOOsiFHR0V2ZHYjsBGrGEvvgxTGVubRQlR_sXctuEMhi3Ae89KhfZZNDy638A8O09WsXJlPuY7UynDkILyrP7_4guaAj3McWIPQsuquIvSAEnSpF_2P9NpqFoTBbVSIpT2JkajavGfLH0Eu5Ho5xzaVK2htCnS4A80-oGH47CJetoEp06XIuzxitSf5BA4Db0AMduzIX9grteMGDx-TYTqKDTUemF3vhsSrDJI74MPuv29GjYKlDpbzqemEdmFRB8tt_NOzjoNYN69ip8YgZzxYzfo1smN0klEgl3KFYpgqoxNLTKuxDsDyO6m4BfgUp7FJUvF1Wr_CdFBV-BDxaAhJX0qSRFiHjt7GUlH10NIiwGTkYo83I6Tv7uUQaHwmZXtqUlpNbcXmauFpsO2c-e2pUz-L4kolKxvAbDonib0NmlsbjYm1ca5-DUamwuy9JXMfDYnwpRITdacZw7t1aRIxROwGb1CmfgzFqzfSeXdp8W9-cp8Vi1VfG0F7cHiCvk-8kPuZnnIvHa3aKBazuSWedWmtG5u8bx59e_qj-r_3K0S-Wdrycc23AqtopK0mEPsTjk8utaAhRX_ZXSZtdpxcVq0XSjM4eEos221XRhujbCV1bJFTqePKQ&zp=dkmY4thJ5vGZYSkA0Iwa8BNrmQnHPZ_gACtbMqyIroL2vKtJNKrAfwlycGi38kaTFJXWRSeFEepNZquo-LKSuXRtjJ8ElEVfVm6PwM6Htc7Wa3hPirr5XLBhEm7wZk2P2mZmMCpfSapP0nYB_BRFc-0e36uU_cBcdJg3OZZQ0iZKmgUkGGpIKqxJt74pjEzKNWGsgItRUWkriWaVHMNUP00MDGtGiZuTov2adOtcsGTSPKEMEwisz030zkWUnbGFj1waKOeBdndQwdL2SR-gsx1lPJHnW0zIpz9NuXa-OPOjq80prxmO8isaHZv9hnLgNBnG2TxnBhz0ls5H1mPLVK_hkhtoA_GgFpd_WkPfn8m46V2nNYQPQtTzoi_lP2zY1hMR2nC2XaCDhBDPIoXMNWLEsNJx-ggssu3ITfrawQzKd6P2iy_OgG4rWOH6vW53Gs7qLGlxTbhf4EP7f0fUCtXWK8g8iWUBSA
+                          - generic [ref=f68e571]:
+                            - link "더 알아보기" [ref=f68e573] [cursor=pointer]:
+                              - /url: https://alb.reddit.com/cr?za=HoaC6qNtOdOYK1bMssqyzsTGUt7bC-4PY4-s9_8KJpWKl5xDoN5G2nh2wPAwo5dJciwDg7wWQsO3jWcxNDrfOOsiFHR0V2ZHYjsBGrGEvvgxTGVubRQlR_sXctuEMhi3Ae89KhfZZNDy638A8O09WsXJlPuY7UynDkILyrP7_4guaAj3McWIPQsuquIvSAEnSpF_2P9NpqFoTBbVSIpT2JkajavGfLH0Eu5Ho5xzaVK2htCnS4A80-oGH47CJetoEp06XIuzxitSf5BA4Db0AMduzIX9grteMGDx-TYTqKDTUemF3vhsSrDJI74MPuv29GjYKlDpbzqemEdmFRB8tt_NOzjoNYN69ip8YgZzxYzfo1smN0klEgl3KFYpgqoxNLTKuxDsDyO6m4BfgUp7FJUvF1Wr_CdFBV-BDxaAhJX0qSRFiHjt7GUlH10NIiwGTkYo83I6Tv7uUQaHwmZXtqUlpNbcXmauFpsO2c-e2pUz-L4kolKxvAbDonib0NmlsbjYm1ca5-DUamwuy9JXMfDYnwpRITdacZw7t1aRIxROwGb1CmfgzFqzfSeXdp8W9-cp8Vi1VfG0F7cHiCvk-8kPuZnnIvHa3aKBazuSWedWmtG5u8bx59e_qj-r_3K0S-Wdrycc23AqtopK0mEPsTjk8utaAhRX_ZXSZtdpxcVq0XSjM4eEos221XRhujbCV1bJFTqePKQ&zp=dkmY4thJ5vGZYSkA0Iwa8BNrmQnHPZ_gACtbMqyIroL2vKtJNKrAfwlycGi38kaTFJXWRSeFEepNZquo-LKSuXRtjJ8ElEVfVm6PwM6Htc7Wa3hPirr5XLBhEm7wZk2P2mZmMCpfSapP0nYB_BRFc-0e36uU_cBcdJg3OZZQ0iZKmgUkGGpIKqxJt74pjEzKNWGsgItRUWkriWaVHMNUP00MDGtGiZuTov2adOtcsGTSPKEMEwisz030zkWUnbGFj1waKOeBdndQwdL2SR-gsx1lPJHnW0zIpz9NuXa-OPOjq80prxmO8isaHZv9hnLgNBnG2TxnBhz0ls5H1mPLVK_hkhtoA_GgFpd_WkPfn8m46V2nNYQPQtTzoi_lP2zY1hMR2nC2XaCDhBDPIoXMNWLEsNJx-ggssu3ITfrawQzKd6P2iy_OgG4rWOH6vW53Gs7qLGlxTbhf4EP7f0fUCtXWK8g8iWUBSA
+                            - link "zenrows.com" [ref=f68e578] [cursor=pointer]:
+                              - /url: https://alb.reddit.com/cr?za=HoaC6qNtOdOYK1bMssqyzsTGUt7bC-4PY4-s9_8KJpWKl5xDoN5G2nh2wPAwo5dJciwDg7wWQsO3jWcxNDrfOOsiFHR0V2ZHYjsBGrGEvvgxTGVubRQlR_sXctuEMhi3Ae89KhfZZNDy638A8O09WsXJlPuY7UynDkILyrP7_4guaAj3McWIPQsuquIvSAEnSpF_2P9NpqFoTBbVSIpT2JkajavGfLH0Eu5Ho5xzaVK2htCnS4A80-oGH47CJetoEp06XIuzxitSf5BA4Db0AMduzIX9grteMGDx-TYTqKDTUemF3vhsSrDJI74MPuv29GjYKlDpbzqemEdmFRB8tt_NOzjoNYN69ip8YgZzxYzfo1smN0klEgl3KFYpgqoxNLTKuxDsDyO6m4BfgUp7FJUvF1Wr_CdFBV-BDxaAhJX0qSRFiHjt7GUlH10NIiwGTkYo83I6Tv7uUQaHwmZXtqUlpNbcXmauFpsO2c-e2pUz-L4kolKxvAbDonib0NmlsbjYm1ca5-DUamwuy9JXMfDYnwpRITdacZw7t1aRIxROwGb1CmfgzFqzfSeXdp8W9-cp8Vi1VfG0F7cHiCvk-8kPuZnnIvHa3aKBazuSWedWmtG5u8bx59e_qj-r_3K0S-Wdrycc23AqtopK0mEPsTjk8utaAhRX_ZXSZtdpxcVq0XSjM4eEos221XRhujbCV1bJFTqePKQ&zp=dkmY4thJ5vGZYSkA0Iwa8BNrmQnHPZ_gACtbMqyIroL2vKtJNKrAfwlycGi38kaTFJXWRSeFEepNZquo-LKSuXRtjJ8ElEVfVm6PwM6Htc7Wa3hPirr5XLBhEm7wZk2P2mZmMCpfSapP0nYB_BRFc-0e36uU_cBcdJg3OZZQ0iZKmgUkGGpIKqxJt74pjEzKNWGsgItRUWkriWaVHMNUP00MDGtGiZuTov2adOtcsGTSPKEMEwisz030zkWUnbGFj1waKOeBdndQwdL2SR-gsx1lPJHnW0zIpz9NuXa-OPOjq80prxmO8isaHZv9hnLgNBnG2TxnBhz0ls5H1mPLVK_hkhtoA_GgFpd_WkPfn8m46V2nNYQPQtTzoi_lP2zY1hMR2nC2XaCDhBDPIoXMNWLEsNJx-ggssu3ITfrawQzKd6P2iy_OgG4rWOH6vW53Gs7qLGlxTbhf4EP7f0fUCtXWK8g8iWUBSA
+                      - link [ref=f68e581] [cursor=pointer]:
+                        - /url: https://alb.reddit.com/cr?za=HoaC6qNtOdOYK1bMssqyzsTGUt7bC-4PY4-s9_8KJpWKl5xDoN5G2nh2wPAwo5dJciwDg7wWQsO3jWcxNDrfOOsiFHR0V2ZHYjsBGrGEvvgxTGVubRQlR_sXctuEMhi3Ae89KhfZZNDy638A8O09WsXJlPuY7UynDkILyrP7_4guaAj3McWIPQsuquIvSAEnSpF_2P9NpqFoTBbVSIpT2JkajavGfLH0Eu5Ho5xzaVK2htCnS4A80-oGH47CJetoEp06XIuzxitSf5BA4Db0AMduzIX9grteMGDx-TYTqKDTUemF3vhsSrDJI74MPuv29GjYKlDpbzqemEdmFRB8tt_NOzjoNYN69ip8YgZzxYzfo1smN0klEgl3KFYpgqoxNLTKuxDsDyO6m4BfgUp7FJUvF1Wr_CdFBV-BDxaAhJX0qSRFiHjt7GUlH10NIiwGTkYo83I6Tv7uUQaHwmZXtqUlpNbcXmauFpsO2c-e2pUz-L4kolKxvAbDonib0NmlsbjYm1ca5-DUamwuy9JXMfDYnwpRITdacZw7t1aRIxROwGb1CmfgzFqzfSeXdp8W9-cp8Vi1VfG0F7cHiCvk-8kPuZnnIvHa3aKBazuSWedWmtG5u8bx59e_qj-r_3K0S-Wdrycc23AqtopK0mEPsTjk8utaAhRX_ZXSZtdpxcVq0XSjM4eEos221XRhujbCV1bJFTqePKQ&zp=dkmY4thJ5vGZYSkA0Iwa8BNrmQnHPZ_gACtbMqyIroL2vKtJNKrAfwlycGi38kaTFJXWRSeFEepNZquo-LKSuXRtjJ8ElEVfVm6PwM6Htc7Wa3hPirr5XLBhEm7wZk2P2mZmMCpfSapP0nYB_BRFc-0e36uU_cBcdJg3OZZQ0iZKmgUkGGpIKqxJt74pjEzKNWGsgItRUWkriWaVHMNUP00MDGtGiZuTov2adOtcsGTSPKEMEwisz030zkWUnbGFj1waKOeBdndQwdL2SR-gsx1lPJHnW0zIpz9NuXa-OPOjq80prxmO8isaHZv9hnLgNBnG2TxnBhz0ls5H1mPLVK_hkhtoA_GgFpd_WkPfn8m46V2nNYQPQtTzoi_lP2zY1hMR2nC2XaCDhBDPIoXMNWLEsNJx-ggssu3ITfrawQzKd6P2iy_OgG4rWOH6vW53Gs7qLGlxTbhf4EP7f0fUCtXWK8g8iWUBSA
+                        - 'img "Thumbnail image: Stop losing sleep to 403s. Zenrows keeps web data flowing." [ref=f68e582]'
+                - article "ZampanoGuy 2개월 전 댓글" [ref=f68e584]:
+                  - generic [ref=f68e585] [cursor=pointer]:
+                    - link "ZampanoGuy 님의 프로필 --- 아바타" [ref=f68e591]:
+                      - /url: https://www.reddit.com/user/ZampanoGuy/
+                    - generic [ref=f68e601]:
+                      - link "ZampanoGuy 님의 프로필" [ref=f68e605]:
+                        - /url: https://www.reddit.com/user/ZampanoGuy/
+                        - text: ZampanoGuy
+                      - generic [aria-hidden] [ref=f68e606]: •
+                      - link [ref=f68e608]:
+                        - /url: https://www.reddit.com/r/techsupport/comments/1v9gi56/comment/p0dvg5r/
+                        - time [ref=f68e610]: 2개월 전
+                  - paragraph [ref=f68e616]: You need to look at your modems event log. Then show your ISP your signals. If you are getting a ton of uncorrectable items. That will help you immensely. Likely a bad coax cable leading to your unit. Once the tech came out and went into the attic space above my unit he swapped out old coax and that fixed the issue permanently. I’m pretty sure I improved the internet connection for my entire building lol. That’s how I got mine fixed. Have to go through the layers to get to a senior tech. But if you can show them the signal feed they will 💯 Chase the issue down.
+                - article "Cybernoid001 2개월 전 댓글" [ref=f68e620]:
+                  - generic [ref=f68e621] [cursor=pointer]:
+                    - link "Cybernoid001 님의 프로필 --- 아바타" [ref=f68e627]:
+                      - /url: https://www.reddit.com/user/Cybernoid001/
+                    - generic [ref=f68e637]:
+                      - link "Cybernoid001 님의 프로필" [ref=f68e641]:
+                        - /url: https://www.reddit.com/user/Cybernoid001/
+                        - text: Cybernoid001
+                      - generic [aria-hidden] [ref=f68e642]: •
+                      - link [ref=f68e644]:
+                        - /url: https://www.reddit.com/r/techsupport/comments/1v9gi56/comment/p0e03my/
+                        - time [ref=f68e646]: 2개월 전
+                  - paragraph [ref=f68e652]: Actually, reading more of you scenario, I have another suggestion.I had a client that also had Coax ISP, we tracked this down to an issue with the voltage on the COAX being out of spec to what the modem was expecting.something from our ticket system that might help.ISP was Cox"evidence of thousands of uncorrectable errors on downstream channels (117-219 MHz), "Commanded Power Exceeds Value" warnings indicating maxed-out upstream transmission, and repeated T3 Time-outs resulting in complete loss of sync"maybe have the ISP technician verify the signal parameters with a line test?We had to get them to come out 3 times before they did the line test properly.
+                - article "tensandjacks 2개월 전 댓글" [ref=f68e656]:
+                  - generic [ref=f68e657] [cursor=pointer]:
+                    - link "tensandjacks 님의 프로필 --- 아바타" [ref=f68e663]:
+                      - /url: https://www.reddit.com/user/tensandjacks/
+                      - img "u/tensandjacks 님의 아바타입니다" [ref=f68e666]
+                    - generic [ref=f68e670]:
+                      - link "tensandjacks 님의 프로필" [ref=f68e674]:
+                        - /url: https://www.reddit.com/user/tensandjacks/
+                        - text: tensandjacks
+                      - generic [aria-hidden] [ref=f68e675]: •
+                      - link [ref=f68e677]:
+                        - /url: https://www.reddit.com/r/techsupport/comments/1v9gi56/comment/p0e354r/
+                        - time [ref=f68e679]: 2개월 전
+                  - generic [ref=f68e684]:
+                    - paragraph [ref=f68e685]: so most residential tech's dont have the ability to actually diagnose your issue unless they have a special tool to trace incoming & outgoing connections only provided by the FCC. the linesman that repair the cable with bucket trucks and the whole works have that tool. I've only ever been able to get a linesman out this way via an ISP business account and the ISP provider was happy to let me know if it wasn't their issue the company i worked for would get a hefty bill. in my case i was able to deduce the connection was shorting in the entire shopping center that had either of the two major providers. both providers would regularly send out basic techs and never got a resolution. after figuring out other shops had issues from time to time at the same time we did i had the linesman check lines for mine and 2 other businesses in the complex. he found that all of us were experiencing the same issue at the same time. after tracing the line he found out the wire was on a telephone pole across the street. its insulation had been damaged and a tether had come loose, so on windy days it was slapping against the other wires causing interference.
+                    - paragraph [ref=f68e686]: if the tech that hooked the wire up to the box said he had an issue and never came back...thats probably a big part of whats going on.
+                    - paragraph [ref=f68e687]: i'd bet the line needs to be dug up and replaced. had this happen when i was young. it took about 4 weeks for them to come and cut through the street to replace the line from the box to my house then years of problems poofed away in a flash
+                - article "notepad987 2개월 전 댓글" [ref=f68e691]:
+                  - generic [ref=f68e692] [cursor=pointer]:
+                    - link "notepad987 님의 프로필 --- 아바타" [ref=f68e698]:
+                      - /url: https://www.reddit.com/user/notepad987/
+                      - img "u/notepad987 님의 아바타입니다" [ref=f68e701]
+                    - generic [ref=f68e705]:
+                      - link "notepad987 님의 프로필" [ref=f68e709]:
+                        - /url: https://www.reddit.com/user/notepad987/
+                        - text: notepad987
+                      - generic [aria-hidden] [ref=f68e710]: •
+                      - link [ref=f68e712]:
+                        - /url: https://www.reddit.com/r/techsupport/comments/1v9gi56/comment/p0e73gk/
+                        - time [ref=f68e714]: 2개월 전
+                  - paragraph [ref=f68e720]: My sister was having a problem with her Comcast connection near Minneapolis, Minnesota. They blamed everything inside the house but in the end it was the wire to the pole and the tech guy says it was probably 30 years old. After replacing the speed was what it should be with no disconnects.
+                - article "Jin-Bru 2개월 전 댓글" [ref=f68e724]:
+                  - generic [ref=f68e725] [cursor=pointer]:
+                    - link "Jin-Bru 님의 프로필 --- 아바타" [ref=f68e731]:
+                      - /url: https://www.reddit.com/user/Jin-Bru/
+                    - generic [ref=f68e741]:
+                      - link "Jin-Bru 님의 프로필" [ref=f68e745]:
+                        - /url: https://www.reddit.com/user/Jin-Bru/
+                        - text: Jin-Bru
+                      - generic [aria-hidden] [ref=f68e746]: •
+                      - link [ref=f68e748]:
+                        - /url: https://www.reddit.com/r/techsupport/comments/1v9gi56/comment/p0e747f/
+                        - time [ref=f68e750]: 2개월 전
+                  - paragraph [ref=f68e756]: Is there a diagnostics page in the router that gives you a measurement for SNR? Signal to noise ratio.
+                - article "Western_Progress_456 2개월 전 댓글" [ref=f68e760]:
+                  - generic [ref=f68e761] [cursor=pointer]:
+                    - link "Western_Progress_456 님의 프로필 --- 아바타" [ref=f68e767]:
+                      - /url: https://www.reddit.com/user/Western_Progress_456/
+                      - img "u/Western_Progress_456 님의 아바타입니다" [ref=f68e770]
+                    - generic [ref=f68e774]:
+                      - link "Western_Progress_456 님의 프로필" [ref=f68e778]:
+                        - /url: https://www.reddit.com/user/Western_Progress_456/
+                        - text: Western_Progress_456
+                      - generic [aria-hidden] [ref=f68e779]: •
+                      - link [ref=f68e781]:
+                        - /url: https://www.reddit.com/r/techsupport/comments/1v9gi56/comment/p0er3b3/
+                        - time [ref=f68e783]: 2개월 전
+                  - paragraph [ref=f68e789]: If yours is the only unit affected there might be a bad splitter that needs to be checked/replaced. Also, use the ISP cable modem/router until the problem is resolved so they can't blame your equipment and request a credit each day the service drops.
+                - article "bustedghost 2개월 전 댓글" [ref=f68e793]:
+                  - generic [ref=f68e794] [cursor=pointer]:
+                    - link "bustedghost 님의 프로필 --- 아바타" [ref=f68e800]:
+                      - /url: https://www.reddit.com/user/bustedghost/
+                    - generic [ref=f68e810]:
+                      - link "bustedghost 님의 프로필" [ref=f68e814]:
+                        - /url: https://www.reddit.com/user/bustedghost/
+                        - text: bustedghost
+                      - generic [aria-hidden] [ref=f68e815]: •
+                      - link [ref=f68e817]:
+                        - /url: https://www.reddit.com/r/techsupport/comments/1v9gi56/comment/p0g8uci/
+                        - time [ref=f68e819]: 2개월 전
+                  - paragraph [ref=f68e825]: My SIL had this problem with Cable Internet coming through her garage attic. The coax cable was too close to the power feed to the house. Once the coax cable was moved a couple feet away from the main power, the issue was resolved.
+                - generic "Zero-CVEs Container Images" [ref=f68e829]:
+                  - generic [ref=f68e830]:
+                    - 'generic "Advertisement: Zero-CVEs Container Images" [ref=f68e831]':
+                      - 'link "Advertisement: Zero-CVEs Container Images" [ref=f68e832] [cursor=pointer]':
+                        - /url: https://alb.reddit.com/cr?za=Qfm4LqMYboFtpS3fWDFKlJrrO-i8MSjoA4c6pAG37lZ5bNxFb8SgGUGC08KJM_uA5Ybuskneb9Thw-gGVteCq9RQzbLzjrHVWA3NA7vZm3c0-MWhdfzEdWyxnMCVdWbWPYbLeCSj0ldo5ElslHMRWZHwRJZ4J3Uj2tjwANkuTMTXtAmVjuMJPY3IqaI4h0WUnfZhGp6hRNtP8O_dUqrfsyodzgpQgBpxNqPRJcpHlDoKWAjYTFxKFDLlqQetZ0VUxT6EirfGy8TS6mu_fKzAYR8RI-lCsVC2s2SYTTkt4dg4bDkBmrKKCBS08Kj-yrSkNl6My331IF13Qgz_AR8DbTXa0vlrVlXdLoaxwz-3fy8euHKQCUFwgbUpK-07TK6W5ZiPv31COgdvP7G84WvRKIzb5IC1TLBycfjbi1xgeF-o1kyhmDRo7Cz16N_51mh27p3VgNWIN_oHmJCC41lwpn_3duGf8fFV8bc_BVBOxQnUtpQpKXI5UhIIYNuQJcvbgZ-coHDXeVqmFcqLw0vjwFL_V02LylsIbgshmGmG3Hu4JO33vdqlZsVDmjnlUf3MIaAdfc1SAUTnXWvqkRYGXvzfqYzbPHe8yq0WHkAJqOR1pmxvV92giobOl4vnQOvRUputS7bydWnsmQN9F_FmXHtIqJcaihlAHa90uezj0hD_DH3qIuDXTMyuLQJyoTt_rDg2zRtqAfxQwA&zp=vfItR2FsVb1hJPyGcFNIiv9RMJe-dj4B53W3bFm6q7hS302rlwEwfv9uMByhRHW41uNBQitxBlEuFzU3Fe6DcXUXoZkVjV_USGwPA0UrmHkWwBvQqdLJgG1AdpjJ3spHARMooqkySEn882Mrbxc0cF4doeaPEiLSgNyVmTxQ5XrjpHfvPU93iT_JUConrPxLVgCUxYgs4mmX9rNSfBzPRV_bAU6aUHK_vwlFr53SJnioINws8NQogGRjS1lGs1NuwZk_g0Qqfdvvnb8-toqagOGqsD8kKsAXbmk7uY5jLQuNpaRy4BGW1uNfGlvOuKAxP17W4xCpXIw8btpJcFEfKOr_D6_xg33SzAlb1xwC0BwqUjgcnQgmnD-VueEJ7h9pSaZS5nYoGx-w9pqCga1lyCAe4Z9EPCjqcynPckWNtLFOsqx6xV-xqcyhzeELJH7726z6bGP--Y5288-hpTDra6jYRMlIYZm-GFFrfy6tCEF5iB5qduN8uQpKtTZ5Zt8kJyYf3DLZ7MUufYLZZka-QuUUiil4PPBnboZ6jDR-wET7a1WqYf1g3G4WF2xGNgey01z_VCwJddetKyHEw5H1I1HNa5wG0ET_s_Ij5h0RnYCNvvVkzlGVy7KTQnMnbFiC2FK4x-jAXV0b8g-JYz38cw
+                    - generic [ref=f68e833]:
+                      - generic [ref=f68e834]:
+                        - link "u/chainguard-dev" [ref=f68e837] [cursor=pointer]:
+                          - /url: /user/chainguard-dev/
+                          - img "u/chainguard-dev 님의 아바타입니다" [ref=f68e840]
+                        - generic [ref=f68e842]: •
+                        - link "광고" [ref=f68e844] [cursor=pointer]:
+                          - /url: /user/chainguard-dev/
+                        - link [ref=f68e847] [cursor=pointer]:
+                          - /url: https://alb.reddit.com/cr?za=Qfm4LqMYboFtpS3fWDFKlJrrO-i8MSjoA4c6pAG37lZ5bNxFb8SgGUGC08KJM_uA5Ybuskneb9Thw-gGVteCq9RQzbLzjrHVWA3NA7vZm3c0-MWhdfzEdWyxnMCVdWbWPYbLeCSj0ldo5ElslHMRWZHwRJZ4J3Uj2tjwANkuTMTXtAmVjuMJPY3IqaI4h0WUnfZhGp6hRNtP8O_dUqrfsyodzgpQgBpxNqPRJcpHlDoKWAjYTFxKFDLlqQetZ0VUxT6EirfGy8TS6mu_fKzAYR8RI-lCsVC2s2SYTTkt4dg4bDkBmrKKCBS08Kj-yrSkNl6My331IF13Qgz_AR8DbTXa0vlrVlXdLoaxwz-3fy8euHKQCUFwgbUpK-07TK6W5ZiPv31COgdvP7G84WvRKIzb5IC1TLBycfjbi1xgeF-o1kyhmDRo7Cz16N_51mh27p3VgNWIN_oHmJCC41lwpn_3duGf8fFV8bc_BVBOxQnUtpQpKXI5UhIIYNuQJcvbgZ-coHDXeVqmFcqLw0vjwFL_V02LylsIbgshmGmG3Hu4JO33vdqlZsVDmjnlUf3MIaAdfc1SAUTnXWvqkRYGXvzfqYzbPHe8yq0WHkAJqOR1pmxvV92giobOl4vnQOvRUputS7bydWnsmQN9F_FmXHtIqJcaihlAHa90uezj0hD_DH3qIuDXTMyuLQJyoTt_rDg2zRtqAfxQwA&zp=vfItR2FsVb1hJPyGcFNIiv9RMJe-dj4B53W3bFm6q7hS302rlwEwfv9uMByhRHW41uNBQitxBlEuFzU3Fe6DcXUXoZkVjV_USGwPA0UrmHkWwBvQqdLJgG1AdpjJ3spHARMooqkySEn882Mrbxc0cF4doeaPEiLSgNyVmTxQ5XrjpHfvPU93iT_JUConrPxLVgCUxYgs4mmX9rNSfBzPRV_bAU6aUHK_vwlFr53SJnioINws8NQogGRjS1lGs1NuwZk_g0Qqfdvvnb8-toqagOGqsD8kKsAXbmk7uY5jLQuNpaRy4BGW1uNfGlvOuKAxP17W4xCpXIw8btpJcFEfKOr_D6_xg33SzAlb1xwC0BwqUjgcnQgmnD-VueEJ7h9pSaZS5nYoGx-w9pqCga1lyCAe4Z9EPCjqcynPckWNtLFOsqx6xV-xqcyhzeELJH7726z6bGP--Y5288-hpTDra6jYRMlIYZm-GFFrfy6tCEF5iB5qduN8uQpKtTZ5Zt8kJyYf3DLZ7MUufYLZZka-QuUUiil4PPBnboZ6jDR-wET7a1WqYf1g3G4WF2xGNgey01z_VCwJddetKyHEw5H1I1HNa5wG0ET_s_Ij5h0RnYCNvvVkzlGVy7KTQnMnbFiC2FK4x-jAXV0b8g-JYz38cw
+                      - button "사용자 작업 열기" [ref=f68e853] [cursor=pointer]
+                    - generic [ref=f68e859]:
+                      - generic [ref=f68e860]:
+                        - link "Zero-CVEs Container Images" [ref=f68e862] [cursor=pointer]:
+                          - /url: https://alb.reddit.com/cr?za=Qfm4LqMYboFtpS3fWDFKlJrrO-i8MSjoA4c6pAG37lZ5bNxFb8SgGUGC08KJM_uA5Ybuskneb9Thw-gGVteCq9RQzbLzjrHVWA3NA7vZm3c0-MWhdfzEdWyxnMCVdWbWPYbLeCSj0ldo5ElslHMRWZHwRJZ4J3Uj2tjwANkuTMTXtAmVjuMJPY3IqaI4h0WUnfZhGp6hRNtP8O_dUqrfsyodzgpQgBpxNqPRJcpHlDoKWAjYTFxKFDLlqQetZ0VUxT6EirfGy8TS6mu_fKzAYR8RI-lCsVC2s2SYTTkt4dg4bDkBmrKKCBS08Kj-yrSkNl6My331IF13Qgz_AR8DbTXa0vlrVlXdLoaxwz-3fy8euHKQCUFwgbUpK-07TK6W5ZiPv31COgdvP7G84WvRKIzb5IC1TLBycfjbi1xgeF-o1kyhmDRo7Cz16N_51mh27p3VgNWIN_oHmJCC41lwpn_3duGf8fFV8bc_BVBOxQnUtpQpKXI5UhIIYNuQJcvbgZ-coHDXeVqmFcqLw0vjwFL_V02LylsIbgshmGmG3Hu4JO33vdqlZsVDmjnlUf3MIaAdfc1SAUTnXWvqkRYGXvzfqYzbPHe8yq0WHkAJqOR1pmxvV92giobOl4vnQOvRUputS7bydWnsmQN9F_FmXHtIqJcaihlAHa90uezj0hD_DH3qIuDXTMyuLQJyoTt_rDg2zRtqAfxQwA&zp=vfItR2FsVb1hJPyGcFNIiv9RMJe-dj4B53W3bFm6q7hS302rlwEwfv9uMByhRHW41uNBQitxBlEuFzU3Fe6DcXUXoZkVjV_USGwPA0UrmHkWwBvQqdLJgG1AdpjJ3spHARMooqkySEn882Mrbxc0cF4doeaPEiLSgNyVmTxQ5XrjpHfvPU93iT_JUConrPxLVgCUxYgs4mmX9rNSfBzPRV_bAU6aUHK_vwlFr53SJnioINws8NQogGRjS1lGs1NuwZk_g0Qqfdvvnb8-toqagOGqsD8kKsAXbmk7uY5jLQuNpaRy4BGW1uNfGlvOuKAxP17W4xCpXIw8btpJcFEfKOr_D6_xg33SzAlb1xwC0BwqUjgcnQgmnD-VueEJ7h9pSaZS5nYoGx-w9pqCga1lyCAe4Z9EPCjqcynPckWNtLFOsqx6xV-xqcyhzeELJH7726z6bGP--Y5288-hpTDra6jYRMlIYZm-GFFrfy6tCEF5iB5qduN8uQpKtTZ5Zt8kJyYf3DLZ7MUufYLZZka-QuUUiil4PPBnboZ6jDR-wET7a1WqYf1g3G4WF2xGNgey01z_VCwJddetKyHEw5H1I1HNa5wG0ET_s_Ij5h0RnYCNvvVkzlGVy7KTQnMnbFiC2FK4x-jAXV0b8g-JYz38cw
+                        - generic [ref=f68e863]:
+                          - link [ref=f68e865] [cursor=pointer]:
+                            - /url: https://alb.reddit.com/cr?za=Qfm4LqMYboFtpS3fWDFKlJrrO-i8MSjoA4c6pAG37lZ5bNxFb8SgGUGC08KJM_uA5Ybuskneb9Thw-gGVteCq9RQzbLzjrHVWA3NA7vZm3c0-MWhdfzEdWyxnMCVdWbWPYbLeCSj0ldo5ElslHMRWZHwRJZ4J3Uj2tjwANkuTMTXtAmVjuMJPY3IqaI4h0WUnfZhGp6hRNtP8O_dUqrfsyodzgpQgBpxNqPRJcpHlDoKWAjYTFxKFDLlqQetZ0VUxT6EirfGy8TS6mu_fKzAYR8RI-lCsVC2s2SYTTkt4dg4bDkBmrKKCBS08Kj-yrSkNl6My331IF13Qgz_AR8DbTXa0vlrVlXdLoaxwz-3fy8euHKQCUFwgbUpK-07TK6W5ZiPv31COgdvP7G84WvRKIzb5IC1TLBycfjbi1xgeF-o1kyhmDRo7Cz16N_51mh27p3VgNWIN_oHmJCC41lwpn_3duGf8fFV8bc_BVBOxQnUtpQpKXI5UhIIYNuQJcvbgZ-coHDXeVqmFcqLw0vjwFL_V02LylsIbgshmGmG3Hu4JO33vdqlZsVDmjnlUf3MIaAdfc1SAUTnXWvqkRYGXvzfqYzbPHe8yq0WHkAJqOR1pmxvV92giobOl4vnQOvRUputS7bydWnsmQN9F_FmXHtIqJcaihlAHa90uezj0hD_DH3qIuDXTMyuLQJyoTt_rDg2zRtqAfxQwA&zp=vfItR2FsVb1hJPyGcFNIiv9RMJe-dj4B53W3bFm6q7hS302rlwEwfv9uMByhRHW41uNBQitxBlEuFzU3Fe6DcXUXoZkVjV_USGwPA0UrmHkWwBvQqdLJgG1AdpjJ3spHARMooqkySEn882Mrbxc0cF4doeaPEiLSgNyVmTxQ5XrjpHfvPU93iT_JUConrPxLVgCUxYgs4mmX9rNSfBzPRV_bAU6aUHK_vwlFr53SJnioINws8NQogGRjS1lGs1NuwZk_g0Qqfdvvnb8-toqagOGqsD8kKsAXbmk7uY5jLQuNpaRy4BGW1uNfGlvOuKAxP17W4xCpXIw8btpJcFEfKOr_D6_xg33SzAlb1xwC0BwqUjgcnQgmnD-VueEJ7h9pSaZS5nYoGx-w9pqCga1lyCAe4Z9EPCjqcynPckWNtLFOsqx6xV-xqcyhzeELJH7726z6bGP--Y5288-hpTDra6jYRMlIYZm-GFFrfy6tCEF5iB5qduN8uQpKtTZ5Zt8kJyYf3DLZ7MUufYLZZka-QuUUiil4PPBnboZ6jDR-wET7a1WqYf1g3G4WF2xGNgey01z_VCwJddetKyHEw5H1I1HNa5wG0ET_s_Ij5h0RnYCNvvVkzlGVy7KTQnMnbFiC2FK4x-jAXV0b8g-JYz38cw
+                          - generic [ref=f68e866]:
+                            - link "더 알아보기" [ref=f68e868] [cursor=pointer]:
+                              - /url: https://alb.reddit.com/cr?za=Qfm4LqMYboFtpS3fWDFKlJrrO-i8MSjoA4c6pAG37lZ5bNxFb8SgGUGC08KJM_uA5Ybuskneb9Thw-gGVteCq9RQzbLzjrHVWA3NA7vZm3c0-MWhdfzEdWyxnMCVdWbWPYbLeCSj0ldo5ElslHMRWZHwRJZ4J3Uj2tjwANkuTMTXtAmVjuMJPY3IqaI4h0WUnfZhGp6hRNtP8O_dUqrfsyodzgpQgBpxNqPRJcpHlDoKWAjYTFxKFDLlqQetZ0VUxT6EirfGy8TS6mu_fKzAYR8RI-lCsVC2s2SYTTkt4dg4bDkBmrKKCBS08Kj-yrSkNl6My331IF13Qgz_AR8DbTXa0vlrVlXdLoaxwz-3fy8euHKQCUFwgbUpK-07TK6W5ZiPv31COgdvP7G84WvRKIzb5IC1TLBycfjbi1xgeF-o1kyhmDRo7Cz16N_51mh27p3VgNWIN_oHmJCC41lwpn_3duGf8fFV8bc_BVBOxQnUtpQpKXI5UhIIYNuQJcvbgZ-coHDXeVqmFcqLw0vjwFL_V02LylsIbgshmGmG3Hu4JO33vdqlZsVDmjnlUf3MIaAdfc1SAUTnXWvqkRYGXvzfqYzbPHe8yq0WHkAJqOR1pmxvV92giobOl4vnQOvRUputS7bydWnsmQN9F_FmXHtIqJcaihlAHa90uezj0hD_DH3qIuDXTMyuLQJyoTt_rDg2zRtqAfxQwA&zp=vfItR2FsVb1hJPyGcFNIiv9RMJe-dj4B53W3bFm6q7hS302rlwEwfv9uMByhRHW41uNBQitxBlEuFzU3Fe6DcXUXoZkVjV_USGwPA0UrmHkWwBvQqdLJgG1AdpjJ3spHARMooqkySEn882Mrbxc0cF4doeaPEiLSgNyVmTxQ5XrjpHfvPU93iT_JUConrPxLVgCUxYgs4mmX9rNSfBzPRV_bAU6aUHK_vwlFr53SJnioINws8NQogGRjS1lGs1NuwZk_g0Qqfdvvnb8-toqagOGqsD8kKsAXbmk7uY5jLQuNpaRy4BGW1uNfGlvOuKAxP17W4xCpXIw8btpJcFEfKOr_D6_xg33SzAlb1xwC0BwqUjgcnQgmnD-VueEJ7h9pSaZS5nYoGx-w9pqCga1lyCAe4Z9EPCjqcynPckWNtLFOsqx6xV-xqcyhzeELJH7726z6bGP--Y5288-hpTDra6jYRMlIYZm-GFFrfy6tCEF5iB5qduN8uQpKtTZ5Zt8kJyYf3DLZ7MUufYLZZka-QuUUiil4PPBnboZ6jDR-wET7a1WqYf1g3G4WF2xGNgey01z_VCwJddetKyHEw5H1I1HNa5wG0ET_s_Ij5h0RnYCNvvVkzlGVy7KTQnMnbFiC2FK4x-jAXV0b8g-JYz38cw
+                            - link "chainguard.dev" [ref=f68e873] [cursor=pointer]:
+                              - /url: https://alb.reddit.com/cr?za=Qfm4LqMYboFtpS3fWDFKlJrrO-i8MSjoA4c6pAG37lZ5bNxFb8SgGUGC08KJM_uA5Ybuskneb9Thw-gGVteCq9RQzbLzjrHVWA3NA7vZm3c0-MWhdfzEdWyxnMCVdWbWPYbLeCSj0ldo5ElslHMRWZHwRJZ4J3Uj2tjwANkuTMTXtAmVjuMJPY3IqaI4h0WUnfZhGp6hRNtP8O_dUqrfsyodzgpQgBpxNqPRJcpHlDoKWAjYTFxKFDLlqQetZ0VUxT6EirfGy8TS6mu_fKzAYR8RI-lCsVC2s2SYTTkt4dg4bDkBmrKKCBS08Kj-yrSkNl6My331IF13Qgz_AR8DbTXa0vlrVlXdLoaxwz-3fy8euHKQCUFwgbUpK-07TK6W5ZiPv31COgdvP7G84WvRKIzb5IC1TLBycfjbi1xgeF-o1kyhmDRo7Cz16N_51mh27p3VgNWIN_oHmJCC41lwpn_3duGf8fFV8bc_BVBOxQnUtpQpKXI5UhIIYNuQJcvbgZ-coHDXeVqmFcqLw0vjwFL_V02LylsIbgshmGmG3Hu4JO33vdqlZsVDmjnlUf3MIaAdfc1SAUTnXWvqkRYGXvzfqYzbPHe8yq0WHkAJqOR1pmxvV92giobOl4vnQOvRUputS7bydWnsmQN9F_FmXHtIqJcaihlAHa90uezj0hD_DH3qIuDXTMyuLQJyoTt_rDg2zRtqAfxQwA&zp=vfItR2FsVb1hJPyGcFNIiv9RMJe-dj4B53W3bFm6q7hS302rlwEwfv9uMByhRHW41uNBQitxBlEuFzU3Fe6DcXUXoZkVjV_USGwPA0UrmHkWwBvQqdLJgG1AdpjJ3spHARMooqkySEn882Mrbxc0cF4doeaPEiLSgNyVmTxQ5XrjpHfvPU93iT_JUConrPxLVgCUxYgs4mmX9rNSfBzPRV_bAU6aUHK_vwlFr53SJnioINws8NQogGRjS1lGs1NuwZk_g0Qqfdvvnb8-toqagOGqsD8kKsAXbmk7uY5jLQuNpaRy4BGW1uNfGlvOuKAxP17W4xCpXIw8btpJcFEfKOr_D6_xg33SzAlb1xwC0BwqUjgcnQgmnD-VueEJ7h9pSaZS5nYoGx-w9pqCga1lyCAe4Z9EPCjqcynPckWNtLFOsqx6xV-xqcyhzeELJH7726z6bGP--Y5288-hpTDra6jYRMlIYZm-GFFrfy6tCEF5iB5qduN8uQpKtTZ5Zt8kJyYf3DLZ7MUufYLZZka-QuUUiil4PPBnboZ6jDR-wET7a1WqYf1g3G4WF2xGNgey01z_VCwJddetKyHEw5H1I1HNa5wG0ET_s_Ij5h0RnYCNvvVkzlGVy7KTQnMnbFiC2FK4x-jAXV0b8g-JYz38cw
+                      - link [ref=f68e876] [cursor=pointer]:
+                        - /url: https://alb.reddit.com/cr?za=Qfm4LqMYboFtpS3fWDFKlJrrO-i8MSjoA4c6pAG37lZ5bNxFb8SgGUGC08KJM_uA5Ybuskneb9Thw-gGVteCq9RQzbLzjrHVWA3NA7vZm3c0-MWhdfzEdWyxnMCVdWbWPYbLeCSj0ldo5ElslHMRWZHwRJZ4J3Uj2tjwANkuTMTXtAmVjuMJPY3IqaI4h0WUnfZhGp6hRNtP8O_dUqrfsyodzgpQgBpxNqPRJcpHlDoKWAjYTFxKFDLlqQetZ0VUxT6EirfGy8TS6mu_fKzAYR8RI-lCsVC2s2SYTTkt4dg4bDkBmrKKCBS08Kj-yrSkNl6My331IF13Qgz_AR8DbTXa0vlrVlXdLoaxwz-3fy8euHKQCUFwgbUpK-07TK6W5ZiPv31COgdvP7G84WvRKIzb5IC1TLBycfjbi1xgeF-o1kyhmDRo7Cz16N_51mh27p3VgNWIN_oHmJCC41lwpn_3duGf8fFV8bc_BVBOxQnUtpQpKXI5UhIIYNuQJcvbgZ-coHDXeVqmFcqLw0vjwFL_V02LylsIbgshmGmG3Hu4JO33vdqlZsVDmjnlUf3MIaAdfc1SAUTnXWvqkRYGXvzfqYzbPHe8yq0WHkAJqOR1pmxvV92giobOl4vnQOvRUputS7bydWnsmQN9F_FmXHtIqJcaihlAHa90uezj0hD_DH3qIuDXTMyuLQJyoTt_rDg2zRtqAfxQwA&zp=vfItR2FsVb1hJPyGcFNIiv9RMJe-dj4B53W3bFm6q7hS302rlwEwfv9uMByhRHW41uNBQitxBlEuFzU3Fe6DcXUXoZkVjV_USGwPA0UrmHkWwBvQqdLJgG1AdpjJ3spHARMooqkySEn882Mrbxc0cF4doeaPEiLSgNyVmTxQ5XrjpHfvPU93iT_JUConrPxLVgCUxYgs4mmX9rNSfBzPRV_bAU6aUHK_vwlFr53SJnioINws8NQogGRjS1lGs1NuwZk_g0Qqfdvvnb8-toqagOGqsD8kKsAXbmk7uY5jLQuNpaRy4BGW1uNfGlvOuKAxP17W4xCpXIw8btpJcFEfKOr_D6_xg33SzAlb1xwC0BwqUjgcnQgmnD-VueEJ7h9pSaZS5nYoGx-w9pqCga1lyCAe4Z9EPCjqcynPckWNtLFOsqx6xV-xqcyhzeELJH7726z6bGP--Y5288-hpTDra6jYRMlIYZm-GFFrfy6tCEF5iB5qduN8uQpKtTZ5Zt8kJyYf3DLZ7MUufYLZZka-QuUUiil4PPBnboZ6jDR-wET7a1WqYf1g3G4WF2xGNgey01z_VCwJddetKyHEw5H1I1HNa5wG0ET_s_Ij5h0RnYCNvvVkzlGVy7KTQnMnbFiC2FK4x-jAXV0b8g-JYz38cw
+                        - 'img "Thumbnail image: Zero-CVEs Container Images" [ref=f68e877]'
+                - article "Inside-Finish-2128 2개월 전 댓글" [ref=f68e879]:
+                  - generic [ref=f68e880] [cursor=pointer]:
+                    - link "Inside-Finish-2128 님의 프로필 --- 아바타" [ref=f68e886]:
+                      - /url: https://www.reddit.com/user/Inside-Finish-2128/
+                      - img "u/Inside-Finish-2128 님의 아바타입니다" [ref=f68e889]
+                    - generic [ref=f68e893]:
+                      - link "Inside-Finish-2128 님의 프로필" [ref=f68e897]:
+                        - /url: https://www.reddit.com/user/Inside-Finish-2128/
+                        - text: Inside-Finish-2128
+                      - generic [aria-hidden] [ref=f68e898]: •
+                      - link [ref=f68e900]:
+                        - /url: https://www.reddit.com/r/techsupport/comments/1v9gi56/comment/p0hw6c1/
+                        - time [ref=f68e902]: 2개월 전
+                  - paragraph [ref=f68e908]: Define "disconnected". Is it showing link down? Is it showing link error? Are you just seeing packet loss? Giving the ISP more detail in that area will help get it resolved.
+                - article "Shadowpaw-21 2개월 전 댓글" [ref=f68e912]:
+                  - generic [ref=f68e913] [cursor=pointer]:
+                    - link "Shadowpaw-21 님의 프로필 --- 아바타" [ref=f68e919]:
+                      - /url: https://www.reddit.com/user/Shadowpaw-21/
+                      - img "u/Shadowpaw-21 님의 아바타입니다" [ref=f68e922]
+                    - generic [ref=f68e926]:
+                      - link "Shadowpaw-21 님의 프로필" [ref=f68e930]:
+                        - /url: https://www.reddit.com/user/Shadowpaw-21/
+                        - text: Shadowpaw-21
+                      - generic [aria-hidden] [ref=f68e931]: •
+                      - link [ref=f68e933]:
+                        - /url: https://www.reddit.com/r/techsupport/comments/1v9gi56/comment/p0krhf3/
+                        - time [ref=f68e935]: 2개월 전
+                  - generic [ref=f68e940]:
+                    - paragraph [ref=f68e941]: I had constant issues with Comcast constantly disconnecting but all the signal strengths were ok according to the tech. I even ran traceroutes and it kept showing timed out connections at their backbone so I thought for sure it was issue on their end but I was wrong . Eventually they installed a powered splitter to boost the signal strength and my problems went away.
+                    - paragraph [ref=f68e942]: I've seen where someone couldn't identify the issue and it ended up being a nearby neighbors ham radio and they were attaching it to the coax cable to run to an antenna but that's gonna be a really rare occurrence.
+                - article "CobaltIsobar 2개월 전 댓글" [ref=f68e946]:
+                  - generic [ref=f68e947] [cursor=pointer]:
+                    - link "CobaltIsobar 님의 프로필 --- 아바타" [ref=f68e953]:
+                      - /url: https://www.reddit.com/user/CobaltIsobar/
+                      - img "u/CobaltIsobar 님의 아바타입니다" [ref=f68e956]
+                    - generic [ref=f68e960]:
+                      - link "CobaltIsobar 님의 프로필" [ref=f68e964]:
+                        - /url: https://www.reddit.com/user/CobaltIsobar/
+                        - text: CobaltIsobar
+                      - generic [aria-hidden] [ref=f68e965]: •
+                      - link [ref=f68e967]:
+                        - /url: https://www.reddit.com/r/techsupport/comments/1v9gi56/comment/p0dpo00/
+                        - time [ref=f68e969]: 2개월 전
+                  - paragraph [ref=f68e975]: StarLink
+                - article "[삭제됨] 2개월 전 댓글" [ref=f68e979]:
+                  - generic "[삭제됨] 2개월 전" [ref=f68e980] [cursor=pointer]:
+                    - generic [ref=f68e987]:
+                      - generic [ref=f68e988]: "[삭제됨]"
+                      - generic [aria-hidden] [ref=f68e991]: •
+                      - time [ref=f68e993]: 2개월 전
+            - generic [ref=f68e995]:
+              - complementary "커뮤니티 정보" [ref=f68e1300]:
+                - generic [ref=f68e1302]:
+                  - heading "커뮤니티 정보 섹션" [level=1] [ref=f68e1303]
+                  - generic [ref=f68e1304]:
+                    - link "r/techsupport" [ref=f68e1306] [cursor=pointer]:
+                      - /url: /r/techsupport/
+                    - button "가입" [ref=f68e1311] [cursor=pointer]
+                  - generic [ref=f68e1312]:
+                    - generic [ref=f68e1313]: TechSupport
+                    - generic [ref=f68e1314]: "Stumped on a tech problem? Ask the community and try to help others with their problems as well. Note: Reddit is dying due to terrible leadership from CEO /u/spez. Please use our Discord server instead of supporting a company that acts against its users and unpaid moderators."
+                    - button "더 보기" [ref=f68e1315] [cursor=pointer]
+                    - generic: 공개
+              - list [ref=f68e1324]:
+                - listitem [ref=f68e1325]:
+                  - link "홈" [ref=f68e1327] [cursor=pointer]:
+                    - /url: /?feed=home
+                - listitem [ref=f68e1328]:
+                  - link "인기" [ref=f68e1330] [cursor=pointer]:
+                    - /url: /r/popular/
+                - listitem [ref=f68e1331]:
+                  - link "뉴스" [ref=f68e1333] [cursor=pointer]:
+                    - /url: /news/
+                - listitem [ref=f68e1334]:
+                  - link "둘러보기" [ref=f68e1336] [cursor=pointer]:
+                    - /url: /explore/
+                - listitem [ref=f68e1337]:
+                  - link "Reddit 베스트 콘텐츠" [ref=f68e1339] [cursor=pointer]:
+                    - /url: https://www.reddit.com/posts/2026/global/
+                - listitem [ref=f68e1340]:
+                  - link "포르투갈 Reddit 베스트 콘텐츠" [ref=f68e1342] [cursor=pointer]:
+                    - /url: https://www.reddit.com/posts/2026/tl-pt-BR/
+                - listitem [ref=f68e1343]:
+                  - link "독일의 Reddit 베스트 콘텐츠" [ref=f68e1345] [cursor=pointer]:
+                    - /url: https://www.reddit.com/posts/2026/tl-de/
+                - listitem [ref=f68e1346]:
+                  - link "Reddit 콘텐츠 규정" [ref=f68e1348] [cursor=pointer]:
+                    - /url: https://www.redditinc.com/policies/content-policy
+                - listitem [ref=f68e1349]:
+                  - link "개인정보 처리방침" [ref=f68e1351] [cursor=pointer]:
+                    - /url: https://www.reddit.com/policies/privacy-policy
+                - listitem [ref=f68e1352]:
+                  - link "이용 약관" [ref=f68e1354] [cursor=pointer]:
+                    - /url: https://www.redditinc.com/policies/user-agreement
+                - listitem [ref=f68e1355]:
+                  - link "접근성" [ref=f68e1357] [cursor=pointer]:
+                    - /url: https://support.reddithelp.com/hc/sections/38303584022676-Accessibility
+                - listitem [ref=f68e1358]:
+                  - link "Reddit, Inc. © 2026. All rights reserved." [ref=f68e1359] [cursor=pointer]:
+                    - /url: https://redditinc.com
+        - generic [ref=f68e1362]:
+          - paragraph [ref=f68e1363]: 인터넷에서 가장 진솔한 공간에 참여해보세요
+          - generic [ref=f68e1365]:
+            - generic [ref=f68e1368]:
+              - iframe [ref=f68e1373]:
+                - button "Google 계정으로 계속하기. 새 탭에서 열림" [ref=f70e3] [cursor=pointer]:
+                  - generic [ref=f70e5]: Google 계정으로 계속하기
+              - generic [ref=f68e1375] [cursor=pointer]:
+                - generic [ref=f68e1376]: Apple로 계속하기
+                - button "Sign in with Apple" [ref=f68e1382]:
+                  - generic [ref=f68e1383]:
+                    - img:
+                      - generic:
+                        - img:
+                          - generic:  Sign in with Apple
+            - link "전화번호로 계속하기" [ref=f68e1388] [cursor=pointer]:
+              - /url: https://www.reddit.com/login/
+            - link "이메일로 계속하기" [ref=f68e1397] [cursor=pointer]:
+              - /url: https://www.reddit.com/register/
+          - paragraph [ref=f68e1404]:
+            - text: 계속 진행할 경우 Reddit의
+            - link "이용 약관" [ref=f68e1405] [cursor=pointer]:
+              - /url: https://www.redditinc.com/policies/user-agreement
+            - text: 에 동의하고
+            - link "개인정보 처리방침" [ref=f68e1406] [cursor=pointer]:
+              - /url: https://www.redditinc.com/policies/privacy-policy
+            - text: 을 이해하고 인정하는 것으로 간주됩니다.

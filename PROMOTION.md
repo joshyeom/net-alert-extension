@@ -1,5 +1,10 @@
 # Internet Down Alert — Promotion Strategy
 
+> **On hold (2026-09-15).** No promotion will be run. The channel rules below
+> were verified live and remain accurate, but the market turned out to be too
+> small to justify the effort: excluding the leader (ICM, 200k), every other
+> outage-logging extension combined has 77 users. See [DECISION.md](DECISION.md).
+
 Research date: 2026-06-23. All channel rules and competitor figures were verified
 by opening the live pages in a headless browser (Playwright/Chromium) — not from
 memory or training data. Items that could not be read live are flagged.

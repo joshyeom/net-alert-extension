@@ -1,0 +1,589 @@
+- generic [ref=f75e2]:
+  - navigation [ref=f75e4]:
+    - link "Home" [ref=f75e6] [cursor=pointer]:
+      - /url: /
+      - generic [ref=f75e9]: Chrome-Stats
+    - generic [ref=f75e11]:
+      - searchbox "Search input" [ref=f75e13]
+      - button "Search button" [ref=f75e14] [cursor=pointer]
+    - list [ref=f75e17]:
+      - listitem [ref=f75e18]:
+        - button "Sign in / up" [ref=f75e19] [cursor=pointer]
+  - generic [ref=f75e23]:
+    - complementary [ref=f75e24]:
+      - navigation [ref=f75e25]:
+        - generic [ref=f75e26]:
+          - button "Explore" [ref=f75e27] [cursor=pointer]
+          - button "Advanced Search" [ref=f75e32] [cursor=pointer]
+          - link "Raw data" [ref=f75e37] [cursor=pointer]:
+            - /url: /chrome/raw-data
+          - link "API" [ref=f75e40] [cursor=pointer]:
+            - /url: /docs/api
+          - link "Buy / sell extensions" [ref=f75e43] [cursor=pointer]:
+            - /url: /marketplace/forsale
+          - link [ref=f75e46] [cursor=pointer]:
+            - /url: https://joinapppass.com
+            - img "App Pass" [ref=f75e47]
+            - text: App Pass
+          - link [ref=f75e48] [cursor=pointer]:
+            - /url: /appbooster
+            - img "Extension Booster" [ref=f75e49]
+            - text: Extension Booster
+          - link "Pricing" [ref=f75e50] [cursor=pointer]:
+            - /url: /pricing
+          - link "History (1)" [ref=f75e54] [cursor=pointer]:
+            - /url: /history
+            - text: History
+            - generic [ref=f75e57]: (1)
+          - link "Internet Connection Monitor Chrome Internet Connection Monitor" [ref=f75e58] [cursor=pointer]:
+            - /url: /d/hgccfdagfbilbdbkgmfdmmdfmjjoakfo
+            - generic [ref=f75e59]:
+              - img "Internet Connection Monitor" [ref=f75e60]
+              - img "Chrome" [ref=f75e61]
+            - generic [ref=f75e62]: Internet Connection Monitor
+    - main [ref=f75e63]:
+      - generic [ref=f75e64]:
+        - generic [ref=f75e65]:
+          - generic [ref=f75e66]:
+            - button [ref=f75e67] [cursor=pointer]
+            - generic [ref=f75e68]:
+              - img "Internet Connection Monitor" [ref=f75e69]
+              - img "Chrome" [ref=f75e70]
+            - heading "Internet Connection Monitor" [level=1] [ref=f75e72]
+          - generic [ref=f75e76]:
+            - generic [ref=f75e77]:
+              - strong [ref=f75e78]: "By:"
+              - link "Dmytro Shcherbyna" [ref=f75e79] [cursor=pointer]:
+                - /url: /a/dWZjNmUzNWI2M2I4ZGVmY2YxOWEwODFjMmYxMzYzNWM3
+            - generic [aria-hidden] [ref=f75e83]: •
+            - link "Browse Tools" [ref=f75e84] [cursor=pointer]:
+              - /url: https://chrome-stats.com/chrome/c/productivity%2Ftools
+              - text: Tools
+          - generic [ref=f75e85]: Test and monitor internet connection. Log every outage, even when Wi-Fi or Ethernet says the connection is fine.
+        - generic [ref=f75e86]:
+          - button [ref=f75e89] [cursor=pointer]:
+            - img "English" [ref=f75e90]
+          - generic [ref=f75e91]:
+            - link "WhatsApp" [ref=f75e92] [cursor=pointer]:
+              - /url: /#whatsapp
+            - link "Telegram" [ref=f75e94] [cursor=pointer]:
+              - /url: /#telegram
+            - link "Facebook" [ref=f75e96] [cursor=pointer]:
+              - /url: /#facebook
+            - link "X" [ref=f75e98] [cursor=pointer]:
+              - /url: /#x
+            - link "나누기" [ref=f75e100] [cursor=pointer]:
+              - /url: https://www.addtoany.com/share#url=https%3A%2F%2Fchrome-stats.com%2Fd%2Fhgccfdagfbilbdbkgmfdmmdfmjjoakfo&title=Internet%20Connection%20Monitor%20-%20Connectivity
+      - list [ref=f75e102]:
+        - listitem [ref=f75e103]:
+          - link "Overview" [ref=f75e104] [cursor=pointer]:
+            - /url: /d/hgccfdagfbilbdbkgmfdmmdfmjjoakfo
+        - listitem [ref=f75e105]:
+          - link "Download" [ref=f75e106] [cursor=pointer]:
+            - /url: /d/hgccfdagfbilbdbkgmfdmmdfmjjoakfo/download
+        - listitem [ref=f75e107]:
+          - link "Source" [ref=f75e108] [cursor=pointer]:
+            - /url: /d/hgccfdagfbilbdbkgmfdmmdfmjjoakfo/source
+        - listitem [ref=f75e109]:
+          - link "Reviews" [ref=f75e110] [cursor=pointer]:
+            - /url: /d/hgccfdagfbilbdbkgmfdmmdfmjjoakfo/reviews
+        - listitem [ref=f75e111]:
+          - link "Trends" [ref=f75e112] [cursor=pointer]:
+            - /url: /d/hgccfdagfbilbdbkgmfdmmdfmjjoakfo/trends
+      - region [ref=f75e113]:
+        - generic [ref=f75e114]:
+          - generic [ref=f75e116]:
+            - heading "Overview" [level=2] [ref=f75e117]
+            - button "Track" [ref=f75e118] [cursor=pointer]
+          - link "Open in Chrome Web Store" [ref=f75e122] [cursor=pointer]:
+            - /url: https://chromewebstore.google.com/detail/internet-connection-monit/hgccfdagfbilbdbkgmfdmmdfmjjoakfo
+            - text: Chrome Web Store
+        - generic [ref=f75e126]:
+          - link "Users 200,000 Data as of 2026-09-14" [ref=f75e127] [cursor=pointer]:
+            - /url: /d/hgccfdagfbilbdbkgmfdmmdfmjjoakfo/trends
+            - generic [ref=f75e128]: Users
+            - generic [ref=f75e131]: 200,000
+            - generic [ref=f75e132]: Data as of 2026-09-14
+          - 'link "Rating: 4.45 (213)" [ref=f75e133] [cursor=pointer]':
+            - /url: /d/hgccfdagfbilbdbkgmfdmmdfmjjoakfo/reviews
+            - generic [ref=f75e134]: "Rating:"
+            - generic [ref=f75e137]: "4.45"
+            - generic [ref=f75e138]: (213)
+          - generic [ref=f75e139]:
+            - link "Download Internet Connection Monitor" [ref=f75e140] [cursor=pointer]:
+              - /url: /d/hgccfdagfbilbdbkgmfdmmdfmjjoakfo/download
+            - generic: "Version:"
+            - generic:
+              - generic: 6.2.1
+              - generic: "Last updated: 2026-06-10"
+            - link "Download" [ref=f75e142] [cursor=pointer]:
+              - /url: /d/hgccfdagfbilbdbkgmfdmmdfmjjoakfo/download
+          - 'link "Ranking #1,246 ▼ 12 Overall" [ref=f75e145] [cursor=pointer]':
+            - /url: /d/hgccfdagfbilbdbkgmfdmmdfmjjoakfo/trends
+            - generic [ref=f75e146]: Ranking
+            - generic [ref=f75e149]:
+              - text: "#1,246"
+              - generic [ref=f75e150]: ▼ 12
+            - generic [ref=f75e151]: Overall
+          - 'link "Category rank #96 ▲ 703 Tools" [ref=f75e152] [cursor=pointer]':
+            - /url: /c/productivity%2Ftools/chrome
+            - generic [ref=f75e153]: Category rank
+            - generic [ref=f75e156]:
+              - text: "#96"
+              - generic "Compared with one week ago" [ref=f75e158]: ▲ 703
+            - generic [ref=f75e159]: Tools
+      - region "Internet Connection Monitor media gallery" [ref=f75e161]:
+        - generic [ref=f75e162]:
+          - button "Next media" [ref=f75e163] [cursor=pointer]
+          - generic [ref=f75e166]:
+            - button "Open screenshot 1 of 5 for Internet Connection Monitor" [ref=f75e167]:
+              - img "Internet Connection Monitor screenshot 1" [ref=f75e168]
+            - button "Open screenshot 2 of 5 for Internet Connection Monitor" [ref=f75e172]:
+              - img "Internet Connection Monitor screenshot 2" [ref=f75e173]
+            - button "Open screenshot 3 of 5 for Internet Connection Monitor" [ref=f75e177]:
+              - img "Internet Connection Monitor screenshot 3" [ref=f75e178]
+            - button "Open screenshot 4 of 5 for Internet Connection Monitor" [ref=f75e182]:
+              - img "Internet Connection Monitor screenshot 4" [ref=f75e183]
+            - button "Open screenshot 5 of 5 for Internet Connection Monitor" [ref=f75e187]:
+              - img "Internet Connection Monitor screenshot 5" [ref=f75e188]
+        - generic "Choose media" [ref=f75e193]:
+          - button "Go to media 1 of 5" [pressed] [ref=f75e194] [cursor=pointer]
+          - button "Go to media 2 of 5" [pressed] [ref=f75e195] [cursor=pointer]
+          - button "Go to media 3 of 5" [ref=f75e196] [cursor=pointer]
+          - button "Go to media 4 of 5" [ref=f75e197] [cursor=pointer]
+          - button "Go to media 5 of 5" [ref=f75e198] [cursor=pointer]
+      - heading "Features & Capabilities" [level=2] [ref=f75e200]
+      - generic [ref=f75e204]:
+        - paragraph [ref=f75e205]: ICM provides real-time Internet connectivity monitoring for Chrome. It tests connectivity at configurable intervals, uses a customizable ping URL, and measures latency. The extension shows your public IP, detects when the Internet is unavailable despite LAN being up, and helps identify ISP or hardware issues. It logs outages and exports data as CSV or PDF.
+        - paragraph [ref=f75e206]: New in v6.1, ICM adds JSON backup/restore of logs, icon overlays with latency and outages, and insights by hour-of-day and day-of-week, along with a refreshed UI for a smoother experience. It works across Chromium-based browsers that support Chrome extensions.
+      - heading "User Growth & Download Statistics" [level=2] [ref=f75e207]
+      - generic [ref=f75e211]:
+        - generic [ref=f75e212]:
+          - generic [ref=f75e213]:
+            - generic [ref=f75e214]: Manifest V3
+            - generic [ref=f75e215]: Extension
+            - link "Developer Tools" [ref=f75e216] [cursor=pointer]:
+              - /url: /tag/Developer%20Tools/chrome
+            - link "Privacy & Security" [ref=f75e217] [cursor=pointer]:
+              - /url: /tag/Privacy%20%26%20Security/chrome
+            - link "Data" [ref=f75e218] [cursor=pointer]:
+              - /url: /tag/Data/chrome
+            - link "Analytics" [ref=f75e219] [cursor=pointer]:
+              - /url: /tag/Analytics/chrome
+          - generic [ref=f75e220]:
+            - term [ref=f75e221]: "By:"
+            - definition [ref=f75e224]:
+              - link "Dmytro Shcherbyna" [ref=f75e225] [cursor=pointer]:
+                - /url: /a/dWZjNmUzNWI2M2I4ZGVmY2YxOWEwODFjMmYxMzYzNWM3
+            - term [ref=f75e229]: "Users:"
+            - definition [ref=f75e232]:
+              - link "200,000" [ref=f75e233] [cursor=pointer]:
+                - /url: /d/hgccfdagfbilbdbkgmfdmmdfmjjoakfo/trends
+            - term [ref=f75e234]: "Rating:"
+            - definition [ref=f75e237]:
+              - link "4.45 (213)" [ref=f75e238] [cursor=pointer]:
+                - /url: /d/hgccfdagfbilbdbkgmfdmmdfmjjoakfo/reviews
+                - text: "4.45"
+                - generic [ref=f75e251]: (213)
+            - term [ref=f75e253]: "Version:"
+            - definition [ref=f75e256]:
+              - link "6.2.1" [ref=f75e257] [cursor=pointer]:
+                - /url: /d/hgccfdagfbilbdbkgmfdmmdfmjjoakfo/download
+              - generic [ref=f75e258]: "Last updated: 2026-06-10"
+            - term [ref=f75e259]: "Creation date:"
+            - definition [ref=f75e262]: 2020-06-16
+            - term [ref=f75e264]: "Risk:"
+            - definition [ref=f75e267]:
+              - link "Very low risk impact" [ref=f75e268] [cursor=pointer]:
+                - /url: /d/hgccfdagfbilbdbkgmfdmmdfmjjoakfo#safety
+              - link "Very low risk likelihood" [ref=f75e269] [cursor=pointer]:
+                - /url: /d/hgccfdagfbilbdbkgmfdmmdfmjjoakfo#safety
+            - term [ref=f75e270]: "Permissions:"
+            - definition [ref=f75e273]:
+              - list [ref=f75e274]:
+                - listitem [ref=f75e275]:
+                  - link "offscreen" [ref=f75e276] [cursor=pointer]:
+                    - /url: /permission/offscreen
+                - listitem [ref=f75e278]:
+                  - link "storage" [ref=f75e279] [cursor=pointer]:
+                    - /url: /permission/storage
+                - listitem [ref=f75e281]:
+                  - link "unlimitedStorage" [ref=f75e282] [cursor=pointer]:
+                    - /url: /permission/unlimitedStorage
+                - listitem [ref=f75e284]:
+                  - link "alarms" [ref=f75e285] [cursor=pointer]:
+                    - /url: /permission/alarms
+            - term [ref=f75e287]: "Size:"
+            - definition [ref=f75e290]: 2.13MB
+            - term [ref=f75e293]: "Email:"
+            - definition [ref=f75e294]:
+              - button "in*****@gmail.com" [ref=f75e295] [cursor=pointer]
+            - term [ref=f75e296]: "URLs:"
+            - definition [ref=f75e299]:
+              - link "Website" [ref=f75e300] [cursor=pointer]:
+                - /url: https://internetmon.org
+              - text: ","
+              - link "Privacy policy" [ref=f75e303] [cursor=pointer]:
+                - /url: https://internetmon.org/privacy-policy.html
+            - term [ref=f75e306]: "Full description:"
+            - definition [ref=f75e309]:
+              - button "See detailed description" [ref=f75e310] [cursor=pointer]
+            - term [ref=f75e311]: "Source:"
+            - definition [ref=f75e314]:
+              - link "Chrome Web Store" [ref=f75e315] [cursor=pointer]:
+                - /url: https://chromewebstore.google.com/detail/internet-connection-monit/hgccfdagfbilbdbkgmfdmmdfmjjoakfo
+              - link "Learn more about Chrome-Stats data methodology" [ref=f75e316] [cursor=pointer]:
+                - /url: /methodology
+            - term [ref=f75e317]: "Data ingested on:"
+            - definition [ref=f75e320]: 2026-09-14
+            - term [ref=f75e321]: "Compare stats and ranking:"
+            - definition [ref=f75e324]:
+              - list [ref=f75e325]:
+                - listitem [ref=f75e326]:
+                  - link "Internet Connection Monitor vs Speed Test & WiFi Fixer by SpeedMate" [ref=f75e327] [cursor=pointer]:
+                    - /url: /d/hgccfdagfbilbdbkgmfdmmdfmjjoakfo/compare/deofojifdhnbpkhfpjpnjdplfallmnbf
+                - listitem [ref=f75e328]:
+                  - link "Internet Connection Monitor vs Network Information" [ref=f75e329] [cursor=pointer]:
+                    - /url: /d/hgccfdagfbilbdbkgmfdmmdfmjjoakfo/compare/aplgkncdgdlldhcghahpnlkokohpinfg
+                - listitem [ref=f75e330]:
+                  - link "Internet Connection Monitor vs Speed Test - Test the Internet Speed" [ref=f75e331] [cursor=pointer]:
+                    - /url: /d/hgccfdagfbilbdbkgmfdmmdfmjjoakfo/compare/bgdllkogfkdjdpaholocflnnabbgjjdc
+              - searchbox "Search input" [ref=f75e334]
+        - generic [ref=f75e335]:
+          - generic [ref=f75e336]:
+            - heading "Ranking" [level=3] [ref=f75e337]
+            - generic [ref=f75e338]:
+              - text: "#"
+              - link "1,246 ▼ 12" [ref=f75e339] [cursor=pointer]:
+                - /url: /d/hgccfdagfbilbdbkgmfdmmdfmjjoakfo/trends
+            - generic [ref=f75e340]:
+              - generic [ref=f75e341]: Other rankings
+              - generic [ref=f75e342]:
+                - generic [ref=f75e344]:
+                  - link "#96 in Tools" [ref=f75e345] [cursor=pointer]:
+                    - /url: /c/productivity%2Ftools/chrome
+                  - link "▲ 703" [ref=f75e346] [cursor=pointer]:
+                    - /url: /d/hgccfdagfbilbdbkgmfdmmdfmjjoakfo/trends#cat-productivity/tools-rank
+                    - generic "Compared to one week ago" [ref=f75e347]: ▲ 703
+                - generic [ref=f75e349]:
+                  - link "#1 in connection keyword 29" [ref=f75e350] [cursor=pointer]:
+                    - /url: /keyword/internet_network/connection
+                  - link:
+                    - /url: /d/hgccfdagfbilbdbkgmfdmmdfmjjoakfo/trends#keyword-connection-rank
+                - generic [ref=f75e352]:
+                  - link "#1 in internet keyword 37" [ref=f75e353] [cursor=pointer]:
+                    - /url: /keyword/internet_network/internet
+                  - link:
+                    - /url: /d/hgccfdagfbilbdbkgmfdmmdfmjjoakfo/trends#keyword-internet-rank
+                - generic [ref=f75e355]:
+                  - link "#3 in example keyword 13" [ref=f75e356] [cursor=pointer]:
+                    - /url: /keyword/education_learning/example
+                  - link "▲ 6" [ref=f75e357] [cursor=pointer]:
+                    - /url: /d/hgccfdagfbilbdbkgmfdmmdfmjjoakfo/trends#keyword-example-rank
+                    - generic "Compared to one week ago" [ref=f75e358]: ▲ 6
+                - generic [ref=f75e360]:
+                  - link "#6 in monitor keyword 48" [ref=f75e361] [cursor=pointer]:
+                    - /url: /keyword/hardware_devices/monitor
+                  - link "▲ 1" [ref=f75e362] [cursor=pointer]:
+                    - /url: /d/hgccfdagfbilbdbkgmfdmmdfmjjoakfo/trends#keyword-monitor-rank
+                    - generic "Compared to one week ago" [ref=f75e363]: ▲ 1
+              - link "Upgrade to see more rankings" [ref=f75e364] [cursor=pointer]:
+                - /url: /pricing
+          - generic [ref=f75e368]:
+            - heading "For Developers" [level=3] [ref=f75e369]
+            - generic [ref=f75e373]:
+              - link "Monetize with App Pass" [ref=f75e374] [cursor=pointer]:
+                - /url: https://joinapppass.com/partner
+              - link "Boost with Extension Booster" [ref=f75e377] [cursor=pointer]:
+                - /url: /appbooster
+      - heading "Contact the developer" [level=2] [ref=f75e381]
+      - generic [ref=f75e385]: Chrome-Stats does not own this Chrome extension. Please use these information below to contact the Chrome extension developer.
+      - generic [ref=f75e386]:
+        - term [ref=f75e387]: "Developed by:"
+        - definition [ref=f75e390]:
+          - link "https://internetmon.org" [ref=f75e391] [cursor=pointer]:
+            - /url: https://internetmon.org
+      - generic [ref=f75e392]:
+        - term [ref=f75e393]: Chrome Web Store
+        - definition [ref=f75e396]:
+          - link "https://chromewebstore.google.com/detail/internet-connection-monit/hgccfdagfbilbdbkgmfdmmdfmjjoakfo" [ref=f75e397] [cursor=pointer]:
+            - /url: https://chromewebstore.google.com/detail/internet-connection-monit/hgccfdagfbilbdbkgmfdmmdfmjjoakfo
+      - generic [ref=f75e398]:
+        - term [ref=f75e399]: "Email:"
+        - definition [ref=f75e402]:
+          - button "in*****@gmail.com" [ref=f75e403] [cursor=pointer]
+      - generic [ref=f75e404]:
+        - term [ref=f75e405]: "Website:"
+        - definition [ref=f75e408]:
+          - link "https://internetmon.org" [ref=f75e409] [cursor=pointer]:
+            - /url: https://internetmon.org
+      - heading "Permission Change History" [level=2] [ref=f75e410]
+      - generic [ref=f75e414]:
+        - generic [ref=f75e415]: "2026-06-10: Version 6.1.0 → 6.2.1"
+        - generic [ref=f75e417]:
+          - generic [ref=f75e418]: "Add Permissions:"
+          - generic [ref=f75e419]: alarms
+      - generic [ref=f75e420]:
+        - generic [ref=f75e421]: "2023-12-26: Version 4.0.1 → 5.0.1"
+        - generic [ref=f75e423]:
+          - generic [ref=f75e424]: "Add Permissions:"
+          - generic [ref=f75e425]: offscreen
+          - generic [ref=f75e426]: storage
+          - generic [ref=f75e427]: unlimitedStorage
+      - heading "User Reviews" [level=2] [ref=f75e428]
+      - generic [ref=f75e432]: Users praise Internet Connection Monitor for detailed logs, charts, multiple reports, ease of use, and light resource use, with clear value for proving outages to an ISP. However, several reviews note reliability and logging accuracy issues, including missed outages and inflated disconnect counts. A couple of feature requests recur, such as Dark Mode, latency display on the icon, and showing public IP with country flag.
+      - generic [ref=f75e434]:
+        - generic [ref=f75e435]:
+          - generic [ref=f75e436]: Pros
+          - list [ref=f75e439]:
+            - listitem [ref=f75e440]: Comprehensive outage logs with charts and multiple report options.
+            - listitem [ref=f75e441]: Easy to use with a clean, simple interface.
+            - listitem [ref=f75e442]: Lightweight and low resource usage.
+            - listitem [ref=f75e443]: Helpful for proving outages to ISPs by providing times and duration of disconnects.
+        - generic [ref=f75e444]:
+          - generic [ref=f75e445]: Cons
+          - list [ref=f75e448]:
+            - listitem [ref=f75e449]: Outages are not logged reliably at times; disconnect counts can be incorrect.
+            - listitem [ref=f75e450]: Occasional reliability issues where the extension stops working or misreports status.
+            - listitem [ref=f75e451]: Missing features suggested by users (Dark Mode, latency on the icon, and showing the public IP with country flag).
+      - heading "Recent reviews" [level=5] [ref=f75e452]
+      - generic [ref=f75e453]:
+        - generic [ref=f75e454]: Absolutely the best extension I have ever used. Thank you for helping me isolate the issue. My internet connection is dropping intermittently and disconnecting my house at random. My ISP has replaced every component/wire from pole to modem and the issue persists. This tool allowed me to verify the ISP is dropping the signal to my modem. THANK YOU!
+        - generic [ref=f75e457]:
+          - generic [ref=f75e458]: by
+          - generic [ref=f75e459]: Je*****
+          - text: ", 2026-09-05"
+      - separator [ref=f75e460]
+      - generic [ref=f75e461]:
+        - generic [ref=f75e462]: best
+        - generic [ref=f75e465]:
+          - generic [ref=f75e466]: by
+          - generic [ref=f75e467]: Me*****
+          - text: ", 2026-08-22"
+      - link "View all user reviews ›" [ref=f75e468] [cursor=pointer]:
+        - /url: /d/hgccfdagfbilbdbkgmfdmmdfmjjoakfo/reviews
+      - heading "Is Internet Connection Monitor Safe?" [level=2] [ref=f75e469]
+      - generic [ref=f75e473]:
+        - generic [ref=f75e475]:
+          - heading "Risk impact" [level=6] [ref=f75e476]
+          - generic [ref=f75e477]: Risk impact measures the level of extra permissions an extension has access to. A low risk impact extension cannot do much harms, whereas a high risk impact extension can do a lot of damage like stealing your password, bypassing your security settings, and accessing your personal data. High risk impact extensions are not necessarily malicious. However, if they do turn malicious, they can be very harmful.
+          - img [ref=f75e479]:
+            - generic [ref=f75e486]: Very low risk impact
+          - paragraph [ref=f75e490]: Internet Connection Monitor does not require any sensitive permissions.
+          - heading "Risk impact analysis details" [level=6] [ref=f75e491]
+          - list
+        - generic [ref=f75e493]:
+          - heading "Risk likelihood" [level=6] [ref=f75e494]
+          - generic [ref=f75e495]: Risk likelihood measures the probability that a Chrome extension may turn malicious. This is determined by the publisher and the Chrome extension reputation on Chrome Web Store, the amount of time the Chrome extension has been around, and other signals about the Chrome extension. Our algorithms are not perfect, and are subject to change as we discover new ways to detect malicious extensions. We recommend that you always exercise caution when installing a Chrome extension.
+          - img [ref=f75e498]:
+            - generic [ref=f75e505]: Very low risk likelihood
+          - paragraph [ref=f75e509]: Internet Connection Monitor has earned a good reputation and can be trusted.
+          - heading "Risk likelihood analysis details" [level=6] [ref=f75e510]
+          - list [ref=f75e511]:
+            - listitem [ref=f75e512]:
+              - generic [ref=f75e513]: Medium
+              - text: This extension has medium user count. Unpopular extensions may not be stable or safe.
+            - listitem [ref=f75e514]:
+              - generic [ref=f75e515]: Low
+              - text: "**** ********* *** ******* **** **** * ****** **** ***** ******** *** **** ****** ** ** ****** *** *****"
+            - listitem [ref=f75e516]:
+              - generic [ref=f75e517]: Low
+              - text: "**** ********* *** ***** **** **** * ****** **** ***** ********** *** **** ****** ** ** ****** *** *****"
+            - listitem [ref=f75e518]:
+              - generic [ref=f75e519]: Good
+              - text: "**** ********* ** ****** ** ********"
+            - listitem [ref=f75e520]:
+              - generic [ref=f75e521]: Good
+              - text: "**** ********* *** **** **** *******"
+      - generic [ref=f75e522]:
+        - img "Extension Guard" [ref=f75e523]
+        - generic [ref=f75e524]:
+          - heading "Extension Guard" [level=5] [ref=f75e525]
+          - paragraph [ref=f75e526]: Discover every extension in use, analyze risks, and enforce blocking policies with Extension Guard
+          - link "Secure Your Browser" [ref=f75e527] [cursor=pointer]:
+            - /url: /guard
+      - link "Upgrade to see full risk analysis details" [ref=f75e528] [cursor=pointer]:
+        - /url: /pricing?c=https%3A%2F%2Fchrome-stats.com%2Fd%2Fhgccfdagfbilbdbkgmfdmmdfmjjoakfo
+      - heading "Promo Images" [level=2] [ref=f75e532]
+      - generic [ref=f75e536]:
+        - figure "Marquee promo image" [ref=f75e537]:
+          - img "Internet Connection Monitor marquee promo image" [ref=f75e538]
+        - figure "Small promo image" [ref=f75e540]
+      - heading "Best Internet Connection Monitor Alternatives" [level=2] [ref=f75e542]
+      - paragraph [ref=f75e546]: "Here are some Chrome extensions that are similar to Internet Connection Monitor:"
+      - generic [ref=f75e547]:
+        - link "Speed Test & WiFi Fixer by SpeedMate" [ref=f75e548] [cursor=pointer]:
+          - /url: /d/deofojifdhnbpkhfpjpnjdplfallmnbf
+          - generic [ref=f75e551]: https://hubbleiq.com
+          - generic [ref=f75e552]:
+            - generic [ref=f75e553]: 10K
+            - generic [ref=f75e554]:
+              - generic [ref=f75e555]: "4.56"
+              - generic [ref=f75e556]: (59)
+        - link "Network Information" [ref=f75e557] [cursor=pointer]:
+          - /url: /d/aplgkncdgdlldhcghahpnlkokohpinfg
+          - generic [ref=f75e560]: Keller
+          - generic [ref=f75e561]:
+            - generic [ref=f75e562]: 2K
+            - generic [ref=f75e563]:
+              - generic [ref=f75e564]: "3.25"
+              - generic [ref=f75e565]: (4)
+        - link "Speed Test - Test the Internet Speed" [ref=f75e566] [cursor=pointer]:
+          - /url: /d/bgdllkogfkdjdpaholocflnnabbgjjdc
+          - generic [ref=f75e569]: vanpooor
+          - generic [ref=f75e570]:
+            - generic [ref=f75e571]: 9K
+            - generic [ref=f75e572]:
+              - generic [ref=f75e573]: "4.00"
+              - generic [ref=f75e574]: (17)
+        - link "Internet Speed Test Badge (Real Time)" [ref=f75e575] [cursor=pointer]:
+          - /url: /d/nampenookgbdlhmcgadpcgeajanjjclf
+          - generic [ref=f75e578]: bakhouch2019
+          - generic [ref=f75e579]:
+            - generic [ref=f75e580]: "578"
+            - generic [ref=f75e581]:
+              - generic [ref=f75e582]: "4.33"
+              - generic [ref=f75e583]: (3)
+        - link "Real-Time Internet Speed Monitor" [ref=f75e584] [cursor=pointer]:
+          - /url: /d/baffnjfijbgpjchgdmbnpkloeccnhenl
+          - generic [ref=f75e587]: https://ared.dev
+          - generic [ref=f75e588]:
+            - generic [ref=f75e589]: 2K
+            - generic [ref=f75e590]:
+              - generic [ref=f75e591]: "4.16"
+              - generic [ref=f75e592]: (50)
+        - link "Internet Speed Fan" [ref=f75e593] [cursor=pointer]:
+          - /url: /d/hfdeahhjljnjddcjoglpodojkmeiahbl
+          - generic [ref=f75e596]: Martins Obayomi
+          - generic [ref=f75e597]:
+            - generic [ref=f75e598]: 4K
+            - generic [ref=f75e599]:
+              - generic [ref=f75e600]: "5.00"
+              - generic [ref=f75e601]: (3)
+        - 'link "Fix-IT Mate: WiFi Speed Test & AI Tech Support" [ref=f75e602] [cursor=pointer]':
+          - /url: /d/cbfnbdgmjknfjeidohbhmpdliofaopne
+          - generic [ref=f75e605]: https://hubbleiq.com
+          - generic [ref=f75e606]:
+            - generic [ref=f75e607]: 50K
+            - generic [ref=f75e608]:
+              - generic [ref=f75e609]: "3.85"
+              - generic [ref=f75e610]: (20)
+        - link "NetMeter Web" [ref=f75e611] [cursor=pointer]:
+          - /url: /d/jnjnledlnjnkfgepmadpfdljbmdhcihi
+          - generic [ref=f75e614]: https://getnetmeter.com
+          - generic [ref=f75e615]:
+            - generic [ref=f75e616]: 4K
+            - generic [ref=f75e617]:
+              - generic [ref=f75e618]: "4.56"
+              - generic [ref=f75e619]: (16)
+        - link "Network Monitor" [ref=f75e620] [cursor=pointer]:
+          - /url: /d/hknlclmampgjlgmnlihfohdinjbagmge
+          - generic [ref=f75e623]: krilwerk@gmail.com
+          - generic [ref=f75e624]:
+            - generic [ref=f75e625]: 6K
+            - generic [ref=f75e626]:
+              - generic [ref=f75e627]: "4.53"
+              - generic [ref=f75e628]: (43)
+        - link "Speed Test" [ref=f75e629] [cursor=pointer]:
+          - /url: /d/aeghledigokaedmpimgnfplidhdhlchg
+          - generic [ref=f75e632]: https://openspeedtest.com/
+          - generic [ref=f75e633]:
+            - generic [ref=f75e634]: 40K
+            - generic [ref=f75e635]:
+              - generic [ref=f75e636]: "3.75"
+              - generic [ref=f75e637]: (483)
+        - link "Speed Test for Chrome - WiFi speedtest" [ref=f75e638] [cursor=pointer]:
+          - /url: /d/khhnfdoljialnlomkdkphhdhngfppabl
+          - generic [ref=f75e641]: SpeedTest app
+          - generic [ref=f75e642]:
+            - generic [ref=f75e643]: 400K
+            - generic [ref=f75e644]:
+              - generic [ref=f75e645]: "3.90"
+              - generic [ref=f75e646]: (31)
+        - 'link "NetMet: Internet Performance Check Tool" [ref=f75e647] [cursor=pointer]':
+          - /url: /d/oaljpapbocgcgdmpbigllilolfgebhnl
+          - generic [ref=f75e650]: boserohan91
+          - generic [ref=f75e651]:
+            - generic [ref=f75e652]: "62"
+            - generic [ref=f75e653]:
+              - generic [ref=f75e654]: "5.00"
+              - generic [ref=f75e655]: (1)
+  - contentinfo [ref=f75e656]:
+    - generic [ref=f75e657]:
+      - generic [ref=f75e658]:
+        - generic [ref=f75e659]: Products
+        - list [ref=f75e660]:
+          - listitem [ref=f75e661]:
+            - link "App Pass" [ref=f75e662] [cursor=pointer]:
+              - /url: https://joinapppass.com
+          - listitem [ref=f75e663]:
+            - link "Chrome-Stats Extension" [ref=f75e664] [cursor=pointer]:
+              - /url: https://chromewebstore.google.com/detail/chrome-stats-extension-an/kgglldjfbljldpocinaomhalhoehenhm
+          - listitem [ref=f75e665]:
+            - link "Extension Guard" [ref=f75e666] [cursor=pointer]:
+              - /url: /guard
+          - listitem [ref=f75e667]:
+            - link "Extension Booster" [ref=f75e668] [cursor=pointer]:
+              - /url: /appbooster
+          - listitem [ref=f75e669]:
+            - link "API" [ref=f75e670] [cursor=pointer]:
+              - /url: /docs/api
+          - listitem [ref=f75e671]:
+            - link "MCP server" [ref=f75e672] [cursor=pointer]:
+              - /url: /docs/mcp
+          - listitem [ref=f75e673]:
+            - link "Raw data export" [ref=f75e674] [cursor=pointer]:
+              - /url: /raw-data
+      - generic [ref=f75e675]:
+        - generic [ref=f75e676]: Resources
+        - list [ref=f75e677]:
+          - listitem [ref=f75e678]:
+            - link "Pricing" [ref=f75e679] [cursor=pointer]:
+              - /url: https://chrome-stats.com/pricing
+          - listitem [ref=f75e680]:
+            - link "Advanced search" [ref=f75e681] [cursor=pointer]:
+              - /url: /chrome/advanced/extension-search
+          - listitem [ref=f75e682]:
+            - link "Copycat checker" [ref=f75e683] [cursor=pointer]:
+              - /url: /chrome/advanced/copycat-checker
+          - listitem [ref=f75e684]:
+            - link "Manifest V3 tracker" [ref=f75e685] [cursor=pointer]:
+              - /url: /manifest-v3-migration
+          - listitem [ref=f75e686]:
+            - link "CSV viewer" [ref=f75e687] [cursor=pointer]:
+              - /url: /tools/csv-viewer
+          - listitem [ref=f75e688]:
+            - link "Add extension" [ref=f75e689] [cursor=pointer]:
+              - /url: /add-extension
+          - listitem [ref=f75e690]:
+            - link "Add keyword" [ref=f75e691] [cursor=pointer]:
+              - /url: /add-keyword
+      - generic [ref=f75e692]:
+        - generic [ref=f75e693]: Company
+        - list [ref=f75e694]:
+          - listitem [ref=f75e695]:
+            - link "About us" [ref=f75e696] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=f75e697]:
+            - link "Methodology" [ref=f75e698] [cursor=pointer]:
+              - /url: /methodology
+          - listitem [ref=f75e699]:
+            - link "Blog" [ref=f75e700] [cursor=pointer]:
+              - /url: /blog
+          - listitem [ref=f75e701]:
+            - link "Contact us" [ref=f75e702] [cursor=pointer]:
+              - /url: /contact
+          - listitem [ref=f75e703]:
+            - link "Terms of Use" [ref=f75e704] [cursor=pointer]:
+              - /url: /terms
+          - listitem [ref=f75e705]:
+            - link "Privacy Notice" [ref=f75e706] [cursor=pointer]:
+              - /url: /privacy
+        - generic [ref=f75e707]:
+          - link "ChromeStats on LinkedIn" [ref=f75e708] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/chromestats/
+          - link "ChromeStats on Facebook" [ref=f75e711] [cursor=pointer]:
+            - /url: https://facebook.com/chromestats
+          - link "ChromeStats on X" [ref=f75e714] [cursor=pointer]:
+            - /url: https://x.com/ChromeStats
+    - generic [ref=f75e717]: © 2026 Chrome-Stats. All rights reserved.

@@ -1,0 +1,327 @@
+- generic [active] [ref=f47e1]:
+  - link "메인 콘텐츠로 바로가기" [ref=f47e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=f47e6]:
+    - generic:
+      - generic: log internet drops - Reddit 검색 결과!
+      - banner [ref=f47e10]:
+        - navigation [ref=f47e11]:
+          - link "홈" [ref=f47e15] [cursor=pointer]:
+            - /url: https://www.reddit.com/
+          - search [ref=f47e34]:
+            - generic [ref=f47e36]:
+              - textbox "검색 초기화" [ref=f47e43]:
+                - /placeholder: Reddit 검색
+                - text: log internet drops
+              - button "검색 초기화" [ref=f47e45] [cursor=pointer]
+          - generic [ref=f47e51]:
+            - link "가입" [ref=f47e57] [cursor=pointer]:
+              - /url: https://www.reddit.com/register/
+            - link "로그인" [ref=f47e63] [cursor=pointer]:
+              - /url: https://www.reddit.com/login/
+            - button "사용자 메뉴 펼치기" [ref=f47e70] [cursor=pointer]
+      - generic "log internet drops - Reddit 검색 결과!"
+      - generic [ref=f47e79]:
+        - generic [ref=f47e80]:
+          - generic [ref=f47e83]:
+            - generic [ref=f47e84]:
+              - generic [ref=f47e87]:
+                - tablist [ref=f47e88]:
+                  - tab [selected] [ref=f47e89]:
+                    - button "게시물" [ref=f47e90] [cursor=pointer]
+                  - tab [ref=f47e95]:
+                    - link "댓글" [ref=f47e96] [cursor=pointer]:
+                      - /url: /r/HomeNetworking/search/?q=log+internet+drops&type=comments&iId=c6e4f1ac-b52c-474b-b425-e3c8a0952096
+                  - tab [ref=f47e102]:
+                    - link "미디어" [ref=f47e103] [cursor=pointer]:
+                      - /url: /r/HomeNetworking/search/?q=log+internet+drops&type=media&iId=c6e4f1ac-b52c-474b-b425-e3c8a0952096
+                - button "forward" [ref=f47e110] [cursor=pointer]
+                - button "back" [ref=f47e117] [cursor=pointer]
+              - generic:
+                - generic:
+                  - tabpanel
+            - button "최신순" [ref=f47e128] [cursor=pointer]
+          - generic [ref=f47e135]:
+            - generic:
+              - generic:
+                - link "가입 바로가기" [ref=f47e136] [cursor=pointer]:
+                  - /url: "#left-sidebar-container"
+                - link "오른쪽 사이드바 바로가기" [ref=f47e137] [cursor=pointer]:
+                  - /url: "#right-sidebar-container"
+          - generic [ref=f47e138]:
+            - main [ref=f47e139]:
+              - generic [ref=f47e140]:
+                - paragraph [ref=f47e143]:
+                  - link "Reddit 전체" [ref=f47e145] [cursor=pointer]:
+                    - /url: /search/?q=log+internet+drops
+                  - text: 의 결과 표시
+                - generic [ref=f47e150]:
+                  - generic:
+                    - heading "4G usb dongle wont register on mobile network" [level=2]:
+                      - link "4G usb dongle wont register on mobile network" [ref=f47e151] [cursor=pointer]:
+                        - /url: /r/HomeNetworking/comments/1wgqmy3/4g_usb_dongle_wont_register_on_mobile_network/
+                  - generic [ref=f47e153]:
+                    - generic [ref=f47e156]:
+                      - link "r/HomeNetworking" [ref=f47e159] [cursor=pointer]:
+                        - /url: /r/HomeNetworking/
+                      - generic [ref=f47e166]: ·
+                      - time [ref=f47e168]: 48분 전
+                    - link "4G usb dongle wont register on mobile network" [ref=f47e169] [cursor=pointer]:
+                      - /url: /r/HomeNetworking/comments/1wgqmy3/4g_usb_dongle_wont_register_on_mobile_network/
+                    - generic [ref=f47e170]:
+                      - generic [ref=f47e171]:
+                        - text: 투표
+                        - generic [ref=f47e172]: "1"
+                        - text: 개
+                      - text: ·
+                      - generic [ref=f47e173]:
+                        - text: 댓글
+                        - generic [ref=f47e174]: "0"
+                        - text: 개
+                  - link "4G usb dongle wont register on mobile network 썸네일 이미지" [ref=f47e176] [cursor=pointer]:
+                    - /url: /r/HomeNetworking/comments/1wgqmy3/4g_usb_dongle_wont_register_on_mobile_network/
+                    - img "4G usb dongle wont register on mobile network" [ref=f47e181]
+                - separator [ref=f47e182]
+                - generic [ref=f47e184]:
+                  - generic:
+                    - heading "Linksys MR7500 issue while using iPhone and Linksys app." [level=2]:
+                      - link "Linksys MR7500 issue while using iPhone and Linksys app." [ref=f47e185] [cursor=pointer]:
+                        - /url: /r/HomeNetworking/comments/1wgic4c/linksys_mr7500_issue_while_using_iphone_and/
+                  - generic [ref=f47e187]:
+                    - generic [ref=f47e190]:
+                      - link "r/HomeNetworking" [ref=f47e193] [cursor=pointer]:
+                        - /url: /r/HomeNetworking/
+                      - generic [ref=f47e200]: ·
+                      - time [ref=f47e202]: 7시간 전
+                    - link "Linksys MR7500 issue while using iPhone and Linksys app." [ref=f47e203] [cursor=pointer]:
+                      - /url: /r/HomeNetworking/comments/1wgic4c/linksys_mr7500_issue_while_using_iphone_and/
+                    - generic [ref=f47e204]:
+                      - generic [ref=f47e205]:
+                        - text: 투표
+                        - generic [ref=f47e206]: "1"
+                        - text: 개
+                      - text: ·
+                      - generic [ref=f47e207]:
+                        - text: 댓글
+                        - generic [ref=f47e208]: "0"
+                        - text: 개
+                - separator [ref=f47e209]
+                - generic [ref=f47e211]:
+                  - generic:
+                    - heading "Poor Wi-Fi signal through reinforced concrete floor — how can I improve coverage?" [level=2]:
+                      - link "Poor Wi-Fi signal through reinforced concrete floor — how can I improve coverage?" [ref=f47e212] [cursor=pointer]:
+                        - /url: /r/HomeNetworking/comments/1wgcju1/poor_wifi_signal_through_reinforced_concrete/
+                  - generic [ref=f47e214]:
+                    - generic [ref=f47e217]:
+                      - link "r/HomeNetworking" [ref=f47e220] [cursor=pointer]:
+                        - /url: /r/HomeNetworking/
+                      - generic [ref=f47e227]: ·
+                      - time [ref=f47e229]: 11시간 전
+                    - link "Poor Wi-Fi signal through reinforced concrete floor — how can I improve coverage?" [ref=f47e230] [cursor=pointer]:
+                      - /url: /r/HomeNetworking/comments/1wgcju1/poor_wifi_signal_through_reinforced_concrete/
+                    - generic [ref=f47e231]:
+                      - generic [ref=f47e232]:
+                        - text: 투표
+                        - generic [ref=f47e233]: "1"
+                        - text: 개
+                      - text: ·
+                      - generic [ref=f47e234]:
+                        - text: 댓글
+                        - generic [ref=f47e235]: "31"
+                        - text: 개
+                - separator [ref=f47e236]
+                - generic [ref=f47e238]:
+                  - generic:
+                    - heading "How long should handoffs take under a mesh wifi system?" [level=2]:
+                      - link "How long should handoffs take under a mesh wifi system?" [ref=f47e239] [cursor=pointer]:
+                        - /url: /r/HomeNetworking/comments/1wfym9o/how_long_should_handoffs_take_under_a_mesh_wifi/
+                  - generic [ref=f47e241]:
+                    - generic [ref=f47e244]:
+                      - link "r/HomeNetworking" [ref=f47e247] [cursor=pointer]:
+                        - /url: /r/HomeNetworking/
+                      - generic [ref=f47e254]: ·
+                      - time [ref=f47e256]: 20시간 전
+                    - link "How long should handoffs take under a mesh wifi system?" [ref=f47e257] [cursor=pointer]:
+                      - /url: /r/HomeNetworking/comments/1wfym9o/how_long_should_handoffs_take_under_a_mesh_wifi/
+                    - generic [ref=f47e258]:
+                      - generic [ref=f47e259]:
+                        - text: 투표
+                        - generic [ref=f47e260]: "2"
+                        - text: 개
+                      - text: ·
+                      - generic [ref=f47e261]:
+                        - text: 댓글
+                        - generic [ref=f47e262]: "9"
+                        - text: 개
+                - separator [ref=f47e263]
+                - generic [ref=f47e265]:
+                  - generic:
+                    - heading "Considering upgrading my Asus RT-AC68U to Ubiquiti - what performance impact could I expect?" [level=2]:
+                      - link "Considering upgrading my Asus RT-AC68U to Ubiquiti - what performance impact could I expect?" [ref=f47e266] [cursor=pointer]:
+                        - /url: /r/HomeNetworking/comments/1wffz1p/considering_upgrading_my_asus_rtac68u_to_ubiquiti/
+                  - generic [ref=f47e268]:
+                    - generic [ref=f47e271]:
+                      - link "r/HomeNetworking" [ref=f47e274] [cursor=pointer]:
+                        - /url: /r/HomeNetworking/
+                      - generic [ref=f47e281]: ·
+                      - time [ref=f47e283]: 1일 전
+                    - link "Considering upgrading my Asus RT-AC68U to Ubiquiti - what performance impact could I expect?" [ref=f47e284] [cursor=pointer]:
+                      - /url: /r/HomeNetworking/comments/1wffz1p/considering_upgrading_my_asus_rtac68u_to_ubiquiti/
+                    - generic [ref=f47e285]:
+                      - generic [ref=f47e286]:
+                        - text: 투표
+                        - generic [ref=f47e287]: "1"
+                        - text: 개
+                      - text: ·
+                      - generic [ref=f47e288]:
+                        - text: 댓글
+                        - generic [ref=f47e289]: "2"
+                        - text: 개
+                - separator [ref=f47e290]
+                - generic [ref=f47e292]:
+                  - generic:
+                    - heading "So sick of my Asus GT-BE98Pro dropping WiFi all the time. Need a recommendation on new router (More in Comments)" [level=2]:
+                      - link "So sick of my Asus GT-BE98Pro dropping WiFi all the time. Need a recommendation on new router (More in Comments)" [ref=f47e293] [cursor=pointer]:
+                        - /url: /r/HomeNetworking/comments/1wf8rh9/so_sick_of_my_asus_gtbe98pro_dropping_wifi_all/
+                  - generic [ref=f47e295]:
+                    - generic [ref=f47e298]:
+                      - link "r/HomeNetworking" [ref=f47e301] [cursor=pointer]:
+                        - /url: /r/HomeNetworking/
+                      - generic [ref=f47e308]: ·
+                      - time [ref=f47e310]: 2일 전
+                    - link "So sick of my Asus GT-BE98Pro dropping WiFi all the time. Need a recommendation on new router (More in Comments)" [ref=f47e311] [cursor=pointer]:
+                      - /url: /r/HomeNetworking/comments/1wf8rh9/so_sick_of_my_asus_gtbe98pro_dropping_wifi_all/
+                    - generic [ref=f47e312]:
+                      - generic [ref=f47e313]:
+                        - text: 투표
+                        - generic [ref=f47e314]: "106"
+                        - text: 개
+                      - text: ·
+                      - generic [ref=f47e315]:
+                        - text: 댓글
+                        - generic [ref=f47e316]: "102"
+                        - text: 개
+                  - link "So sick of my Asus GT-BE98Pro dropping WiFi all the time. Need a recommendation on new router (More in Comments) 썸네일 이미지" [ref=f47e318] [cursor=pointer]:
+                    - /url: /r/HomeNetworking/comments/1wf8rh9/so_sick_of_my_asus_gtbe98pro_dropping_wifi_all/
+                    - img "So sick of my Asus GT-BE98Pro dropping WiFi all the time. Need a recommendation on new router (More in Comments)" [ref=f47e323]
+                - separator [ref=f47e324]
+                - generic [ref=f47e326]:
+                  - generic:
+                    - heading "First time buying home internet" [level=2]:
+                      - link "First time buying home internet" [ref=f47e327] [cursor=pointer]:
+                        - /url: /r/HomeNetworking/comments/1wezc8f/first_time_buying_home_internet/
+                  - generic [ref=f47e329]:
+                    - generic [ref=f47e332]:
+                      - link "r/HomeNetworking" [ref=f47e335] [cursor=pointer]:
+                        - /url: /r/HomeNetworking/
+                      - generic [ref=f47e342]: ·
+                      - time [ref=f47e344]: 2일 전
+                    - link "First time buying home internet" [ref=f47e345] [cursor=pointer]:
+                      - /url: /r/HomeNetworking/comments/1wezc8f/first_time_buying_home_internet/
+                    - generic [ref=f47e346]:
+                      - generic [ref=f47e347]:
+                        - text: 투표
+                        - generic [ref=f47e348]: "0"
+                        - text: 개
+                      - text: ·
+                      - generic [ref=f47e349]:
+                        - text: 댓글
+                        - generic [ref=f47e350]: "8"
+                        - text: 개
+                - separator [ref=f47e351]
+                - region [ref=f47e352]:
+                  - generic [ref=f47e353]:
+                    - heading "찾으시는 내용이 없으신가요?" [level=2] [ref=f47e354]
+                    - paragraph [ref=f47e355]: 커뮤니티에 질문해보세요
+                  - generic [ref=f47e356]:
+                    - 'link "HomeNetworking 평균 응답 시간: 7분 · 주간 방문자 수: 548K" [ref=f47e359] [cursor=pointer]':
+                      - /url: /r/HomeNetworking/
+                      - generic [ref=f47e366]:
+                        - generic [ref=f47e367]: HomeNetworking
+                        - generic [ref=f47e368]: "평균 응답 시간: 7분 · 주간 방문자 수: 548K"
+                    - link "게시글 작성하기" [ref=f47e370] [cursor=pointer]:
+                      - /url: /r/HomeNetworking/submit?composer_entry=search_inspiration_prompt
+                - separator [ref=f47e376]
+            - generic [ref=f47e380]:
+              - generic [ref=f47e385]:
+                - heading "커뮤니티 정보 섹션" [level=1] [ref=f47e386]
+                - generic [ref=f47e387]:
+                  - generic [ref=f47e388]: HomeNetworking, community based networking help
+                  - generic [ref=f47e389]: HomeNetworking is a place where anyone can ask for help with their home or small office computer network. No question is too small, but please be sure to read the rules and the FAQ before asking for help. We also welcome pretty much anything else related to small networks.
+                  - generic [ref=f47e390]:
+                    - generic [ref=f47e391]: "생성일: 2010년 9월 30일"
+                    - generic [ref=f47e395]: 공개
+                - generic [ref=f47e399]:
+                  - generic [ref=f47e400]:
+                    - strong [ref=f47e402]:
+                      - generic: 54만
+                    - generic [ref=f47e403]: 주간 방문자 수
+                  - generic [ref=f47e404]:
+                    - strong [ref=f47e406]:
+                      - generic: 6.3천
+                    - generic [ref=f47e407]: 주간 기여 수
+              - list [ref=f47e409]:
+                - listitem [ref=f47e410]:
+                  - link "홈" [ref=f47e412] [cursor=pointer]:
+                    - /url: /?feed=home
+                - listitem [ref=f47e413]:
+                  - link "인기" [ref=f47e415] [cursor=pointer]:
+                    - /url: /r/popular/
+                - listitem [ref=f47e416]:
+                  - link "뉴스" [ref=f47e418] [cursor=pointer]:
+                    - /url: /news/
+                - listitem [ref=f47e419]:
+                  - link "둘러보기" [ref=f47e421] [cursor=pointer]:
+                    - /url: /explore/
+                - listitem [ref=f47e422]:
+                  - link "Reddit 베스트 콘텐츠" [ref=f47e424] [cursor=pointer]:
+                    - /url: https://www.reddit.com/posts/2026/global/
+                - listitem [ref=f47e425]:
+                  - link "포르투갈 Reddit 베스트 콘텐츠" [ref=f47e427] [cursor=pointer]:
+                    - /url: https://www.reddit.com/posts/2026/tl-pt-BR/
+                - listitem [ref=f47e428]:
+                  - link "독일의 Reddit 베스트 콘텐츠" [ref=f47e430] [cursor=pointer]:
+                    - /url: https://www.reddit.com/posts/2026/tl-de/
+                - listitem [ref=f47e431]:
+                  - link "Reddit 콘텐츠 규정" [ref=f47e433] [cursor=pointer]:
+                    - /url: https://www.redditinc.com/policies/content-policy
+                - listitem [ref=f47e434]:
+                  - link "개인정보 처리방침" [ref=f47e436] [cursor=pointer]:
+                    - /url: https://www.reddit.com/policies/privacy-policy
+                - listitem [ref=f47e437]:
+                  - link "이용 약관" [ref=f47e439] [cursor=pointer]:
+                    - /url: https://www.redditinc.com/policies/user-agreement
+                - listitem [ref=f47e440]:
+                  - link "접근성" [ref=f47e442] [cursor=pointer]:
+                    - /url: https://support.reddithelp.com/hc/sections/38303584022676-Accessibility
+                - listitem [ref=f47e443]:
+                  - link "Reddit, Inc. © 2026. All rights reserved." [ref=f47e444] [cursor=pointer]:
+                    - /url: https://redditinc.com
+        - generic [ref=f47e447]:
+          - paragraph [ref=f47e448]: 인터넷에서 가장 진솔한 공간에 참여해보세요
+          - generic [ref=f47e450]:
+            - generic [ref=f47e453]:
+              - generic [ref=f47e457]:
+                - button "Google 계정으로 계속하기. 새 탭에서 열림" [ref=f47e459] [cursor=pointer]:
+                  - generic [ref=f47e461]: Google 계정으로 계속하기
+                - iframe
+              - generic [ref=f47e472] [cursor=pointer]:
+                - generic [ref=f47e473]: Apple로 계속하기
+                - button "Sign in with Apple" [ref=f47e479]:
+                  - generic [ref=f47e480]:
+                    - img:
+                      - generic:
+                        - img:
+                          - generic:  Sign in with Apple
+            - link "전화번호로 계속하기" [ref=f47e485] [cursor=pointer]:
+              - /url: https://www.reddit.com/login/
+            - link "이메일로 계속하기" [ref=f47e494] [cursor=pointer]:
+              - /url: https://www.reddit.com/register/
+          - paragraph [ref=f47e501]:
+            - text: 계속 진행할 경우 Reddit의
+            - link "이용 약관" [ref=f47e502] [cursor=pointer]:
+              - /url: https://www.redditinc.com/policies/user-agreement
+            - text: 에 동의하고
+            - link "개인정보 처리방침" [ref=f47e503] [cursor=pointer]:
+              - /url: https://www.redditinc.com/policies/privacy-policy
+            - text: 을 이해하고 인정하는 것으로 간주됩니다.

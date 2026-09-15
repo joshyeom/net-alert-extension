@@ -1,0 +1,119 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - link "주요 콘텐츠로 이동" [ref=e3] [cursor=pointer]
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - link "Chrome 웹 스토어 로고 Chrome 웹 스토어" [ref=e7] [cursor=pointer]:
+          - /url: ./
+          - img "Chrome 웹 스토어 로고" [ref=e8]
+          - generic [ref=e9]: Chrome 웹 스토어
+        - search "사이트 전체" [ref=e10]:
+          - generic [ref=e13]:
+            - combobox "Chrome 웹 스토어 검색" [active] [ref=e15]: 인터넷 끊김 알림
+            - button "검색 설정 지우기" [ref=e17] [cursor=pointer]
+        - generic [ref=e20]:
+          - button "옵션 메뉴 더보기" [ref=e24] [cursor=pointer]
+          - generic [ref=e34]:
+            - button "Google 앱" [ref=e38] [cursor=pointer]
+            - link "로그인" [ref=e42] [cursor=pointer]:
+              - /url: https://accounts.google.com/ServiceLogin?passive=1209600&osid=1&continue=https://chromewebstore.google.com/search/%25EC%259D%25B8%25ED%2584%25B0%25EB%2584%25B7%2520%25EB%2581%258A%25EA%25B9%2580%2520%25EC%2595%258C%25EB%25A6%25BC?hl%3Dko&followup=https://chromewebstore.google.com/search/%25EC%259D%25B8%25ED%2584%25B0%25EB%2584%25B7%2520%25EB%2581%258A%25EA%25B9%2580%2520%25EC%2595%258C%25EB%25A6%25BC?hl%3Dko&hl=ko&ec=GAZApQM
+      - tablist [ref=e46]:
+        - generic [ref=e49]:
+          - tab "탐색" [ref=e50] [cursor=pointer]
+          - tab "확장 프로그램" [ref=e51] [cursor=pointer]
+          - tab "테마" [ref=e52] [cursor=pointer]
+  - generic [ref=e56]:
+    - generic [ref=e58]:
+      - generic [ref=e59]:
+        - heading "유형" [level=2] [ref=e60]
+        - toolbar "광고 확장 유형별로 항목 필터링" [ref=e61]:
+          - button "확장 프로그램" [ref=e64] [cursor=pointer]
+          - button "테마" [ref=e69] [cursor=pointer]
+      - generic [ref=e72]:
+        - heading "필터링 기준" [level=2] [ref=e73]
+        - generic [ref=e75] [cursor=pointer]:
+          - checkbox "추천 확장 프로그램" [ref=e77]
+          - generic [ref=e78]: 추천 확장 프로그램
+        - generic [ref=e81] [cursor=pointer]:
+          - checkbox "우수 게시자" [ref=e83]
+          - generic [ref=e84]: 우수 게시자
+      - generic [ref=e86]:
+        - heading "평점" [level=2] [ref=e87]
+        - radiogroup "평점" [ref=e88]:
+          - radio "별 5개" [ref=e89]
+          - radio "별 4개 이상" [ref=e95]:
+            - generic [aria-hidden] [ref=e102]: 이상
+          - radio "별 3개 이상" [ref=e103]:
+            - generic [aria-hidden] [ref=e111]: 이상
+          - radio "별 2개 이상" [ref=e112]:
+            - generic [aria-hidden] [ref=e121]: 이상
+      - generic [ref=e123]:
+        - button "모든 필터 지우기 버튼" [disabled] [ref=e124]:
+          - generic [aria-hidden] [ref=e126]: 모두 지우기
+        - tooltip [aria-hidden] [ref=e127]: 필터 옵션을 재설정합니다.
+    - main [ref=e128]:
+      - generic [ref=e129]:
+        - heading "검색결과" [level=1] [ref=e130]
+        - generic [ref=e131]:
+          - generic [ref=e132]:
+            - link "인터넷 끊김 알림" [ref=e133] [cursor=pointer]:
+              - /url: ./detail/%EC%9D%B8%ED%84%B0%EB%84%B7-%EB%81%8A%EA%B9%80-%EC%95%8C%EB%A6%BC/egidejbpdcankobpbnofddmjooiicbgg
+            - generic [ref=e135]:
+              - heading "인터넷 끊김 알림" [level=2] [ref=e137]
+              - paragraph
+              - generic [ref=e138]:
+                - img "평균 평점은 별점 5점 중 5점입니다." [ref=e139]:
+                  - generic [ref=e140]: "5.0"
+                - link "검색 결과 및 리뷰에 관해 자세히 알아보기 \"인터넷 끊김 알림\"" [ref=e149] [cursor=pointer]:
+                  - /url: https://support.google.com/chrome_webstore/answer/12225786?p=cws_reviews_results&hl=ko
+              - paragraph [ref=e150]: 인터넷 연결이 실제로 되고 있는지 확인하고, 끊기거나 복구되면 알려줍니다.
+          - generic [ref=e151]:
+            - link "내 아이피" [ref=e152] [cursor=pointer]:
+              - /url: ./detail/%EB%82%B4-%EC%95%84%EC%9D%B4%ED%94%BC/hjfkopginlgihmjejgpfdhcgconehokj
+            - generic [ref=e154]:
+              - heading "내 아이피" [level=2] [ref=e156]
+              - paragraph [ref=e157]:
+                - img "인증된 게시자에 의해 게시됨" [ref=e158]
+                - generic [ref=e161]: whois-ip-lookup.ovh
+              - generic [ref=e162]:
+                - img "평균 평점은 별점 5점 중 4.6점입니다." [ref=e163]:
+                  - generic [ref=e164]: "4.6"
+                - link "검색 결과 및 리뷰에 관해 자세히 알아보기 \"내 아이피\"" [ref=e173] [cursor=pointer]:
+                  - /url: https://support.google.com/chrome_webstore/answer/12225786?p=cws_reviews_results&hl=ko
+              - paragraph [ref=e174]: 내 아이피를 사용하여 ip 주소 위치에 대한 정보를 얻고, 마지막으로 내 공인 ip를 확인하세요.
+          - generic [ref=e175]:
+            - link "AdBlock Network — 로컬 방화벽 및 추적 차단" [ref=e176] [cursor=pointer]:
+              - /url: ./detail/adblock-network-%E2%80%94-%EB%A1%9C%EC%BB%AC-%EB%B0%A9%ED%99%94%EB%B2%BD/aeacakanaldjkllcmigolpcokkpfncmc
+            - generic [ref=e178]:
+              - heading "AdBlock Network — 로컬 방화벽 및 추적 차단" [level=2] [ref=e180]
+              - paragraph [ref=e181]:
+                - link "adblock.network" [ref=e182] [cursor=pointer]:
+                  - /url: https://adblock.network
+              - generic [ref=e183]:
+                - img "평균 평점은 별점 5점 중 5점입니다." [ref=e184]:
+                  - generic [ref=e185]: "5.0"
+                - link "검색 결과 및 리뷰에 관해 자세히 알아보기 \"AdBlock Network — 로컬 방화벽 및 추적 차단\"" [ref=e194] [cursor=pointer]:
+                  - /url: https://support.google.com/chrome_webstore/answer/12225786?p=cws_reviews_results&hl=ko
+              - paragraph [ref=e195]: 팝업, 추적기를 차단하고 동영상 플랫폼의 레이아웃을 정리하는 고급 로컬 방화벽 확장 프로그램.
+  - contentinfo [ref=e196]:
+    - list [ref=e197]:
+      - listitem [ref=e198]:
+        - link "Chrome 웹 스토어 정보" [ref=e199] [cursor=pointer]:
+          - /url: https://support.google.com/chrome_webstore/answer/1047776?hl=ko
+        - text: •
+      - listitem [ref=e200]:
+        - link "개발자 대시보드" [ref=e201] [cursor=pointer]:
+          - /url: https://chrome.google.com/webstore/devconsole/
+        - text: •
+      - listitem [ref=e202]:
+        - link "개인정보처리방침" [ref=e203] [cursor=pointer]:
+          - /url: https://myaccount.google.com/privacypolicy?hl=ko
+        - text: •
+      - listitem [ref=e204]:
+        - link "서비스 약관" [ref=e205] [cursor=pointer]:
+          - /url: https://ssl.gstatic.com/chrome/webstore/intl/ko/gallery_tos.html
+        - text: •
+      - listitem [ref=e206]:
+        - link "도움말" [ref=e207] [cursor=pointer]:
+          - /url: https://support.google.com/chrome_webstore?hl=ko
+  - generic [ref=e208]: 페이지가 로드되었습니다.

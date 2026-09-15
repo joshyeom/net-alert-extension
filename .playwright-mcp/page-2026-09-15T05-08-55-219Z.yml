@@ -1,0 +1,86 @@
+- generic [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - link "주요 콘텐츠로 이동" [ref=f1e3] [cursor=pointer]
+    - generic [ref=f1e4]:
+      - generic [ref=f1e5]:
+        - link "Chrome 웹 스토어 로고 Chrome 웹 스토어" [ref=f1e7] [cursor=pointer]:
+          - /url: ./
+          - img "Chrome 웹 스토어 로고" [ref=f1e8]
+          - generic [ref=f1e9]: Chrome 웹 스토어
+        - search "사이트 전체" [ref=f1e10]:
+          - generic [ref=f1e13]:
+            - combobox "Chrome 웹 스토어 검색" [active] [ref=f1e15]: 인터넷 알림 끊김 extension
+            - button "검색 설정 지우기" [ref=f1e17] [cursor=pointer]
+        - generic [ref=f1e20]:
+          - button "옵션 메뉴 더보기" [ref=f1e24] [cursor=pointer]
+          - generic [ref=f1e34]:
+            - button "Google 앱" [ref=f1e38] [cursor=pointer]
+            - link "로그인" [ref=f1e42] [cursor=pointer]:
+              - /url: https://accounts.google.com/ServiceLogin?passive=1209600&osid=1&continue=https://chromewebstore.google.com/search/%25EC%259D%25B8%25ED%2584%25B0%25EB%2584%25B7%2520%25EC%2595%258C%25EB%25A6%25BC%2520%25EB%2581%258A%25EA%25B9%2580%2520extension?hl%3Dko&followup=https://chromewebstore.google.com/search/%25EC%259D%25B8%25ED%2584%25B0%25EB%2584%25B7%2520%25EC%2595%258C%25EB%25A6%25BC%2520%25EB%2581%258A%25EA%25B9%2580%2520extension?hl%3Dko&hl=ko&ec=GAZApQM
+      - tablist [ref=f1e46]:
+        - generic [ref=f1e49]:
+          - tab "탐색" [ref=f1e50] [cursor=pointer]
+          - tab "확장 프로그램" [ref=f1e51] [cursor=pointer]
+          - tab "테마" [ref=f1e52] [cursor=pointer]
+  - generic [ref=f1e56]:
+    - generic [ref=f1e58]:
+      - generic [ref=f1e59]:
+        - heading "유형" [level=2] [ref=f1e60]
+        - toolbar "광고 확장 유형별로 항목 필터링" [ref=f1e61]:
+          - generic [ref=f1e62]:
+            - generic:
+              - button "확장 프로그램" [disabled]
+          - generic [ref=f1e63]:
+            - generic:
+              - button "테마" [disabled]
+      - generic [ref=f1e64]:
+        - heading "필터링 기준" [level=2] [ref=f1e65]
+        - generic [ref=f1e67]:
+          - generic:
+            - checkbox "추천 확장 프로그램" [disabled]
+          - generic [ref=f1e68]: 추천 확장 프로그램
+        - generic [ref=f1e71]:
+          - generic:
+            - checkbox "우수 게시자" [disabled]
+          - generic [ref=f1e72]: 우수 게시자
+      - generic [ref=f1e74]:
+        - heading "평점" [level=2] [ref=f1e75]
+        - radiogroup "평점" [ref=f1e76]:
+          - radio "별 5개" [disabled]
+          - radio "별 4개 이상" [disabled]:
+            - generic [aria-hidden]: 이상
+          - radio "별 3개 이상" [disabled]:
+            - generic [aria-hidden]: 이상
+          - radio "별 2개 이상" [disabled]:
+            - generic [aria-hidden]: 이상
+      - generic [ref=f1e78]:
+        - button "모든 필터 지우기 버튼" [disabled] [ref=f1e79]:
+          - generic [aria-hidden] [ref=f1e81]: 모두 지우기
+        - tooltip [aria-hidden] [ref=f1e82]: 필터 옵션을 재설정합니다.
+    - main [ref=f1e83]:
+      - dialog "검색결과 없음" [ref=f1e85]:
+        - heading "검색결과 없음" [level=1] [ref=f1e86]
+        - text: 검색어와 일치하는 결과가 없는 것 같습니다.
+        - strong [ref=f1e87]: "도움말:"
+        - text: 찾고 있는 확장 프로그램, 테마 또는 주제의 이름에 포함될 만한 단어를 사용해 보세요.
+  - contentinfo [ref=f1e88]:
+    - list [ref=f1e89]:
+      - listitem [ref=f1e90]:
+        - link "Chrome 웹 스토어 정보" [ref=f1e91] [cursor=pointer]:
+          - /url: https://support.google.com/chrome_webstore/answer/1047776?hl=ko
+        - text: •
+      - listitem [ref=f1e92]:
+        - link "개발자 대시보드" [ref=f1e93] [cursor=pointer]:
+          - /url: https://chrome.google.com/webstore/devconsole/
+        - text: •
+      - listitem [ref=f1e94]:
+        - link "개인정보처리방침" [ref=f1e95] [cursor=pointer]:
+          - /url: https://myaccount.google.com/privacypolicy?hl=ko
+        - text: •
+      - listitem [ref=f1e96]:
+        - link "서비스 약관" [ref=f1e97] [cursor=pointer]:
+          - /url: https://ssl.gstatic.com/chrome/webstore/intl/ko/gallery_tos.html
+        - text: •
+      - listitem [ref=f1e98]:
+        - link "도움말" [ref=f1e99] [cursor=pointer]:
+          - /url: https://support.google.com/chrome_webstore?hl=ko
